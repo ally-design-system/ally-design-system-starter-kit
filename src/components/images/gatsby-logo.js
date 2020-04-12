@@ -28,7 +28,7 @@ const ImageGatsbyLogo = () => {
 
     return (
         <Img
-            alt="Gatsby Icon"
+            alt="Gatsby Logo"
             fluid={data.placeholderImage.childImageSharp.fluid}
         />
     )
