@@ -1,0 +1,35 @@
+.header {
+    background-color: $color-white;
+    border-bottom: 2px solid $color-black;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: $layout-maxWidth;
+        padding: $layout-padding;
+    }
+
+    &__initial {
+        font-size: 1.3rem;
+        color: $color-black;
+        margin: 0;
+    }
+
+    &__navigation {
+        margin: auto 0;
+        ul {
+            display: flex;
+            margin: 0;
+
+            li {
+                list-style: none;
+                margin: 0.3rem 0 0 3rem;
+
+                a.active {
+                    border-bottom: 3px solid $color-gatsbypurple;
+                }
+            }
+        }
+    }
+}

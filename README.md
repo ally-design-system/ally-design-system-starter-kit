@@ -1,14 +1,16 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  The NP Gatsby Starter
 </h1>
+<h2>
+  Built off of Gatsby's Default Starter
+</h2>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Gatsby boilerplate including the main Gatsby configuration files needed to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
@@ -16,11 +18,11 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Use the Gatsby CLI to create a new site, specifying this starter.
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # create a new Gatsby site using this starter
+    gatsby new new-gatsby-site https://github.com/nikkipantony/np-gatsby-starter
     ```
 
 1.  **Start developing.**
@@ -28,21 +30,21 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    cd new-gatsby-site/
     gatsby develop
     ```
 
 1.  **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
+    Your site is now running at `http://localhost:8000` or in Chrome at `http://127.0.0.1:8000`
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `new-gatsby-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+A quick look at the top-level files and directories you'll see in this Gatsby project.
 
     .
     ├── node_modules
@@ -82,18 +84,67 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
+## 🧐 Inside Source Directory
+
+A quick look at the files and directories in the src directory where your site files will live.
+
+    .
+    └── src
+      ├── components
+      | |
+      | ├── images
+      | | ├── image-logo.js
+      | | └── image-example.js
+      | |
+      | ├── layouts
+      | | ├── layout-main.js
+      | | └── layout-example.js
+      | |
+      | ├── header.js
+      | ├── footer.js
+      | ├── example.js
+      | └── seo.js
+      |
+      ├── icon
+      | └── favicon.png
+      |
+      ├── images
+      | ├── image-logo.jpg
+      | └── image-example.png
+      |
+      ├── pages
+      | ├── 404.js
+      | ├── index.js
+      | └── page-example.js
+      |
+      └── styles
+        ├── components
+        | ├── _header.scss
+        | └── _footer.scss
+        |
+        ├── layouts
+        | ├── _layout-main.scss
+        | └── _layout-example.scss
+        |
+        ├── pages
+        | ├── _page-404.scss
+        | ├── _page-index.scss
+        | └── _page-example.scss
+        |
+        ├── _variables.scss
+        ├── _globale.scss
+        └── main.scss
+
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+-   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+-   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nikkipantony/np-gatsby-starter)
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/nikkipantony/np-gatsby-starter)

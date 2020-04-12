@@ -1,0 +1,15 @@
+// Global Styles
+@import "variables";
+@import "global";
+
+// Layout Styles
+@import "layouts/layout-main";
+
+// Component Styles
+@import "components/header";
+@import "components/footer";
+
+// Page Styles
+@import "pages/page-index";
+@import "pages/page-second";
+@import "pages/page-third";

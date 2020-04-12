@@ -1,0 +1,14 @@
+.footer {
+    background-color: $color-white;
+    border-top: 2px solid $color-black;
+
+    &__inner {
+        margin: 0 auto;
+        max-width: $layout-maxWidth;
+        padding: $layout-padding;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}
