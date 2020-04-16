@@ -4,11 +4,8 @@
   </a>
 </p>
 <h1 align="center">
-  The NP Gatsby Starter
+  Gatsby + BEM + SASS Starter
 </h1>
-<h2>
-  Built off of Gatsby's Default Starter
-</h2>
 
 Gatsby boilerplate including the main Gatsby configuration files needed to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -22,7 +19,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```shell
     # create a new Gatsby site using this starter
-    gatsby new new-gatsby-site https://github.com/nikkipantony/np-gatsby-starter
+    gatsby new new-gatsby-site https://github.com/nikkipantony/gatsby-bem-sass-starter
     ```
 
 1.  **Start developing.**
@@ -145,6 +142,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nikkipantony/np-gatsby-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nikkipantony/gatsby-bem-sass-starter)
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/nikkipantony/np-gatsby-starter)
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/nikkipantony/gatsby-bem-sass-starter)

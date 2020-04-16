@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `NP Gatsby Starter`,
-        description: `Gatsby starter built off of the Gatsby Starter Default by Nikki Pantony.`,
+        title: `Gatsby + BEM + SASS Starter`,
+        description: `A simple starter to get up and developing quickly with Gatsby by Nikki Pantony.`,
         author: `@nikkipantony`,
     },
     plugins: [

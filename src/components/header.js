@@ -11,7 +11,7 @@ const Header = () => (
     <header className="header">
         <div className="header__inner">
             <p className="header__initial">
-                <Link to="/">NP Gatsby Starter</Link>
+                <Link to="/">Gatsby + BEM + SASS</Link>
             </p>
             <nav className="header__navigation">
                 <ul>
