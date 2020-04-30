@@ -90,7 +90,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 12. **`README.md`** A text file containing useful reference information about your project.
 
-## 🧐 Inside Source Directory
+## 🌲 Inside the source directory
 
 A quick look at the files and directories in the src directory where your site files will live.
 
