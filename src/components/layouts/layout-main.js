@@ -1,6 +1,5 @@
 import React from "react"
 
-import "normalize.css"
 import "../../styles/main.scss"
 
 import Header from "../header"
