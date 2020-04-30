@@ -8,14 +8,14 @@ const IndexPage = () => (
     <>
         <LayoutMain>
             <SEO title="Home" />
-            <h1>Home page of the Gatsby Starter SASS + BEM</h1>
+            <h1>Gatsby + SASS + BEM + Markdown</h1>
             <p>
                 This Gatsby starter includes SASS setup with the BEM naming
                 convention for styling plus the main Gatsby configuration files
                 needed to get up and running.
             </p>
             <p>Now go build something great.</p>
-            <div className="page-index__image">
+            <div className="index__image">
                 <ImageGatsbyLogo />
             </div>
         </LayoutMain>

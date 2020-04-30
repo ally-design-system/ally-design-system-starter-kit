@@ -4,17 +4,17 @@ import LayoutMain from "../components/layouts/layout-main"
 import SEO from "../components/seo"
 import ImageGatsbyLogos from "../components/images/graphql-react-webpack"
 
-const ThirdPage = () => (
+const Markdown = () => (
     <>
         <LayoutMain>
-            <SEO title="Third Page" />
-            <h1>This is the Third Page</h1>
+            <SEO title="Markdown" />
+            <h1>Markdown</h1>
             <p>Now go build something great.</p>
-            <div className="page-third__image">
+            <div className="markdown__image">
                 <ImageGatsbyLogos />
             </div>
         </LayoutMain>
     </>
 )
 
-export default ThirdPage
+export default Markdown
