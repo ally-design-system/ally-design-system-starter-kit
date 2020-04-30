@@ -13,7 +13,16 @@ _Have another more specific idea? Check out the vibrant collection of [official 
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site using this starter.**
+1.  **Make sure you have the Gatsby CLI installed.**
+
+    If you don't already have the Gatsby CLI installed, install it using npm.
+
+    ```shell
+    # install Gatsby CLI globally on your machine
+    npm install -g gatsby-cli
+    ```
+
+2.  **Create a Gatsby site using this starter.**
 
     Use the Gatsby CLI to create a new site, specifying this starter.
 
@@ -22,7 +31,7 @@ _Have another more specific idea? Check out the vibrant collection of [official 
     gatsby new new-gatsby-site https://github.com/nikkipantony/gatsby-starter-sass-bem-md
     ```
 
-2.  **Start developing.**
+3.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -31,7 +40,7 @@ _Have another more specific idea? Check out the vibrant collection of [official 
     gatsby develop
     ```
 
-3.  **Open the source code and start editing!**
+4.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000` or in Chrome at `http://127.0.0.1:8000`
 
@@ -140,7 +149,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deploy
 
 **`Deploy to Netlify`**
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nikkipantony/gatsby-starter-sass-bem-md)
 
 **`Deploy to Vercel (formerly ZEIT Now)`**
+
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/nikkipantony/gatsby-starter-sass-bem-md)
