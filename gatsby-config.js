@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Starter SASS + BEM`,
+        title: `Gatsby Starter SASS + BEM + Markdown`,
         description: `Gatsby starter including SASS setup with the BEM naming convention for styling plus the main Gatsby configuration files needed to get up and running.`,
         author: `@nikkipantony`,
     },
