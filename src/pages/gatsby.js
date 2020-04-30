@@ -2,7 +2,7 @@ import React from "react"
 
 import LayoutMain from "../components/layouts/layout-main"
 import SEO from "../components/seo"
-import ImageGatsbyAstronaut from "../components/images/gatsby-astronaut"
+import ImageGatsbyLogos from "../components/images/graphql-react-webpack"
 
 const Gatsby = () => (
     <>
@@ -11,7 +11,7 @@ const Gatsby = () => (
             <h1>Gatsby (React + Webpack + GraphQL)</h1>
             <p>Now go build something great.</p>
             <div className="gatsby__image">
-                <ImageGatsbyAstronaut />
+                <ImageGatsbyLogos />
             </div>
         </LayoutMain>
     </>

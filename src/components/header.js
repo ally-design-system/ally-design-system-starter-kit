@@ -15,7 +15,7 @@ const NavLink = props => <Link getProps={isActive} {...props} />
 
 const Header = () => {
     const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
+        query HeaderSiteTitleQuery {
             site {
                 siteMetadata {
                     title
@@ -43,7 +43,7 @@ const Header = () => {
                                 <NavLink to="/sass-bem/">SASS + BEM</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/markdown/">+ Markdown</NavLink>
+                                <NavLink to="/markdown/">Markdown</NavLink>
                             </li>
                         </ul>
                     </nav>

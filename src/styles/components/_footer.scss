@@ -9,6 +9,11 @@
     }
 
     &__text {
-        margin: 0;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+
+        &--copyright {
+            font-family: $font-arimo;
+        }
     }
 }

@@ -10,11 +10,11 @@ const IndexPage = () => (
             <SEO title="Home" />
             <h1>Gatsby + SASS + BEM + Markdown</h1>
             <p>
-                This Gatsby starter includes SASS setup with the BEM naming
-                convention for styling plus the main Gatsby configuration files
-                needed to get up and running.
+                An opinionated Gatsby starter boilerplate including SASS setup
+                with the BEM naming convention for styling plus the main Gatsby
+                configuration files needed to get up and running with content
+                sourced from markdown files.
             </p>
-            <p>Now go build something great.</p>
             <div className="index__image">
                 <ImageGatsbyLogo />
             </div>
