@@ -4,25 +4,25 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Starter SASS + BEM
+  Gatsby Starter SASS + BEM + Markdown
 </h1>
 
-Gatsby boilerplate including the main Gatsby configuration files needed to get up and running blazing fast with the blazing fast app generator for React.
+An opinionated Gatsby starter boilerplate including SASS setup with the BEM naming convention for styling plus the main Gatsby configuration files needed to get up and running with content sourced from markdown files.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+_Have another more specific idea? Check out the vibrant collection of [official and community-created Gatsby starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Create a Gatsby site using this starter.**
 
     Use the Gatsby CLI to create a new site, specifying this starter.
 
     ```shell
     # create a new Gatsby site using this starter
-    gatsby new new-gatsby-site https://github.com/nikkipantony/gatsby-bem-sass-starter
+    gatsby new new-gatsby-site https://github.com/nikkipantony/gatsby-starter-sass-bem-md
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -31,7 +31,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000` or in Chrome at `http://127.0.0.1:8000`
 
@@ -90,23 +90,20 @@ A quick look at the files and directories in the src directory where your site f
       ├── components
       | |
       | ├── images
-      | | ├── image-logo.js
       | | └── image-example.js
       | |
       | ├── layouts
-      | | ├── layout-main.js
       | | └── layout-example.js
       | |
       | ├── header.js
       | ├── footer.js
-      | ├── example.js
+      | ├── component-example.js
       | └── seo.js
       |
       ├── icon
       | └── favicon.png
       |
       ├── images
-      | ├── image-logo.jpg
       | └── image-example.png
       |
       ├── pages
@@ -116,11 +113,11 @@ A quick look at the files and directories in the src directory where your site f
       |
       └── styles
         ├── components
+        | ├── _component-example.scss
         | ├── _header.scss
         | └── _footer.scss
         |
         ├── layouts
-        | ├── _layout-main.scss
         | └── _layout-example.scss
         |
         ├── pages
