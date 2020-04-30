@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby + BEM + SASS Starter
+  Gatsby Starter SASS + BEM
 </h1>
 
 Gatsby boilerplate including the main Gatsby configuration files needed to get up and running blazing fast with the blazing fast app generator for React.
@@ -142,6 +142,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nikkipantony/gatsby-bem-sass-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nikkipantony/gatsby-starter-sass-bem)
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/nikkipantony/gatsby-bem-sass-starter)
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/nikkipantony/gatsby-starter-sass-bem)
