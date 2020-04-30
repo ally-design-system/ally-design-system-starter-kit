@@ -15,7 +15,7 @@ const IndexPage = () => (
                 needed to get up and running.
             </p>
             <p>Now go build something great.</p>
-            <div className="page-index__image">
+            <div className="index__image">
                 <ImageGatsbyLogo />
             </div>
         </LayoutMain>
