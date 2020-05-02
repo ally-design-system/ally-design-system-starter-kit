@@ -4,13 +4,13 @@
 
 import React from "react"
 
-import MainLayout from "../components/layouts/main-layout"
+import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
 import ImageGatsbyLogos from "../components/images/graphql-react-webpack"
 
 const GatsbyPage = () => (
     <>
-        <MainLayout>
+        <MainSiteLayout>
             <SEO title="Learn about Gatsby" />
             <h1>Learn About Gatsby</h1>
             <p>
@@ -36,7 +36,7 @@ const GatsbyPage = () => (
             <div className="gatsby-page__image">
                 <ImageGatsbyLogos />
             </div>
-        </MainLayout>
+        </MainSiteLayout>
     </>
 )
 

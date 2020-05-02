@@ -7,9 +7,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import MainLayout from "../components/layouts/main-layout"
+import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import ImageGatsbyLogo from "../components/images/gatsby-logo"
+import GatsbyLogoImage from "../components/images/gatsby-logo"
+import Icon from "../components/images/graphql-react-webpack"
 
 const HomePage = () => {
     const data = useStaticQuery(graphql`
@@ -24,19 +25,37 @@ const HomePage = () => {
 
     return (
         <>
-            <MainLayout>
+            <MainSiteLayout>
                 <SEO title="Gatsby Starter SASS + BEM + Markdown" />
-                <h1>Welcome to the {data.site.siteMetadata.title}</h1>
-                <p>
-                    An opinionated Gatsby starter boilerplate including SASS
-                    setup with the BEM naming convention for styling plus the
-                    main Gatsby configuration files needed to get up and running
-                    with content sourced from markdown files.
-                </p>
-                <div className="home-page__image">
-                    <ImageGatsbyLogo />
-                </div>
-            </MainLayout>
+                <section className="default-page-layout__grid">
+                    <div className="default-page-layout__single-column">
+                        <h1>Welcome to the {data.site.siteMetadata.title}</h1>
+                        <p>
+                            An opinionated Gatsby starter boilerplate including
+                            SASS setup with the BEM naming convention for
+                            styling plus the main Gatsby configuration files
+                            needed to get up and running with content sourced
+                            from markdown files.
+                        </p>
+                    </div>
+                    <div className="default-page-layout__single-column">
+                        <div className="default-page-layout__feature-image">
+                            <GatsbyLogoImage />
+                        </div>
+                    </div>
+                    <div className="default-page-layout__double-column">
+                        <div className="default-page-layout__icon">
+                            <Icon />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <Icon />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <Icon />
+                        </div>
+                    </div>
+                </section>
+            </MainSiteLayout>
         </>
     )
 }

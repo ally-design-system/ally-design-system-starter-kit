@@ -16,7 +16,7 @@ const GraphqlReactWebpackImage = () => {
                 relativePath: { eq: "graphql-react-webpack.png" }
             ) {
                 childImageSharp {
-                    fluid(maxWidth: 700) {
+                    fluid(maxWidth: 500) {
                         ...GatsbyImageSharpFluid
                     }
                 }

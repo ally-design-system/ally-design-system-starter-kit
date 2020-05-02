@@ -1,6 +1,7 @@
 $header-and-footer: 14.5rem; // Height of header + footer
+$breakpoint-tablet: 850px;
 
-.main-layout {
+.main-site-layout {
     margin: 0 auto;
     max-width: $layout-max-width;
     padding: $layout-spacing * 2 $layout-spacing;

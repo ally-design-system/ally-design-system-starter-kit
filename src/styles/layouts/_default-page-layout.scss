@@ -1,0 +1,37 @@
+.default-page-layout {
+    &__grid {
+        display: grid;
+        row-gap: $layout-spacing;
+
+        @media (min-width: $breakpoint-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            column-gap: $layout-spacing;
+        }
+    }
+
+    &__single-column {
+        display: grid;
+    }
+
+    &__feature-image {
+        width: 80%;
+        margin: 0 auto auto;
+    }
+
+    &__double-column {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: $layout-spacing auto;
+
+        @media (min-width: $breakpoint-tablet) {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    &__icon {
+        width: 15rem; // To change when replacing icon images
+        margin: $layout-spacing / 2;
+    }
+}
