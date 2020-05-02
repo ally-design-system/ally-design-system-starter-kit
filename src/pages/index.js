@@ -1,5 +1,5 @@
 /*
- * Index Page
+ * Home Page
  *
  * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
  */
@@ -11,7 +11,7 @@ import MainLayout from "../components/layouts/main-layout"
 import SEO from "../components/seo"
 import ImageGatsbyLogo from "../components/images/gatsby-logo"
 
-const IndexPage = () => {
+const HomePage = () => {
     const data = useStaticQuery(graphql`
         query HomeSiteTitleQuery {
             site {
@@ -41,4 +41,4 @@ const IndexPage = () => {
     )
 }
 
-export default IndexPage
+export default HomePage

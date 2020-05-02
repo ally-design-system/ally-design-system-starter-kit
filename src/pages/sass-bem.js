@@ -8,7 +8,7 @@ import MainLayout from "../components/layouts/main-layout"
 import SEO from "../components/seo"
 import ImageGatsbyAstronaut from "../components/images/gatsby-astronaut"
 
-const SassBem = () => (
+const SassBemPage = () => (
     <>
         <MainLayout>
             <SEO title="SASS + BEM" />
@@ -21,4 +21,4 @@ const SassBem = () => (
     </>
 )
 
-export default SassBem
+export default SassBemPage

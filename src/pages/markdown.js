@@ -8,7 +8,7 @@ import MainLayout from "../components/layouts/main-layout"
 import SEO from "../components/seo"
 import ImageGatsbyAstronaut from "../components/images/gatsby-astronaut"
 
-const Markdown = () => (
+const MarkdownPage = () => (
     <>
         <MainLayout>
             <SEO title="Markdown" />
@@ -21,4 +21,4 @@ const Markdown = () => (
     </>
 )
 
-export default Markdown
+export default MarkdownPage
