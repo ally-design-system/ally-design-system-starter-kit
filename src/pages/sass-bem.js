@@ -31,11 +31,16 @@ const SassBemPage = () => (
                     </p>
 
                     <p>
-                        but for this starter I have choosen to use SASS with the
-                        BEM naming convention.
+                        but for this starter I have choosen to use nested SASS
+                        with the BEM naming convention.
                     </p>
                     <p>
+                        BEM Articles:
+                        https://seesparkbox.com/foundry/bem_by_example
+                        https://codeburst.io/understanding-css-bem-naming-convention-a8cca116d252
+                        BEM + Nested SASS:
                         https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894
+                        https://css-tricks.com/using-sass-control-scope-bem-naming/
                     </p>
                 </div>
                 <div className="default-page-layout__single-column">
