@@ -25,7 +25,6 @@ const MarkdownPage = () => (
                         >
                             Link
                         </a>
-                        .
                     </p>
                 </div>
                 <div className="default-page-layout__single-column">

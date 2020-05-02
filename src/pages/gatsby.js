@@ -36,7 +36,6 @@ const GatsbyPage = () => (
                         >
                             gatsbyjs.org
                         </a>
-                        .
                     </p>
                 </div>
                 <div className="default-page-layout__single-column">

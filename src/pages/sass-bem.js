@@ -28,7 +28,6 @@ const SassBemPage = () => (
                         >
                             Gatsby Docs Styling Page
                         </a>
-                        .
                     </p>
 
                     <p>
