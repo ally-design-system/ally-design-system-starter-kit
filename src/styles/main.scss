@@ -1,16 +1,22 @@
-// Global Styles
+/*
+ * Main Styling File
+ */
+
+// Variables holding Typography, Layout Units, and Color Palette
 @import "variables";
+
+// Global Styling
 @import "global";
 
-// Layout Styles
-@import "layouts/layout-main";
+// Layout Styling
+@import "layouts/main-layout";
 
-// Component Styles
+// Component Styling
 @import "components/header";
 @import "components/footer";
 
-// Page Styles
-@import "pages/index";
-@import "pages/gatsby";
-@import "pages/sass-bem";
-@import "pages/markdown";
+// Page Styling
+@import "pages/home-page";
+@import "pages/gatsby-page";
+@import "pages/sass-bem-page";
+@import "pages/markdown-page";

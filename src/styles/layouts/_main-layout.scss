@@ -1,0 +1,24 @@
+$header-and-footer: 14.5rem; // Height of header + footer
+
+.main-layout {
+    margin: 0 auto;
+    max-width: $layout-max-width;
+    padding: $layout-spacing * 2 $layout-spacing;
+    min-height: calc(
+        100vh - #{$header-and-footer}
+    ); // Set minimum page height to viewport height - header + footer height to keep footer at bottom in pages with less content
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        max-width: $heading-max-width;
+        margin-bottom: $layout-spacing;
+    }
+    p {
+        margin-top: $layout-spacing / 2;
+        max-width: $paragraph-max-width;
+    }
+}

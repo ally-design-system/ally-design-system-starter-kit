@@ -1,19 +1,23 @@
+/*
+ * Markdown Page
+ */
+
 import React from "react"
 
-import LayoutMain from "../components/layouts/layout-main"
+import MainLayout from "../components/layouts/main-layout"
 import SEO from "../components/seo"
 import ImageGatsbyAstronaut from "../components/images/gatsby-astronaut"
 
 const Markdown = () => (
     <>
-        <LayoutMain>
+        <MainLayout>
             <SEO title="Markdown" />
             <h1>Markdown</h1>
             <p>Now go build something great.</p>
-            <div className="markdown__image">
+            <div className="markdown-page__image">
                 <ImageGatsbyAstronaut />
             </div>
-        </LayoutMain>
+        </MainLayout>
     </>
 )
 

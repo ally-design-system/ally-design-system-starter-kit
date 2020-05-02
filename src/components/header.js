@@ -1,4 +1,6 @@
 /*
+ * Header Component
+ *
  * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
  * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
  */
@@ -28,7 +30,7 @@ const Header = () => {
         <>
             <header className="header">
                 <div className="header__inner">
-                    <p className="header__initial">
+                    <p className="header__site-title">
                         <Link to="/">{data.site.siteMetadata.title}</Link>
                     </p>
                     <nav className="header__navigation">

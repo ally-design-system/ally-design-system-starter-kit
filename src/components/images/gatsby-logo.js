@@ -1,4 +1,6 @@
 /*
+ * Gatsby Image Component
+ *
  * Gatsby Image API`: https://gatsby.dev/gatsby-image
  * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
  */
@@ -7,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageGatsbyLogo = () => {
+const GatsbyLogoImage = () => {
     const data = useStaticQuery(graphql`
         query {
             placeholderImage: file(relativePath: { eq: "gatsby-logo.jpg" }) {
@@ -28,4 +30,4 @@ const ImageGatsbyLogo = () => {
     )
 }
 
-export default ImageGatsbyLogo
+export default GatsbyLogoImage

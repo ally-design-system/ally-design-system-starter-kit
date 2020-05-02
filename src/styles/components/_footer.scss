@@ -1,11 +1,11 @@
 .footer {
     background-color: $color-white;
-    border-top: 2px solid $color-black;
+    border-top: 2px solid $color-gatsby-purple;
 
     &__inner {
         margin: 0 auto;
-        max-width: $layout-maxWidth;
-        padding: $layout-padding;
+        max-width: $layout-max-width;
+        padding: $layout-spacing;
     }
 
     &__text {
