@@ -1,4 +1,6 @@
 /*
+ * Header Component
+ *
  * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
  * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
  */
@@ -15,7 +17,7 @@ const NavLink = props => <Link getProps={isActive} {...props} />
 
 const Header = () => {
     const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
+        query HeaderSiteTitleQuery {
             site {
                 siteMetadata {
                     title
@@ -28,7 +30,7 @@ const Header = () => {
         <>
             <header className="header">
                 <div className="header__inner">
-                    <p className="header__initial">
+                    <p className="header__site-title">
                         <Link to="/">{data.site.siteMetadata.title}</Link>
                     </p>
                     <nav className="header__navigation">
@@ -43,7 +45,7 @@ const Header = () => {
                                 <NavLink to="/sass-bem/">SASS + BEM</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/markdown/">+ Markdown</NavLink>
+                                <NavLink to="/markdown/">Markdown</NavLink>
                             </li>
                         </ul>
                     </nav>

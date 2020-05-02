@@ -1,4 +1,6 @@
 /*
+ * Global Styling
+ *
  * Modern CSS Reset based on: https://dev.to/hankchizljaw/a-modern-css-reset-6p3
  */
 
@@ -36,13 +38,6 @@ blockquote,
 dl,
 dd {
     margin: 0;
-}
-
-// Remove list styles and default padding on ul, ol elements with a class attribute
-ul[class],
-ol[class] {
-    list-style: none;
-    padding: 0;
 }
 
 // Make images easier to work with
@@ -102,6 +97,6 @@ a {
     padding-bottom: 2px;
 
     &:hover {
-        border-bottom: 3px solid $color-gatsbypurple;
+        border-bottom: 3px solid $color-gatsby-purple;
     }
 }

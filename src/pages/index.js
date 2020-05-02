@@ -1,25 +1,70 @@
+/*
+ * Home Page
+ *
+ * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
+ */
+
 import React from "react"
 
-import LayoutMain from "../components/layouts/layout-main"
+import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import ImageGatsbyLogo from "../components/images/gatsby-logo"
+import GatsbyLogoImage from "../components/images/gatsby-logo"
+import Icon from "../components/images/graphql-react-webpack"
 
-const IndexPage = () => (
+const HomePage = () => (
     <>
-        <LayoutMain>
-            <SEO title="Home" />
-            <h1>Gatsby + SASS + BEM + Markdown</h1>
-            <p>
-                This Gatsby starter includes SASS setup with the BEM naming
-                convention for styling plus the main Gatsby configuration files
-                needed to get up and running.
-            </p>
-            <p>Now go build something great.</p>
-            <div className="index__image">
-                <ImageGatsbyLogo />
-            </div>
-        </LayoutMain>
+        <MainSiteLayout>
+            <SEO title="Gatsby Starter SASS + BEM + Markdown" />
+            <section className="default-page-layout__grid">
+                <div className="default-page-layout__single-column">
+                    <h1>
+                        Welcome to the Gatsby Starter for building a Gatsby Site
+                        using SASS + BEM + Markdown
+                    </h1>
+                    <p>
+                        An opinionated Gatsby starter boilerplate including SASS
+                        setup with the BEM naming convention for styling plus
+                        the main Gatsby configuration files needed to get up and
+                        running with content sourced from markdown files.
+                    </p>
+                    <p>
+                        @Todo: Talk about: A11y, SEO, Responsiveness and
+                        Performance.
+                    </p>
+                    <p>
+                        @Todo: Add Skip Link, Add Mobile Menu, Add content to
+                        pages, Add logos/icons.
+                    </p>
+                    <p>
+                        The repo for this starter can be found at:{" "}
+                        <a
+                            href="https://github.com/nikkipantony/gatsby-starter-sass-bem-md"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github.com/nikkipantony/gatsby-starter-sass-bem-md
+                        </a>
+                    </p>
+                </div>
+                <div className="default-page-layout__single-column">
+                    <div className="default-page-layout__feature-image">
+                        <GatsbyLogoImage />
+                    </div>
+                </div>
+                <div className="default-page-layout__double-column">
+                    <div className="default-page-layout__icon">
+                        <Icon />
+                    </div>
+                    <div className="default-page-layout__icon">
+                        <Icon />
+                    </div>
+                    <div className="default-page-layout__icon">
+                        <Icon />
+                    </div>
+                </div>
+            </section>
+        </MainSiteLayout>
     </>
 )
 
-export default IndexPage
+export default HomePage

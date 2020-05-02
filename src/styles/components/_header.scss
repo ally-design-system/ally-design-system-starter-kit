@@ -1,16 +1,20 @@
+/*
+ * Header Styling
+ */
+
 .header {
     background-color: $color-white;
-    border-bottom: 2px solid $color-black;
+    border-bottom: 2px solid $color-gatsby-purple;
 
     &__inner {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: $layout-maxWidth;
-        padding: $layout-padding;
+        max-width: $layout-max-width;
+        padding: $layout-spacing;
     }
 
-    &__initial {
+    &__site-title {
         font-size: 1.3rem;
         color: $color-black;
         margin: 0;
@@ -18,6 +22,7 @@
 
     &__navigation {
         margin: auto 0;
+
         ul {
             display: flex;
             margin: 0;
@@ -27,7 +32,7 @@
                 margin: 0.3rem 0 0 3rem;
 
                 a.active {
-                    border-bottom: 3px solid $color-gatsbypurple;
+                    border-bottom: 3px solid $color-gatsby-purple;
                 }
             }
         }

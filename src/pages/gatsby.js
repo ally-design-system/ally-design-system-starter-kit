@@ -1,20 +1,62 @@
+/*
+ * Gatsby Page
+ */
+
 import React from "react"
 
-import LayoutMain from "../components/layouts/layout-main"
+import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import ImageGatsbyAstronaut from "../components/images/gatsby-astronaut"
+import GatsbyLogoImage from "../components/images/gatsby-logo"
+import Icon from "../components/images/graphql-react-webpack"
 
-const Gatsby = () => (
+const GatsbyPage = () => (
     <>
-        <LayoutMain>
-            <SEO title="Gatsby" />
-            <h1>Gatsby (React + Webpack + GraphQL)</h1>
-            <p>Now go build something great.</p>
-            <div className="gatsby__image">
-                <ImageGatsbyAstronaut />
-            </div>
-        </LayoutMain>
+        <MainSiteLayout>
+            <SEO title="Learn about Gatsby" />
+            <section className="default-page-layout__grid">
+                <div className="default-page-layout__single-column">
+                    <h1>Learn About Gatsby</h1>
+                    <p>
+                        Gatsby is a free and open source framework based on
+                        React that helps developers build blazing fast websites
+                        and apps.
+                    </p>
+                    <p>
+                        It offers the power of modern web technologies without
+                        the headaches like React.js, Webpack, modern JavaScript
+                        and CSS as well as GraphQL to pull in data from
+                        anywhere.
+                    </p>
+                    <p>
+                        Find out more by visiting:{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            gatsbyjs.org
+                        </a>
+                    </p>
+                </div>
+                <div className="default-page-layout__single-column">
+                    <div className="default-page-layout__feature-image">
+                        <GatsbyLogoImage />
+                    </div>
+                </div>
+                <div className="default-page-layout__double-column">
+                    <div className="default-page-layout__icon">
+                        <Icon />
+                    </div>
+                    <div className="default-page-layout__icon">
+                        <Icon />
+                    </div>
+                    <div className="default-page-layout__icon">
+                        <Icon />
+                    </div>
+                </div>
+            </section>
+        </MainSiteLayout>
     </>
 )
 
-export default Gatsby
+export default GatsbyPage

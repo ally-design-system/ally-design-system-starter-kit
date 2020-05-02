@@ -1,14 +1,19 @@
 .footer {
     background-color: $color-white;
-    border-top: 2px solid $color-black;
+    border-top: 2px solid $color-gatsby-purple;
 
     &__inner {
         margin: 0 auto;
-        max-width: $layout-maxWidth;
-        padding: $layout-padding;
+        max-width: $layout-max-width;
+        padding: $layout-spacing;
     }
 
     &__text {
-        margin: 0;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+
+        &--copyright {
+            font-family: $font-arimo;
+        }
     }
 }
