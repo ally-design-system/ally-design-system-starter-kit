@@ -12,7 +12,6 @@ import GatsbyLogoImage from "../components/images/Gatsby-Logo"
 import ReactIconImage from "../components/images/React-icon"
 import GraphQLIconImage from "../components/images/GraphQL-icon"
 import WebpackIconImage from "../components/images/Webpack-icon"
-
 import SassIconImage from "../components/images/Sass-icon"
 import BEMIconImage from "../components/images/BEM-icon"
 import MarkdownIconImage from "../components/images/Markdown-icon"
@@ -66,7 +65,6 @@ const HomePage = () => (
                         <div className="default-page-layout__icon">
                             <WebpackIconImage />
                         </div>
-
                         <div className="default-page-layout__icon">
                             <SassIconImage />
                         </div>
@@ -78,10 +76,6 @@ const HomePage = () => (
                         </div>
                     </div>
                 </div>
-                {/* <div className="default-page-layout__double-column">
-                    <div className="default-page-layout__icon">
-                    </div>
-                </div> */}
             </section>
         </MainSiteLayout>
     </>

@@ -6,6 +6,8 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
+import SassIconImage from "../components/images/Sass-icon"
+import BEMIconImage from "../components/images/BEM-icon"
 
 const SassBemPage = () => (
     <>
@@ -41,15 +43,16 @@ const SassBemPage = () => (
                         https://css-tricks.com/using-sass-control-scope-bem-naming/
                     </p>
                 </div>
-                <div className="default-page-layout__single-column">
-                    <div className="default-page-layout__feature-image">
-                        {/* <SassImage /> */}
+                <div className="default-page-layout__column">
+                    <div className="default-page-layout__icons default-page-layout__icons--two">
+                        <div className="default-page-layout__icon">
+                            <SassIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <BEMIconImage />
+                        </div>
                     </div>
                 </div>
-                {/* <div className="default-page-layout__double-column">
-                    <div className="default-page-layout__icon">
-                    </div>
-                </div> */}
             </section>
         </MainSiteLayout>
     </>

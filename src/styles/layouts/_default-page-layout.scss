@@ -1,4 +1,6 @@
 .default-page-layout {
+    $parent-selector: &;
+
     &__grid {
         display: grid;
         row-gap: $layout-spacing;
@@ -35,6 +37,24 @@
         @media (min-width: $breakpoint-tablet) {
             width: 90%;
             margin: $layout-spacing * 2 0 0 auto;
+        }
+
+        &--three {
+            #{$parent-selector}__icon {
+                width: 24%;
+            }
+        }
+
+        &--two {
+            #{$parent-selector}__icon {
+                width: 44%;
+            }
+        }
+
+        &--one {
+            #{$parent-selector}__icon {
+                width: 80%;
+            }
         }
     }
 

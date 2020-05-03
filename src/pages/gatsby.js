@@ -6,14 +6,17 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import GatsbyLogoImage from "../components/images/Gatsby-logo"
+import GatsbyLogoImage from "../components/images/Gatsby-Logo"
+import ReactIconImage from "../components/images/React-icon"
+import GraphQLIconImage from "../components/images/GraphQL-icon"
+import WebpackIconImage from "../components/images/Webpack-icon"
 
 const GatsbyPage = () => (
     <>
         <MainSiteLayout>
             <SEO title="Learn about Gatsby" />
             <section className="default-page-layout__grid">
-                <div className="default-page-layout__single-column">
+                <div className="default-page-layout__column">
                     <h1>Learn About Gatsby</h1>
                     <p>
                         Gatsby is a free and open source framework based on
@@ -37,15 +40,22 @@ const GatsbyPage = () => (
                         </a>
                     </p>
                 </div>
-                <div className="default-page-layout__single-column">
+                <div className="default-page-layout__column">
                     <div className="default-page-layout__feature-image">
                         <GatsbyLogoImage />
                     </div>
-                </div>
-                {/* <div className="default-page-layout__double-column">
-                    <div className="default-page-layout__icon">
+                    <div className="default-page-layout__icons default-page-layout__icons--three">
+                        <div className="default-page-layout__icon">
+                            <ReactIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <GraphQLIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <WebpackIconImage />
+                        </div>
                     </div>
-                </div> */}
+                </div>
             </section>
         </MainSiteLayout>
     </>
