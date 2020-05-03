@@ -99,40 +99,36 @@ A quick look at the files and directories in the src directory where your site f
       ├── components
       | |
       | ├── images
-      | | └── image-example.js
+      | | └── example-image.js
       | |
       | ├── layouts
-      | | └── layout-example.js
+      | | └── main-site-layout.js
       | |
       | ├── header.js
       | ├── footer.js
-      | ├── component-example.js
       | └── seo.js
       |
       ├── icon
       | └── favicon.png
       |
       ├── images
-      | └── image-example.png
+      | └── example-image.png
       |
       ├── pages
       | ├── 404.js
-      | ├── index.js
-      | └── page-example.js
+      | └── index.js
       |
       └── styles
         ├── components
-        | ├── _component-example.scss
         | ├── _header.scss
         | └── _footer.scss
         |
         ├── layouts
-        | └── _layout-example.scss
+        | └── _default-page-layout.scss
         |
         ├── pages
-        | ├── _page-404.scss
-        | ├── _page-index.scss
-        | └── _page-example.scss
+        | ├── _404-page.scss
+        | └── _home-page.scss
         |
         ├── _variables.scss
         ├── _globale.scss
