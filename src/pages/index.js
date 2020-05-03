@@ -9,13 +9,20 @@ import React from "react"
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
 import GatsbyLogoImage from "../components/images/Gatsby-Logo"
+import ReactIconImage from "../components/images/React-icon"
+import GraphQLIconImage from "../components/images/GraphQL-icon"
+import WebpackIconImage from "../components/images/Webpack-icon"
+
+import SassIconImage from "../components/images/Sass-icon"
+import BEMIconImage from "../components/images/BEM-icon"
+import MarkdownIconImage from "../components/images/Markdown-icon"
 
 const HomePage = () => (
     <>
         <MainSiteLayout>
             <SEO title="Gatsby Starter SASS + BEM + Markdown" />
             <section className="default-page-layout__grid">
-                <div className="default-page-layout__single-column">
+                <div className="default-page-layout__column">
                     <h1>
                         Welcome to the Gatsby Starter for building a Gatsby Site
                         using SASS + BEM + Markdown
@@ -45,9 +52,30 @@ const HomePage = () => (
                         </a>
                     </p>
                 </div>
-                <div className="default-page-layout__single-column">
+                <div className="default-page-layout__column">
                     <div className="default-page-layout__feature-image">
                         <GatsbyLogoImage />
+                    </div>
+                    <div className="default-page-layout__icons">
+                        <div className="default-page-layout__icon">
+                            <ReactIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <GraphQLIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <WebpackIconImage />
+                        </div>
+
+                        <div className="default-page-layout__icon">
+                            <SassIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <BEMIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <MarkdownIconImage />
+                        </div>
                     </div>
                 </div>
                 {/* <div className="default-page-layout__double-column">

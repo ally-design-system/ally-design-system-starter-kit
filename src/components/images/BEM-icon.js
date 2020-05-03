@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 const BEMIconImage = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(relativePath: { eq: "BEM-icon.png" }) {
+            placeholderImage: file(relativePath: { eq: "BEM.png" }) {
                 childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid
