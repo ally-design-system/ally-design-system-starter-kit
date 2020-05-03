@@ -9,14 +9,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const GatsbyAstronautImage = () => {
+const BEMIconImage = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(
-                relativePath: { eq: "gatsby-astronaut.jpg" }
-            ) {
+            placeholderImage: file(relativePath: { eq: "BEM-icon.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 350) {
+                    fluid {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -26,10 +24,10 @@ const GatsbyAstronautImage = () => {
 
     return (
         <Img
-            alt="Gatsby Astronaut"
+            alt="BEM Icon"
             fluid={data.placeholderImage.childImageSharp.fluid}
         />
     )
 }
 
-export default GatsbyAstronautImage
+export default BEMIconImage

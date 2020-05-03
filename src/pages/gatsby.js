@@ -6,8 +6,7 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import GatsbyLogoImage from "../components/images/gatsby-logo"
-import Icon from "../components/images/graphql-react-webpack"
+import GatsbyLogoImage from "../components/images/Gatsby-logo"
 
 const GatsbyPage = () => (
     <>
@@ -43,17 +42,10 @@ const GatsbyPage = () => (
                         <GatsbyLogoImage />
                     </div>
                 </div>
-                <div className="default-page-layout__double-column">
+                {/* <div className="default-page-layout__double-column">
                     <div className="default-page-layout__icon">
-                        <Icon />
                     </div>
-                    <div className="default-page-layout__icon">
-                        <Icon />
-                    </div>
-                    <div className="default-page-layout__icon">
-                        <Icon />
-                    </div>
-                </div>
+                </div> */}
             </section>
         </MainSiteLayout>
     </>
