@@ -1,37 +1,65 @@
 .default-page-layout {
+    $parent-selector: &;
+
     &__grid {
         display: grid;
         row-gap: $layout-spacing;
 
         @media (min-width: $breakpoint-tablet) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, auto);
+            grid-template-rows: repeat(1, auto);
             column-gap: $layout-spacing;
+            row-gap: $layout-spacing;
         }
     }
 
-    &__single-column {
-        display: grid;
+    &__column {
+        max-width: 570px;
     }
 
     &__feature-image {
-        width: 80%;
-        margin: 0 auto auto;
-    }
-
-    &__double-column {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: $layout-spacing auto;
+        width: 100%;
+        margin: $layout-spacing auto $layout-spacing 0;
 
         @media (min-width: $breakpoint-tablet) {
-            grid-column: 1 / span 2;
+            width: 90%;
+            margin: $layout-spacing 0 $layout-spacing auto;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: $layout-spacing * 2 auto 0 0;
+
+        @media (min-width: $breakpoint-tablet) {
+            width: 90%;
+            margin: $layout-spacing * 2 0 0 auto;
+        }
+
+        &--three {
+            #{$parent-selector}__icon {
+                width: 24%;
+            }
+        }
+
+        &--two {
+            #{$parent-selector}__icon {
+                width: 44%;
+            }
+        }
+
+        &--one {
+            #{$parent-selector}__icon {
+                width: 80%;
+            }
         }
     }
 
     &__icon {
-        width: 15rem; // To change when replacing icon images
-        margin: $layout-spacing / 2;
+        width: 11%;
+        margin: 0 0 $layout-spacing;
     }
 }

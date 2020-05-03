@@ -6,8 +6,8 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import GatsbyLogoImage from "../components/images/gatsby-logo"
-import Icon from "../components/images/graphql-react-webpack"
+import SassIconImage from "../components/images/Sass-icon"
+import BEMIconImage from "../components/images/BEM-icon"
 
 const SassBemPage = () => (
     <>
@@ -31,27 +31,26 @@ const SassBemPage = () => (
                     </p>
 
                     <p>
-                        but for this starter I have choosen to use SASS with the
-                        BEM naming convention.
+                        but for this starter I have choosen to use nested SASS
+                        with the BEM naming convention.
                     </p>
                     <p>
+                        BEM Articles:
+                        https://seesparkbox.com/foundry/bem_by_example
+                        https://codeburst.io/understanding-css-bem-naming-convention-a8cca116d252
+                        BEM + Nested SASS:
                         https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894
+                        https://css-tricks.com/using-sass-control-scope-bem-naming/
                     </p>
                 </div>
-                <div className="default-page-layout__single-column">
-                    <div className="default-page-layout__feature-image">
-                        <GatsbyLogoImage />
-                    </div>
-                </div>
-                <div className="default-page-layout__double-column">
-                    <div className="default-page-layout__icon">
-                        <Icon />
-                    </div>
-                    <div className="default-page-layout__icon">
-                        <Icon />
-                    </div>
-                    <div className="default-page-layout__icon">
-                        <Icon />
+                <div className="default-page-layout__column">
+                    <div className="default-page-layout__icons default-page-layout__icons--two">
+                        <div className="default-page-layout__icon">
+                            <SassIconImage />
+                        </div>
+                        <div className="default-page-layout__icon">
+                            <BEMIconImage />
+                        </div>
                     </div>
                 </div>
             </section>

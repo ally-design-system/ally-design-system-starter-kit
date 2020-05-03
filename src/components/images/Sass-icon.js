@@ -9,14 +9,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const GraphqlReactWebpackImage = () => {
+const SassIconImage = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(
-                relativePath: { eq: "graphql-react-webpack.png" }
-            ) {
+            placeholderImage: file(relativePath: { eq: "Sass.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -26,10 +24,10 @@ const GraphqlReactWebpackImage = () => {
 
     return (
         <Img
-            alt="Graphql React and Webpack logos"
+            alt="Sass Icon"
             fluid={data.placeholderImage.childImageSharp.fluid}
         />
     )
 }
 
-export default GraphqlReactWebpackImage
+export default SassIconImage
