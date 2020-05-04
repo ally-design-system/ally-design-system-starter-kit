@@ -38,7 +38,7 @@ const HomePage = () => (
                     </p>
                     <p>
                         @Todo: Add Skip Link, Add Mobile Menu, Add content to
-                        pages, Add logos/icons.
+                        pages.
                     </p>
                     <p>
                         The repo for this starter can be found at:{" "}
