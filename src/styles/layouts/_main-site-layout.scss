@@ -1,5 +1,10 @@
+/*
+ * Main Site Layout Styling
+ *
+ * Sass '$self: &;' parent selector with interpolation: https://css-tricks.com/using-sass-control-scope-bem-naming/
+ */
+
 $header-and-footer: 14.5rem; // Height of header + footer
-$breakpoint-tablet: 850px;
 
 .main-site-layout {
     margin: 0 auto;

@@ -14,7 +14,7 @@ const SassBemPage = () => (
         <MainSiteLayout>
             <SEO title="SASS + BEM" />
             <section className="default-page-layout__grid">
-                <div className="default-page-layout__single-column">
+                <div className="default-page-layout__column">
                     <h1>
                         Learn about using SASS with the BEM naming convention
                     </h1>
@@ -41,10 +41,11 @@ const SassBemPage = () => (
                         BEM + Nested SASS:
                         https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894
                         https://css-tricks.com/using-sass-control-scope-bem-naming/
+                        https://css-tricks.com/using-sass-control-scope-bem-naming/
                     </p>
                 </div>
                 <div className="default-page-layout__column">
-                    <div className="default-page-layout__icons default-page-layout__icons--two">
+                    <div className="default-page-layout__icons default-page-layout__icons--two-icons">
                         <div className="default-page-layout__icon">
                             <SassIconImage />
                         </div>

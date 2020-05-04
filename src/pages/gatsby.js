@@ -44,7 +44,7 @@ const GatsbyPage = () => (
                     <div className="default-page-layout__feature-image">
                         <GatsbyLogoImage />
                     </div>
-                    <div className="default-page-layout__icons default-page-layout__icons--three">
+                    <div className="default-page-layout__icons default-page-layout__icons--three-icons">
                         <div className="default-page-layout__icon">
                             <ReactIconImage />
                         </div>
