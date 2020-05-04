@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Starter SASS + BEM + Markdown
+  Gatsby Starter Sass + BEM + Markdown
 </h1>
 
 An opinionated Gatsby starter boilerplate including SASS setup with the BEM naming convention for styling plus the main Gatsby configuration files needed to get up and running with content sourced from markdown files.

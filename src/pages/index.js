@@ -19,18 +19,30 @@ import MarkdownIconImage from "../components/images/Markdown-icon"
 const HomePage = () => (
     <>
         <MainSiteLayout>
-            <SEO title="Gatsby Starter SASS + BEM + Markdown" />
+            <SEO title="Gatsby Starter Sass + BEM + Markdown" />
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
                     <h1>
-                        Welcome to the Gatsby Starter for building a Gatsby Site
-                        using SASS + BEM + Markdown
+                        Welcome to the Gatsby Starter for building Gatsby Sites
+                        using Sass + BEM + Markdown
                     </h1>
                     <p>
-                        An opinionated Gatsby starter boilerplate including SASS
-                        setup with the BEM naming convention for styling plus
-                        the main Gatsby configuration files needed to get up and
-                        running with content sourced from markdown files.
+                        This is an opinionated Gatsby starter boilerplate
+                        including Sass setup with the BEM naming convention for
+                        styling plus the main Gatsby configuration files needed
+                        to get up and running with content sourced from markdown
+                        files.
+                    </p>
+
+                    <p>
+                        This starter also setup with gatsby image for advanced
+                        image loading and optimization and prettier for document
+                        formating.
+                    </p>
+                    <p>
+                        is setup with an SEO component for improved Search
+                        Engine Optimization, it's fully responsive including a
+                        burger menu{" "}
                     </p>
                     <p>
                         @Todo: Talk about: A11y, SEO, Responsiveness and

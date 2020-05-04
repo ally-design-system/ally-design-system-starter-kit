@@ -16,7 +16,7 @@ const SassBemPage = () => (
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
                     <h1>
-                        Learn about using SASS with the BEM naming convention
+                        Learn about using Sass with the BEM naming convention
                     </h1>
                     <p>
                         There are many different ways to write styling in Gatsby
