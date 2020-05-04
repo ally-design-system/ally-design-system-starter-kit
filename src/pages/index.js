@@ -27,30 +27,77 @@ const HomePage = () => (
                         using Sass + BEM + Markdown
                     </h1>
                     <p>
-                        This is an opinionated Gatsby starter boilerplate
-                        including Sass setup with the BEM naming convention for
-                        styling plus the main Gatsby configuration files needed
-                        to get up and running with content sourced from markdown
+                        This is an opinionated{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Gatsby
+                        </a>{" "}
+                        starter boilerplate including{" "}
+                        <a
+                            href="https://sass-lang.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Sass
+                        </a>{" "}
+                        setup with the{" "}
+                        <a
+                            href="http://getbem.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            BEM Naming Convention
+                        </a>{" "}
+                        for styling plus the main Gatsby configuration files
+                        needed to get up and running with content sourced from{" "}
+                        <a
+                            href="https://www.markdownguide.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Markdown
+                        </a>{" "}
                         files.
                     </p>
 
                     <p>
-                        This starter also setup with gatsby image for advanced
-                        image loading and optimization and prettier for document
-                        formating.
+                        It also includes{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/packages/gatsby-image/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Gatsby Image
+                        </a>{" "}
+                        for advanced image loading and optimization plus{" "}
+                        <a
+                            href="https://prettier.io/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Prettier
+                        </a>{" "}
+                        for document formating.
                     </p>
                     <p>
-                        is setup with an SEO component for improved Search
-                        Engine Optimization, it's fully responsive including a
-                        burger menu{" "}
+                        For improved search engine optimization it is also setup
+                        with a{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/docs/add-seo-component/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SEO Component
+                        </a>{" "}
+                        and is fully responsive including a burger menu for
+                        navigation on smaller devices.
                     </p>
                     <p>
-                        @Todo: Talk about: A11y, SEO, Responsiveness and
-                        Performance.
-                    </p>
-                    <p>
-                        @Todo: Add Skip Link, Add Mobile Menu, Add content to
-                        pages.
+                        This starter has also been built with web accessibility
+                        in mind and includes a skip link as standard.
                     </p>
                     <p>
                         The repo for this starter can be found at:{" "}
@@ -62,6 +109,11 @@ const HomePage = () => (
                             github.com/nikkipantony/gatsby-starter-sass-bem-md
                         </a>
                     </p>
+                    {/* @Todo: 
+                    - Add Skip Link 
+                    - Add Mobile Menu 
+                    - Add content to all pages. 
+                    */}
                 </div>
                 <div className="default-page-layout__column">
                     <div className="default-page-layout__feature-image">
