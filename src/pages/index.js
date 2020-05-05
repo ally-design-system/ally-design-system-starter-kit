@@ -19,26 +19,85 @@ import MarkdownIconImage from "../components/images/Markdown-icon"
 const HomePage = () => (
     <>
         <MainSiteLayout>
-            <SEO title="Gatsby Starter SASS + BEM + Markdown" />
+            <SEO title="Gatsby Starter Sass + BEM + Markdown" />
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
                     <h1>
-                        Welcome to the Gatsby Starter for building a Gatsby Site
-                        using SASS + BEM + Markdown
+                        Welcome to the Gatsby Starter for building Gatsby Sites
+                        using Sass + BEM + Markdown
                     </h1>
                     <p>
-                        An opinionated Gatsby starter boilerplate including SASS
-                        setup with the BEM naming convention for styling plus
-                        the main Gatsby configuration files needed to get up and
-                        running with content sourced from markdown files.
+                        This is an opinionated{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Gatsby
+                        </a>{" "}
+                        starter boilerplate including{" "}
+                        <a
+                            href="https://sass-lang.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Sass
+                        </a>{" "}
+                        setup with the{" "}
+                        <a
+                            href="http://getbem.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            BEM Naming Convention
+                        </a>{" "}
+                        for styling plus the main Gatsby configuration files
+                        needed to get up and running with content sourced from{" "}
+                        <a
+                            href="https://www.markdownguide.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Markdown
+                        </a>{" "}
+                        files.
+                    </p>
+
+                    <p>
+                        It also includes{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/packages/gatsby-image/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Gatsby Image
+                        </a>{" "}
+                        for advanced image loading and optimization plus{" "}
+                        <a
+                            href="https://prettier.io/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Prettier
+                        </a>{" "}
+                        for code formatting.
                     </p>
                     <p>
-                        @Todo: Talk about: A11y, SEO, Responsiveness and
-                        Performance.
+                        For improved search engine optimization it is also setup
+                        with a{" "}
+                        <a
+                            href="https://www.gatsbyjs.org/docs/add-seo-component/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SEO Component
+                        </a>{" "}
+                        and is fully responsive including a burger menu for
+                        navigation on smaller devices.
                     </p>
                     <p>
-                        @Todo: Add Skip Link, Add Mobile Menu, Add content to
-                        pages, Add logos/icons.
+                        This starter has also been built with web accessibility
+                        in mind and includes a skip link as standard.
                     </p>
                     <p>
                         The repo for this starter can be found at:{" "}
@@ -50,6 +109,12 @@ const HomePage = () => (
                             github.com/nikkipantony/gatsby-starter-sass-bem-md
                         </a>
                     </p>
+                    {/* @Todo: 
+                    - Add content to all pages.
+                    - Add Markdown
+                    - Add Skip Link 
+                    - Add Mobile Menu 
+                    */}
                 </div>
                 <div className="default-page-layout__column">
                     <div className="default-page-layout__feature-image">

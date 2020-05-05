@@ -71,7 +71,7 @@ const Footer = () => {
                     .
                 </p>
                 <p className="footer__text">
-                    Gatsby starter built by{" "}
+                    This Gatsby Starter was built by{" "}
                     <a
                         href="https://nikkipantony.com"
                         target="_blank"

@@ -24,8 +24,17 @@ $font-weight-bold: 700;
 // Set Max Width for Site
 $layout-max-width: 1200px;
 
-// Set Base Spacing for padding and Margins
+// Set Base Spacing for Padding and Margins
 $layout-spacing: 1.5rem;
+
+// Set Breakpoints
+$breakpoint-tablet: 850px;
+
+// Add If Needed
+// $breakpoint-moble-xs: 0px;
+// $breakpoint-moble: 0px;
+// $breakpoint-desktop: 0px;
+// $breakpoint-desktop-xl: 0px;
 
 /* Color Palette
  ***************/

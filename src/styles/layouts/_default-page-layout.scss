@@ -1,5 +1,11 @@
+/*
+ * Default Page Layout Styling
+ *
+ * Sass '$self: &;' Parent Selector with Interpolation: https://css-tricks.com/using-sass-control-scope-bem-naming/
+ */
+
 .default-page-layout {
-    $parent-selector: &;
+    $self: &;
 
     &__grid {
         display: grid;
@@ -19,11 +25,11 @@
 
     &__feature-image {
         width: 100%;
-        margin: $layout-spacing auto $layout-spacing 0;
+        margin: $layout-spacing auto $layout-spacing * 2 0;
 
         @media (min-width: $breakpoint-tablet) {
             width: 90%;
-            margin: $layout-spacing 0 $layout-spacing auto;
+            margin: $layout-spacing 0 $layout-spacing * 2 auto;
         }
     }
 
@@ -32,28 +38,44 @@
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        margin: $layout-spacing * 2 auto 0 0;
+        margin: 0 auto 0 0;
 
         @media (min-width: $breakpoint-tablet) {
             width: 90%;
-            margin: $layout-spacing * 2 0 0 auto;
+            margin: 0 0 0 auto;
         }
 
-        &--three {
-            #{$parent-selector}__icon {
-                width: 24%;
+        &--three-icons {
+            justify-content: space-around;
+
+            #{$self}__icon {
+                width: 20%;
             }
         }
 
-        &--two {
-            #{$parent-selector}__icon {
-                width: 44%;
+        &--two-icons {
+            @media (min-width: $breakpoint-tablet) {
+                justify-content: space-around;
+            }
+
+            #{$self}__icon {
+                width: 38%;
+
+                @media (min-width: $breakpoint-tablet) {
+                    margin: 0 0 $layout-spacing auto;
+                }
             }
         }
 
-        &--one {
-            #{$parent-selector}__icon {
-                width: 80%;
+        &--one-icon {
+            #{$self}__icon {
+                justify-content: space-around;
+                width: 70%;
+
+                @media (min-width: $breakpoint-tablet) {
+                    justify-content: space-between;
+                    margin: -$layout-spacing * 2 0 $layout-spacing auto;
+                }
             }
         }
     }
