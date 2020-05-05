@@ -110,9 +110,10 @@ const HomePage = () => (
                         </a>
                     </p>
                     {/* @Todo: 
+                    - Add content to all pages.
+                    - Add Markdown
                     - Add Skip Link 
                     - Add Mobile Menu 
-                    - Add content to all pages. 
                     */}
                 </div>
                 <div className="default-page-layout__column">
