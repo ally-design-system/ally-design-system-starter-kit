@@ -100,3 +100,11 @@ a {
         border-bottom: 3px solid $color-gatsby-purple;
     }
 }
+
+ul {
+    margin: $layout-spacing * 1.5 0;
+
+    li {
+        margin: $layout-spacing / 2 0;
+    }
+}
