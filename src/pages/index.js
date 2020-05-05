@@ -80,7 +80,7 @@ const HomePage = () => (
                         >
                             Prettier
                         </a>{" "}
-                        for document formating.
+                        for code formatting.
                     </p>
                     <p>
                         For improved search engine optimization it is also setup
