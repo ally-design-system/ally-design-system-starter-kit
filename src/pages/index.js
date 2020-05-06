@@ -97,7 +97,7 @@ const HomePage = () => (
                     </p>
                     <p>
                         This starter has also been built with web accessibility
-                        in mind and includes a skip link as standard.
+                        in mind and includes a skip link component as standard.
                     </p>
                     <p>
                         The repo for this starter can be found at:{" "}
@@ -112,6 +112,7 @@ const HomePage = () => (
                     {/* @Todo: 
                     - Add content to all pages.
                     - Add Markdown
+                    - Update Readme (Remove src stuff, Add some details from pages)
                     - Add Skip Link 
                     - Add Mobile Menu 
                     */}

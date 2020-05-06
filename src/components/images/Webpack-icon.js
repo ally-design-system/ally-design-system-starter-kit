@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 const WebpackIconImage = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(relativePath: { eq: "Webpack.png" }) {
+            placeholderImage: file(relativePath: { eq: "images/Webpack.png" }) {
                 childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid
