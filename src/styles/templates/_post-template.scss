@@ -1,4 +1,6 @@
 .post-template {
+    margin-top: $layout-spacing * 2;
+
     &__frontmatter {
         margin: $layout-spacing / 2 0;
     }
@@ -9,9 +11,5 @@
 
     &__content {
         margin: $layout-spacing 0;
-
-        p {
-            margin-bottom: $layout-spacing / 2;
-        }
     }
 }

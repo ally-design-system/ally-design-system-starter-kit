@@ -13,16 +13,4 @@ $header-and-footer: 14.5rem; // Height of header + footer
     min-height: calc(
         100vh - #{$header-and-footer}
     ); // Set minimum page height to viewport height - header + footer height to keep footer at bottom in pages with less content
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-bottom: $layout-spacing;
-    }
-    p {
-        margin-top: $layout-spacing / 2;
-    }
 }

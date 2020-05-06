@@ -3,6 +3,7 @@
  */
 
 import React from "react"
+import { Link } from "gatsby"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
@@ -24,6 +25,24 @@ const MarkdownPage = () => (
                             Gatsby Docs Adding Markdown Pages
                         </a>
                     </p>
+                    <h2>Markdown Post Examples</h2>
+                    <ul>
+                        <li>
+                            <Link to="/markdown/first-post">
+                                First Markdown Post Example
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/markdown/second-post">
+                                Second Markdown Post Example
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/markdown/third-post">
+                                Third Markdown Post Example
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
                 <div className="default-page-layout__column">
                     <div className="default-page-layout__icons default-page-layout__icons--one-icon">
