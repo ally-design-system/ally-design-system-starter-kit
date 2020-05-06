@@ -10,7 +10,7 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `content`,
-                path: `${__dirname}/src/content`,
+                path: `${__dirname}/src/content`, // Contains '/images' and '/markdown'
             },
         },
         `gatsby-transformer-sharp`,
@@ -19,12 +19,12 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `gatsby-starter-sass-bem-md`,
+                short_name: `starter-sass-bem-md`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
-                display: `minimal-ui`,
+                background_color: `#542c85`,
+                theme_color: `#542c85`,
+                display: `minimal-ui`, // https://developer.mozilla.org/en-US/docs/Web/Manifest/display
                 icon: `src/icon/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
