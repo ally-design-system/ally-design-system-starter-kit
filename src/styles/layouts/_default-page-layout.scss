@@ -62,7 +62,7 @@
                 width: 38%;
 
                 @media (min-width: $breakpoint-tablet) {
-                    margin: 0 0 $layout-spacing auto;
+                    margin: $layout-spacing 0 $layout-spacing auto;
                 }
             }
         }
@@ -74,7 +74,7 @@
 
                 @media (min-width: $breakpoint-tablet) {
                     justify-content: space-between;
-                    margin: -$layout-spacing * 2 0 $layout-spacing auto;
+                    margin: -$layout-spacing 0 $layout-spacing auto;
                 }
             }
         }

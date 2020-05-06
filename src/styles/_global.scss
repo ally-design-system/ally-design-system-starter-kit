@@ -73,7 +73,7 @@ select {
  * Global Styles For Site Start Here
  */
 
-// Set Font Families and Weights
+// Set Font Defaults for Site
 h1,
 h2,
 h3,
@@ -82,11 +82,21 @@ h5,
 h6 {
     font-family: $font-arimo;
     font-weight: $font-weight-bold;
+    margin: $layout-spacing 0 $layout-spacing * 1.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: $layout-spacing * 2 0 $layout-spacing;
 }
 
 p {
     font-family: $font-slab;
     font-weight: $font-weight-normal;
+    margin-bottom: $layout-spacing;
 }
 
 a {
