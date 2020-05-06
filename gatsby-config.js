@@ -13,6 +13,7 @@ module.exports = {
                 path: `${__dirname}/src/content`, // Contains '/images' and '/markdown'
             },
         },
+        `gatsby-transformer-remark`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-sass`,
