@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 const ReactIconImage = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(relativePath: { eq: "images/React.png" }) {
+            placeholderImage: file(relativePath: { eq: "React.png" }) {
                 childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid
