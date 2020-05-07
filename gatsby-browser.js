@@ -4,4 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+//  @Todo For Skip-Link
+// exports.onRouteUpdate = ({ location, prevLocation }) => {
+//     if (prevLocation !== null) {
+//         const skipLink = document.querySelector("#reach-skip-nav")
+//         if (skipLink) {
+//             skipLink.focus()
+//         }
+//     }
+// }
