@@ -1,0 +1,16 @@
+.skip-link {
+    position: absolute;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    border: solid 5px $color-black;
+    padding: $layout-spacing;
+
+    &:focus {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    // &__link {
+    // }
+}
