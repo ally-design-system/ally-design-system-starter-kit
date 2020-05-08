@@ -1,0 +1,37 @@
+/*
+ * Skip Nav Link Styling
+ *
+ * Custom styling for the Reach UI 'skip-nav' component: https://reacttraining.com/reach-ui/skip-nav
+ * Source code: https://github.com/reach/reach-ui/tree/master/packages/skip-nav
+ */
+
+:root {
+    --reach-skip-nav: 1;
+}
+
+[data-reach-skip-nav-link] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+[data-reach-skip-nav-link]:focus {
+    position: fixed;
+    overflow: hidden;
+    left: $layout-spacing / 2;
+    width: auto;
+    height: auto;
+    clip: auto;
+    border: $border;
+    padding: $layout-spacing / 2;
+    color: $color-black;
+    background-color: $color-white;
+    z-index: 1;
+    transform: translateY($layout-spacing / 2);
+    opacity: 1;
+}
