@@ -4,7 +4,7 @@
 
 .header {
     background-color: $color-white;
-    border-bottom: 2px solid $color-gatsby-purple;
+    border-bottom: $border;
 
     &__inner {
         display: flex;
