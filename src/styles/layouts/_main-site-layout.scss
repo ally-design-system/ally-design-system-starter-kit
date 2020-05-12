@@ -8,7 +8,7 @@ $header-and-footer: 14.5rem; // Height of header + footer
 
 .main-site-layout {
     margin: 0 auto;
-    max-width: $layout-max-width;
+    max-width: $site-max-width;
     padding: $gutter--xl $gutter--m;
     min-height: calc(
         100vh - #{$header-and-footer}
