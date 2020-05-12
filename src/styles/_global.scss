@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    line-height: $font-line-height;
 }
 
 // Remove Default Margins
@@ -73,15 +73,15 @@ select {
  * Global Styles For Site Start Here
  */
 
-// Set Font Defaults for Site
+// Set Global Site Font Default Styles
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: $font--arimo;
-    font-weight: $font-weight--bold;
+    font-family: $heading--font;
+    font-weight: $heading--weight;
     margin: $gutter--m 0 $gutter--l;
 }
 
@@ -94,20 +94,20 @@ h6 {
 }
 
 p {
-    font-family: $font--slab;
-    font-weight: $font-weight--normal;
-    margin-bottom: $gutter--m;
+    font-family: $paragraph--font;
+    font-weight: $paragraph--weight;
+    margin-bottom: $gutter--s;
 }
 
 a {
-    font-family: $font--arimo;
-    font-weight: $font-weight--bold;
-    color: $color-black;
+    font-family: $link--font;
+    font-weight: $link--weight;
+    color: $link--color;
     text-decoration: none;
     padding-bottom: 2px;
 
     &:hover {
-        border-bottom: 3px solid $color-gatsby-purple;
+        border-bottom: $border--underline;
     }
 }
 
@@ -117,4 +117,28 @@ ul {
     li {
         margin: $gutter--xs 0;
     }
+}
+
+h1 {
+    font-size: $font-size--xl;
+}
+
+h2 {
+    font-size: $font-size--l;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: $font-size--m;
+}
+
+p,
+a {
+    font-size: $font-size--m;
+}
+
+ul > li {
+    font-size: $font-size--m;
 }

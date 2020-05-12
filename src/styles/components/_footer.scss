@@ -3,7 +3,7 @@
  */
 
 .footer {
-    background-color: $color-white;
+    background-color: $site-background-color;
     border-top: $border;
 
     &__inner {
@@ -13,11 +13,7 @@
     }
 
     &__text {
-        margin: 0.5rem 0;
-        font-size: 0.9rem;
-
-        &--copyright {
-            font-family: $font--arimo;
-        }
+        margin: $gutter--m 0;
+        font-size: $font-size--s;
     }
 }

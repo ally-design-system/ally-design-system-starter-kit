@@ -29,8 +29,8 @@
     clip: auto;
     border: $border;
     padding: $gutter--xs;
-    color: $color-black;
-    background-color: $color-white;
+    color: $link--color;
+    background-color: $site-background-color;
     z-index: 1;
     transform: translateY($gutter--xs);
     opacity: 1;
