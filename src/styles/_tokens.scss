@@ -37,29 +37,30 @@ $color-gatsby-purple: #542c85;
 // Base Gutter Spacing for Padding and Margins
 $gutter-spacing: 1.5rem;
 
-// Set Breakpoints
-$breakpoint-tablet: 850px;
+/* Breakpoints
+ *************/
 
-// Add If Needed
-// $breakpoint-moble-xs: 0px;
-// $breakpoint-moble: 0px;
-// $breakpoint-desktop: 0px;
-// $breakpoint-desktop-xl: 0px;
+// Set Breakpoints
+$breakpoint--mobile-xs: 380px;
+$breakpoint--mobile: 500px;
+$breakpoint--tablet: 850px;
+$breakpoint--desktop: 1200px;
+$breakpoint--desktop-xl: 1600px;
 
 /* Design Choices
  ****************/
 
-// Border Styling
-$border: 2px solid $color-gatsby-purple;
-
 // Set Max Width for Site
-$layout-max-width: 1200px;
+$layout-max-width: $breakpoint--desktop;
 
 // Gutter Spacing Options
-$gutter--xxs: $gutter-spacing / 3;
-$gutter--xs: $gutter-spacing / 2;
-$gutter--s: $gutter-spacing / 1.5;
-$gutter--m: $gutter-spacing;
-$gutter--l: $gutter-spacing * 1.5;
-$gutter--xl: $gutter-spacing * 2;
-$gutter--xxl: $gutter-spacing * 3;
+$gutter--xxs: $gutter-spacing / 3; // 0.5rem
+$gutter--xs: $gutter-spacing / 2; // 0.75rem
+$gutter--s: $gutter-spacing / 1.5; // 1rem
+$gutter--m: $gutter-spacing; // 1.5rem
+$gutter--l: $gutter-spacing * 1.5; // 2.25rem
+$gutter--xl: $gutter-spacing * 2; // 3rem
+$gutter--xxl: $gutter-spacing * 3; // 4.5rem
+
+// Border Style
+$border: 2px solid $color-gatsby-purple;
