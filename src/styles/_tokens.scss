@@ -1,12 +1,12 @@
 /*
  * Design Token Variables
  *
- * Includes Typography, Color Palette, Gutter Spacing, Breakpoints and More.
+ * Includes Typography, Color Palette, Gutter Spacing, Breakpoints and Design Choices.
  * 
  * These Tokens can also be stored as a JSON file to be shared accross multiple platforms, for more information see:
  * Tokens in Design Systems by Nathan Curtis https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421
  * What Are Design Tokens? by Robin Rendle https://css-tricks.com/what-are-design-tokens
- * Design tokens with Figma by Pavel Laptev https://blog.prototypr.io/design-tokens-with-figma-aef25c42430f
+ * Design Tokens with Figma by Pavel Laptev https://blog.prototypr.io/design-tokens-with-figma-aef25c42430f
  */
 
 /* Typography
@@ -15,22 +15,27 @@
 // Import from Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
-// Set Font Families
-$font-arimo: "Arimo", sans-serif;
-$font-slab: "Roboto Slab", serif;
+// Font Families
+$font--arimo: "Arimo", sans-serif;
+$font--slab: "Roboto Slab", serif;
 
-// Set Font Weights
-$font-weight-normal: 400;
-$font-weight-bold: 700;
+// Font Weights
+$font-weight--normal: 400;
+$font-weight--bold: 700;
 
-/* Layout Units
- **************/
+/* Color Palette
+ ***************/
 
-// Set Max Width for Site
-$layout-max-width: 1200px;
+// Color Palette Options
+$color-white: #fefefe;
+$color-black: #000013;
+$color-gatsby-purple: #542c85;
 
-// Set Base Spacing for Padding and Margins
-$layout-spacing: 1.5rem;
+/* Gutter Spacing
+ ****************/
+
+// Base Gutter Spacing for Padding and Margins
+$gutter-spacing: 1.5rem;
 
 // Set Breakpoints
 $breakpoint-tablet: 850px;
@@ -41,14 +46,20 @@ $breakpoint-tablet: 850px;
 // $breakpoint-desktop: 0px;
 // $breakpoint-desktop-xl: 0px;
 
-/* Color Palette
- ***************/
+/* Design Choices
+ ****************/
 
-$color-white: #fefefe;
-$color-black: #000013;
-$color-gatsby-purple: #542c85;
-
-/* Design Tokens
- ***************/
-
+// Border Styling
 $border: 2px solid $color-gatsby-purple;
+
+// Set Max Width for Site
+$layout-max-width: 1200px;
+
+// Gutter Spacing Options
+$gutter--xxs: $gutter-spacing / 3;
+$gutter--xs: $gutter-spacing / 2;
+$gutter--s: $gutter-spacing / 1.5;
+$gutter--m: $gutter-spacing;
+$gutter--l: $gutter-spacing * 1.5;
+$gutter--xl: $gutter-spacing * 2;
+$gutter--xxl: $gutter-spacing * 3;

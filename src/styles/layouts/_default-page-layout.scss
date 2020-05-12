@@ -9,13 +9,13 @@
 
     &__grid {
         display: grid;
-        row-gap: $layout-spacing;
+        row-gap: $gutter--m;
 
         @media (min-width: $breakpoint-tablet) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, auto);
-            column-gap: $layout-spacing;
-            row-gap: $layout-spacing;
+            column-gap: $gutter--m;
+            row-gap: $gutter--m;
         }
     }
 
@@ -25,11 +25,11 @@
 
     &__feature-image {
         width: 100%;
-        margin: $layout-spacing auto $layout-spacing * 2 0;
+        margin: $gutter--m auto $gutter--xl 0;
 
         @media (min-width: $breakpoint-tablet) {
             width: 90%;
-            margin: $layout-spacing 0 $layout-spacing * 2 auto;
+            margin: $gutter--m 0 $gutter--xl auto;
         }
     }
 
@@ -62,7 +62,7 @@
                 width: 38%;
 
                 @media (min-width: $breakpoint-tablet) {
-                    margin: $layout-spacing 0 $layout-spacing auto;
+                    margin: $gutter--m 0 $gutter--m auto;
                 }
             }
         }
@@ -74,7 +74,7 @@
 
                 @media (min-width: $breakpoint-tablet) {
                     justify-content: space-between;
-                    margin: -$layout-spacing 0 $layout-spacing auto;
+                    margin: -$gutter--m 0 $gutter--m auto;
                 }
             }
         }
@@ -82,6 +82,6 @@
 
     &__icon {
         width: 11%;
-        margin: 0 0 $layout-spacing;
+        margin: 0 0 $gutter--m;
     }
 }

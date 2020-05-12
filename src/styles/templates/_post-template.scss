@@ -1,15 +1,15 @@
 .post-template {
-    margin-top: $layout-spacing * 2;
+    margin-top: $gutter--xl;
 
     &__frontmatter {
-        margin: $layout-spacing / 2 0;
+        margin: $gutter--xl 0;
     }
 
     &__date {
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight--bold;
     }
 
     &__content {
-        margin: $layout-spacing 0;
+        margin: $gutter--m 0;
     }
 }
