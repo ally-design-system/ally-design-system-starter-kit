@@ -23,15 +23,15 @@
 [data-reach-skip-nav-link]:focus {
     position: fixed;
     overflow: hidden;
-    left: $layout-spacing / 2;
+    left: $gutter--xs;
     width: auto;
     height: auto;
     clip: auto;
     border: $border;
-    padding: $layout-spacing / 2;
-    color: $color-black;
-    background-color: $color-white;
+    padding: $gutter--xs;
+    color: $link--color;
+    background-color: $site-background-color;
     z-index: 1;
-    transform: translateY($layout-spacing / 2);
+    transform: translateY($gutter--xs);
     opacity: 1;
 }

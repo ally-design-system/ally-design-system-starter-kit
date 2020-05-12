@@ -1,0 +1,121 @@
+/*
+ * Design Token Variables
+ *
+ * Includes Typography, Font Sizing, Color Palette, Gutter Spacing, Breakpoints and Design Choices.
+ * 
+ * These Tokens can also be stored as a JSON file to be shared accross multiple platforms, for more information see:
+ * Tokens in Design Systems by Nathan Curtis https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421
+ * What Are Design Tokens? by Robin Rendle https://css-tricks.com/what-are-design-tokens
+ * Design Tokens with Figma by Pavel Laptev https://blog.prototypr.io/design-tokens-with-figma-aef25c42430f
+ */
+
+/* Typography
+ ************/
+
+// Import from Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+// Font Families
+$font--arimo: "Arimo", sans-serif;
+$font--slab: "Roboto Slab", serif;
+
+// Font Weights
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+
+// Font Line Height
+$font-line-height: 1.4;
+
+/* Font Sizing
+ ****************/
+
+// Base Font Size
+$font-size: 1rem;
+
+// Font Size Options
+$font-size--s: $font-size / 1.1; // 0.9rem
+$font-size--m: $font-size; // 1rem
+$font-size--l: $font-size * 1.3; // 1.5rem
+$font-size--xl: $font-size * 1.5; // 1.5rem
+$font-size--xxl: $font-size * 2; // 2rem
+
+/* Color Palette
+ ***************/
+
+// Color Palette Options
+$color--white: #fefefe;
+$color--black: #000013;
+$color--gatsby-purple: #542c85;
+
+/* Gutter Spacing
+ ****************/
+
+// Base Gutter Spacing for Padding and Margins
+$gutter-spacing: 1.5rem;
+
+// Gutter Spacing Options
+$gutter--xxs: $gutter-spacing / 3; // 0.5rem
+$gutter--xs: $gutter-spacing / 2; // 0.75rem
+$gutter--s: $gutter-spacing / 1.5; // 1rem
+$gutter--m: $gutter-spacing; // 1.5rem
+$gutter--l: $gutter-spacing * 1.5; // 2.25rem
+$gutter--xl: $gutter-spacing * 2; // 3rem
+$gutter--xxl: $gutter-spacing * 3; // 4.5rem
+
+/* Breakpoints
+ *************/
+
+// Set Breakpoints
+$breakpoint--mobile-xs: 380px;
+$breakpoint--mobile: 500px;
+$breakpoint--tablet: 850px;
+$breakpoint--desktop: 1200px;
+$breakpoint--desktop-xl: 1600px;
+
+/* Design Choices
+ ****************/
+
+// Set Max Width for Site
+$site-max-width: $breakpoint--desktop;
+
+// Set Site Theme Colors
+$theme-color--primary: $color--black;
+$theme-color--primary-lighter: $color--black;
+$theme-color--primary-darker: $color--black;
+
+$theme-color--seconday: $color--gatsby-purple;
+$theme-color--seconday-lighter: $color--gatsby-purple;
+$theme-color--seconday-darker: $color--gatsby-purple;
+
+$theme-color--accent: $color--gatsby-purple;
+$theme-color--accent-lighter: $color--gatsby-purple;
+$theme-color--accent-darker: $color--gatsby-purple;
+
+$theme-color--background: $color--white;
+
+// Set Site Background Color
+$site-background-color: $theme-color--background;
+
+// Set Site Heading Styles
+$heading--font: $font--arimo;
+$heading--weight: $font-weight--bold;
+$heading--color: $theme-color--primary;
+
+// Set Site Paragraph Styles
+$paragraph--font: $font--slab;
+$paragraph--weight: $font-weight--normal;
+$paragraph--color: $theme-color--primary;
+
+// Set Site Link Styles
+$link--font: $font--arimo;
+$link--weight: $font-weight--bold;
+$link--color: $theme-color--primary;
+
+// Set Site Border Styles
+$border--width: 2px;
+$border--style: solid;
+$border--color: $color--gatsby-purple;
+
+// Set Site Border Options
+$border: $border--width $border--style $border--color;
+$border--underline: $border--width * 1.5 $border--style $border--color;

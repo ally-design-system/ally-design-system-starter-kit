@@ -9,13 +9,13 @@
 
     &__grid {
         display: grid;
-        row-gap: $layout-spacing;
+        row-gap: $gutter--m;
 
-        @media (min-width: $breakpoint-tablet) {
+        @media (min-width: $breakpoint--tablet) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, auto);
-            column-gap: $layout-spacing;
-            row-gap: $layout-spacing;
+            column-gap: $gutter--m;
+            row-gap: $gutter--m;
         }
     }
 
@@ -25,11 +25,11 @@
 
     &__feature-image {
         width: 100%;
-        margin: $layout-spacing auto $layout-spacing * 2 0;
+        margin: $gutter--m auto $gutter--xl 0;
 
-        @media (min-width: $breakpoint-tablet) {
+        @media (min-width: $breakpoint--tablet) {
             width: 90%;
-            margin: $layout-spacing 0 $layout-spacing * 2 auto;
+            margin: $gutter--m 0 $gutter--xl auto;
         }
     }
 
@@ -40,7 +40,7 @@
         width: 100%;
         margin: 0 auto 0 0;
 
-        @media (min-width: $breakpoint-tablet) {
+        @media (min-width: $breakpoint--tablet) {
             width: 90%;
             margin: 0 0 0 auto;
         }
@@ -54,15 +54,15 @@
         }
 
         &--two-icons {
-            @media (min-width: $breakpoint-tablet) {
+            @media (min-width: $breakpoint--tablet) {
                 justify-content: space-around;
             }
 
             #{$self}__icon {
                 width: 38%;
 
-                @media (min-width: $breakpoint-tablet) {
-                    margin: $layout-spacing 0 $layout-spacing auto;
+                @media (min-width: $breakpoint--tablet) {
+                    margin: $gutter--m 0 $gutter--m auto;
                 }
             }
         }
@@ -72,9 +72,9 @@
                 justify-content: space-around;
                 width: 70%;
 
-                @media (min-width: $breakpoint-tablet) {
+                @media (min-width: $breakpoint--tablet) {
                     justify-content: space-between;
-                    margin: -$layout-spacing 0 $layout-spacing auto;
+                    margin: -$gutter--m 0 $gutter--m auto;
                 }
             }
         }
@@ -82,6 +82,6 @@
 
     &__icon {
         width: 11%;
-        margin: 0 0 $layout-spacing;
+        margin: 0 0 $gutter--m;
     }
 }

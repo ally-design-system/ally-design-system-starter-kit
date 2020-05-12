@@ -2,8 +2,8 @@
  * Main Styling File
  */
 
-// Variables holding Typography, Layout Units, and Color Palette
-@import "variables";
+// Design Token variables holding Typography, Color Palette, Gutter Spacing, Breakpoints and Design Choices.
+@import "tokens";
 
 // Global Styling
 @import "global";

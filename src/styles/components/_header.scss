@@ -3,21 +3,21 @@
  */
 
 .header {
-    background-color: $color-white;
+    background-color: $site-background-color;
     border-bottom: $border;
 
     &__inner {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: $layout-max-width;
-        padding: $layout-spacing;
+        max-width: $site-max-width;
+        padding: $gutter--m;
     }
 
-    &__site-title {
-        font-size: 1.3rem;
-        color: $color-black;
-        margin: 0;
+    &__site-title > a {
+        font-size: $font-size--l;
+        color: $link--color;
+        margin: auto 0;
     }
 
     &__navigation {
@@ -29,10 +29,10 @@
 
             li {
                 list-style: none;
-                margin: 0.3rem 0 0 3rem;
+                margin: 0 0 0 $gutter--xxl;
 
                 a.active {
-                    border-bottom: 3px solid $color-gatsby-purple;
+                    border-bottom: $border--underline;
                 }
             }
         }

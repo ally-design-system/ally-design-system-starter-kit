@@ -30,9 +30,9 @@ const Header = () => {
         <>
             <header className="header">
                 <div className="header__inner">
-                    <p className="header__site-title">
+                    <div className="header__site-title">
                         <Link to="/">{data.site.siteMetadata.title}</Link>
-                    </p>
+                    </div>
                     <nav className="header__navigation">
                         <ul>
                             <li>

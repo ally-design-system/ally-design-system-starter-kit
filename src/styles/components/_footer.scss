@@ -3,21 +3,17 @@
  */
 
 .footer {
-    background-color: $color-white;
+    background-color: $site-background-color;
     border-top: $border;
 
     &__inner {
         margin: 0 auto;
-        max-width: $layout-max-width;
-        padding: $layout-spacing;
+        max-width: $site-max-width;
+        padding: $gutter--m;
     }
 
     &__text {
-        margin: 0.5rem 0;
-        font-size: 0.9rem;
-
-        &--copyright {
-            font-family: $font-arimo;
-        }
+        margin: $gutter--m 0;
+        font-size: $font-size--s;
     }
 }
