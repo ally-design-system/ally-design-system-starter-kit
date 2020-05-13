@@ -4,6 +4,11 @@
  * Modern CSS Reset based on: https://dev.to/hankchizljaw/a-modern-css-reset-6p3
  */
 
+// Set Document Root Values
+:root {
+    font-size: 16px;
+}
+
 // Box sizing rules
 *,
 *::before,
