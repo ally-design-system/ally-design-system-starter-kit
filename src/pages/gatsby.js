@@ -4,7 +4,7 @@
 
 import React from "react"
 import SEO from "../07_utilities/seo"
-import MainSiteLayout from "../04_templates/main-layout-template"
+import MainLayout from "../04_templates/main-layout-template"
 import GatsbyLogoImage from "../01_atoms/images/Gatsby-Logo"
 import ReactIconImage from "../01_atoms/images/React-icon"
 import GraphQLIconImage from "../01_atoms/images/GraphQL-icon"
@@ -12,7 +12,7 @@ import WebpackIconImage from "../01_atoms/images/Webpack-icon"
 
 const GatsbyPage = () => (
     <>
-        <MainSiteLayout>
+        <MainLayout>
             <SEO title="Learn about Gatsby" />
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
@@ -77,7 +77,7 @@ const GatsbyPage = () => (
                     </div>
                 </div>
             </section>
-        </MainSiteLayout>
+        </MainLayout>
     </>
 )
 

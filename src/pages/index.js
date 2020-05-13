@@ -6,7 +6,7 @@
 
 import React from "react"
 import SEO from "../07_utilities/seo"
-import MainSiteLayout from "../04_templates/main-layout-template"
+import MainLayout from "../04_templates/main-layout-template"
 import GatsbyLogoImage from "../01_atoms/images/Gatsby-Logo"
 import ReactIconImage from "../01_atoms/images/React-icon"
 import GraphQLIconImage from "../01_atoms/images/GraphQL-icon"
@@ -17,7 +17,7 @@ import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 
 const HomePage = () => (
     <>
-        <MainSiteLayout>
+        <MainLayout>
             <SEO title="Gatsby Starter Sass + BEM + Markdown" />
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
@@ -108,13 +108,6 @@ const HomePage = () => (
                             github.com/nikkipantony/gatsby-starter-sass-bem-md
                         </a>
                     </p>
-                    {/* @Todo: 
-                    - Add content to all pages.
-                    - Add Markdown
-                    - Update Readme (Remove src stuff, Add some details from pages)
-                    - Add Skip Link 
-                    - Add Mobile Menu 
-                    */}
                 </div>
                 <div className="default-page-layout__column">
                     <div className="default-page-layout__feature-image">
@@ -142,7 +135,7 @@ const HomePage = () => (
                     </div>
                 </div>
             </section>
-        </MainSiteLayout>
+        </MainLayout>
     </>
 )
 
