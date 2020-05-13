@@ -6,7 +6,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import MainSiteLayout from "../04_templates/main-site-layout"
-import SEO from "../components/seo"
+import SEO from "../07_utilities/seo"
 import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 
 const MarkdownPage = () => (
