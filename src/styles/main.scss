@@ -2,8 +2,11 @@
  * Main Styling File
  */
 
-// Design Token variables holding Typography, Color Palette, Gutter Spacing, Breakpoints and Design Choices.
+// Design Token variables holding Typography, Color Palette, Gutter Spacing, and Breakpoints
 @import "tokens";
+
+// Site Theme Design Choices using Design Tokens
+@import "theme";
 
 // Global Styling
 @import "global";

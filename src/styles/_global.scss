@@ -85,8 +85,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading--font;
-    font-weight: $heading--weight;
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    color: $heading-color;
     margin: $gutter--m 0 $gutter--l;
 }
 
@@ -95,12 +96,13 @@ h3,
 h4,
 h5,
 h6 {
-    margin: $gutter--xl 0 $gutter--m;
+    margin: $gutter--xl 0 $gutter--s;
 }
 
 p {
-    font-family: $paragraph--font;
-    font-weight: $paragraph--weight;
+    font-family: $paragraph-font;
+    font-weight: $paragraph-weight;
+    color: $paragraph-color;
     margin-bottom: $gutter--s;
     font-size: $font-size--s;
 }
@@ -121,9 +123,9 @@ h6 {
 }
 
 a {
-    font-family: $link--font;
-    font-weight: $link--weight;
-    color: $link--color;
+    font-family: $link-font;
+    font-weight: $link-weight;
+    color: $link-color;
     text-decoration: none;
     padding-bottom: 2px;
     font-size: $font-size--s;
