@@ -6,7 +6,7 @@
 
 import React from "react"
 
-import MainSiteLayout from "../components/layouts/main-site-layout"
+import MainSiteLayout from "../04_templates/main-site-layout"
 import SEO from "../components/seo"
 import GatsbyLogoImage from "../01_atoms/images/Gatsby-Logo"
 import ReactIconImage from "../01_atoms/images/React-icon"

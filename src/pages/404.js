@@ -8,7 +8,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import MainSiteLayout from "../components/layouts/main-site-layout"
+import MainSiteLayout from "../04_templates/main-site-layout"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (

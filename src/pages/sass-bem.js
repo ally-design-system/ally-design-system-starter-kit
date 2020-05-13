@@ -4,7 +4,7 @@
 
 import React from "react"
 
-import MainSiteLayout from "../components/layouts/main-site-layout"
+import MainSiteLayout from "../04_templates/main-site-layout"
 import SEO from "../components/seo"
 import SassIconImage from "../01_atoms/images/Sass-icon"
 import BEMIconImage from "../01_atoms/images/BEM-icon"
