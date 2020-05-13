@@ -9,11 +9,15 @@
     &__inner {
         margin: 0 auto;
         max-width: $site-max-width;
-        padding: $gutter--m;
+        padding: $gutter--s;
     }
 
     &__text {
-        margin: $gutter--m 0;
-        font-size: $font-size--s;
+        margin: $gutter--xs 0;
+        font-size: $font-size--xs;
+    }
+
+    &__text-link {
+        font-size: $font-size--xs;
     }
 }

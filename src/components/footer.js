@@ -30,6 +30,7 @@ const Footer = () => {
                 <p className="footer__text">
                     Fonts:{" "}
                     <a
+                        className="footer__text-link"
                         href="https://fonts.google.com/specimen/Arimo"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -38,6 +39,7 @@ const Footer = () => {
                     </a>{" "}
                     by{" "}
                     <a
+                        className="footer__text-link"
                         href="https://twitter.com/SteveMatteson1"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -46,6 +48,7 @@ const Footer = () => {
                     </a>{" "}
                     and{" "}
                     <a
+                        className="footer__text-link"
                         href="https://fonts.google.com/specimen/Roboto+Slab"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -54,6 +57,7 @@ const Footer = () => {
                     </a>{" "}
                     by{" "}
                     <a
+                        className="footer__text-link"
                         href="https://twitter.com/cr64"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -62,6 +66,7 @@ const Footer = () => {
                     </a>{" "}
                     served by{" "}
                     <a
+                        className="footer__text-link"
                         href="https://fonts.google.com/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -73,6 +78,7 @@ const Footer = () => {
                 <p className="footer__text">
                     This Gatsby Starter was built by{" "}
                     <a
+                        className="footer__text-link"
                         href="https://nikkipantony.com"
                         target="_blank"
                         rel="noopener noreferrer"
