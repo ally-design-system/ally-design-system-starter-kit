@@ -5,7 +5,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
-import MainSiteLayout from "../04_templates/main-site-layout"
+import MainSiteLayout from "../04_templates/main-layout-template"
 import SEO from "../07_utilities/seo"
 
 export default function Template({
