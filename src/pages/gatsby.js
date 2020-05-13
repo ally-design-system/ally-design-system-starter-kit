@@ -6,10 +6,10 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import GatsbyLogoImage from "../components/images/Gatsby-Logo"
-import ReactIconImage from "../components/images/React-icon"
-import GraphQLIconImage from "../components/images/GraphQL-icon"
-import WebpackIconImage from "../components/images/Webpack-icon"
+import GatsbyLogoImage from "../01_atoms/images/Gatsby-Logo"
+import ReactIconImage from "../01_atoms/images/React-icon"
+import GraphQLIconImage from "../01_atoms/images/GraphQL-icon"
+import WebpackIconImage from "../01_atoms/images/Webpack-icon"
 
 const GatsbyPage = () => (
     <>

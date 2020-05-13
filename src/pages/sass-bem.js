@@ -6,8 +6,8 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import SassIconImage from "../components/images/Sass-icon"
-import BEMIconImage from "../components/images/BEM-icon"
+import SassIconImage from "../01_atoms/images/Sass-icon"
+import BEMIconImage from "../01_atoms/images/BEM-icon"
 
 const SassBemPage = () => (
     <>

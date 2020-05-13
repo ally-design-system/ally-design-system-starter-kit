@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import MarkdownIconImage from "../components/images/Markdown-icon"
+import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 
 const MarkdownPage = () => (
     <>

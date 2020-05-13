@@ -8,13 +8,13 @@ import React from "react"
 
 import MainSiteLayout from "../components/layouts/main-site-layout"
 import SEO from "../components/seo"
-import GatsbyLogoImage from "../components/images/Gatsby-Logo"
-import ReactIconImage from "../components/images/React-icon"
-import GraphQLIconImage from "../components/images/GraphQL-icon"
-import WebpackIconImage from "../components/images/Webpack-icon"
-import SassIconImage from "../components/images/Sass-icon"
-import BEMIconImage from "../components/images/BEM-icon"
-import MarkdownIconImage from "../components/images/Markdown-icon"
+import GatsbyLogoImage from "../01_atoms/images/Gatsby-Logo"
+import ReactIconImage from "../01_atoms/images/React-icon"
+import GraphQLIconImage from "../01_atoms/images/GraphQL-icon"
+import WebpackIconImage from "../01_atoms/images/Webpack-icon"
+import SassIconImage from "../01_atoms/images/Sass-icon"
+import BEMIconImage from "../01_atoms/images/BEM-icon"
+import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 
 const HomePage = () => (
     <>
