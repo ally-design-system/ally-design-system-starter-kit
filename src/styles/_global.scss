@@ -4,6 +4,11 @@
  * Modern CSS Reset based on: https://dev.to/hankchizljaw/a-modern-css-reset-6p3
  */
 
+// Set Document Root Values
+:root {
+    font-size: 16px;
+}
+
 // Box sizing rules
 *,
 *::before,
@@ -73,7 +78,7 @@ select {
  * Global Styles For Site Start Here
  */
 
-// Set Global Site Font Default Styles
+// Set Global Default Font Styles
 h1,
 h2,
 h3,
@@ -97,26 +102,7 @@ p {
     font-family: $paragraph--font;
     font-weight: $paragraph--weight;
     margin-bottom: $gutter--s;
-}
-
-a {
-    font-family: $link--font;
-    font-weight: $link--weight;
-    color: $link--color;
-    text-decoration: none;
-    padding-bottom: 2px;
-
-    &:hover {
-        border-bottom: $border--underline;
-    }
-}
-
-ul {
-    margin: $gutter--l 0;
-
-    li {
-        margin: $gutter--xs 0;
-    }
+    font-size: $font-size--s;
 }
 
 h1 {
@@ -134,11 +120,24 @@ h6 {
     font-size: $font-size--m;
 }
 
-p,
 a {
-    font-size: $font-size--m;
+    font-family: $link--font;
+    font-weight: $link--weight;
+    color: $link--color;
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-size: $font-size--s;
+
+    &:hover {
+        border-bottom: $border--underline;
+    }
 }
 
-ul > li {
-    font-size: $font-size--m;
+ul {
+    margin: $gutter--l 0;
+
+    li {
+        margin: $gutter--xs 0;
+        font-size: $font-size--s;
+    }
 }
