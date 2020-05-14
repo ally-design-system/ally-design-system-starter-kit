@@ -1,0 +1,22 @@
+/*
+ * Main Styling File
+ */
+
+// Base Styles
+@import "00_base-styles/tokens"; // Design Token Variables - Typography, Color Palette, Gutter Spacing, and Breakpoints
+@import "00_base-styles/theme"; // Theme Variables - Design Choices using Design Tokens Variables
+@import "00_base-styles/global"; // Global Styling - Applied using Theme Variables (Design Choices) + Modern CSS Reset
+
+// Atom Styles
+@import "01_atom-styles/skip-link";
+
+// Molecule Styles
+
+// Organism Styles
+@import "03_organism-styles/header";
+@import "03_organism-styles/footer";
+
+// Template Stylesss
+@import "04_template-styles/main-layout-template";
+@import "04_template-styles/page-template";
+@import "04_template-styles/post-template";
