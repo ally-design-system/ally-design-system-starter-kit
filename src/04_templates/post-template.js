@@ -5,8 +5,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
-import MainSiteLayout from "../components/layouts/main-site-layout"
-import SEO from "../components/seo"
+import MainLayout from "../04_templates/main-layout-template"
+import SEO from "../08_utilities/seo"
 
 export default function Template({
     data, // This prop will be injected by the GraphQL query below.
@@ -16,7 +16,7 @@ export default function Template({
 
     return (
         <>
-            <MainSiteLayout>
+            <MainLayout>
                 <SEO title={frontmatter.title} />
 
                 <Link to="/markdown">&larr; Back To Markdown Page</Link>
@@ -33,7 +33,7 @@ export default function Template({
                         />
                     </div>
                 </article>
-            </MainSiteLayout>
+            </MainLayout>
         </>
     )
 }

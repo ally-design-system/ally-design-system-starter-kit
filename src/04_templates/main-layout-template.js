@@ -1,16 +1,14 @@
 /*
- * Main Site Layout Component
+ * Main Layout Template
  */
 
 import React from "react"
-
-import "../../styles/main.scss"
-
+import "../09_styles/styles.scss"
+import Header from "../03_organisms/header"
+import Footer from "../03_organisms/footer"
 import { SkipNavLink, SkipNavContent } from "@reach/skip-nav"
-import Header from "../header"
-import Footer from "../footer"
 
-const MainSiteLayout = ({ children }) => (
+const MainLayout = ({ children }) => (
     <>
         <SkipNavLink />
         <Header />
@@ -20,4 +18,4 @@ const MainSiteLayout = ({ children }) => (
     </>
 )
 
-export default MainSiteLayout
+export default MainLayout

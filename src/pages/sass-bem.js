@@ -3,15 +3,14 @@
  */
 
 import React from "react"
-
-import MainSiteLayout from "../components/layouts/main-site-layout"
-import SEO from "../components/seo"
-import SassIconImage from "../components/images/Sass-icon"
-import BEMIconImage from "../components/images/BEM-icon"
+import SEO from "../08_utilities/seo"
+import MainLayout from "../04_templates/main-layout-template"
+import SassIconImage from "../01_atoms/images/Sass-icon"
+import BEMIconImage from "../01_atoms/images/BEM-icon"
 
 const SassBemPage = () => (
     <>
-        <MainSiteLayout>
+        <MainLayout>
             <SEO title="SASS + BEM" />
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
@@ -109,7 +108,7 @@ const SassBemPage = () => (
                     </div>
                 </div>
             </section>
-        </MainSiteLayout>
+        </MainLayout>
     </>
 )
 
