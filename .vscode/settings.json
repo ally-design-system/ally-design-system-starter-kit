@@ -1,0 +1,64 @@
+{
+    "window.zoomLevel": 1,
+
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "material-icon-theme",
+
+    "material-icon-theme.activeIconPack": "react",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.showUpdateMessage": true,
+    "material-icon-theme.folders.color": "#ec407a",
+    "material-icon-theme.folders.associations": {
+        ".cache": "Database",
+        "design_assets": "Theme",
+        "design_files": "Custom",
+        "node_modules": "Node",
+        "public": "Public",
+        "page-data": "Global",
+        "01_atoms": "Cluster",
+        "02_molecules": "App",
+        "03_organisms": "Components",
+        "04_templates": "Layout",
+        "05_pages": "Log",
+        "06_posts": "Docs",
+        "07_images": "Images",
+        "08_utilities": "Utils",
+        "09_styles": "Sass",
+        "00_base-styles": "Theme",
+        "01_atom-styles": "Cluster",
+        "02_molecule-styles": "App",
+        "03_organism-styles": "Components",
+        "04_template-styles": "Layout",
+        "10_favicon": "Svg"
+    },
+    "material-icon-theme.files.associations": {
+        "*.js": "react"
+    },
+
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.unknownProperties": "warning",
+    "scss.lint.unknownAtRules": "warning",
+    "scss.lint.emptyRules": "warning",
+    "scss.lint.important": "warning",
+    "scss.validate": true,
+
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": true,
+
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+
+    "prettier.trailingComma": "none",
+    "prettier.arrowParens": "avoid",
+    "prettier.printWidth": 60,
+    "prettier.useTabs": true,
+    "prettier.semi": false
+}
