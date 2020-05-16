@@ -24,14 +24,14 @@
         "05_pages": "Log",
         "06_posts": "Docs",
         "07_images": "Images",
-        "08_utilities": "Utils",
-        "09_styles": "Sass",
+        "08_icons": "Svg",
+        "09_utilities": "Utils",
+        "10_styles": "Sass",
         "00_base-styles": "Theme",
         "01_atom-styles": "Cluster",
         "02_molecule-styles": "App",
         "03_organism-styles": "Components",
-        "04_template-styles": "Layout",
-        "10_favicon": "Svg"
+        "04_template-styles": "Layout"
     },
     "material-icon-theme.files.associations": {
         "*.js": "react"
