@@ -60,5 +60,9 @@
     "prettier.arrowParens": "avoid",
     "prettier.printWidth": 60,
     "prettier.useTabs": true,
-    "prettier.semi": false
+    "prettier.semi": false,
+
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
 }

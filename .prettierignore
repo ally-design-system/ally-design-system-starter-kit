@@ -1,4 +1,7 @@
 .cache
-package.json
-package-lock.json
+.vscode
+design_assets
+node_modules
 public
+package-lock.json
+package.json

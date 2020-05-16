@@ -1,0 +1,39 @@
+{
+    "React arrow function": {
+		"prefix": "r",
+		"body": [
+      "import React from \"react\"",
+      "",
+      "const ${TM_FILENAME_BASE} = () => {",
+      "\t return (",
+      "\t\t <>",
+      "\t\t\t",
+      "\t\t </>",
+      "\t )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+		],
+		  "description": "tester"
+    },
+    "React arrow function with Props": {
+		"prefix": "rp",
+		"body": [
+      "import React from \"react\"",
+      "import PropTypes from \"prop-types\"",
+      "",
+      "const ${TM_FILENAME_BASE} = props => {",
+      "\t return (",
+      "\t\t <>",
+      "\t\t\t",
+      "\t\t </>",
+      "\t )",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+		],
+		  "description": "tester"
+    }
+}
