@@ -45,7 +45,7 @@
       "}",
       "",
       "${TM_FILENAME_BASE}.propTypes = {"
-      "\t // propName: \"PropTypes.string.isRequired\"",
+      "\t // propName: PropTypes.string.isRequired",
       "}",
       "",
       "export default ${TM_FILENAME_BASE}"
