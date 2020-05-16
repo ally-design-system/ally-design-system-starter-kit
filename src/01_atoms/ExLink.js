@@ -20,7 +20,7 @@ const ExLink = props => {
 }
 
 ExLink.defaultProps = {
-    href: "https://nikkipantony.com",
+    href: "/404/",
     text: "Link Text Missing",
 }
 

@@ -14,11 +14,14 @@ const ComponentsPage = () => (
                 <div className="default-page-layout__column">
                     <h1>Components Demo Page</h1>
                     <h2>Atom Components</h2>
-                    <h3>External Link</h3>
+                    <h3>Links</h3>
+                    <h4>External Link Working</h4>
                     <ExLink
                         href="https://github.com/nikkipantony/gatsby-starter-sass-bem-md"
-                        text="External link text"
+                        text="External Link"
                     />
+                    <h4>External Link Broken</h4>
+                    <ExLink />
                 </div>
             </section>
         </MainLayout>
