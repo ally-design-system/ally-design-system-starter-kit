@@ -1,5 +1,5 @@
 /*
- * Component Demo Page
+ * Style Guide Page
  *
  */
 
@@ -13,7 +13,7 @@ const ComponentsPage = () => (
         <MainLayout>
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
-                    <h1>Components Demo Page</h1>
+                    <h1>Ally Style Guide</h1>
 
                     <h2>Atom Components</h2>
 
