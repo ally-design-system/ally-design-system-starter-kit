@@ -1,15 +1,15 @@
 /*
- * Button Component
+ * BackButton Component
  *
  */
 
 import React from "react"
 import PropTypes from "prop-types"
 
-const Button = props => {
+const BackButton = props => {
     return (
         <>
-            <button>{props.text}</button>
+            <button className="--back">{props.text}</button>
         </>
     )
 }
@@ -22,4 +22,4 @@ Button.propTypes = {
     text: PropTypes.string.isRequired,
 }
 
-export default Button
+export default BackButton

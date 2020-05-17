@@ -37,13 +37,16 @@ const Icons = props => {
 
 Icons.defaultProps = {
     id: "open-in-new",
-    size: "24",
+    size: 24,
     title: "Link will open in new tab",
     fill: "#000013",
 }
 
 Icons.propTypes = {
-    symbol: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    size: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    fill: PropTypes.string.isRequired,
 }
 
 export default Icons
