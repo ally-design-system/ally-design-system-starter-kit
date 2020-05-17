@@ -1,9 +1,10 @@
 /*
- * Icons Component
+ * Icon Component
  *
  * Help (with example) from: https://github.com/parcel-bundler/parcel/issues/2246
  * SVG `symbol` a Good Choice for Icons by Chris Coyier: https://css-tricks.com/svg-symbol-good-choice-icons
  * Creating an SVG Icon System with React by Sarah Drasner: https://css-tricks.com/creating-svg-icon-system-react
+ * Accessible SVGs by Heather Migliorisi https://css-tricks.com/accessible-svgs/
  */
 
 // @todo
@@ -12,24 +13,33 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import IconsSprite from "../../08_icons/icon-sprite.svg"
+import IconsSprite from "../08_icons/icon-sprite.svg"
 
 const Icons = props => {
     return (
         <>
             <svg
+                role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                className={`icon icon-${props.name}`}
+                viewBox="0 0 24 24"
+                width={`${props.size}`}
+                height={`${props.size}`}
+                className={`icon icon-${props.id}`}
+                fill={`${props.fill}`}
             >
-                <use xlinkHref={`${IconsSprite}#${props.symbol}`} />
+                <title>{props.title}</title>
+                <use xlinkHref={`${IconsSprite}#${props.id}`} />
             </svg>
         </>
     )
 }
 
 Icons.defaultProps = {
-    symbol: "icon",
+    id: "open-in-new",
+    size: "24",
+    title: "Link will open in new tab",
+    fill: "#000013",
 }
 
 Icons.propTypes = {
