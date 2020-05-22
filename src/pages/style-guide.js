@@ -6,11 +6,12 @@
 import React from "react"
 import MainLayout from "../04_templates/main-layout-template"
 import Icon from "../01_atoms/Icon"
-import ExLink from "../01_atoms/ExLink"
 import InLink from "../01_atoms/InLink"
 import Button from "../01_atoms/Button"
+import ExLink from "../02_molecules/ExLink"
 import NavLinks from "../02_molecules/NavLinks"
 
+// Todo: Move to style guide styling unless adding Storybook!?
 const Container = {
     display: "flex",
     flexWrap: "wrap",
@@ -24,7 +25,7 @@ const ComponentsPage = () => (
                 <div className="default-page-layout__column">
                     <h1>Ally Style Guide</h1>
                     <h2>Atom Components</h2>
-                    <h3>Icons</h3>
+                    <h3>Icon</h3>
                     <div style={Container}>
                         <Icon
                             id="mail"
@@ -97,19 +98,6 @@ const ComponentsPage = () => (
                             fill="rebeccapurple"
                         />
                     </div>
-                    <h3>External Link</h3>
-                    <div style={Container}>
-                        <p>
-                            <ExLink
-                                href="https://github.com/nikkipantony/gatsby-starter-sass-bem-md"
-                                text="Ally Starter Kit on GitHub"
-                            />
-                        </p>
-                        <p> &nbsp; &nbsp; </p>
-                        <p>
-                            <ExLink />
-                        </p>
-                    </div>
                     <h4>Internal Link</h4>
                     <div style={Container}>
                         <p>
@@ -119,10 +107,6 @@ const ComponentsPage = () => (
                         <p>
                             <InLink />
                         </p>
-                    </div>
-                    <h4>Main Menu Navigation Links</h4>
-                    <div style={Container}>
-                        <NavLinks />
                     </div>
                     <h4>Button</h4>
                     <div style={Container}>
@@ -143,6 +127,24 @@ const ComponentsPage = () => (
                         <p>
                             <Button />
                         </p>
+                    </div>
+                    <h2>Molecule Components</h2>
+                    <h3>External Link</h3>
+                    <div style={Container}>
+                        <p>
+                            <ExLink
+                                href="https://github.com/nikkipantony/gatsby-starter-sass-bem-md"
+                                text="Ally Starter Kit on GitHub"
+                            />
+                        </p>
+                        <p> &nbsp; &nbsp; </p>
+                        <p>
+                            <ExLink />
+                        </p>
+                    </div>
+                    <h4>Main Menu Navigation Links</h4>
+                    <div style={Container}>
+                        <NavLinks />
                     </div>
                 </div>
             </section>

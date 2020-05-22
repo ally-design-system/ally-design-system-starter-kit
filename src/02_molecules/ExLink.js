@@ -15,7 +15,7 @@ const ExLink = props => {
     return (
         <>
             <a
-                className="a-ex-link"
+                className="m-ex-link"
                 href={props.href}
                 rel="noopener noreferrer"
                 target="_blank"
