@@ -120,7 +120,7 @@ const ComponentsPage = () => (
                             <InLink />
                         </p>
                     </div>
-                    <h4>Menu Navigation Links</h4>
+                    <h4>Main Menu Navigation Links</h4>
                     <div style={Container}>
                         <NavLinks />
                     </div>
