@@ -121,13 +121,23 @@ const ComponentsPage = () => (
                     </div>
                     <h4>Menu Navigation Link</h4>
                     <div style={Container}>
-                        <p>
-                            <InLink to="/" text="Home" />
-                        </p>
-                        <p> &nbsp; &nbsp; </p>
-                        <p>
-                            <InLink />
-                        </p>
+                        {/* Todo Replace InLink with NavLink */}
+                        <nav>
+                            <ul>
+                                <li>
+                                    <InLink to="/" text="Home" />
+                                </li>
+                                <li>
+                                    <InLink
+                                        to="/style-guide"
+                                        text="Style Guide"
+                                    />
+                                </li>
+                                <li>
+                                    <InLink />
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <h4>Button</h4>
                     <div style={Container}>
