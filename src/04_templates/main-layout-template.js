@@ -12,7 +12,7 @@ const MainLayout = ({ children }) => (
     <>
         <SkipNavLink />
         <Header />
-        <SkipNavContent />
+        <SkipNavContent tabindex="-1" />
         <main className="main-site-layout">{children}</main>
         <Footer />
     </>

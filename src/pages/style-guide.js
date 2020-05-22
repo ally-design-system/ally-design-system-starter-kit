@@ -9,6 +9,7 @@ import Icon from "../01_atoms/Icon"
 import ExLink from "../01_atoms/ExLink"
 import InLink from "../01_atoms/InLink"
 import Button from "../01_atoms/Button"
+import NavLinks from "../02_molecules/NavLinks"
 
 const Container = {
     display: "flex",
@@ -119,25 +120,9 @@ const ComponentsPage = () => (
                             <InLink />
                         </p>
                     </div>
-                    <h4>Menu Navigation Link</h4>
+                    <h4>Menu Navigation Links</h4>
                     <div style={Container}>
-                        {/* Todo Replace InLink with NavLink */}
-                        <nav>
-                            <ul>
-                                <li>
-                                    <InLink to="/" text="Home" />
-                                </li>
-                                <li>
-                                    <InLink
-                                        to="/style-guide"
-                                        text="Style Guide"
-                                    />
-                                </li>
-                                <li>
-                                    <InLink />
-                                </li>
-                            </ul>
-                        </nav>
+                        <NavLinks />
                     </div>
                     <h4>Button</h4>
                     <div style={Container}>

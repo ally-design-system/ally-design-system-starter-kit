@@ -19,10 +19,10 @@ const Icons = props => {
     return (
         <>
             <svg
-                role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 24 24"
+                focusable="false"
                 width={`${props.size}`}
                 height={`${props.size}`}
                 className={`icon icon-${props.id}`}
