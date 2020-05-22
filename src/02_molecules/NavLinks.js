@@ -1,6 +1,7 @@
 /*
  * NavLinks Component
  *
+ * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
  */
 
 import React from "react"
@@ -11,38 +12,25 @@ const isActive = ({ isCurrent }) => {
 }
 const NavLink = props => <Link getProps={isActive} {...props} />
 
-const Nav = () => {
+const NavLinks = () => {
     return (
         <>
             <nav className="m-nav-links">
                 <ul className="m-nav-links__list">
                     <li className="m-nav-links__list-item">
-                        <NavLink className="m-nav-links__link" to="/">
-                            Home
-                        </NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="m-nav-links__list-item">
-                        <NavLink className="m-nav-links__link" to="/gatsby/">
-                            Gatsby
-                        </NavLink>
+                        <NavLink to="/gatsby/">Gatsby</NavLink>
                     </li>
                     <li className="m-nav-links__list-item">
-                        <NavLink className="m-nav-links__link" to="/sass-bem/">
-                            SASS + BEM
-                        </NavLink>
+                        <NavLink to="/sass-bem/">SASS + BEM</NavLink>
                     </li>
                     <li className="m-nav-links__list-item">
-                        <NavLink className="m-nav-links__link" to="/markdown/">
-                            Markdown
-                        </NavLink>
+                        <NavLink to="/markdown/">Markdown</NavLink>
                     </li>
                     <li className="m-nav-links__list-item">
-                        <NavLink
-                            className="m-nav-links__link"
-                            to="/style-guide/"
-                        >
-                            Style Guide
-                        </NavLink>
+                        <NavLink to="/style-guide/">Style Guide</NavLink>
                     </li>
                 </ul>
             </nav>
@@ -50,4 +38,4 @@ const Nav = () => {
     )
 }
 
-export default Nav
+export default NavLinks

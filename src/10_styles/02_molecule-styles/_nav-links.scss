@@ -1,0 +1,17 @@
+.m-nav-links {
+    display: flex;
+    margin: 0;
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__list-item {
+        margin: 0 0 0 $gutter--m;
+
+        a.active {
+            border-bottom: $border--underline;
+        }
+    }
+}

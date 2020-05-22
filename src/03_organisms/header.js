@@ -27,7 +27,9 @@ const Header = () => {
                     <div className="header__site-title">
                         <Link to="/">{data.site.siteMetadata.title}</Link>
                     </div>
-                    <NavLinks />
+                    <div className="header__navigation">
+                        <NavLinks />
+                    </div>
                 </div>
             </header>
         </>
