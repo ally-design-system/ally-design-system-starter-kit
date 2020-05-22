@@ -9,12 +9,23 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Icon from "../01_atoms/Icon"
 
 const ExLink = props => {
     return (
         <>
-            <a href={props.href} rel="noopener noreferrer" target="_blank">
-                {props.text}
+            <a
+                className="a-ex-link"
+                href={props.href}
+                rel="noopener noreferrer"
+                target="_blank"
+            >
+                {props.text}{" "}
+                <Icon
+                    id="open-in-new"
+                    title="Link will open in new
+                    tab"
+                />
             </a>
         </>
     )

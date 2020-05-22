@@ -23,10 +23,7 @@ const Icons = props => {
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 24 24"
                 focusable="false"
-                width={`${props.size}`}
-                height={`${props.size}`}
-                className={`icon icon-${props.id}`}
-                fill={`${props.fill}`}
+                className={`a-icon --${props.id}`}
             >
                 <title>{props.title}</title>
                 <use xlinkHref={`${IconsSprite}#${props.id}`} />
@@ -37,16 +34,12 @@ const Icons = props => {
 
 Icons.defaultProps = {
     id: "open-in-new",
-    size: 24,
     title: "Link will open in new tab",
-    fill: "#000013",
 }
 
 Icons.propTypes = {
     id: PropTypes.string.isRequired,
-    size: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    fill: PropTypes.string.isRequired,
 }
 
 export default Icons
