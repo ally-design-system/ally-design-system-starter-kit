@@ -6,7 +6,8 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import InLink from "../01_atoms/InLink"
 import NavLinks from "../02_molecules/NavLinks"
 
 const Header = () => {
@@ -22,12 +23,12 @@ const Header = () => {
 
     return (
         <>
-            <header className="header">
-                <div className="header__inner">
-                    <div className="header__site-title">
-                        <Link to="/">{data.site.siteMetadata.title}</Link>
+            <header className="o-header">
+                <div className="o-header__inner">
+                    <div className="o-header__site-title">
+                        <InLink to="/" text={data.site.siteMetadata.title} />
                     </div>
-                    <div className="header__navigation">
+                    <div className="o-header__navigation">
                         <NavLinks />
                     </div>
                 </div>
