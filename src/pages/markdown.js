@@ -4,13 +4,13 @@
 
 import React from "react"
 import { Link } from "gatsby"
-import SEO from "../09_utilities/seo"
-import MainLayout from "../04_templates/main-layout-template"
+import SEO from "../09_utilities/SEO"
+import Layout from "../04_templates/LayoutTemplate"
 import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 
 const MarkdownPage = () => (
     <>
-        <MainLayout>
+        <Layout>
             <SEO title="Markdown" />
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
@@ -51,7 +51,7 @@ const MarkdownPage = () => (
                     </div>
                 </div>
             </section>
-        </MainLayout>
+        </Layout>
     </>
 )
 

@@ -10,52 +10,56 @@
 /* Design Choices
  ****************/
 
-// Set Max Width for Site
-$site-max-width: $breakpoint--desktop;
+// Set Site Theme Fonts
+$theme-font-primary: $font--arimo;
+$theme-font-secondry: $font--slab;
 
-// Set Site Theme Colors
-$theme-color--primary: $color--black;
-$theme-color--primary-lighter: $color--black;
-$theme-color--primary-darker: $color--black;
+// Set Site Theme Color Palette
+$theme-color-primary: $color-black;
+$theme-color-primary--lighter: $color-black;
+$theme-color-primary--darker: $color-black;
 
-$theme-color--seconday: $color--gatsby-purple;
-$theme-color--seconday-lighter: $color--gatsby-purple;
-$theme-color--seconday-darker: $color--gatsby-purple;
+$theme-color-seconday: $color-indigo;
+$theme-color-seconday--lighter: $color-indigo--lighter;
+$theme-color-seconday--darker: $color-indigo--darker;
 
-$theme-color--accent: $color--gatsby-purple;
-$theme-color--accent-lighter: $color--gatsby-purple;
-$theme-color--accent-darker: $color--gatsby-purple;
+$theme-color-accent: $color-indigo;
+$theme-color-accent--lighter: $color-indigo--lighter;
+$theme-color-accent--darker: $color-indigo--darker;
 
-$theme-color--background: $color--white;
+$theme-color-background: $color-white;
 
 // Set Site Background Color
-$site-background-color: $theme-color--background;
+$site-background-color: $theme-color-background;
+
+// Set Max Width for Site
+$site-max-width: $breakpoint-desktop;
 
 // Set Site Heading Styles
-$heading-font: $font--arimo;
+$heading-font: $theme-font-primary;
 $heading-weight: $font-weight--bold;
-$heading-color: $theme-color--primary;
+$heading-color: $theme-color-primary;
 
 // Set Site Paragraph Styles
-$paragraph-font: $font--slab;
+$paragraph-font: $theme-font-secondry;
 $paragraph-weight: $font-weight--normal;
-$paragraph-color: $theme-color--primary;
+$paragraph-color: $theme-color-primary;
 
 // Set Site Link Styles
-$link-font: $font--arimo;
+$link-font: $theme-font-primary;
 $link-weight: $font-weight--bold;
-$link-color: $theme-color--primary;
+$link-color: $theme-color-primary;
 
 // Set Site Button Styles
-$button-font: $font--arimo;
-$button-color: $color--white;
-$button-background: $theme-color--seconday;
-$button-background--hover: $color-gatsby-purple--lighter;
+$button-font: $theme-font-primary;
+$button-color: $color-white;
+$button-background: $theme-color-accent;
+$button-background--hover: $theme-color-accent--darker;
 
 // Set Site Border Styles
 $border-width: 3px;
 $border-style: solid;
-$border-color: $theme-color--accent;
+$border-color: $theme-color-accent;
 
 // Set Site Border Options
 $border: $border-width $border-style $border-color;
