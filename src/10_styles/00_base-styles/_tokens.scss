@@ -27,7 +27,7 @@ $font-weight--bold: 700;
 $font-line-height: 1.4;
 
 /* Font Sizing
- ****************/
+ *************/
 
 // Set Base Font Size
 $font-size: 1.1rem;
@@ -43,10 +43,11 @@ $font-size--xl: $font-size * 2.1; // 2.31rem
  ***************/
 
 // Color Palette Options
-$color--white: #fefefe;
-$color--black: #000013;
-$color--gatsby-purple: #542c85;
-$color-gatsby-purple--lighter: #6e42a5;
+$color-white: #fefefe;
+$color-black: #000013;
+$color-indigo: #4b0082;
+$color-indigo--lighter: #6b00b8;
+$color-indigo--darker: #2b0049;
 
 /* Gutter Spacing
  ****************/
@@ -67,8 +68,8 @@ $gutter--xxl: $gutter * 3; // 4.5rem
  *************/
 
 // Set Breakpoint Options
-$breakpoint--mobile-xs: 380px;
-$breakpoint--mobile: 500px;
-$breakpoint--tablet: 850px;
-$breakpoint--desktop: 1200px;
-$breakpoint--desktop-xl: 1600px;
+$breakpoint-mobile--s: 380px;
+$breakpoint-mobile: 500px;
+$breakpoint-tablet: 850px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop--l: 1600px;

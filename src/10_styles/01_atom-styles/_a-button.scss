@@ -1,8 +1,8 @@
 .a-button {
     font-family: $button-font;
-    font-size: $font-size--s;
     color: $button-color;
     background: $button-background;
+    font-size: $font-size--s;
     padding: $gutter--s $gutter--m;
 
     &:hover,
