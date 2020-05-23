@@ -15,7 +15,6 @@ import NavLinks from "../02_molecules/NavLinks"
 const Container = {
     display: "flex",
     flexWrap: "wrap",
-    maxWidth: "400px",
 }
 
 const ComponentsPage = () => (
@@ -27,76 +26,32 @@ const ComponentsPage = () => (
                     <h2>Atom Components</h2>
                     <h3>Icon</h3>
                     <div style={Container}>
-                        <Icon
-                            id="mail"
-                            size="60"
-                            title="Email address"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="mail" title="Email address" />
                         <p> &nbsp; &nbsp; </p>
                         <Icon
                             id="open-in-new"
-                            size="60"
                             title="Link will open in new
                     tab"
-                            fill="rebeccapurple"
                         />
                         <p> &nbsp; &nbsp; </p>
                         <Icon
                             id="map-marker"
-                            size="60"
                             title="View location on Google maps"
-                            fill="rebeccapurple"
                         />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="home"
-                            size="60"
-                            title="Go to home page"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="home" title="Go to home page" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="close"
-                            size="60"
-                            title="Close"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="close" title="Close" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="a11y-human"
-                            size="60"
-                            title="Web accessibility"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="a11y-human" title="Web accessibility" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="cookie"
-                            size="60"
-                            title="Cookies policy"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="cookie" title="Cookies policy" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="privacy-lock"
-                            size="60"
-                            title="Priavy policy"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="privacy-lock" title="Priavy policy" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="burger-menu"
-                            size="60"
-                            title="Open menu"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="burger-menu" title="Open menu" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon
-                            id="message"
-                            size="60"
-                            title="Send me a message"
-                            fill="rebeccapurple"
-                        />
+                        <Icon id="message" title="Send me a message" />
                     </div>
                     <h4>Internal Link</h4>
                     <div style={Container}>
@@ -112,16 +67,6 @@ const ComponentsPage = () => (
                     <div style={Container}>
                         <p>
                             <Button text="Download" />
-                        </p>
-                        <p> &nbsp; &nbsp; </p>
-                        <p>
-                            <Button />
-                        </p>
-                    </div>
-                    <h4>Back Button</h4>
-                    <div style={Container}>
-                        <p>
-                            <Button text="Go Back" />
                         </p>
                         <p> &nbsp; &nbsp; </p>
                         <p>

@@ -9,7 +9,7 @@ import PropTypes from "prop-types"
 const Button = props => {
     return (
         <>
-            <button>{props.text}</button>
+            <button className="a-button">{props.text}</button>
         </>
     )
 }

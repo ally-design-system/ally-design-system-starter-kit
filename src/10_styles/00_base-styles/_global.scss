@@ -144,46 +144,32 @@ ul {
     }
 }
 
-// Todo: Add Button styling!
+// Reset base button styles
 // For help: https://css-tricks.com/overriding-default-button-styles/
-
 button,
 input,
 optgroup,
 select,
 textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
+// Show the overflow in IE and Edge
 button,
 input {
-    /* 1 */
     overflow: visible;
 }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
+// Remove the inheritance of text transform in Edge, Firefox, and IE.
 button,
 select {
-    /* 1 */
     text-transform: none;
 }
 
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
+// Correct the inability to style clickable types in iOS and Safari.
 button,
 [type="button"],
 [type="reset"],
@@ -191,36 +177,35 @@ button,
     -webkit-appearance: button;
 }
 
-/* Buttons styles start */
+// Base Button styles
 button {
+    font-family: $button-font;
+    font-size: $font-size--s;
+    color: $button-color;
+    background: $button-background;
+    padding: $gutter--s $gutter--m;
     display: inline-block;
     border: none;
-    padding: 1rem 2rem;
     margin: 0;
     text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
-    font-family: sans-serif;
-    font-size: 1rem;
     line-height: 1;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
+    transition: background-color 250ms ease-in-out, transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
 button:hover,
 button:focus {
-    background: #0053ba;
+    background-color: $button-background--hover;
 }
 
-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
+// button:focus {
+//     outline: 1px solid #fff;
+//     outline-offset: 4px;
+// }
 
 button:active {
     transform: scale(0.99);
 }
-/* Button styles end */
