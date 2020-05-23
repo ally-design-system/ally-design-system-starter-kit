@@ -46,6 +46,12 @@ $link-font: $font--arimo;
 $link-weight: $font-weight--bold;
 $link-color: $theme-color--primary;
 
+// Set Site Button Styles
+$button-font: $font--arimo;
+$button-color: $color--white;
+$button-background: $theme-color--seconday;
+$button-background--hover: $color-gatsby-purple--lighter;
+
 // Set Site Border Styles
 $border-width: 3px;
 $border-style: solid;

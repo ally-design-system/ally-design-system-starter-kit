@@ -1,0 +1,12 @@
+.a-button {
+    font-family: $button-font;
+    font-size: $font-size--s;
+    color: $button-color;
+    background: $button-background;
+    padding: $gutter--s $gutter--m;
+
+    &:hover,
+    &:focus {
+        background-color: $button-background--hover;
+    }
+}

@@ -143,3 +143,69 @@ ul {
         font-size: $font-size--s;
     }
 }
+
+// Reset base button styles
+// For help: https://css-tricks.com/overriding-default-button-styles/
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+// Show the overflow in IE and Edge
+button,
+input {
+    overflow: visible;
+}
+
+// Remove the inheritance of text transform in Edge, Firefox, and IE.
+button,
+select {
+    text-transform: none;
+}
+
+// Correct the inability to style clickable types in iOS and Safari.
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+// Base Button styles
+button {
+    font-family: $button-font;
+    font-size: $font-size--s;
+    color: $button-color;
+    background: $button-background;
+    padding: $gutter--s $gutter--m;
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background-color: $button-background--hover;
+}
+
+// button:focus {
+//     outline: 1px solid #fff;
+//     outline-offset: 4px;
+// }
+
+button:active {
+    transform: scale(0.99);
+}

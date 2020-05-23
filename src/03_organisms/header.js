@@ -6,14 +6,8 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
-
-const isActive = ({ isCurrent }) => {
-    return { className: isCurrent ? "active" : "navlink" }
-}
-
-const NavLink = props => <Link getProps={isActive} {...props} />
+import { useStaticQuery, graphql, Link } from "gatsby"
+import NavLinks from "../02_molecules/NavLinks"
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -33,22 +27,9 @@ const Header = () => {
                     <div className="header__site-title">
                         <Link to="/">{data.site.siteMetadata.title}</Link>
                     </div>
-                    <nav className="header__navigation">
-                        <ul>
-                            <li>
-                                <NavLink to="/">Home</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/gatsby/">Gatsby</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/sass-bem/">SASS + BEM</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/markdown/">Markdown</NavLink>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div className="header__navigation">
+                        <NavLinks />
+                    </div>
                 </div>
             </header>
         </>

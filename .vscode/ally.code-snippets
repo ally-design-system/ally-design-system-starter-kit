@@ -1,0 +1,55 @@
+{
+    "React arrow function": {
+		"prefix": "rc",
+		"body": [
+       "/*",
+      " * ${TM_FILENAME_BASE} Component",
+      " *",
+      " */",
+      "",
+      "import React from \"react\"",
+      "",
+      "const ${TM_FILENAME_BASE} = () => {",
+      "\t return (",
+      "\t\t <>",
+      "\t\t\t {/* <p>Hi</p> */}",
+      "\t\t </>",
+      "\t )",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+		],
+		  "description": "React arrow function"
+    },
+    "React arrow function component with Props": {
+		"prefix": "rcp",
+		"body": [
+      "/*",
+      " * ${TM_FILENAME_BASE} Component",
+      " *",
+      " */",
+      "",
+      "import React from \"react\"",
+      "import PropTypes from \"prop-types\"",
+      "",
+      "const ${TM_FILENAME_BASE} = props => {",
+      "\t return (",
+      "\t\t <>",
+      "\t\t\t {/* <p>{props.propName}</p> */}",
+      "\t\t </>",
+      "\t )",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.defaultProps = {"
+      "\t // propName: \"default prop value\"",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {"
+      "\t // propName: PropTypes.string.isRequired,"
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+		],
+		  "description": "React arrow function component with Props"
+    }
+}
