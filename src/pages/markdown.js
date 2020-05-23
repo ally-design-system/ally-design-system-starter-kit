@@ -4,7 +4,7 @@
 
 import React from "react"
 import { Link } from "gatsby"
-import SEO from "../09_utilities/seo"
+import SEO from "../09_utilities/SEO"
 import Layout from "../04_templates/LayoutTemplate"
 import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 

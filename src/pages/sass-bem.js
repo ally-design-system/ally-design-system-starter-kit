@@ -3,7 +3,7 @@
  */
 
 import React from "react"
-import SEO from "../09_utilities/seo"
+import SEO from "../09_utilities/SEO"
 import Layout from "../04_templates/LayoutTemplate"
 import SassIconImage from "../01_atoms/images/Sass-icon"
 import BEMIconImage from "../01_atoms/images/BEM-icon"
