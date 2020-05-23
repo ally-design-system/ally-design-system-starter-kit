@@ -5,7 +5,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
-import MainLayout from "../04_templates/main-layout-template"
+import Layout from "./LayoutTemplate"
 import SEO from "../09_utilities/seo"
 
 export default function Template({
@@ -16,24 +16,24 @@ export default function Template({
 
     return (
         <>
-            <MainLayout>
+            <Layout>
                 <SEO title={frontmatter.title} />
 
                 <Link to="/markdown">&larr; Back To Markdown Page</Link>
 
-                <article className="post-template">
-                    <div className="post-template__frontmatter">
+                <article className="t-post-template">
+                    <div className="t-post-template__frontmatter">
                         <h1>{frontmatter.title}</h1>
-                        <p className="post-template__date">
+                        <p className="t-post-template__date">
                             {frontmatter.date}
                         </p>
                         <div
-                            className="post-template__content"
+                            className="t-post-template__content"
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                     </div>
                 </article>
-            </MainLayout>
+            </Layout>
         </>
     )
 }

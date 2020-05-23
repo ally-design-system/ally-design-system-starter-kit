@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import MainLayout from "../04_templates/main-layout-template"
+import Layout from "../04_templates/LayoutTemplate"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"
 import Button from "../01_atoms/Button"
@@ -19,7 +19,7 @@ const Container = {
 
 const ComponentsPage = () => (
     <>
-        <MainLayout>
+        <Layout>
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
                     <h1>Ally Style Guide</h1>
@@ -93,7 +93,7 @@ const ComponentsPage = () => (
                     </div>
                 </div>
             </section>
-        </MainLayout>
+        </Layout>
     </>
 )
 

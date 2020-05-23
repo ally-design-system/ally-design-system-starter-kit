@@ -4,6 +4,7 @@
  * Sass '$self: &;' Parent Selector with Interpolation: https://css-tricks.com/using-sass-control-scope-bem-naming/
  */
 
+// @todo: Needs to be changed to .t-page-template and applied through using the PageTemplate.js component
 .default-page-layout {
     $self: &;
 
