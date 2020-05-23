@@ -8,6 +8,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import ExLink from "../02_molecules/ExLink"
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -21,70 +22,19 @@ const Footer = () => {
     `)
 
     return (
-        <footer className="footer">
-            <div className="footer__inner">
-                <p className="footer__text">
+        <footer className="o-footer">
+            <div className="o-footer__inner">
+                <p className="o-footer__text">
                     &copy; {new Date().getFullYear()}{" "}
                     {data.site.siteMetadata.title}
                 </p>
-                <p className="footer__text">
-                    Fonts:{" "}
-                    <a
-                        className="footer__text-link"
-                        href="https://fonts.google.com/specimen/Arimo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Arimo
-                    </a>{" "}
-                    by{" "}
-                    <a
-                        className="footer__text-link"
-                        href="https://twitter.com/SteveMatteson1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Steve Matteson
-                    </a>{" "}
-                    and{" "}
-                    <a
-                        className="footer__text-link"
-                        href="https://fonts.google.com/specimen/Roboto+Slab"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Roboto Slab
-                    </a>{" "}
-                    by{" "}
-                    <a
-                        className="footer__text-link"
-                        href="https://twitter.com/cr64"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Christian Robertson
-                    </a>{" "}
-                    served by{" "}
-                    <a
-                        className="footer__text-link"
-                        href="https://fonts.google.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Google Fonts
-                    </a>
-                    .
-                </p>
-                <p className="footer__text">
-                    This Gatsby Starter was built by{" "}
-                    <a
-                        className="footer__text-link"
+                <p className="o-footer__text">
+                    Built by{" "}
+                    <ExLink
+                        class="o-footer__text --ex-link"
                         href="https://nikkipantony.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Nikki Pantony
-                    </a>
+                        text="Nikki Pantony"
+                    />
                 </p>
             </div>
         </footer>

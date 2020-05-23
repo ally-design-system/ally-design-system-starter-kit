@@ -15,7 +15,7 @@ const ExLink = props => {
     return (
         <>
             <a
-                className="m-ex-link"
+                className={`m-ex-link ${props.class}`}
                 href={props.href}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -34,11 +34,13 @@ const ExLink = props => {
 ExLink.defaultProps = {
     href: "/404/",
     text: "Link Text Missing",
+    class: "",
 }
 
 ExLink.propTypes = {
     href: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    class: PropTypes.string,
 }
 
 export default ExLink
