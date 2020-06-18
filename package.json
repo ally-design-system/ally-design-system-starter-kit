@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-sass-bem-md",
+  "name": "ally-starter-kit",
   "private": true,
-  "description": "An opinionated Gatsby starter boilerplate including SASS setup with the BEM naming convention for styling plus the main Gatsby configuration files needed to get up and running with content sourced from markdown files.",
+  "description": "Ally Starter Kit is a Front-End, Design-System-First, Gatsby Starter Kit with a project architecture inspired by Brad Frost's Atomic Design Methodology.",
   "version": "0.1.0",
   "author": "Nikki Pantony <hello@nikkipantony.com>",
   "dependencies": {
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikkipantony/gatsby-bem-sass-starter"
+    "url": "https://github.com/nikkipantony/ally-starter-kit"
   }
 }
