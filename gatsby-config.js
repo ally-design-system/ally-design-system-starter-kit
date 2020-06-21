@@ -34,8 +34,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-sass-bem-md`,
-                short_name: `starter-sass-bem-md`,
+                name: `ally-starter-kit`,
+                short_name: `ally-starter-kit`,
                 start_url: `/`,
                 background_color: `#542c85`,
                 theme_color: `#542c85`,
