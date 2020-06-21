@@ -1,5 +1,6 @@
 ---
 path: "/markdown/second-post"
+type: "post"
 date: "2020-05-06"
 title: "Second Markdown Post Example"
 ---

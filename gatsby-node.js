@@ -5,11 +5,12 @@
  */
 
 const path = require(`path`)
+const { node } = require("prop-types")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-
     const postTemplate = path.resolve(`src/04_templates/PostTemplate.js`)
+    const pageTemplate = path.resolve(`src/04_templates/PageTemplate.js`)
 
     const result = await graphql(`
         {
@@ -20,6 +21,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 edges {
                     node {
                         frontmatter {
+                            type
                             path
                         }
                     }
@@ -35,10 +37,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-            path: node.frontmatter.path,
-            component: postTemplate,
-            context: {}, // additional data can be passed via context
-        })
+        if (node.frontmatter.type === "page") {
+            createPage({
+                path: node.frontmatter.path,
+                component: pageTemplate,
+                context: {}, // additional data can be passed via context
+            })
+        } else {
+            createPage({
+                path: node.frontmatter.path,
+                component: postTemplate,
+                context: {}, // additional data can be passed via context
+            })
+        }
     })
 }
