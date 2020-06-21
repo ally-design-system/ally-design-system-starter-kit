@@ -1,5 +1,5 @@
 /*
- * Markdown Post Template
+ * Post Template
  */
 
 import React from "react"
@@ -44,6 +44,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
+                type
                 path
                 title
             }
