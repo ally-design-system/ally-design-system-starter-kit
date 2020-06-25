@@ -6,7 +6,7 @@
  */
 
 :root {
-    --reach-skip-nav: 1;
+    --reach-skip-nav: 20;
 }
 
 [data-reach-skip-nav-link] {
@@ -30,7 +30,7 @@
     border: $border;
     padding: $gutter--xs;
     background-color: $site-background-color;
-    z-index: 1;
+    z-index: var(--reach-skip-nav);
     transform: translateY($gutter--xs);
     opacity: 1;
 }

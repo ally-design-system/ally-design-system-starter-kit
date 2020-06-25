@@ -3,6 +3,7 @@
  */
 
 .o-footer {
+    z-index: 1;
     background-color: $site-background-color;
     border-top: $border;
 
@@ -10,6 +11,10 @@
         max-width: $site-max-width;
         padding: $gutter--m;
         margin: 0 auto;
+    }
+
+    &__navigation {
+        margin-bottom: $gutter--m;
     }
 
     &__text {
