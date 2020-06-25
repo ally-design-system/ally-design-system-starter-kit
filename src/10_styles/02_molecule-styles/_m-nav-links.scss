@@ -5,10 +5,15 @@
     &__list {
         display: flex;
         list-style: none;
+        padding: 0;
     }
 
     &__list-item {
         margin: 0 0 0 $gutter--m;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
 
         a.active {
             border-bottom: $border--underline;
