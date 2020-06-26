@@ -5,10 +5,6 @@
  * Source code: https://github.com/reach/reach-ui/tree/master/packages/skip-nav
  */
 
-:root {
-    --reach-skip-nav: 20;
-}
-
 [data-reach-skip-nav-link] {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -21,6 +17,7 @@
 }
 
 [data-reach-skip-nav-link]:focus {
+    z-index: map-get($zindex, skiplink);
     position: fixed;
     overflow: hidden;
     left: $gutter--xs;
@@ -30,7 +27,6 @@
     border: $border;
     padding: $gutter--xs;
     background-color: $site-background-color;
-    z-index: var(--reach-skip-nav);
     transform: translateY($gutter--xs);
     opacity: 1;
 }

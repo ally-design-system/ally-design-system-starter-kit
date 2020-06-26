@@ -8,7 +8,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import ExLink from "../02_molecules/ExLink"
+import ExLink from "../01_atoms/ExLink"
 import NavLinks from "../02_molecules/NavLinks"
 
 const Footer = () => {

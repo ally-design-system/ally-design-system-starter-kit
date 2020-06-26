@@ -5,10 +5,10 @@
 
 import React from "react"
 import Layout from "../04_templates/LayoutTemplate"
-import ExLink from "../02_molecules/ExLink"
 import NavLinks from "../02_molecules/NavLinks"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"
+import ExLink from "../01_atoms/ExLink"
 import Button from "../01_atoms/Button"
 
 // Todo: Move to style guide styling unless adding Storybook!?

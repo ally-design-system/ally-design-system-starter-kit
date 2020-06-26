@@ -4,7 +4,6 @@
 
 import React from "react"
 import { graphql } from "gatsby"
-//import { Link } from "gatsby"
 import Layout from "./LayoutTemplate"
 import SEO from "../09_utilities/SEO"
 

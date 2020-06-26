@@ -9,13 +9,13 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../01_atoms/Icon"
+import Icon from "./Icon"
 
 const ExLink = props => {
     return (
         <>
             <a
-                className={`m-ex-link ${props.class}`}
+                className={`a-ex-link ${props.class}`}
                 href={props.href}
                 rel="noopener noreferrer"
                 target="_blank"

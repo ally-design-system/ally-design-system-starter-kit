@@ -3,7 +3,7 @@
  */
 
 .o-footer {
-    z-index: 1;
+    z-index: map-get($zindex, footer);
     background-color: $site-background-color;
     border-top: $border;
 
