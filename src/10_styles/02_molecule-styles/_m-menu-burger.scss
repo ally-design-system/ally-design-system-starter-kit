@@ -1,0 +1,45 @@
+/*
+ * Burger Menu Styles
+ *
+ * Custom styling for the Reach UI 'menu-button' component: https://reacttraining.com/reach-ui/menu-button
+ * Source code: https://github.com/reach/reach-ui/tree/master/packages/skip-nav
+ */
+
+[data-reach-menu-button] {
+    font-weight: $font-weight--bold;
+    background: $button-background;
+    outline-offset: -$outline-offset;
+
+    &:hover,
+    &:focus {
+        background-color: $button-background--hover;
+        outline: $border;
+    }
+}
+
+[data-reach-menu-list] {
+    display: block;
+    background-color: $site-background-color;
+    padding: $gutter--xs;
+    margin: $gutter--xs 0;
+    outline: 0; // Outline replaced with border
+    border: $border;
+
+    [data-reach-menu-item] {
+        line-height: $gutter--xl;
+        border: none;
+    }
+}
+
+[data-reach-menu-item] {
+    font-family: $button-font;
+    font-size: $font-size--s;
+    padding: $gutter--xs $gutter--s $gutter--xs;
+    transition: $transition-background;
+
+    &[data-selected] {
+        outline: 0; // Outline replaced with background
+        color: $button-color;
+        background: $button-background;
+    }
+}

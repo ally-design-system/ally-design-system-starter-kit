@@ -1,18 +1,18 @@
 /*
- * Menu Component
+ * Burger Menu Component
  *
- * Reach Menu Button: https://reacttraining.com/reach-ui/menu-button
+ * Reach UI 'menu-button' component: https://reacttraining.com/reach-ui/menu-button
  */
 
 import React from "react"
 import { Menu, MenuList, MenuButton, MenuLink } from "@reach/menu-button"
 import { Link as GatsbyLink } from "gatsby"
 
-const MenuTest = () => {
+const MenuBurger = () => {
     return (
         <>
             <Menu>
-                <MenuButton>Actions</MenuButton>
+                <MenuButton>Menu</MenuButton>
                 <MenuList>
                     <MenuLink as={GatsbyLink} to="/">
                         Home
@@ -23,10 +23,16 @@ const MenuTest = () => {
                     <MenuLink as={GatsbyLink} to="/sass-bem/">
                         SASS + BEM
                     </MenuLink>
+                    <MenuLink as={GatsbyLink} to="/markdown/">
+                        Markdown
+                    </MenuLink>
+                    <MenuLink as={GatsbyLink} to="/style-guide/">
+                        Style Guide
+                    </MenuLink>
                 </MenuList>
             </Menu>
         </>
     )
 }
 
-export default MenuTest
+export default MenuBurger

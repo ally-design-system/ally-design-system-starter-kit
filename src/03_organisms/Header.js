@@ -9,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import InLink from "../01_atoms/InLink"
 import NavLinks from "../02_molecules/NavLinks"
-import MenuTest from "../02_molecules/Menu"
+import MenuBurger from "../02_molecules/MenuBurger"
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -31,7 +31,7 @@ const Header = () => {
                     </div>
                     <div className="o-header__navigation">
                         <NavLinks />
-                        <MenuTest />
+                        <MenuBurger />
                     </div>
                 </div>
             </header>

@@ -1,12 +1,15 @@
 .a-button {
     font-family: $button-font;
+    font-weight: $font-weight--bold;
     color: $button-color;
     background: $button-background;
     font-size: $font-size--s;
     padding: $gutter--s $gutter--m;
+    outline-offset: -$outline-offset;
 
     &:hover,
     &:focus {
         background-color: $button-background--hover;
+        outline: $border;
     }
 }
