@@ -5,7 +5,7 @@
 
 import React from "react"
 import Layout from "../04_templates/LayoutTemplate"
-import NavLinks from "../02_molecules/NavLinks"
+import NavLinks from "../02_molecules/MenuDesktop"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"
 import ExLink from "../01_atoms/ExLink"

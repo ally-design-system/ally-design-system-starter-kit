@@ -1,5 +1,5 @@
 /*
- * NavLinks Component
+ * Desktop Menu Component
  *
  * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
  */
@@ -12,24 +12,24 @@ const isActive = ({ isCurrent }) => {
 }
 const NavLink = props => <Link getProps={isActive} {...props} />
 
-const NavLinks = () => {
+const MenuDesktop = () => {
     return (
         <>
-            <nav className="m-nav-links">
-                <ul className="m-nav-links__list">
-                    <li className="m-nav-links__list-item">
+            <nav className="m-menu-desktop">
+                <ul className="m-menu-desktop__list">
+                    <li className="m-menu-desktop__list-item">
                         <NavLink to="/">Home</NavLink>
                     </li>
-                    <li className="m-nav-links__list-item">
+                    <li className="m-menu-desktop__list-item">
                         <NavLink to="/gatsby/">Gatsby</NavLink>
                     </li>
-                    <li className="m-nav-links__list-item">
+                    <li className="m-menu-desktop__list-item">
                         <NavLink to="/sass-bem/">SASS + BEM</NavLink>
                     </li>
-                    <li className="m-nav-links__list-item">
+                    <li className="m-menu-desktop__list-item">
                         <NavLink to="/markdown/">Markdown</NavLink>
                     </li>
-                    <li className="m-nav-links__list-item">
+                    <li className="m-menu-desktop__list-item">
                         <NavLink to="/style-guide/">Style Guide</NavLink>
                     </li>
                 </ul>
@@ -38,4 +38,4 @@ const NavLinks = () => {
     )
 }
 
-export default NavLinks
+export default MenuDesktop

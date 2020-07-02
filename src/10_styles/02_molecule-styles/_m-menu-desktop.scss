@@ -1,6 +1,10 @@
-.m-nav-links {
-    display: flex;
-    margin: 0;
+.m-menu-desktop {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        margin: 0;
+    }
 
     &__list {
         display: flex;
