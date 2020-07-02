@@ -1,7 +1,8 @@
 /*
- * Header Skip Link Component
+ * Skip Link Component
  *
  * Reach UI 'skip-nav' component: https://reacttraining.com/reach-ui/skip-nav
+ * Used in `src/04_templates/LayoutTemplate` with `import { SkipNavContent } from "@reach/skip-nav"` to work correctly
  */
 
 import React from "react"
