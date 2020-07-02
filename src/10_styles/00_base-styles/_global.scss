@@ -16,15 +16,6 @@
     box-sizing: border-box;
 }
 
-// Set Focus Styling Based on Theme to show only when user is tabbing
-// @todo:Remove the :focus outline when user is not tabbing
-// Follow this article: https://medium.com/hackernoon/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
-// Or Use the :focus-visible polyfill: https://github.com/wicg/focus-visible
-*:focus {
-    outline: $border;
-    outline-offset: $outline-offset;
-}
-
 // Set Core Body Defaults
 body {
     min-height: 100vh;
@@ -141,7 +132,7 @@ a {
     font-size: $font-size--s;
 
     &:hover {
-        border-bottom: $border--underline;
+        border-bottom: $border--bottom;
     }
 }
 
@@ -187,32 +178,20 @@ button,
     -webkit-appearance: button;
 }
 
-// Base Button styles
+// Button base styles
 button {
-    font-family: $button-font;
-    font-size: $font-size--s;
-    color: $button-color;
-    background: $button-background;
-    padding: $gutter--s $gutter--m;
     display: inline-block;
     border: none;
     margin: 0;
+    text-align: center;
     text-decoration: none;
     line-height: 1;
     cursor: pointer;
-    text-align: center;
-    outline-offset: $outline-offset;
     transition: $transition-background;
     -webkit-appearance: none;
     -moz-appearance: none;
-}
 
-button:hover,
-button:focus {
-    background-color: $button-background--hover;
-    outline: $border;
-}
-
-button:active {
-    transform: scale(1);
+    &:active {
+        transform: scale(1);
+    }
 }

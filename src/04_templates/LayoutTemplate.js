@@ -2,6 +2,7 @@
  * Main Layout Template
  */
 
+import "focus-visible"
 import React from "react"
 import "../10_styles/styles.scss"
 import SkipLinkHeader from "../01_atoms/SkipLinkHeader"

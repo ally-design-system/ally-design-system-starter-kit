@@ -6,14 +6,16 @@
  */
 
 [data-reach-menu-button] {
+    font-family: $button-font;
     font-weight: $font-weight--bold;
+    font-size: $font-size--s;
+    color: $button-color;
     background: $button-background;
-    outline-offset: -$outline-offset;
+    padding: $gutter--s $gutter--m;
 
     &:hover,
     &:focus {
         background-color: $button-background--hover;
-        outline: $border;
     }
 }
 
@@ -22,12 +24,15 @@
     background-color: $site-background-color;
     padding: $gutter--xs;
     margin: $gutter--xs 0;
-    outline: 0; // Outline replaced with border
     border: $border;
+
+    &.focus-visible {
+        outline: 0; // Outline replaced with border
+    }
 
     [data-reach-menu-item] {
         line-height: $gutter--xl;
-        border: none;
+        border-bottom: 0;
     }
 }
 
@@ -38,7 +43,6 @@
     transition: $transition-background;
 
     &[data-selected] {
-        outline: 0; // Outline replaced with background
         color: $button-color;
         background: $button-background;
     }

@@ -82,15 +82,20 @@ $breakpoint-desktop--l: 1600px;
 // Set Background Color Transition
 $transition-background: background-color 250ms ease-in-out;
 
-/* Border
- ********/
+/* Borders
+ *********/
 
 // Set Border Styling
 $border-width: 3px;
 $border-style: solid;
+$border-color: $color-indigo;
 
-/* Focus Outline
- ***************/
+// Set Border Style
+$border: $border-width $border-style $border-color;
 
-// Set Outline Offset
+// Set Border Bottom Style
+$border--bottom: $border-width * 1.2 $border-style $border-color;
+
+// Set Focus Outline Border Style
+$outline: $border;
 $outline-offset: 3px;
