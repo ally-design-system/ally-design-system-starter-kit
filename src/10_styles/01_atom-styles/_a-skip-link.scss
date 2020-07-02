@@ -16,17 +16,24 @@
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-[data-reach-skip-nav-link]:focus {
-    z-index: map-get($zindex, skiplink);
-    position: fixed;
-    overflow: hidden;
-    left: $gutter--xs;
-    width: auto;
-    height: auto;
-    clip: auto;
-    border: $border;
-    padding: $gutter--xs;
-    background-color: $site-background-color;
-    transform: translateY($gutter--xs);
-    opacity: 1;
+[data-reach-skip-nav-link] {
+    &:focus {
+        z-index: map-get($zindex, skiplink);
+        position: fixed;
+        overflow: hidden;
+        left: $gutter--xs;
+        width: auto;
+        height: auto;
+        clip: auto;
+        padding: $gutter--xs;
+        background-color: $site-background-color;
+        transform: translateY($gutter--xs);
+        opacity: 1;
+    }
+
+    &.focus-visible,
+    &:hover {
+        border-bottom: 0; // Override `border-bottom` set for links
+        outline-offset: 0; // Override `outline-offset` value set in `src/10_styles/00_base-styles/_focus-visible`
+    }
 }

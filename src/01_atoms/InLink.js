@@ -13,7 +13,7 @@ import PropTypes from "prop-types"
 const InLink = props => {
     return (
         <>
-            <GatsbyLink className="a-in-link" to={props.to}>
+            <GatsbyLink className={`a-in-link ${props.class}`} to={props.to}>
                 {props.text}
             </GatsbyLink>
         </>
@@ -21,13 +21,15 @@ const InLink = props => {
 }
 
 InLink.defaultProps = {
-    to: "/404/",
+    to: "/",
     text: "Link Text Missing",
+    class: "",
 }
 
 InLink.propTypes = {
     to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    class: PropTypes.string,
 }
 
 export default InLink

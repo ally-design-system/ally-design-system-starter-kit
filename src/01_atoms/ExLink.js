@@ -32,7 +32,7 @@ const ExLink = props => {
 }
 
 ExLink.defaultProps = {
-    href: "/404/",
+    href: "/",
     text: "Link Text Missing",
     class: "",
 }

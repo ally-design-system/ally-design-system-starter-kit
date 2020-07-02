@@ -22,6 +22,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: $font-line-height;
+    background-color: $site-background-color;
 }
 
 // Remove Default Margins
@@ -130,8 +131,9 @@ a {
     padding-bottom: 2px;
     font-size: $font-size--s;
 
-    &:hover {
-        border-bottom: $border--underline;
+    &:hover,
+    &.focus-visible {
+        border-bottom: $border--bottom;
     }
 }
 
@@ -177,35 +179,20 @@ button,
     -webkit-appearance: button;
 }
 
-// Base Button styles
+// Button base styles
 button {
-    font-family: $button-font;
-    font-size: $font-size--s;
-    color: $button-color;
-    background: $button-background;
-    padding: $gutter--s $gutter--m;
     display: inline-block;
     border: none;
     margin: 0;
+    text-align: center;
     text-decoration: none;
     line-height: 1;
     cursor: pointer;
-    text-align: center;
-    transition: background-color 250ms ease-in-out, transform 150ms ease;
+    transition: $transition-background;
     -webkit-appearance: none;
     -moz-appearance: none;
-}
 
-button:hover,
-button:focus {
-    background-color: $button-background--hover;
-}
-
-// button:focus {
-//     outline: 1px solid #fff;
-//     outline-offset: 4px;
-// }
-
-button:active {
-    transform: scale(0.99);
+    &:active {
+        transform: scale(1);
+    }
 }

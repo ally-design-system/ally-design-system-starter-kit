@@ -75,3 +75,27 @@ $breakpoint-mobile: 500px;
 $breakpoint-tablet: 850px;
 $breakpoint-desktop: 1200px;
 $breakpoint-desktop--l: 1600px;
+
+/* Transitions
+ *************/
+
+// Set Background Color Transition
+$transition-background: background-color 250ms ease-in-out;
+
+/* Borders
+ *********/
+
+// Set Border Styling
+$border-width: 3px;
+$border-style: solid;
+$border-color: $color-indigo;
+
+// Set Border Style
+$border: $border-width $border-style $border-color;
+
+// Set Border Bottom Style
+$border--bottom: $border-width * 1.2 $border-style $border-color;
+
+// Set Focus Outline Border Style
+$outline: $border;
+$outline-offset: 3px;

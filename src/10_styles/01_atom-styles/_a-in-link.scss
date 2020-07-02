@@ -7,6 +7,10 @@
     font-size: $font-size--s;
 
     &:hover {
-        border-bottom: $border--underline;
+        border-bottom: $border--bottom;
+    }
+
+    .focus-visible {
+        outline-offset: -$outline-offset;
     }
 }

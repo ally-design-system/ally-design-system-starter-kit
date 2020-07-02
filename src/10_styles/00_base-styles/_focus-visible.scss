@@ -1,0 +1,26 @@
+/*
+ * Focus Visible Styles
+ *
+ * WICG Polyfill for `:focus-visible`: https://github.com/wicg/focus-visible
+ * Demo: https://wicg.github.io/focus-visible/demo/
+ *
+ * JavaScript import "focus-visible" in `src/04_templates/LayoutTemplate`
+ */
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+/*
+  This defines a strong focus indicator for keyboard focus.
+  If this styling is removed the browser's default focus
+  indicator will be displayed instead.
+*/
+.js-focus-visible .focus-visible {
+    outline: $outline;
+    outline-offset: $outline-offset;
+}

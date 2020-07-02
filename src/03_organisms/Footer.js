@@ -8,8 +8,8 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import InLink from "../01_atoms/InLink"
 import ExLink from "../01_atoms/ExLink"
-import NavLinks from "../02_molecules/NavLinks"
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -25,14 +25,18 @@ const Footer = () => {
     return (
         <footer className="o-footer">
             <div className="o-footer__inner">
-                <div className="o-footer__navigation">
-                    <NavLinks />
-                </div>
+                <p className="o-footer__text">
+                    <InLink class="o-footer__text --link" to="/" text="Home" />
+                    <InLink class="o-footer__text --link" to="/" text="Home" />
+                    <InLink class="o-footer__text --link" to="/" text="Home" />
+                    <InLink class="o-footer__text --link" to="/" text="Home" />
+                    <InLink class="o-footer__text --link" to="/" text="Home" />
+                </p>
                 <p className="o-footer__text">
                     &copy; {new Date().getFullYear()}{" "}
                     {data.site.siteMetadata.title} &nbsp; | &nbsp; Built by{" "}
                     <ExLink
-                        class="o-footer__text --ex-link"
+                        class="o-footer__text --link"
                         href="https://nikkipantony.com"
                         text="Nikki Pantony"
                     />

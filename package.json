@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "author": "Nikki Pantony <hello@nikkipantony.com>",
   "dependencies": {
+    "@reach/menu-button": "^0.10.5",
     "@reach/skip-nav": "^0.10.1",
+    "focus-visible": "^5.1.0",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",

@@ -5,13 +5,12 @@
 
 import React from "react"
 import Layout from "../04_templates/LayoutTemplate"
-import NavLinks from "../02_molecules/NavLinks"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"
 import ExLink from "../01_atoms/ExLink"
 import Button from "../01_atoms/Button"
 
-// Todo: Move to style guide styling unless adding Storybook!?
+// @todo: Move to style guide styling unless adding Storybook!?
 const Container = {
     display: "flex",
     flexWrap: "wrap",
@@ -86,10 +85,6 @@ const ComponentsPage = () => (
                         <p>
                             <ExLink />
                         </p>
-                    </div>
-                    <h4>Main Menu Navigation Links</h4>
-                    <div style={Container}>
-                        <NavLinks />
                     </div>
                 </div>
             </section>

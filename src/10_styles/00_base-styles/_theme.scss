@@ -55,12 +55,3 @@ $button-font: $theme-font-primary;
 $button-color: $color-white;
 $button-background: $theme-color-accent;
 $button-background--hover: $theme-color-accent--darker;
-
-// Set Site Border Styles
-$border-width: 3px;
-$border-style: solid;
-$border-color: $theme-color-accent;
-
-// Set Site Border Options
-$border: $border-width $border-style $border-color;
-$border--underline: $border-width * 1.2 $border-style $border-color;

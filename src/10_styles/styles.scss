@@ -3,10 +3,17 @@
  */
 
 // Base Styles
+
+// - Particle Styles
 @import "00_base-styles/tokens"; // Design Token Variables - Typography, Color Palette, Gutter Spacing, and Breakpoints
 @import "00_base-styles/theme"; // Theme Variables - Design Choices using Design Tokens Variables
+
+// - Global Styles
 @import "00_base-styles/global"; // Global Styling - Applied using Theme Variables (Design Choices) + Modern CSS Reset
-@import "00_base-styles/zindex"; // Manage UI Components z-indexing
+
+// - Utilities
+@import "00_base-styles/focus-visible"; // Manage focus using focus-visible WICG Polyfill
+@import "00_base-styles/z-index"; // Manage UI Components z-indexing
 
 // Atom Styles
 @import "01_atom-styles/a-skip-link";
@@ -16,7 +23,8 @@
 @import "01_atom-styles/a-ex-link";
 
 // Molecule Styles
-@import "02_molecule-styles/m-nav-links";
+@import "02_molecule-styles/m-menu-mobile";
+@import "02_molecule-styles/m-menu-desktop";
 
 // Organism Styles
 @import "03_organism-styles/o-header";
