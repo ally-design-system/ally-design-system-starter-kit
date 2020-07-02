@@ -5,12 +5,7 @@
  */
 
 import React from "react"
-import { Link } from "gatsby"
-
-const isActive = ({ isCurrent }) => {
-    return { className: isCurrent ? "active" : "navlink" }
-}
-const NavLink = props => <Link getProps={isActive} {...props} />
+import NavLink from "../01_atoms/NavLink"
 
 const MenuDesktop = () => {
     return (
@@ -18,19 +13,19 @@ const MenuDesktop = () => {
             <nav className="m-menu-desktop">
                 <ul className="m-menu-desktop__list">
                     <li className="m-menu-desktop__list-item">
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/" text="Home" />
                     </li>
                     <li className="m-menu-desktop__list-item">
-                        <NavLink to="/gatsby/">Gatsby</NavLink>
+                        <NavLink to="/gatsby/" text="Gatsby" />
                     </li>
                     <li className="m-menu-desktop__list-item">
-                        <NavLink to="/sass-bem/">SASS + BEM</NavLink>
+                        <NavLink to="/sass-bem/" text="SASS + BEM" />
                     </li>
                     <li className="m-menu-desktop__list-item">
-                        <NavLink to="/markdown/">Markdown</NavLink>
+                        <NavLink to="/markdown/" text="Markdown" />
                     </li>
                     <li className="m-menu-desktop__list-item">
-                        <NavLink to="/style-guide/">Style Guide</NavLink>
+                        <NavLink to="/style-guide/" text="Style Guide" />
                     </li>
                 </ul>
             </nav>

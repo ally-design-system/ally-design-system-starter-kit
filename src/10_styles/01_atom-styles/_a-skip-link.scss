@@ -31,11 +31,9 @@
         opacity: 1;
     }
 
-    &.focus-visible {
-        outline-offset: 0; // Override `outline-offset` value set in `src/10_styles/00_base-styles/_focus-visible`
-    }
-
+    &.focus-visible,
     &:hover {
-        border-bottom: 0; // Override hover `border-bottom` set for links
+        border-bottom: 0; // Override `border-bottom` set for links
+        outline-offset: 0; // Override `outline-offset` value set in `src/10_styles/00_base-styles/_focus-visible`
     }
 }

@@ -8,27 +8,34 @@ import React from "react"
 import { Menu, MenuList, MenuButton, MenuLink } from "@reach/menu-button"
 import { Link } from "gatsby"
 
+/* Customized `MenuLink` to work as `NavLink` component used in Desktop Menu with styled active page link in navigation */
+const isActive = ({ isCurrent }) => {
+    return { className: isCurrent ? "active" : "navlink" }
+}
+
+const NavLink = props => <MenuLink getProps={isActive} {...props} />
+
 const MenuMobile = () => {
     return (
         <>
             <Menu>
                 <MenuButton>Menu</MenuButton>
                 <MenuList className="slide-down">
-                    <MenuLink as={Link} to="/">
+                    <NavLink as={Link} to="/">
                         Home
-                    </MenuLink>
-                    <MenuLink as={Link} to="/gatsby/">
+                    </NavLink>
+                    <NavLink as={Link} to="/gatsby/">
                         Gatsby
-                    </MenuLink>
-                    <MenuLink as={Link} to="/sass-bem/">
+                    </NavLink>
+                    <NavLink as={Link} to="/sass-bem/">
                         SASS + BEM
-                    </MenuLink>
-                    <MenuLink as={Link} to="/markdown/">
+                    </NavLink>
+                    <NavLink as={Link} to="/markdown/">
                         Markdown
-                    </MenuLink>
-                    <MenuLink as={Link} to="/style-guide/">
+                    </NavLink>
+                    <NavLink as={Link} to="/style-guide/">
                         Style Guide
-                    </MenuLink>
+                    </NavLink>
                 </MenuList>
             </Menu>
         </>

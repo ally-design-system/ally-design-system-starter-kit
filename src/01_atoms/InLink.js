@@ -21,7 +21,7 @@ const InLink = props => {
 }
 
 InLink.defaultProps = {
-    to: "/404/",
+    to: "/",
     text: "Link Text Missing",
     class: "",
 }

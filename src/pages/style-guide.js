@@ -5,7 +5,6 @@
 
 import React from "react"
 import Layout from "../04_templates/LayoutTemplate"
-import NavLinks from "../02_molecules/MenuDesktop"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"
 import ExLink from "../01_atoms/ExLink"
@@ -86,10 +85,6 @@ const ComponentsPage = () => (
                         <p>
                             <ExLink />
                         </p>
-                    </div>
-                    <h4>Main Menu Navigation Links</h4>
-                    <div style={Container}>
-                        <NavLinks />
                     </div>
                 </div>
             </section>

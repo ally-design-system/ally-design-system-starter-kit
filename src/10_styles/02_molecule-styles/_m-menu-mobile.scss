@@ -55,7 +55,12 @@
 
     &[data-selected] {
         color: $button-color;
-        background: $button-background;
+        background: $color-indigo--lighter;
+    }
+
+    &.active {
+        color: $button-color;
+        background: $color-indigo;
     }
 }
 
@@ -69,6 +74,7 @@
         transform: translateY(0);
     }
 }
+
 .slide-down[data-reach-menu-list],
 .slide-down[data-reach-menu-items] {
     animation: slide-down 0.2s ease;
