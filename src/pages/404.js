@@ -3,6 +3,7 @@
  *
  * Gatsby 404 Page: https://www.gatsbyjs.org/docs/add-404-page/
  * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
+ *
  */
 
 import React from "react"

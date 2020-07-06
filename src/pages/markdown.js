@@ -1,12 +1,12 @@
 /*
  * Markdown Page
+ *
  */
 
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../09_utilities/SEO"
 import Layout from "../04_templates/LayoutTemplate"
-import MarkdownIconImage from "../01_atoms/images/Markdown-icon"
 
 const MarkdownPage = () => (
     <>
@@ -45,9 +45,7 @@ const MarkdownPage = () => (
                 </div>
                 <div className="default-page-layout__column">
                     <div className="default-page-layout__icons default-page-layout__icons--one-icon">
-                        <div className="default-page-layout__icon">
-                            <MarkdownIconImage />
-                        </div>
+                        <div className="default-page-layout__icon"></div>
                     </div>
                 </div>
             </section>

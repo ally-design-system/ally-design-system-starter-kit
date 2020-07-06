@@ -1,14 +1,11 @@
 /*
  * Gatsby Page
+ *
  */
 
 import React from "react"
 import SEO from "../09_utilities/SEO"
 import Layout from "../04_templates/LayoutTemplate"
-import GatsbyLogoImage from "../01_atoms/images/Gatsby-Logo"
-import ReactIconImage from "../01_atoms/images/React-icon"
-import GraphQLIconImage from "../01_atoms/images/GraphQL-icon"
-import WebpackIconImage from "../01_atoms/images/Webpack-icon"
 
 const GatsbyPage = () => (
     <>
@@ -61,19 +58,11 @@ const GatsbyPage = () => (
                     </p>
                 </div>
                 <div className="default-page-layout__column">
-                    <div className="default-page-layout__feature-image">
-                        <GatsbyLogoImage />
-                    </div>
+                    <div className="default-page-layout__feature-image"></div>
                     <div className="default-page-layout__icons default-page-layout__icons--three-icons">
-                        <div className="default-page-layout__icon">
-                            <ReactIconImage />
-                        </div>
-                        <div className="default-page-layout__icon">
-                            <GraphQLIconImage />
-                        </div>
-                        <div className="default-page-layout__icon">
-                            <WebpackIconImage />
-                        </div>
+                        <div className="default-page-layout__icon"></div>
+                        <div className="default-page-layout__icon"></div>
+                        <div className="default-page-layout__icon"></div>
                     </div>
                 </div>
             </section>
