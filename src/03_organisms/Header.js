@@ -9,7 +9,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import InLink from "../01_atoms/InLink"
 import MenuDesktop from "../02_molecules/MenuDesktop"
-import MenuBurger from "../02_molecules/MenuMobile"
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -31,7 +30,6 @@ const Header = () => {
                     </div>
                     <div className="o-header__navigation">
                         <MenuDesktop />
-                        <MenuBurger />
                     </div>
                 </div>
             </header>

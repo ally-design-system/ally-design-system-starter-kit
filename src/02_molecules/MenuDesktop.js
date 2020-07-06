@@ -6,6 +6,7 @@
 
 import React from "react"
 import NavLink from "../01_atoms/NavLink"
+import MenuBurger from "../02_molecules/MenuMobile"
 
 const MenuDesktop = () => {
     return (
@@ -28,6 +29,7 @@ const MenuDesktop = () => {
                         <NavLink to="/style-guide/" text="Style Guide" />
                     </li>
                 </ul>
+                <MenuBurger />
             </nav>
         </>
     )

@@ -1,15 +1,15 @@
 .m-menu-desktop {
-    display: none;
-
-    @media (min-width: $breakpoint-tablet) {
-        display: flex;
-        margin: 0;
-    }
+    display: flex;
+    margin: 0;
 
     &__list {
-        display: flex;
+        display: none;
         list-style: none;
         padding: 0;
+
+        @media (min-width: $breakpoint-tablet) {
+            display: flex;
+        }
     }
 
     &__list-item {
