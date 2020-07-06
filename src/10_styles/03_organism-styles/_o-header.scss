@@ -9,6 +9,7 @@
 
     &__inner {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         margin: 0 auto;
         max-width: $site-max-width;

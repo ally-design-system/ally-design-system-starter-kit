@@ -6,6 +6,9 @@
  */
 
 [data-reach-menu-button] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: $button-font;
     font-weight: $font-weight--bold;
     font-size: $font-size--s;
@@ -16,6 +19,12 @@
     &:hover,
     &:focus {
         background-color: $button-background--hover;
+    }
+
+    svg {
+        fill: $button-color;
+        width: 1.3rem;
+        margin: auto 0 auto $gutter--xs;
     }
 
     @media (min-width: $breakpoint-tablet) {
@@ -42,7 +51,7 @@
     }
 
     [data-reach-menu-item] {
-        line-height: $gutter--xl;
+        line-height: $gutter--xl * 1.3;
         border-bottom: 0;
     }
 }
@@ -50,7 +59,7 @@
 [data-reach-menu-item] {
     font-family: $button-font;
     font-size: $font-size--s;
-    padding: $gutter--xs $gutter--s $gutter--xs;
+    padding: $gutter--s;
     transition: $transition-background;
 
     &[data-selected] {
