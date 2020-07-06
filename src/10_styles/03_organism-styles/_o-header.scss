@@ -1,5 +1,6 @@
 /*
  * Header Styles
+ *
  */
 
 .o-header {
@@ -9,6 +10,7 @@
 
     &__inner {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         margin: 0 auto;
         max-width: $site-max-width;
@@ -21,6 +23,7 @@
     }
 
     &__navigation {
+        display: flex;
         margin: auto 0;
     }
 }

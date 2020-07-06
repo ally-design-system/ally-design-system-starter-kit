@@ -8,8 +8,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import InLink from "../01_atoms/InLink"
+import MenuMobile from "../02_molecules/MenuMobile"
 import MenuDesktop from "../02_molecules/MenuDesktop"
-import MenuBurger from "../02_molecules/MenuMobile"
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -29,10 +29,10 @@ const Header = () => {
                     <div className="o-header__site-title">
                         <InLink to="/" text={data.site.siteMetadata.title} />
                     </div>
-                    <div className="o-header__navigation">
+                    <nav className="o-header__navigation">
                         <MenuDesktop />
-                        <MenuBurger />
-                    </div>
+                        <MenuMobile />
+                    </nav>
                 </div>
             </header>
         </>

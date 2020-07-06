@@ -10,25 +10,23 @@ import NavLink from "../01_atoms/NavLink"
 const MenuDesktop = () => {
     return (
         <>
-            <nav className="m-menu-desktop">
-                <ul className="m-menu-desktop__list">
-                    <li className="m-menu-desktop__list-item">
-                        <NavLink to="/" text="Home" />
-                    </li>
-                    <li className="m-menu-desktop__list-item">
-                        <NavLink to="/gatsby/" text="Gatsby" />
-                    </li>
-                    <li className="m-menu-desktop__list-item">
-                        <NavLink to="/sass-bem/" text="SASS + BEM" />
-                    </li>
-                    <li className="m-menu-desktop__list-item">
-                        <NavLink to="/markdown/" text="Markdown" />
-                    </li>
-                    <li className="m-menu-desktop__list-item">
-                        <NavLink to="/style-guide/" text="Style Guide" />
-                    </li>
-                </ul>
-            </nav>
+            <ul className="m-menu-desktop">
+                <li className="m-menu-desktop__item">
+                    <NavLink to="/" text="Home" />
+                </li>
+                <li className="m-menu-desktop__item">
+                    <NavLink to="/gatsby/" text="Gatsby" />
+                </li>
+                <li className="m-menu-desktop__item">
+                    <NavLink to="/sass-bem/" text="SASS + BEM" />
+                </li>
+                <li className="m-menu-desktop__item">
+                    <NavLink to="/markdown/" text="Markdown" />
+                </li>
+                <li className="m-menu-desktop__item">
+                    <NavLink to="/style-guide/" text="Style Guide" />
+                </li>
+            </ul>
         </>
     )
 }
