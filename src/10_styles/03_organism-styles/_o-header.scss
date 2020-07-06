@@ -1,5 +1,6 @@
 /*
  * Header Styles
+ *
  */
 
 .o-header {
@@ -22,6 +23,7 @@
     }
 
     &__navigation {
+        display: flex;
         margin: auto 0;
     }
 }

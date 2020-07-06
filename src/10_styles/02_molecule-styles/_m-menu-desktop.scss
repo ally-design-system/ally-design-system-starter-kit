@@ -1,18 +1,17 @@
+/*
+ * Desktop Menu Styles
+ *
+ */
+
 .m-menu-desktop {
-    display: flex;
-    margin: 0;
+    display: none;
+    list-style: none;
 
-    &__list {
-        display: none;
-        list-style: none;
-        padding: 0;
-
-        @media (min-width: $breakpoint-tablet) {
-            display: flex;
-        }
+    @media (min-width: $breakpoint-tablet) {
+        display: flex;
     }
 
-    &__list-item {
+    &__item {
         margin: 0 0 0 $gutter--m;
 
         &:first-of-type {
