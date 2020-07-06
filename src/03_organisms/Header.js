@@ -3,6 +3,7 @@
  *
  * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
  * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
+ *
  */
 
 import React from "react"

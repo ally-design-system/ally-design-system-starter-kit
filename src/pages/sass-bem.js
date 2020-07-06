@@ -1,12 +1,11 @@
 /*
  * SASS + BEM Page
+ *
  */
 
 import React from "react"
 import SEO from "../09_utilities/SEO"
 import Layout from "../04_templates/LayoutTemplate"
-import SassIconImage from "../01_atoms/images/Sass-icon"
-import BEMIconImage from "../01_atoms/images/BEM-icon"
 
 const SassBemPage = () => (
     <>
@@ -99,12 +98,8 @@ const SassBemPage = () => (
                 </div>
                 <div className="default-page-layout__column">
                     <div className="default-page-layout__icons default-page-layout__icons--two-icons">
-                        <div className="default-page-layout__icon">
-                            <SassIconImage />
-                        </div>
-                        <div className="default-page-layout__icon">
-                            <BEMIconImage />
-                        </div>
+                        <div className="default-page-layout__icon"></div>
+                        <div className="default-page-layout__icon"></div>
                     </div>
                 </div>
             </section>
