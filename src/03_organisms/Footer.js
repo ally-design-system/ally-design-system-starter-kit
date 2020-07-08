@@ -35,9 +35,9 @@ const Footer = () => {
                 </p>
                 <p className="o-footer__text">
                     &copy; {new Date().getFullYear()}{" "}
-                    {data.site.siteMetadata.title} &nbsp; | &nbsp; Built by{" "}
+                    {data.site.siteMetadata.title}. Built by{" "}
                     <ExLink
-                        class="o-footer__text --link"
+                        class="--smaller"
                         href="https://nikkipantony.com"
                         text="Nikki Pantony"
                     />

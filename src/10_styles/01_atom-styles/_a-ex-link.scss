@@ -7,4 +7,18 @@
         fill: $link-color;
         margin-left: $gutter--xxxs;
     }
+
+    &.--smaller {
+        font-size: $font-size--xs;
+
+        svg {
+            width: 12px;
+            height: 12px;
+            margin-left: $gutter--xxxxs;
+        }
+
+        &:hover {
+            border-width: 2px;
+        }
+    }
 }

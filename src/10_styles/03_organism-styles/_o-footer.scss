@@ -15,21 +15,9 @@
 
     &__text {
         font-size: $font-size--xs;
-        margin: $gutter--xs 0;
 
         .--link {
-            font-size: $font-size--xs;
-            margin-right: $gutter--s;
-
-            svg {
-                width: 12px;
-                height: 12px;
-                margin-left: $gutter--xxxxs;
-            }
-
-            &:hover {
-                border-width: 2px;
-            }
+            margin: $gutter--xs $gutter--s $gutter--xs 0;
         }
     }
 }
