@@ -25,7 +25,7 @@ const ComponentsPage = () => (
                     <h1>Ally Style Guide</h1>
                     <h2>Atom Components</h2>
                     <h3>Image</h3>
-                    <Image alt="Gatsby in Space" filename="BEM.png" />
+                    <Image alt="Gatsby Logo" filename="Gatsby.png" />
                     <h3>Icon</h3>
                     <div style={Container}>
                         <Icon id="mail" title="Email address" />
