@@ -34,7 +34,7 @@ export default create({
     inputBorderRadius: 0,
 
     // Branding
-    brandTitle: "Ally Starter Kit",
+    brandTitle: "Ally Design System Starter Kit",
     brandUrl: "https://ally-starter-kit.github.io",
 
     // Replace brand title with image

@@ -15,3 +15,7 @@ global.__PATH_PREFIX__ = ""
 window.___navigate = pathname => {
     action("NavigateTo:")(pathname)
 }
+
+// @todo: Code below does not work, need to look into replacing using: https://github.com/le0pard/storybook-addon-root-attribute
+// const HTML = document.getElementsByTagName("html")
+// HTML.className.add("js-focus-visible")
