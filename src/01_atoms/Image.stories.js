@@ -6,6 +6,7 @@ export default {
     component: Image,
 }
 
+// Shows SVG but does not load image - @todo Need to add static file / mock data
 export const FileFound = () => <Image alt="Gatsby Logo" filename="Gatsby.png" />
 
 export const FileNotFound = () => (
