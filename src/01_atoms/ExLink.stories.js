@@ -18,6 +18,13 @@ export const WorkingSmaller = () => (
     />
 )
 
+export const LongText = () => (
+    <ExLink
+        href="https://ally-starter-kit.github.io"
+        text="Ally Starter Kit Ally Starter Kit Ally Starter Kit"
+    />
+)
+
 export const TextMissing = () => (
     <ExLink href="https://ally-starter-kit.github.io" text="" />
 )

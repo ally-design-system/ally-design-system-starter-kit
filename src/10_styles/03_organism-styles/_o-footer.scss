@@ -6,10 +6,14 @@
     z-index: map-get($zindex, footer);
     background-color: $site-background-color;
     border-top: $border;
+    width: 100%;
 
     &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: $site-max-width;
-        padding: $gutter--m;
+        padding: $gutter--l $gutter--m;
         margin: 0 auto;
     }
 
@@ -17,7 +21,14 @@
         font-size: $font-size--xs;
 
         .--link {
-            margin: $gutter--xs $gutter--s $gutter--xs 0;
+            margin: 0 $gutter--s $gutter--s 0;
+            padding: 0;
         }
+    }
+
+    .--links {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 2.5rem;
     }
 }

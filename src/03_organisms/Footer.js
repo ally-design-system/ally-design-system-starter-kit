@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <footer className="o-footer">
             <div className="o-footer__inner">
-                <p className="o-footer__text">
+                <p className="o-footer__text --links">
                     <InLink class="o-footer__text --link" to="/" text="Home" />
                     <InLink class="o-footer__text --link" to="/" text="Home" />
                     <InLink class="o-footer__text --link" to="/" text="Home" />
