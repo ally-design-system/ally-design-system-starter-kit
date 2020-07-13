@@ -1,3 +1,4 @@
+import "focus-visible"
 import "!style-loader!css-loader!sass-loader!../src/10_styles/styles.scss"
 import { action } from "@storybook/addon-actions"
 // Gatsby's Link overrides:

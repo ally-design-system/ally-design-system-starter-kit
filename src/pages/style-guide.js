@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import Layout from "../04_templates/LayoutTemplate"
+import Layout from "../04_templates/MainLayout"
 import Image from "../01_atoms/Image"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"

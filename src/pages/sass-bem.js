@@ -5,7 +5,7 @@
 
 import React from "react"
 import SEO from "../09_utilities/SEO"
-import Layout from "../04_templates/LayoutTemplate"
+import Layout from "../04_templates/MainLayout"
 
 const SassBemPage = () => (
     <>
