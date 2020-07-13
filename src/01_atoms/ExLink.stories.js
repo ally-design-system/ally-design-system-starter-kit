@@ -1,3 +1,8 @@
+/*
+ * External Link Component Stories
+ *
+ */
+
 import React from "react"
 import ExLink from "../01_atoms/ExLink"
 

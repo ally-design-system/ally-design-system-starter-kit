@@ -1,3 +1,8 @@
+/*
+ * Footer Component Stories
+ *
+ */
+
 import React from "react"
 import Footer from "../03_organisms/Footer"
 

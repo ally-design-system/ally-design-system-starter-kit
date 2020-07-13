@@ -1,3 +1,8 @@
+/*
+ * Skip Link Component Stories
+ *
+ */
+
 import React from "react"
 import SkipLink from "../01_atoms/SkipLink"
 

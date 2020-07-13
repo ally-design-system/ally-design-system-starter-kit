@@ -1,5 +1,5 @@
 /*
- * Post Template
+ * Post Template Component
  *
  */
 

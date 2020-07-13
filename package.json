@@ -1,7 +1,7 @@
 {
-  "name": "ally-starter-kit",
+  "name": "ally-design-system-starter-kit",
   "private": true,
-  "description": "Ally Starter Kit is a Front-End, Design-System-First, Gatsby Starter Kit with a project architecture inspired by Brad Frost's Atomic Design Methodology.",
+  "description": "The Ally Design System Starter Kit. Built with Gatsby (v2) and Storybook (v5) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.",
   "version": "0.1.0",
   "author": "Nikki Pantony <hello@nikkipantony.com>",
   "dependencies": {
@@ -37,7 +37,7 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "storybook", "design system", "atomic design", "sass", "ally"
   ],
   "license": "MIT",
   "scripts": {
@@ -54,5 +54,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nikkipantony/ally-starter-kit"
-  }
+  },
+  "homepage": "https://ally-starter-kit.github.io"
 }

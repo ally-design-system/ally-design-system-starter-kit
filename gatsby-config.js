@@ -1,7 +1,15 @@
+/*
+ * Gatsby Configuration
+ *
+ * Add Gatsby configuration options in this file.
+ *
+ * Gatsby Configuration: https://www.gatsbyjs.org/docs/gatsby-config
+ */
+
 module.exports = {
     siteMetadata: {
-        title: `Ally Starter Kit`,
-        description: `Ally Starter Kit is a Front-End, Design-System-First, Gatsby Starter Kit with a project architecture inspired by Brad Frost's Atomic Design Methodology.`,
+        title: `Ally Design System Starter Kit`,
+        description: `The Ally Design System Starter Kit. Built with Gatsby (v2) and Storybook (v5) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.`,
         author: `@nikkipantony`,
     },
     plugins: [

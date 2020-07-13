@@ -1,7 +1,9 @@
 /*
  * Gatsby Node API
  *
- * See: https://www.gatsbyjs.org/docs/node-apis/
+ * Implement `Async/await`, `Promise` and `Callback` APIs from this file.
+ *
+ * Gatsby Node API: https://www.gatsbyjs.org/docs/node-apis
  */
 
 const path = require(`path`)

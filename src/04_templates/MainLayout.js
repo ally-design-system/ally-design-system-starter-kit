@@ -1,11 +1,9 @@
 /*
- * Main Layout Template
+ * Main Layout Template Component
  *
  */
 
-import "focus-visible"
 import React from "react"
-import "../10_styles/styles.scss"
 import SkipLink from "../01_atoms/SkipLink"
 import { SkipNavContent } from "@reach/skip-nav"
 import Header from "../03_organisms/Header"

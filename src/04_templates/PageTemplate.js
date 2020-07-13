@@ -1,5 +1,5 @@
 /*
- * Page Template
+ * Page Template Component
  *
  */
 

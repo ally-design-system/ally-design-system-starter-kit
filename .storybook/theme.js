@@ -1,5 +1,15 @@
+/*
+ * Ally Custom Storybook Theme
+ *
+ * Edit the custom Storybook theme from this file.
+ *
+ * Storybook Theme Configuration: https://storybook.js.org/docs/configurations/theming
+ */
+
+// Import the `create()` function to generate a new theme
 import { create } from "@storybook/theming/create"
 
+// Set custom storybook theme variables
 export default create({
     // Base theme - Either "light" or "dark"
     base: "light", // Required for theme to work

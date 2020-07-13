@@ -1,6 +1,20 @@
+/*
+ * Storybook Preview Configuration
+ *
+ * Configure Storybook global decorators and parameters in this file.
+ *
+ * Storybook Manager & Preview Configuration: https://storybook.js.org/docs/configurations/overview/#manager--preview
+ */
+
+// Import `focus-visible` globally within storybook so it is applied in component stories
 import "focus-visible"
+
+// Import global styling with loaders to compile component Sass/Scss styling
 import "!style-loader!css-loader!sass-loader!../src/10_styles/styles.scss"
+
+// Import Storybook Actions addon
 import { action } from "@storybook/addon-actions"
+
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),
@@ -16,7 +30,3 @@ global.__PATH_PREFIX__ = ""
 window.___navigate = pathname => {
     action("NavigateTo:")(pathname)
 }
-
-// @todo: Code below does not work, need to look into replacing using: https://github.com/le0pard/storybook-addon-root-attribute
-// const HTML = document.getElementsByTagName("html")
-// HTML.className.add("js-focus-visible")

@@ -1,3 +1,8 @@
+/*
+ * Icon Component Stories
+ *
+ */
+
 import React from "react"
 import Icon from "../01_atoms/Icon"
 

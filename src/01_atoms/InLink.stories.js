@@ -1,3 +1,8 @@
+/*
+ * Internal Link Component Stories
+ *
+ */
+
 import React from "react"
 import InLink from "../01_atoms/InLink"
 

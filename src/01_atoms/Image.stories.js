@@ -1,3 +1,9 @@
+/*
+ * Image Component Stories
+ *
+ */
+
+// @todo: Add Static Image file: https://storybook.js.org/docs/configurations/serving-static-files for story demo
 import React from "react"
 import Image from "../01_atoms/Image"
 

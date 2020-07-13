@@ -1,3 +1,8 @@
+/*
+ * Desktop Menu Component Stories
+ *
+ */
+
 import React from "react"
 import MenuDesktop from "../02_molecules/MenuDesktop"
 
