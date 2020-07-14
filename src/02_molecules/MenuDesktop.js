@@ -1,8 +1,8 @@
 /*
  * Desktop Menu Component
  *
- * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
- *
+ * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link
+ * Gatsby Active Link: https://www.gatsbyjs.org/docs/gatsby-link/#add-custom-styles-for-the-currently-active-link
  */
 
 import React from "react"

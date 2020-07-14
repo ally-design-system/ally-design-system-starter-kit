@@ -1,8 +1,8 @@
 /**
  * SEO Component
  *
- * Gatsby SEO Component: https://www.gatsbyjs.org/docs/add-seo-component/
- * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
+ * Gatsby SEO Component: https://www.gatsbyjs.org/docs/add-seo-component
+ * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query
  */
 
 import React from "react"

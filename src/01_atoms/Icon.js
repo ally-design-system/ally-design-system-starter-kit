@@ -5,7 +5,6 @@
  * SVG `symbol` a Good Choice for Icons by Chris Coyier: https://css-tricks.com/svg-symbol-good-choice-icons
  * Creating an SVG Icon System with React by Sarah Drasner: https://css-tricks.com/creating-svg-icon-system-react
  * Accessible SVGs by Heather Migliorisi https://css-tricks.com/accessible-svgs/
- *
  */
 
 import React from "react"

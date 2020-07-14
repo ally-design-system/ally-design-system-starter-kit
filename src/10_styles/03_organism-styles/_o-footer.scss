@@ -1,35 +1,35 @@
 /*
  * Footer Styles
+ *
  */
 
 .o-footer {
     z-index: map-get($zindex, footer);
     background-color: $site-background-color;
     border-top: $border;
+    width: 100%;
 
     &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: $site-max-width;
-        padding: $gutter--m;
+        padding: $gutter--l $gutter--m $gutter--s;
         margin: 0 auto;
     }
 
     &__text {
         font-size: $font-size--xs;
-        margin: $gutter--xs 0;
 
         .--link {
-            font-size: $font-size--xs;
-            margin-right: $gutter--s;
-
-            svg {
-                width: 12px;
-                height: 12px;
-                margin-left: $gutter--xxxxs;
-            }
-
-            &:hover {
-                border-width: 2px;
-            }
+            margin: 0 $gutter--s $gutter--s 0;
+            padding: 0;
         }
+    }
+
+    .--links {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 2.5rem;
     }
 }

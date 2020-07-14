@@ -1,10 +1,9 @@
 /*
- * InLink Component
+ * Internal Link Component
  *
  * prop-types: https://www.npmjs.com/package/prop-types
  * Typechecking with proptypes https://reactjs.org/docs/typechecking-with-proptypes.html
  * How to use prop-types: https://www.npmjs.com/package/prop-types#usage
- *
  */
 
 import React from "react"

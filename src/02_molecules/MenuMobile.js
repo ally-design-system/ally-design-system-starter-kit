@@ -2,7 +2,6 @@
  * Mobile Menu Component
  *
  * Reach UI 'menu-button' component: https://reacttraining.com/reach-ui/menu-button
- *
  */
 
 import React from "react"

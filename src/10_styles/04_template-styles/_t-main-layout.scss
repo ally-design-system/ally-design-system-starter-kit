@@ -5,11 +5,11 @@
 
 $header-and-footer: 14.5rem; // Height of header + footer
 
-.t-layout-template {
+.t-main-layout {
     margin: 0 auto;
     max-width: $site-max-width;
     padding: $gutter--xl $gutter--m;
     min-height: calc(
         100vh - #{$header-and-footer}
-    ); // Set minimum page height to viewport height - header + footer height to keep footer at bottom in pages with less content
+    ); // Set minimum page height to viewport height - (header + footer) height to keep footer at bottom of page
 }

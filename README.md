@@ -1,12 +1,12 @@
 <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="80" />
 
-# Ally Starter Kit
+# Ally Design System Starter Kit
 
-**[WIP] This project is still currently a work in progress and the first version has not yet been released.**
+**[WIP] Please note this project is still currently a work in progress and the first version has not yet been released.**
 
 ## 👋 Introduction
 
-Ally Starter Kit is a Front-End, Design-System-First, Gatsby Starter Kit with a project architecture inspired by Brad Frost's Atomic Design Methodology.
+The Ally Design System Starter Kit is built with Gatsby (v2) and Storybook (v5) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.
 
 This starter kit aims to create an enjoyable and productive developer experience for Jamstack Design System based projects while still prioritising Web Accessibility (A11y), Best Practices and Performance.
 
@@ -20,36 +20,44 @@ This starter kit aims to create an enjoyable and productive developer experience
     npm install -g gatsby-cli
     ```
 
-2.  **Create a Gatsby site using this starter.**
+2.  **Create a Gatsby project using this starter.**
 
-    Use the Gatsby CLI to create a new site, specifying this starter.
+    Use the Gatsby CLI to create a new project, specifying this starter.
 
     ```shell
-    gatsby new new-gatsby-site https://github.com/nikkipantony/ally-starter-kit
+    gatsby new new-project https://github.com/nikkipantony/ally-starter-kit
     ```
 
-3.  **Install Ally Starter Kit's packages using npm.**
+3.  **Install Ally Design System Starter Kit's packages.**
+
+    Navigate into your new project’s directory and install packages using npm.
 
     ```shell
+    cd new-project/
     npm install
     ```
 
 4.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    When installed your ready to start it up. To start the gatsby development server run `gatsby develop` and to run storybook `npm run storybook` in seperate terminal windows.
 
     ```shell
-    cd new-gatsby-site/
     gatsby develop
+    ```
+
+    ```shell
+    npm run storybook
     ```
 
 5.  **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000` or in Chrome at `http://127.0.0.1:8000`
+    After running `gatsby develop` your project will be served at `http://localhost:8000` or in Chrome at `http://127.0.0.1:8000`
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    You'll also see a second link when running gatsby develop: `http://localhost:8000/___graphql`\_.
 
-    Open your `new-gatsby-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
+
+    After running `npm run storybook` your projects storybook UI library can be found at: `http://localhost:6006`
 
 ## 🗺️ Road Map
 

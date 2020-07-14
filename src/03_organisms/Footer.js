@@ -1,10 +1,9 @@
 /*
  * Footer Component
  *
- * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query/
+ * Gatsby useStaticQuery Hook: https://www.gatsbyjs.org/docs/use-static-query
  * Current year using JavaScript / React: https://stackoverflow.com/questions/41293014/new-date-getfullyear-in-react
- * Use target="_blank" with rel="noopener noreferrer" for security: https://mathiasbynens.github.io/rel-noopener/
- *
+ * Use target="_blank" with rel="noopener noreferrer" for security: https://mathiasbynens.github.io/rel-noopener
  */
 
 import React from "react"
@@ -26,7 +25,7 @@ const Footer = () => {
     return (
         <footer className="o-footer">
             <div className="o-footer__inner">
-                <p className="o-footer__text">
+                <p className="o-footer__text --links">
                     <InLink class="o-footer__text --link" to="/" text="Home" />
                     <InLink class="o-footer__text --link" to="/" text="Home" />
                     <InLink class="o-footer__text --link" to="/" text="Home" />
@@ -35,9 +34,9 @@ const Footer = () => {
                 </p>
                 <p className="o-footer__text">
                     &copy; {new Date().getFullYear()}{" "}
-                    {data.site.siteMetadata.title} &nbsp; | &nbsp; Built by{" "}
+                    {data.site.siteMetadata.title}. Built by{" "}
                     <ExLink
-                        class="o-footer__text --link"
+                        class="--smaller"
                         href="https://nikkipantony.com"
                         text="Nikki Pantony"
                     />

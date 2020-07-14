@@ -1,7 +1,7 @@
 {
-  "name": "ally-starter-kit",
+  "name": "ally-design-system-starter-kit",
   "private": true,
-  "description": "Ally Starter Kit is a Front-End, Design-System-First, Gatsby Starter Kit with a project architecture inspired by Brad Frost's Atomic Design Methodology.",
+  "description": "The Ally Design System Starter Kit. Built with Gatsby (v2) and Storybook (v5) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.",
   "version": "0.1.0",
   "author": "Nikki Pantony <hello@nikkipantony.com>",
   "dependencies": {
@@ -26,10 +26,18 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@storybook/theming": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "storybook", "design system", "atomic design", "sass", "ally"
   ],
   "license": "MIT",
   "scripts": {
@@ -39,10 +47,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nikkipantony/ally-starter-kit"
-  }
+  },
+  "homepage": "https://ally-starter-kit.github.io"
 }

@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import Layout from "../04_templates/LayoutTemplate"
+import Layout from "../04_templates/MainLayout"
 import Image from "../01_atoms/Image"
 import Icon from "../01_atoms/Icon"
 import InLink from "../01_atoms/InLink"
@@ -25,7 +25,7 @@ const ComponentsPage = () => (
                     <h1>Ally Style Guide</h1>
                     <h2>Atom Components</h2>
                     <h3>Image</h3>
-                    <Image alt="Gatsby in Space" filename="BEM.png" />
+                    <Image alt="Gatsby Logo" filename="Gatsby.png" />
                     <h3>Icon</h3>
                     <div style={Container}>
                         <Icon id="mail" title="Email address" />

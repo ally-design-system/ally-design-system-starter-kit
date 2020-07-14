@@ -9,9 +9,10 @@
  * SVG's have been optimizated using the SVGO web app SVGOMG: https://jakearchibald.github.io/svgomg
 -->
 <!--
-// @todo
+// @todo:
 // Add default styling using scss!!
 // Add most used material design icons to sprite
+// Add Titles?
 -->
 
 <svg xmlns="http://www.w3.org/2000/svg">

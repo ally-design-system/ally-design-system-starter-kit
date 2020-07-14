@@ -1,11 +1,11 @@
 /*
- * Page Template
+ * Page Template Component
  *
  */
 
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "./LayoutTemplate"
+import Layout from "./MainLayout"
 import SEO from "../09_utilities/SEO"
 
 export default function Template({

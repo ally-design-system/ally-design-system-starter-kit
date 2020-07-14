@@ -4,7 +4,8 @@
  * WICG Polyfill for `:focus-visible`: https://github.com/wicg/focus-visible
  * Demo: https://wicg.github.io/focus-visible/demo/
  *
- * JavaScript import "focus-visible" in `src/04_templates/LayoutTemplate`
+ * JavaScript imported in `./gatsby-browser.js` for Gatsby Build
+ * JavaScript imported in `.storybook/preview.js` for Storybook Build
  */
 
 /*
