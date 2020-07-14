@@ -1,9 +1,10 @@
 /*
  * Image Component Stories
  *
+ * Serving static files via a directory: https://storybook.js.org/docs/configurations/serving-static-files/#2-via-a-directory
+ * Help solving Gatsby/Storybook StaticQuery Issue: https://github.com/gatsbyjs/gatsby/issues/12007#issuecomment-467730610
  */
 
-// @todo: Add Static Image file: https://storybook.js.org/docs/configurations/serving-static-files for story demo
 import React from "react"
 import Image from "../01_atoms/Image"
 
@@ -12,9 +13,10 @@ export default {
     component: Image,
 }
 
-// Shows SVG but does not load image - @todo Need to add static file / mock data
-export const FileFound = () => <Image alt="Gatsby Logo" filename="Gatsby.png" />
+export const ImageFound = () => (
+    <Image alt="Gatsby Logo" filename="Gatsby.png" />
+)
 
-export const FileNotFound = () => (
+export const ImageNotFound = () => (
     <Image alt="Gatsby Logo" filename="Gatsby2.png" />
 )
