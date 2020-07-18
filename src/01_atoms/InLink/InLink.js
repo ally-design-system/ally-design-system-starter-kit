@@ -13,7 +13,7 @@ import PropTypes from "prop-types"
 const InLink = props => {
     return (
         <>
-            <GatsbyLink className={`a-in-link ${props.class}`} to={props.to}>
+            <GatsbyLink className={`in-link ${props.class}`} to={props.to}>
                 {props.text}
             </GatsbyLink>
         </>

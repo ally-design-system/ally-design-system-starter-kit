@@ -19,11 +19,11 @@
 @import "00_base-styles/z-index"; // Manage UI Components z-indexing
 
 // Atom Styles
-@import "01_atom-styles/a-skip-link";
-@import "01_atom-styles/a-icon";
-@import "01_atom-styles/a-button";
-@import "01_atom-styles/a-in-link";
-@import "01_atom-styles/a-ex-link";
+@import "../01_atoms/Button/Button";
+@import "../01_atoms/ExLink/ExLink";
+@import "../01_atoms/Icon/Icon";
+@import "../01_atoms/InLink/InLink";
+@import "../01_atoms/SkipLink/SkipLink";
 
 // Molecule Styles
 @import "02_molecule-styles/m-menu-mobile";

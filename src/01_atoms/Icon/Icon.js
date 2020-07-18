@@ -19,7 +19,7 @@ const Icons = props => {
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 24 24"
                 focusable="false"
-                className={`a-icon --${props.id}`}
+                className={`icon --${props.id}`}
             >
                 <title>{props.title}</title>
                 <use xlinkHref={`${IconsSprite}#${props.id}`} />
