@@ -5,7 +5,7 @@
 
 import React from "react"
 import SEO from "../09_utilities/SEO"
-import Layout from "../04_templates/MainLayout"
+import Layout from "../04_templates/MainLayout/MainLayout"
 
 const GatsbyPage = () => (
     <>
