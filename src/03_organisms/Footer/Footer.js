@@ -8,8 +8,8 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import InLink from "../01_atoms/InLink/InLink"
-import ExLink from "../01_atoms/ExLink/ExLink"
+import InLink from "../../01_atoms/InLink/InLink"
+import ExLink from "../../01_atoms/ExLink/ExLink"
 
 const Footer = () => {
     const data = useStaticQuery(graphql`

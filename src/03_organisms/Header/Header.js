@@ -7,9 +7,9 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import InLink from "../01_atoms/InLink/InLink"
-import MenuMobile from "../02_molecules/MenuMobile/MenuMobile"
-import MenuDesktop from "../02_molecules/MenuDesktop/MenuDesktop"
+import InLink from "../../01_atoms/InLink/InLink"
+import MenuMobile from "../../02_molecules/MenuMobile/MenuMobile"
+import MenuDesktop from "../../02_molecules/MenuDesktop/MenuDesktop"
 
 const Header = () => {
     const data = useStaticQuery(graphql`

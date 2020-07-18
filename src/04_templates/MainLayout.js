@@ -6,8 +6,8 @@
 import React from "react"
 import SkipLink from "../01_atoms/SkipLink/SkipLink"
 import { SkipNavContent } from "@reach/skip-nav"
-import Header from "../03_organisms/Header"
-import Footer from "../03_organisms/Footer"
+import Header from "../03_organisms/Header/Header"
+import Footer from "../03_organisms/Footer/Footer"
 
 const MainLayout = ({ children }) => (
     <>
