@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import Icon from "../01_atoms/Icon"
+import Icon from "./Icon"
 
 export default {
     title: "/01 Atoms/Icon",

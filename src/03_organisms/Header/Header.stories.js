@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import Header from "../03_organisms/Header"
+import Header from "./Header"
 
 export default {
     title: "/03 Organisms/Header",

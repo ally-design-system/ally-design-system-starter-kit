@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import NavLink from "../01_atoms/NavLink"
+import NavLink from "./NavLink"
 
 export default {
     title: "/01 Atoms/Navigation Link",

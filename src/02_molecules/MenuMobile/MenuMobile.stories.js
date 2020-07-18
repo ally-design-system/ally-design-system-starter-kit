@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import MenuMobile from "../02_molecules/MenuMobile"
+import MenuMobile from "./MenuMobile"
 
 export default {
     title: "/02 Molecules/Menu Mobile",

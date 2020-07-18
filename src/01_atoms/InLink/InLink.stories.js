@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import InLink from "../01_atoms/InLink"
+import InLink from "./InLink"
 
 export default {
     title: "/01 Atoms/Internal Link",

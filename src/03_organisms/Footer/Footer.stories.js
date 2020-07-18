@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import Footer from "../03_organisms/Footer"
+import Footer from "./Footer"
 
 export default {
     title: "/03 Organisms/Footer",

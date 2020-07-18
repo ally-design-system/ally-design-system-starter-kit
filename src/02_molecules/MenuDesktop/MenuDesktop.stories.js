@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import MenuDesktop from "../02_molecules/MenuDesktop"
+import MenuDesktop from "./MenuDesktop"
 
 export default {
     title: "/02 Molecules/Menu Desktop",

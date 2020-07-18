@@ -4,7 +4,7 @@
  */
 
 import React from "react"
-import Button from "../01_atoms/Button"
+import Button from "./Button"
 
 export default {
     title: "/01 Atoms/Button",

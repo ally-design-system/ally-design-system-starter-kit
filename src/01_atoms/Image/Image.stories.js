@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import Image from "../01_atoms/Image"
+import Image from "./Image"
 
 export default {
     title: "/01 Atoms/Image",
@@ -14,9 +14,9 @@ export default {
 }
 
 export const ImageFound = () => (
-    <Image alt="Gatsby Logo" filename="Gatsby.png" />
+    <Image alt="Gatsby Logo" filename="gatsby.png" />
 )
 
 export const ImageNotFound = () => (
-    <Image alt="Gatsby Logo" filename="Gatsby2.png" />
+    <Image alt="Gatsby Logo" filename="Gatsby.png" />
 )
