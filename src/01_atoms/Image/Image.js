@@ -5,6 +5,8 @@
  * Help for creating a reusable component: https://stackoverflow.com/questions/55122752/reusable-gatsby-image-component-with-dynamic-image-sources
  */
 
+// @todo: Need to fix warning "You can't use childImageSharp together with x.md
+// — use publicURL instead. The childImageSharp portion of the query in this file will return null: undefined"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"

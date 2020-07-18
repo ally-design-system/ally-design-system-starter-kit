@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import NavLink from "../01_atoms/NavLink"
+import NavLink from "../01_atoms/NavLink/NavLink"
 
 const MenuDesktop = () => {
     return (

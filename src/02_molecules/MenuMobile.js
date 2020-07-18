@@ -7,7 +7,7 @@
 import React from "react"
 import { Menu, MenuList, MenuButton, MenuLink } from "@reach/menu-button"
 import { Link } from "gatsby"
-import Icon from "../01_atoms/Icon"
+import Icon from "../01_atoms/Icon/Icon"
 
 // Customized `MenuLink` to work as `NavLink` component used in Desktop Menu with styled active page link in navigation
 const isActive = ({ isCurrent }) => {
