@@ -11,6 +11,7 @@
 	"material-icon-theme.showUpdateMessage": true,
 	"material-icon-theme.folders.color": "#ec407a",
 	"material-icon-theme.folders.associations": {
+
 		".cache": "Database",
 		"design_assets": "Theme",
 		"design_files": "Custom",
@@ -38,7 +39,7 @@
 		"05_pages": "Log",
 		"06_posts": "Docs",
         "07_images": "Images",
-        "icon_logos": "Images",
+        "logos": "Images",
 		"08_icons": "Svg",
 		"09_utilities": "Utils",
 		"10_styles": "Sass",
@@ -49,6 +50,7 @@
 		"04_template-styles": "Layout"
 	},
 	"material-icon-theme.files.associations": {
+
 		"*.js": "react"
 	},
 
@@ -79,5 +81,8 @@
 
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
+    },
+    "material-icon-theme.languages.associations": {
+    
     }
 }
