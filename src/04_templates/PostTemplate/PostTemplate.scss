@@ -1,0 +1,20 @@
+/*
+ * Post Template Styles
+ *
+ */
+
+.post-template {
+    margin-top: $gutter--xl;
+
+    &__frontmatter {
+        margin: $gutter--xl 0;
+    }
+
+    &__date {
+        font-weight: $font-weight--bold;
+    }
+
+    &__content {
+        margin: $gutter--m 0;
+    }
+}
