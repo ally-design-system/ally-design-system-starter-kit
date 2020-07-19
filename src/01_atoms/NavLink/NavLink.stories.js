@@ -7,12 +7,12 @@ import React from "react"
 import NavLink from "./NavLink"
 
 export default {
-    title: "/01 Atoms/Navigation Link",
+    title: "/Atoms/Navigation Link",
     component: NavLink,
 }
 
-export const WithText = () => <NavLink to="/" text="Home" />
+export const Default = () => <NavLink to="/" text="Home" />
 
-export const TextMissing = () => <NavLink to="/" text="" />
+export const MissingText = () => <NavLink to="/" />
 
-export const PropsMissing = () => <NavLink />
+export const AllPropsMissing = () => <NavLink />

@@ -1,0 +1,12 @@
+/*
+ * Image Styles
+ *
+ */
+
+.image {
+    width: 100%;
+
+    &.--maxWidth500 {
+        max-width: 500px;
+    }
+}

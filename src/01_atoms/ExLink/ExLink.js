@@ -9,20 +9,20 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../Icon/Icon"
+import Icon from "../../00_design_tokens/Icon/Icon"
 
 const ExLink = props => {
     return (
         <>
             <a
-                className={`ex-link ${props.class}`}
-                href={props.href}
+                className={`ex-link ${props.modifier}`}
+                href={props.to}
                 rel="noopener noreferrer"
                 target="_blank"
             >
                 {props.text}{" "}
                 <Icon
-                    id="open-in-new"
+                    name="open-in-new"
                     title="Link will open in new
                     tab"
                 />
@@ -32,15 +32,15 @@ const ExLink = props => {
 }
 
 ExLink.defaultProps = {
-    href: "/",
+    to: "/",
     text: "Link Text Missing",
-    class: "",
+    modifier: "",
 }
 
 ExLink.propTypes = {
-    href: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    class: PropTypes.string,
+    modifier: PropTypes.string,
 }
 
 export default ExLink

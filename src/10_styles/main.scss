@@ -18,11 +18,14 @@
 @import "00_base-styles/focus-visible"; // Manage focus using focus-visible WICG Polyfill
 @import "00_base-styles/z-index"; // Manage UI Components z-indexing
 
+@import "../00_design_tokens/Icon/Icon";
+
 // Atom Styles
 @import "../01_atoms/Button/Button";
 @import "../01_atoms/ExLink/ExLink";
-@import "../01_atoms/Icon/Icon";
+@import "../01_atoms/Image/Image";
 @import "../01_atoms/InLink/InLink";
+@import "../01_atoms/NavLink/NavLink";
 @import "../01_atoms/SkipLink/SkipLink";
 
 // Molecule Styles

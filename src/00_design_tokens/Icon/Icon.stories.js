@@ -7,14 +7,10 @@ import React from "react"
 import Icon from "./Icon"
 
 export default {
-    title: "/01 Atoms/Icon",
+    title: "/Design Tokens/Icons",
     component: Icon,
 }
 
 export const OpenInNew = () => (
-    <Icon
-        id="open-in-new"
-        title="Link will open in new
-                    tab"
-    />
+    <Icon name="open-in-new" title="Link will open in new tab" />
 )

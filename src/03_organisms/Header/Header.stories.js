@@ -7,7 +7,7 @@ import React from "react"
 import Header from "./Header"
 
 export default {
-    title: "/03 Organisms/Header",
+    title: "/Organisms/Header",
     component: Header,
 }
 

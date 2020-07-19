@@ -18,7 +18,12 @@ const NavigationLink = props => <Link getProps={isActive} {...props} />
 const NavLink = props => {
     return (
         <>
-            <NavigationLink to={props.to}>{props.text}</NavigationLink>
+            <NavigationLink
+                className={`nav-link ${props.modifier}`}
+                to={props.to}
+            >
+                {props.text}
+            </NavigationLink>
         </>
     )
 }
@@ -26,11 +31,13 @@ const NavLink = props => {
 NavLink.defaultProps = {
     to: "/",
     text: "Missing Text",
+    modifier: "",
 }
 
 NavLink.propTypes = {
     to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    modifier: PropTypes.string,
 }
 
 export default NavLink

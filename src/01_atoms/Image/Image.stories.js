@@ -9,7 +9,7 @@ import React from "react"
 import Image from "./Image"
 
 export default {
-    title: "/01 Atoms/Image",
+    title: "/Atoms/Image",
     component: Image,
 }
 
@@ -19,4 +19,8 @@ export const ImageFound = () => (
 
 export const ImageNotFound = () => (
     <Image alt="Gatsby Logo" filename="Gatsby.png" />
+)
+
+export const maxWidth500 = () => (
+    <Image alt="Gatsby Logo" filename="gatsby.png" modifier="--maxWidth500" />
 )

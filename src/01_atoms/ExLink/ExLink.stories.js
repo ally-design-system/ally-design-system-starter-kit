@@ -7,31 +7,31 @@ import React from "react"
 import ExLink from "./ExLink"
 
 export default {
-    title: "/01 Atoms/External Link",
+    title: "/Atoms/External Link",
     component: ExLink,
 }
 
-export const Working = () => (
-    <ExLink href="https://ally-starter-kit.github.io" text="Ally Starter Kit" />
+export const Default = () => (
+    <ExLink to="https://ally-starter-kit.github.io" text="Ally Starter Kit" />
 )
 
-export const WorkingSmaller = () => (
+export const smaller = () => (
     <ExLink
-        class="--smaller"
-        href="https://ally-starter-kit.github.io"
+        to="https://ally-starter-kit.github.io"
         text="Ally Starter Kit"
+        modifier="--smaller"
     />
 )
 
 export const LongText = () => (
     <ExLink
-        href="https://ally-starter-kit.github.io"
+        to="https://ally-starter-kit.github.io"
         text="Ally Starter Kit Ally Starter Kit Ally Starter Kit"
     />
 )
 
-export const TextMissing = () => (
-    <ExLink href="https://ally-starter-kit.github.io" text="" />
+export const MissingText = () => (
+    <ExLink to="https://ally-starter-kit.github.io" text="" />
 )
 
-export const URLMissing = () => <ExLink href="" text="Ally Starter Kit" />
+export const MissingURL = () => <ExLink to="" text="Ally Starter Kit" />

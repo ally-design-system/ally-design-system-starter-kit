@@ -6,14 +6,27 @@
  */
 
 import React from "react"
+import PropTypes from "prop-types"
 import { SkipNavLink } from "@reach/skip-nav"
 
-const SkipLinkHeader = () => {
+const SkipLink = props => {
     return (
         <>
-            <SkipNavLink>Skip navigation, go to main content</SkipNavLink>
+            <SkipNavLink className={`skip-link ${props.modifier}`}>
+                {props.text}
+            </SkipNavLink>
         </>
     )
 }
 
-export default SkipLinkHeader
+SkipLink.defaultProps = {
+    text: "Skip navigation, go to main content",
+    modifier: "",
+}
+
+SkipLink.propTypes = {
+    text: PropTypes.string.isRequired,
+    modifier: PropTypes.string,
+}
+
+export default SkipLink

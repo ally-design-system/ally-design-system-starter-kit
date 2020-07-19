@@ -11,7 +11,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import IconsSprite from "../../08_icons/icon-sprite.svg"
 
-const Icons = props => {
+const Icon = props => {
     return (
         <>
             <svg
@@ -19,23 +19,25 @@ const Icons = props => {
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 24 24"
                 focusable="false"
-                className={`icon --${props.id}`}
+                className={`icon ${props.modifier}`}
             >
                 <title>{props.title}</title>
-                <use xlinkHref={`${IconsSprite}#${props.id}`} />
+                <use xlinkHref={`${IconsSprite}#${props.name}`} />
             </svg>
         </>
     )
 }
 
-Icons.defaultProps = {
-    id: "open-in-new",
+Icon.defaultProps = {
+    name: "open-in-new",
     title: "Link will open in new tab",
+    modifier: "",
 }
 
-Icons.propTypes = {
-    id: PropTypes.string.isRequired,
+Icon.propTypes = {
+    name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    modifier: PropTypes.string,
 }
 
-export default Icons
+export default Icon
