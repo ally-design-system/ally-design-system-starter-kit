@@ -5,6 +5,7 @@
  */
 
 import React from "react"
+import PropTypes from "prop-types"
 import { Menu, MenuList, MenuButton, MenuLink } from "@reach/menu-button"
 import { Link } from "gatsby"
 import Icon from "../../00_design_tokens/Icon/Icon"
@@ -16,9 +17,9 @@ const isActive = ({ isCurrent }) => {
 
 const NavLink = props => <MenuLink getProps={isActive} {...props} />
 
-const MenuMobile = () => {
+const MenuMobile = props => {
     return (
-        <Menu>
+        <Menu className={`menu-mobile ${props.modifier}`}>
             {({ isExpanded }) => (
                 <>
                     <MenuButton>
@@ -53,6 +54,14 @@ const MenuMobile = () => {
             )}
         </Menu>
     )
+}
+
+MenuMobile.defaultProps = {
+    modifier: "",
+}
+
+MenuMobile.propTypes = {
+    modifier: PropTypes.string,
 }
 
 export default MenuMobile

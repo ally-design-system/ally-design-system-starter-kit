@@ -29,8 +29,8 @@
 @import "../01_atoms/SkipLink/SkipLink";
 
 // Molecule Styles
-@import "02_molecule-styles/m-menu-mobile";
-@import "02_molecule-styles/m-menu-desktop";
+@import "../02_molecules/MenuDesktop/MenuDesktop";
+@import "../02_molecules/MenuMobile/MenuMobile";
 
 // Organism Styles
 @import "../03_organisms/Footer/Footer";
