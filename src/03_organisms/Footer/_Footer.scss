@@ -16,7 +16,7 @@
         max-width: $site-max-width;
         padding: $gutter--s $gutter--m;
         margin: 0 auto;
-        min-height: 6rem;
+        min-height: 6.5rem;
     }
 
     &__links {
@@ -34,5 +34,13 @@
         margin: 0;
     }
 
-    // &__ex-link {}
+    &__ex-link {
+        font-size: $font-size--xs;
+
+        svg {
+            width: 12px;
+            height: 12px;
+            margin-left: $gutter--xxxxs;
+        }
+    }
 }

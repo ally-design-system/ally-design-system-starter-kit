@@ -16,14 +16,4 @@
         fill: $link-color;
         margin: auto 0 auto $gutter--xxxs;
     }
-
-    &.--smaller {
-        font-size: $font-size--xs;
-
-        svg {
-            width: 12px;
-            height: 12px;
-            margin-left: $gutter--xxxxs;
-        }
-    }
 }

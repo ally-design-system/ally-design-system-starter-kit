@@ -26,49 +26,18 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__inner">
                 <div className="footer__links">
-                    <InLink
-                        className="footer__in-link"
-                        modifier="--smaller"
-                        to="/"
-                        text="Home"
-                    />
-                    <InLink
-                        className="footer__in-link"
-                        modifier="--smaller"
-                        to="/"
-                        text="Home"
-                    />
-                    <InLink
-                        className="footer__in-link"
-                        modifier="--smaller"
-                        to="/"
-                        text="Home"
-                    />
-                    <InLink
-                        className="footer__in-link"
-                        modifier="--smaller"
-                        to="/"
-                        text="Home"
-                    />
-                    <InLink
-                        className="footer__in-link"
-                        modifier="--smaller"
-                        to="/"
-                        text="Home"
-                    />
-                    <InLink
-                        className="footer__in-link"
-                        modifier="--smaller"
-                        to="/"
-                        text="Home"
-                    />
+                    <InLink className="footer__in-link" to="/" text="Home" />
+                    <InLink className="footer__in-link" to="/" text="Home" />
+                    <InLink className="footer__in-link" to="/" text="Home" />
+                    <InLink className="footer__in-link" to="/" text="Home" />
+                    <InLink className="footer__in-link" to="/" text="Home" />
+                    <InLink className="footer__in-link" to="/" text="Home" />
                 </div>
                 <p className="footer__text">
                     &copy; {new Date().getFullYear()}{" "}
                     {data.site.siteMetadata.title}. Built by{" "}
                     <ExLink
                         className="footer__ex-link"
-                        modifier="--smaller"
                         to="https://nikkipantony.com"
                         text="Nikki Pantony"
                     />
