@@ -12,7 +12,7 @@ import NavLink from "../../01_atoms/NavLink/NavLink"
 const MenuDesktop = props => {
     return (
         <>
-            <ul className={`menu-desktop ${props.modifier}`}>
+            <ul className={`menu-desktop ${props.className} ${props.modifier}`}>
                 <li className="menu-desktop__item">
                     <NavLink to="/" text="Home" />
                 </li>
@@ -34,10 +34,12 @@ const MenuDesktop = props => {
 }
 
 MenuDesktop.defaultProps = {
+    className: "",
     modifier: "",
 }
 
 MenuDesktop.propTypes = {
+    className: PropTypes.string,
     modifier: PropTypes.string,
 }
 

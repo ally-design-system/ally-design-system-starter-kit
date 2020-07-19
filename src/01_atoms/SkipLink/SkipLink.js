@@ -12,7 +12,9 @@ import { SkipNavLink } from "@reach/skip-nav"
 const SkipLink = props => {
     return (
         <>
-            <SkipNavLink className={`skip-link ${props.modifier}`}>
+            <SkipNavLink
+                className={`skip-link ${props.className} ${props.modifier}`}
+            >
                 {props.text}
             </SkipNavLink>
         </>
@@ -21,11 +23,13 @@ const SkipLink = props => {
 
 SkipLink.defaultProps = {
     text: "Skip navigation, go to main content",
+    className: "",
     modifier: "",
 }
 
 SkipLink.propTypes = {
     text: PropTypes.string.isRequired,
+    className: PropTypes.string,
     modifier: PropTypes.string,
 }
 

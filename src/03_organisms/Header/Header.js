@@ -27,7 +27,11 @@ const Header = () => {
             <header className="header">
                 <div className="header__inner">
                     <div className="header__site-title">
-                        <InLink to="/" text={data.site.siteMetadata.title} />
+                        <InLink
+                            className="header__in-link"
+                            to="/"
+                            text={data.site.siteMetadata.title}
+                        />
                     </div>
                     <nav className="header__navigation">
                         <MenuDesktop />

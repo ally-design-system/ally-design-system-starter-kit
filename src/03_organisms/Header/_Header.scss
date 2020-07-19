@@ -18,9 +18,12 @@
         padding: $gutter--m;
     }
 
-    &__site-title > a {
-        font-size: $font-size--m;
+    &__site-title {
         margin: auto 0;
+    }
+
+    &__in-link {
+        font-size: $font-size--m;
     }
 
     &__navigation {

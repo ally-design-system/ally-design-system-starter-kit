@@ -25,19 +25,51 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__inner">
-                <p className="footer__text --links">
-                    <InLink class="footer__text --link" to="/" text="Home" />
-                    <InLink class="footer__text --link" to="/" text="Home" />
-                    <InLink class="footer__text --link" to="/" text="Home" />
-                    <InLink class="footer__text --link" to="/" text="Home" />
-                    <InLink class="footer__text --link" to="/" text="Home" />
-                </p>
+                <div className="footer__links">
+                    <InLink
+                        className="footer__in-link"
+                        modifier="--smaller"
+                        to="/"
+                        text="Home"
+                    />
+                    <InLink
+                        className="footer__in-link"
+                        modifier="--smaller"
+                        to="/"
+                        text="Home"
+                    />
+                    <InLink
+                        className="footer__in-link"
+                        modifier="--smaller"
+                        to="/"
+                        text="Home"
+                    />
+                    <InLink
+                        className="footer__in-link"
+                        modifier="--smaller"
+                        to="/"
+                        text="Home"
+                    />
+                    <InLink
+                        className="footer__in-link"
+                        modifier="--smaller"
+                        to="/"
+                        text="Home"
+                    />
+                    <InLink
+                        className="footer__in-link"
+                        modifier="--smaller"
+                        to="/"
+                        text="Home"
+                    />
+                </div>
                 <p className="footer__text">
                     &copy; {new Date().getFullYear()}{" "}
                     {data.site.siteMetadata.title}. Built by{" "}
                     <ExLink
-                        class="--smaller"
-                        href="https://nikkipantony.com"
+                        className="footer__ex-link"
+                        modifier="--smaller"
+                        to="https://nikkipantony.com"
                         text="Nikki Pantony"
                     />
                 </p>

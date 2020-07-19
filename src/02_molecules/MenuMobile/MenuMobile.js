@@ -19,7 +19,7 @@ const NavLink = props => <MenuLink getProps={isActive} {...props} />
 
 const MenuMobile = props => {
     return (
-        <Menu className={`menu-mobile ${props.modifier}`}>
+        <Menu className={`menu-mobile ${props.className} ${props.modifier}`}>
             {({ isExpanded }) => (
                 <>
                     <MenuButton>
@@ -57,10 +57,12 @@ const MenuMobile = props => {
 }
 
 MenuMobile.defaultProps = {
+    className: "",
     modifier: "",
 }
 
 MenuMobile.propTypes = {
+    className: PropTypes.string,
     modifier: PropTypes.string,
 }
 

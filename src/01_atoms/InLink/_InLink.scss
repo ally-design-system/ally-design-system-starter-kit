@@ -18,4 +18,8 @@
     .focus-visible {
         outline-offset: -$outline-offset;
     }
+
+    &.--smaller {
+        font-size: $font-size--xs;
+    }
 }

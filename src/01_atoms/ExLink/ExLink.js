@@ -15,7 +15,7 @@ const ExLink = props => {
     return (
         <>
             <a
-                className={`ex-link ${props.modifier}`}
+                className={`ex-link ${props.className} ${props.modifier}`}
                 href={props.to}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -34,12 +34,14 @@ const ExLink = props => {
 ExLink.defaultProps = {
     to: "/",
     text: "Link Text Missing",
+    className: "",
     modifier: "",
 }
 
 ExLink.propTypes = {
     to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    className: PropTypes.string,
     modifier: PropTypes.string,
 }
 

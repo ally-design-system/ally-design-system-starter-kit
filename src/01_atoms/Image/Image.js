@@ -41,7 +41,7 @@ const Image = props => (
 
             return (
                 <Img
-                    className={`image ${props.modifier}`}
+                    className={`image ${props.className} ${props.modifier}`}
                     alt={props.alt}
                     fluid={image.node.childImageSharp.fluid}
                 />
@@ -53,12 +53,14 @@ const Image = props => (
 Image.defaultProps = {
     filename: "gatsby.png",
     alt: "Gatsby Logo",
+    className: "",
     modifier: "",
 }
 
 Image.propTypes = {
     filename: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
+    className: PropTypes.string,
     modifier: PropTypes.string,
 }
 

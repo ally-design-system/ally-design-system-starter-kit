@@ -14,22 +14,25 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: $site-max-width;
-        padding: $gutter--l $gutter--m $gutter--s;
+        padding: $gutter--s $gutter--m;
         margin: 0 auto;
+        min-height: 6rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    &__in-link {
+        margin-right: $gutter--s;
     }
 
     &__text {
         font-size: $font-size--xs;
-
-        .--link {
-            margin: 0 $gutter--s $gutter--s 0;
-            padding: 0;
-        }
+        margin: 0;
     }
 
-    .--links {
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 2.5rem;
-    }
+    // &__ex-link {}
 }
