@@ -15,4 +15,4 @@
 import "focus-visible"
 
 // Import global Sass/Scss styling
-import "./src/10_styles/styles.scss"
+import "./src/10_styles/main.scss"

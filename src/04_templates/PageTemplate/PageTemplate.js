@@ -18,20 +18,20 @@ export default function Template({
         <>
             <Layout>
                 <SEO title={frontmatter.title} />
-                <section className="default-page-layout__grid">
+                <section className="page-template">
                     <div
-                        className="default-page-layout__column"
+                        className="page-template__column"
                         dangerouslySetInnerHTML={{ __html: html }}
                     />
-                    <div className="default-page-layout__column">
-                        <div className="default-page-layout__feature-image"></div>
-                        <div className="default-page-layout__icons">
-                            <div className="default-page-layout__icon"></div>
-                            <div className="default-page-layout__icon"></div>
-                            <div className="default-page-layout__icon"></div>
-                            <div className="default-page-layout__icon"></div>
-                            <div className="default-page-layout__icon"></div>
-                            <div className="default-page-layout__icon"></div>
+                    <div className="page-template__column">
+                        <div className="page-template__feature-image"></div>
+                        <div className="page-template__icons">
+                            <div className="page-template__icon"></div>
+                            <div className="page-template__icon"></div>
+                            <div className="page-template__icon"></div>
+                            <div className="page-template__icon"></div>
+                            <div className="page-template__icon"></div>
+                            <div className="page-template__icon"></div>
                         </div>
                     </div>
                 </section>

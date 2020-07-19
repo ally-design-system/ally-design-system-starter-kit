@@ -13,7 +13,7 @@ const MainLayout = ({ children }) => (
     <>
         <SkipLink />
         <Header />
-        <main className="t-main-layout">
+        <main className="main-layout">
             <SkipNavContent tabindex="-1">{children}</SkipNavContent>
         </main>
         <Footer />

@@ -5,19 +5,17 @@
  */
 
 // @todo: Needs to be changed to .t-page-template and applied through using the PageTemplate.js component
-.default-page-layout {
+.page-template {
     $self: &;
 
-    &__grid {
-        display: grid;
-        row-gap: $gutter--m;
+    display: grid;
+    row-gap: $gutter--m;
 
-        @media (min-width: $breakpoint-tablet) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(1, auto);
-            column-gap: $gutter--m;
-            row-gap: $gutter--m;
-        }
+    @media (min-width: $breakpoint-tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        column-gap: $gutter--m;
+        row-gap: $gutter--m;
     }
 
     &__column {

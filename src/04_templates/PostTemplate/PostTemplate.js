@@ -22,14 +22,14 @@ export default function Template({
 
                 <Link to="/markdown">&larr; Back To Markdown Page</Link>
 
-                <article className="t-post-template">
-                    <div className="t-post-template__frontmatter">
+                <article className="post-template">
+                    <div className="post-template__frontmatter">
                         <h1>{frontmatter.title}</h1>
-                        <p className="t-post-template__date">
+                        <p className="post-template__date">
                             {frontmatter.date}
                         </p>
                         <div
-                            className="t-post-template__content"
+                            className="post-template__content"
                             dangerouslySetInnerHTML={{ __html: html }}
                         />
                     </div>
