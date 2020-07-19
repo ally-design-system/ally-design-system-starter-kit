@@ -30,8 +30,8 @@
 @import "02_molecule-styles/m-menu-desktop";
 
 // Organism Styles
-@import "03_organism-styles/o-header";
-@import "03_organism-styles/o-footer";
+@import "../03_organisms/Footer/Footer";
+@import "../03_organisms/Header/Header";
 
 // Template Styles
 @import "../04_templates/MainLayout/MainLayout";

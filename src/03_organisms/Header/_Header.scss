@@ -3,7 +3,7 @@
  *
  */
 
-.o-header {
+.header {
     z-index: map-get($zindex, header);
     background-color: $site-background-color;
     border-bottom: $border;

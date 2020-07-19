@@ -23,16 +23,16 @@ const Footer = () => {
     `)
 
     return (
-        <footer className="o-footer">
-            <div className="o-footer__inner">
-                <p className="o-footer__text --links">
-                    <InLink class="o-footer__text --link" to="/" text="Home" />
-                    <InLink class="o-footer__text --link" to="/" text="Home" />
-                    <InLink class="o-footer__text --link" to="/" text="Home" />
-                    <InLink class="o-footer__text --link" to="/" text="Home" />
-                    <InLink class="o-footer__text --link" to="/" text="Home" />
+        <footer className="footer">
+            <div className="footer__inner">
+                <p className="footer__text --links">
+                    <InLink class="footer__text --link" to="/" text="Home" />
+                    <InLink class="footer__text --link" to="/" text="Home" />
+                    <InLink class="footer__text --link" to="/" text="Home" />
+                    <InLink class="footer__text --link" to="/" text="Home" />
+                    <InLink class="footer__text --link" to="/" text="Home" />
                 </p>
-                <p className="o-footer__text">
+                <p className="footer__text">
                     &copy; {new Date().getFullYear()}{" "}
                     {data.site.siteMetadata.title}. Built by{" "}
                     <ExLink

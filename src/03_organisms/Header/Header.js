@@ -24,12 +24,12 @@ const Header = () => {
 
     return (
         <>
-            <header className="o-header">
-                <div className="o-header__inner">
-                    <div className="o-header__site-title">
+            <header className="header">
+                <div className="header__inner">
+                    <div className="header__site-title">
                         <InLink to="/" text={data.site.siteMetadata.title} />
                     </div>
-                    <nav className="o-header__navigation">
+                    <nav className="header__navigation">
                         <MenuDesktop />
                         <MenuMobile />
                     </nav>
