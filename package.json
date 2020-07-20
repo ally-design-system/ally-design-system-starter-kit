@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.8.7",
     "gatsby-transformer-sharp": "^2.4.3",
+    "modern-normalize": "^0.7.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -37,7 +38,26 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby", "storybook", "design system", "atomic design", "sass", "ally"
+    "gatsby",
+    "gatsbyjs",
+    "gatsby-starter",
+    "gatsby-boilerplate",
+    "react",
+    "reactjs",
+    "storybook",
+    "storybookjs",
+    "graphql",
+    "markdown",
+    "sass",
+    "design-system",
+    "a11y-testing",
+    "figma",
+    "kit",
+    "accessibility",
+    "a11y",
+    "bem-methodology",
+    "bem-naming",
+    "bem"
   ],
   "license": "MIT",
   "scripts": {
