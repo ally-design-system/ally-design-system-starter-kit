@@ -20,6 +20,9 @@
 // Manage Z Indexing Design Tokens
 @import "../00_design_tokens/ZIndex/ZIndex";
 
+// Spacing Design Tokens
+@import "../00_design_tokens/Spacing/Spacing";
+
 // Color Palette Design Tokens
 @import "../00_design_tokens/Colors/Colors";
 
@@ -38,11 +41,11 @@
 // Icon Styles Design Tokens
 @import "../00_design_tokens/Icon/Icon";
 
-// Focus Visible Styles Design Tokens (Using focus-visible WICG Polyfill)
-@import "../00_design_tokens/FocusVisible/FocusVisible";
-
 // Typography Styles Design Tokens
 @import "../00_design_tokens/Typography/Typography";
+
+// Focus Visible Styles Design Tokens (Using focus-visible WICG Polyfill)
+@import "../00_design_tokens/FocusVisible/FocusVisible";
 
 // Global Styles
 @import "../10_styles/global";

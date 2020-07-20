@@ -1,0 +1,16 @@
+/* Gutter Spacing
+ ****************/
+
+// Set Base Gutter Spacing for Padding and Margins
+$gutter: 1.5rem;
+
+// Gutter Spacing Options
+$gutter--xxxxs: $gutter / 7; // 0.214rem
+$gutter--xxxs: $gutter / 4; // 0.375rem
+$gutter--xxs: $gutter / 3; // 0.5rem
+$gutter--xs: $gutter / 2; // 0.75rem
+$gutter--s: $gutter / 1.5; // 1rem
+$gutter--m: $gutter; // 1.5rem
+$gutter--l: $gutter * 1.5; // 2.25rem
+$gutter--xl: $gutter * 2; // 3rem
+$gutter--xxl: $gutter * 3; // 4.5rem

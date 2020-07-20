@@ -3,6 +3,12 @@
  *
  */
 
+// Set Site Background Color
+$site-background-color: $theme-color-background;
+
+// Set Max Width for Site
+$site-max-width: $breakpoint-desktop;
+
 body {
     background-color: $site-background-color; // Set Body Background Color
 }
