@@ -5,22 +5,32 @@
  * Imported in `.storybook/preview.js` for Storybook Build
  */
 
-// Base Styles
+// CSS Reset
 
-// - Particle Styles
+////
+// Base Styles
 @import "00_base-styles/tokens"; // Design Token Variables - Typography, Color Palette, Gutter Spacing, and Breakpoints
 @import "00_base-styles/theme"; // Theme Variables - Design Choices using Design Tokens Variables
+////
 
-// - Global Styles
-@import "00_base-styles/global"; // Global Styling - Applied using Theme Variables (Design Choices) + Modern CSS Reset
+// Design Tokens
+@import "../00_design_tokens/Colors/Colors"; // Color Palette
+@import "../00_design_tokens/Typography/Typography"; // Typography Styles
+@import "../00_design_tokens/Icon/Icon"; // Icon Styles
+@import "../00_design_tokens/Border/Border"; // Border Styles
+@import "../00_design_tokens/FocusVisible/FocusVisible"; // Focus Visible Styles (using focus-visible WICG Polyfill)
+@import "../00_design_tokens/Transition/Transition"; // Transition Styles
+@import "../00_design_tokens/Opacity/Opacity"; // Opacity Styles
+@import "../00_design_tokens/Shadow/Shadow"; // Shadow Styles
+@import "../00_design_tokens/Breakpoints/Breakpoints"; // Manage Breakpoints
+@import "../00_design_tokens/ZIndex/ZIndex"; // Manage Z Indexing
 
-// - Utilities
-@import "00_base-styles/focus-visible"; // Manage focus using focus-visible WICG Polyfill
-@import "00_base-styles/z-index"; // Manage UI Components z-indexing
+////
+// Global Styles
+@import "00_base-styles/global";
+////
 
-@import "../00_design_tokens/Icon/Icon";
-
-// Atom Styles
+// Atom Component Styles
 @import "../01_atoms/Button/Button";
 @import "../01_atoms/ExLink/ExLink";
 @import "../01_atoms/Image/Image";
@@ -28,11 +38,11 @@
 @import "../01_atoms/NavLink/NavLink";
 @import "../01_atoms/SkipLink/SkipLink";
 
-// Molecule Styles
+// Molecule Component Styles
 @import "../02_molecules/MenuDesktop/MenuDesktop";
 @import "../02_molecules/MenuMobile/MenuMobile";
 
-// Organism Styles
+// Organism Component Styles
 @import "../03_organisms/Footer/Footer";
 @import "../03_organisms/Header/Header";
 

@@ -25,6 +25,7 @@ Button.defaultProps = {
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     className: PropTypes.string,
+    // modifier: PropTypes.oneOf(["--default", "--delete"]),
     modifier: PropTypes.string,
 }
 
