@@ -11,9 +11,6 @@
 @import "00_base-styles/theme"; // Theme Variables - Design Choices using Design Tokens Variables
 ////
 
-// Modern Normalize Browser Default Styling
-// @import "../../node_modules/modern-normalize/modern-normalize.css";
-
 // CSS Reset
 @import "../10_styles/css-reset";
 
@@ -46,11 +43,6 @@
 
 // Typography Styles Design Tokens
 @import "../00_design_tokens/Typography/Typography";
-
-////
-// Global Styles
-// @import "00_base-styles/global";
-////
 
 // Global Styles
 @import "../10_styles/global";

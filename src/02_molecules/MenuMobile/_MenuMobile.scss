@@ -28,7 +28,7 @@
     }
 
     @media (min-width: $breakpoint-tablet) {
-        display: none;
+        display: none; // Removes Element Visually And From The Accessibility Tree
     }
 }
 

@@ -4,7 +4,7 @@
  */
 
 .menu-desktop {
-    display: none;
+    display: none; // Removes Element Visually And From The Accessibility Tree
     list-style: none;
 
     @media (min-width: $breakpoint-tablet) {
