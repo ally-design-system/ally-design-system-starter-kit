@@ -1,0 +1,66 @@
+// Set Global Default Font Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    color: $heading-color;
+    margin: $gutter--m 0 $gutter--l;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: $gutter--xl 0 $gutter--s;
+}
+
+p {
+    font-family: $paragraph-font;
+    font-weight: $paragraph-weight;
+    color: $paragraph-color;
+    margin-bottom: $gutter--s;
+    font-size: $font-size--s;
+}
+
+h1 {
+    font-size: $font-size--xl;
+}
+
+h2 {
+    font-size: $font-size--l;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: $font-size--m;
+}
+
+a {
+    font-family: $link-font;
+    font-weight: $link-weight;
+    color: $link-color;
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-size: $font-size--s;
+
+    &:hover,
+    &.focus-visible {
+        border-bottom: $border--bottom;
+    }
+}
+
+ul {
+    margin: $gutter--l 0;
+
+    li {
+        margin: $gutter--xs 0;
+        font-size: $font-size--s;
+    }
+}

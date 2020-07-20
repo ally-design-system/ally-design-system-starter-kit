@@ -3,6 +3,24 @@
  *
  */
 
+// Button base styles
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+    transition: $transition-background;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:active {
+        transform: scale(1);
+    }
+}
+
 .button {
     font-family: $button-font;
     font-weight: $font-weight--bold;

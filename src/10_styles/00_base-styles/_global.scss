@@ -4,195 +4,199 @@
  * Modern CSS Reset based on: https://dev.to/hankchizljaw/a-modern-css-reset-6p3
  */
 
-// Set Document Root Values
-:root {
-    font-size: 16px;
-}
+// // Set Document Root Values
+// :root {
+//     font-size: 16px;
+// }
 
-// Box sizing rules
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+// // Box sizing rules
+// *,
+// *::before,
+// *::after {
+//     box-sizing: border-box;
+// }
 
-// Set Core Body Defaults
-body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: $font-line-height;
-    background-color: $site-background-color;
-}
+// // Set Global Site Default Line Height
+// html {
+//     line-height: $font-line-height;
+// }
 
-// Remove Default Margins
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
+// // Set Core Body Defaults
+// body {
+//     min-height: 100vh;
+//     scroll-behavior: smooth;
+//     text-rendering: optimizeSpeed;
+//     background-color: $site-background-color;
+// }
 
-// Make Images Easier to Work With
-img {
-    max-width: 100%;
-    display: block;
-}
+// // Remove Default Margins
+// body,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// a,
+// ul[class],
+// ol[class],
+// li,
+// figure,
+// figcaption,
+// blockquote,
+// dl,
+// dd {
+//     margin: 0;
+// }
 
-// Natural Flow and Rhythm in Articles by Default
-article > * + * {
-    margin-top: 1em;
-}
+// // Make Images Easier to Work With
+// img {
+//     max-width: 100%;
+//     display: block;
+// }
 
-// Inherit Fonts for Inputs and Buttons
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
+// // Natural Flow and Rhythm in Articles by Default
+// article > * + * {
+//     margin-top: 1em;
+// }
 
-// Remove All Animations and Transitions for People Who Prefer Not to See Them
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
+// // Inherit Fonts for Inputs and Buttons
+// input,
+// button,
+// textarea,
+// select {
+//     font: inherit;
+// }
+
+// // Remove All Animations and Transitions for People Who Prefer Not to See Them
+// @media (prefers-reduced-motion: reduce) {
+//     * {
+//         animation-duration: 0.01ms !important;
+//         animation-iteration-count: 1 !important;
+//         transition-duration: 0.01ms !important;
+//         scroll-behavior: auto !important;
+//     }
+// }
 
 /*
  * Global Styles For Site Start Here
  */
 
-// Set Global Default Font Styles
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $heading-font;
-    font-weight: $heading-weight;
-    color: $heading-color;
-    margin: $gutter--m 0 $gutter--l;
-}
+// // Set Global Default Font Styles
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-family: $heading-font;
+//     font-weight: $heading-weight;
+//     color: $heading-color;
+//     margin: $gutter--m 0 $gutter--l;
+// }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: $gutter--xl 0 $gutter--s;
-}
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     margin: $gutter--xl 0 $gutter--s;
+// }
 
-p {
-    font-family: $paragraph-font;
-    font-weight: $paragraph-weight;
-    color: $paragraph-color;
-    margin-bottom: $gutter--s;
-    font-size: $font-size--s;
-}
+// p {
+//     font-family: $paragraph-font;
+//     font-weight: $paragraph-weight;
+//     color: $paragraph-color;
+//     margin-bottom: $gutter--s;
+//     font-size: $font-size--s;
+// }
 
-h1 {
-    font-size: $font-size--xl;
-}
+// h1 {
+//     font-size: $font-size--xl;
+// }
 
-h2 {
-    font-size: $font-size--l;
-}
+// h2 {
+//     font-size: $font-size--l;
+// }
 
-h3,
-h4,
-h5,
-h6 {
-    font-size: $font-size--m;
-}
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-size: $font-size--m;
+// }
 
-a {
-    font-family: $link-font;
-    font-weight: $link-weight;
-    color: $link-color;
-    text-decoration: none;
-    padding-bottom: 2px;
-    font-size: $font-size--s;
+// a {
+//     font-family: $link-font;
+//     font-weight: $link-weight;
+//     color: $link-color;
+//     text-decoration: none;
+//     padding-bottom: 2px;
+//     font-size: $font-size--s;
 
-    &:hover,
-    &.focus-visible {
-        border-bottom: $border--bottom;
-    }
-}
+//     &:hover,
+//     &.focus-visible {
+//         border-bottom: $border--bottom;
+//     }
+// }
 
-ul {
-    margin: $gutter--l 0;
+// ul {
+//     margin: $gutter--l 0;
 
-    li {
-        margin: $gutter--xs 0;
-        font-size: $font-size--s;
-    }
-}
+//     li {
+//         margin: $gutter--xs 0;
+//         font-size: $font-size--s;
+//     }
+// }
 
-// Reset base button styles
-// For help: https://css-tricks.com/overriding-default-button-styles/
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-}
+// // Reset base button styles
+// // For help: https://css-tricks.com/overriding-default-button-styles/
+// button,
+// input,
+// optgroup,
+// select,
+// textarea {
+//     font-family: inherit;
+//     font-size: 100%;
+//     line-height: 1.15;
+//     margin: 0;
+// }
 
-// Show the overflow in IE and Edge
-button,
-input {
-    overflow: visible;
-}
+// // Show the overflow in IE and Edge
+// button,
+// input {
+//     overflow: visible;
+// }
 
-// Remove the inheritance of text transform in Edge, Firefox, and IE.
-button,
-select {
-    text-transform: none;
-}
+// // Remove the inheritance of text transform in Edge, Firefox, and IE.
+// button,
+// select {
+//     text-transform: none;
+// }
 
-// Correct the inability to style clickable types in iOS and Safari.
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
+// // Correct the inability to style clickable types in iOS and Safari.
+// button,
+// [type="button"],
+// [type="reset"],
+// [type="submit"] {
+//     -webkit-appearance: button;
+// }
 
-// Button base styles
-button {
-    display: inline-block;
-    border: none;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1;
-    cursor: pointer;
-    transition: $transition-background;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+// // Button base styles
+// button {
+//     display: inline-block;
+//     border: none;
+//     margin: 0;
+//     text-align: center;
+//     text-decoration: none;
+//     line-height: 1;
+//     cursor: pointer;
+//     transition: $transition-background;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
 
-    &:active {
-        transform: scale(1);
-    }
-}
+//     &:active {
+//         transform: scale(1);
+//     }
+// }

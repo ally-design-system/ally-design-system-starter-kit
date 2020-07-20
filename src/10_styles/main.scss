@@ -5,31 +5,55 @@
  * Imported in `.storybook/preview.js` for Storybook Build
  */
 
-// Modern Normalize Browser Default Styling
-@import "../../node_modules/modern-normalize/modern-normalize.css";
-
 ////
 // Base Styles
 @import "00_base-styles/tokens"; // Design Token Variables - Typography, Color Palette, Gutter Spacing, and Breakpoints
 @import "00_base-styles/theme"; // Theme Variables - Design Choices using Design Tokens Variables
 ////
 
-// Design Tokens
-@import "../00_design_tokens/Colors/Colors"; // Color Palette
-@import "../00_design_tokens/Typography/Typography"; // Typography Styles
-@import "../00_design_tokens/Icon/Icon"; // Icon Styles
-@import "../00_design_tokens/Border/Border"; // Border Styles
-@import "../00_design_tokens/FocusVisible/FocusVisible"; // Focus Visible Styles (using focus-visible WICG Polyfill)
-@import "../00_design_tokens/Transition/Transition"; // Transition Styles
-@import "../00_design_tokens/Opacity/Opacity"; // Opacity Styles
-@import "../00_design_tokens/Shadow/Shadow"; // Shadow Styles
-@import "../00_design_tokens/Breakpoints/Breakpoints"; // Manage Breakpoints
-@import "../00_design_tokens/ZIndex/ZIndex"; // Manage Z Indexing
+// Modern Normalize Browser Default Styling
+// @import "../../node_modules/modern-normalize/modern-normalize.css";
+
+// CSS Reset
+@import "../10_styles/css-reset";
+
+// Manage Breakpoints Design Tokens
+@import "../00_design_tokens/Breakpoints/Breakpoints";
+
+// Manage Z Indexing Design Tokens
+@import "../00_design_tokens/ZIndex/ZIndex";
+
+// Color Palette Design Tokens
+@import "../00_design_tokens/Colors/Colors";
+
+// Border Styles Design Tokens
+@import "../00_design_tokens/Border/Border";
+
+// Transition Styles Design Tokens
+@import "../00_design_tokens/Transition/Transition";
+
+// Opacity Styles Design Tokens
+@import "../00_design_tokens/Opacity/Opacity";
+
+// Shadow Styles Design Tokens
+@import "../00_design_tokens/Shadow/Shadow";
+
+// Icon Styles Design Tokens
+@import "../00_design_tokens/Icon/Icon";
+
+// Focus Visible Styles Design Tokens (Using focus-visible WICG Polyfill)
+@import "../00_design_tokens/FocusVisible/FocusVisible";
+
+// Typography Styles Design Tokens
+@import "../00_design_tokens/Typography/Typography";
 
 ////
 // Global Styles
-@import "00_base-styles/global";
+// @import "00_base-styles/global";
 ////
+
+// Global Styles
+@import "../10_styles/global";
 
 // Atom Component Styles
 @import "../01_atoms/Button/Button";
