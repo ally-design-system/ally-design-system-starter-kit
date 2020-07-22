@@ -5,16 +5,10 @@
  * Imported in `.storybook/preview.js` for Storybook Build
  */
 
-////
-// Base Styles
-@import "00_base-styles/tokens"; // Design Token Variables - Typography, Color Palette, Gutter Spacing, and Breakpoints
-@import "00_base-styles/theme"; // Theme Variables - Design Choices using Design Tokens Variables
-////
-
 // CSS Reset
 @import "../10_styles/css-reset";
 
-// Manage Breakpoints Design Tokens
+// Manage Breakpoint Design Tokens
 @import "../00_design_tokens/Breakpoints/Breakpoints";
 
 // Manage Z Indexing Design Tokens
@@ -42,13 +36,13 @@
 @import "../00_design_tokens/Icon/Icon";
 
 // Typography Styles Design Tokens
-@import "../00_design_tokens/Typography/Typography";
+// @import "../00_design_tokens/Typography/Typography";
 
 // Focus Visible Styles Design Tokens (Using focus-visible WICG Polyfill)
 @import "../00_design_tokens/FocusVisible/FocusVisible";
 
-// Global Styles
-@import "../10_styles/global";
+// Theme Styles (With Design Tokens) @Todo replace with global
+@import "../10_styles/theme";
 
 // Atom Component Styles
 @import "../01_atoms/Button/Button";

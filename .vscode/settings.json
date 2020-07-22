@@ -24,6 +24,7 @@
 		"Icon": "Theme",
 		"Opacity": "Theme",
 		"Shadow": "Theme",
+		"Spacing": "Theme",
 		"Transition": "Theme",
 		"Typography": "Theme",
 		"ZIndex": "Theme",

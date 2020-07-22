@@ -1,0 +1,30 @@
+/*
+ * Theme Styles
+ *
+ */
+
+// @todo Add all design tokens here!
+// Rename file to _design-tokens
+// Design Tokens
+
+@import "../00_design_tokens/Typography/Typography";
+
+// @todo: create wrapper design token with below in it:
+
+// Set Max Width for Site
+$site-max-width: $breakpoint-desktop;
+
+// @todo: Add below to a file called global.
+
+// Set Site Background Color
+$site-background-color: $theme-color-background; // @todo: Change to actual color from colors!
+
+body {
+    background-color: $site-background-color; // Set Body Background Color
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $color-black;
+    }
+}
+
+// @todo create typography mixin (https://scarab.style/core/design-tokens/#font-sizes-line-heights)
