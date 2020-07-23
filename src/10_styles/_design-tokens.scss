@@ -3,23 +3,40 @@
  *
  */
 
-// Breakpoint Value Design Tokens
-@import "../00_design_tokens/Breakpoints/Breakpoints";
+// 001 Layout Design Tokens
+/************************/
+// Layout / Breakpoint Design Tokens
+@import "../00_design_tokens/Layout/Breakpoints/Breakpoints";
 
-// Z Indexing Value Design Tokens
+// Layout / Wrapper Design Tokens
+@import "../00_design_tokens/Layout/Wrappers/Wrappers";
+
+// Layout / Spacing Design Tokens
+@import "../00_design_tokens/Layout/Spacing/Spacing";
+
+// 002 Layer Design Tokens
+/***********************/
+// Layer / ZIndex Design Tokens
 @import "../00_design_tokens/ZIndex/ZIndex";
 
-// Spacing Design Tokens
-@import "../00_design_tokens/Spacing/Spacing";
-
-// Color Palette Design Tokens
+// 003 Color Palette Design Tokens
+/*******************************/
+// Brand Color Design Tokens
 @import "../00_design_tokens/Colors/Colors";
+
+// Shade Design Tokens
+
+// Tint Design Tokens
+
+// Tone Design Tokens
+
+// 003 Motion Design Tokens
+/************************/
+// Transition Styles Design Tokens
+@import "../00_design_tokens/Transition/Transition";
 
 // Border Styles Design Tokens
 @import "../00_design_tokens/Border/Border";
-
-// Transition Styles Design Tokens
-@import "../00_design_tokens/Transition/Transition";
 
 // Opacity Styles Design Tokens
 @import "../00_design_tokens/Opacity/Opacity";
