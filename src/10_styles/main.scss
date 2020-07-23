@@ -1,5 +1,5 @@
 /*
- * Main Styling File
+ * Main Styles File
  *
  * Imported in `./gatsby-browser.js` for Gatsby Build
  * Imported in `.storybook/preview.js` for Storybook Build
@@ -11,10 +11,10 @@
 // Design Tokens
 @import "../10_styles/design-tokens";
 
-// Theme Styles @Todo replace with global
-@import "../10_styles/theme";
+// Global
+@import "../10_styles/global";
 
-// Atom Component Styles
+// Atom Styles
 @import "../01_atoms/Button/Button";
 @import "../01_atoms/ExLink/ExLink";
 @import "../01_atoms/Image/Image";
@@ -22,11 +22,11 @@
 @import "../01_atoms/NavLink/NavLink";
 @import "../01_atoms/SkipLink/SkipLink";
 
-// Molecule Component Styles
+// Molecule Styles
 @import "../02_molecules/MenuDesktop/MenuDesktop";
 @import "../02_molecules/MenuMobile/MenuMobile";
 
-// Organism Component Styles
+// Organism Styles
 @import "../03_organisms/Footer/Footer";
 @import "../03_organisms/Header/Header";
 

@@ -1,0 +1,21 @@
+/*
+ * Global Styles
+ *
+ */
+
+// Set Site Background Color
+$site-background-color: $theme-color-background; // @todo: Change to actual color from colors!
+
+// Set the root font-size for REMs
+:root {
+    font-size: 16px;
+}
+
+// Set Body Background Color
+body {
+    background-color: $color-white;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $color-black;
+    }
+}
