@@ -14,3 +14,58 @@ $gutter--m: $gutter; // 1.5rem
 $gutter--l: $gutter * 1.5; // 2.25rem
 $gutter--xl: $gutter * 2; // 3rem
 $gutter--xxl: $gutter * 3; // 4.5rem
+
+////
+
+/*
+ * Spacing Design Tokens
+ *
+ * Inspiration from:
+ * https://www.carbondesignsystem.com/guidelines/themes/overview#spacing
+ * https://scarab.style/core/design-tokens/#spacing
+ * https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
+ */
+
+// Set Base Spacing
+$spacing-baseline: 1rem; // 1rem / 16px (16px set in `:root` in `global.scss`)
+
+// Spacing Scale
+$spacing: (
+    // xxxxs / 0.0625rem / 1px
+        xxxxs: $spacing-baseline * 0.0625,
+    // xxxs / 0.125rem / 2px
+        xxxs: $spacing-baseline * 0.125,
+    // xxs / 0.25rem / 4px
+        xxs: $spacing-baseline * 0.25,
+    // xs / 0.5rem / 8px
+        xs: $spacing-baseline * 0.5,
+    // s / 0.75rem / 12px
+        s: $spacing-baseline * 0.75,
+    // m / 1rem / 16px
+        m: $spacing-baseline,
+    // l / 1.5rem / 24px
+        l: $spacing-baseline * 1.5,
+    // xl / 2rem / 32px
+        xl: $spacing-baseline * 2,
+    // xxl / 2.5rem / 40px
+        xxl: $spacing-baseline * 2.5,
+    // xxxl / 3rem / 48px
+        xxxl: $spacing-baseline * 3,
+    // xxxxl / 3.5rem / 56px
+        xxxxl: $spacing-baseline * 3.5
+);
+
+// Spacing Design Token Config
+@function spacing($name) {
+    @if map-has-key($spacing, $name) {
+        @return map-get($spacing, $name);
+    }
+
+    @warn "The key #{$name} is not in the ’$spacing’ design token map";
+    @return null;
+}
+
+// Example Usage
+.component {
+    margin: spacing(xl);
+}

@@ -8,40 +8,10 @@
 // CSS Reset
 @import "../10_styles/css-reset";
 
-// Manage Breakpoint Design Tokens
-@import "../00_design_tokens/Breakpoints/Breakpoints";
+// Design Tokens
+@import "../10_styles/design-tokens";
 
-// Manage Z Indexing Design Tokens
-@import "../00_design_tokens/ZIndex/ZIndex";
-
-// Spacing Design Tokens
-@import "../00_design_tokens/Spacing/Spacing";
-
-// Color Palette Design Tokens
-@import "../00_design_tokens/Colors/Colors";
-
-// Border Styles Design Tokens
-@import "../00_design_tokens/Border/Border";
-
-// Transition Styles Design Tokens
-@import "../00_design_tokens/Transition/Transition";
-
-// Opacity Styles Design Tokens
-@import "../00_design_tokens/Opacity/Opacity";
-
-// Shadow Styles Design Tokens
-@import "../00_design_tokens/Shadow/Shadow";
-
-// Icon Styles Design Tokens
-@import "../00_design_tokens/Icon/Icon";
-
-// Typography Styles Design Tokens
-// @import "../00_design_tokens/Typography/Typography";
-
-// Focus Visible Styles Design Tokens (Using focus-visible WICG Polyfill)
-@import "../00_design_tokens/FocusVisible/FocusVisible";
-
-// Theme Styles (With Design Tokens) @Todo replace with global
+// Theme Styles @Todo replace with global
 @import "../10_styles/theme";
 
 // Atom Component Styles
