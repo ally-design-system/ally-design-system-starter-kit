@@ -15,20 +15,23 @@
 @import "../00_design_tokens/Layout/Spacing/Spacing";
 
 // 002 Layer Design Tokens
-/***********************/
+/***************************/
 // Layer / ZIndex Design Tokens
 @import "../00_design_tokens/ZIndex/ZIndex";
 
 // 003 Color Palette Design Tokens
-/*******************************/
+/***********************************/
 // Brand Color Design Tokens
-@import "../00_design_tokens/Colors/Colors";
+@import "../00_design_tokens/Colors/Brand/Brand";
 
 // Shade Design Tokens
+@import "../00_design_tokens/Colors/Shades/Shades";
 
 // Tint Design Tokens
+@import "../00_design_tokens/Colors/Tints/Tints";
 
 // Tone Design Tokens
+@import "../00_design_tokens/Colors/Tones/Tones";
 
 // 003 Motion Design Tokens
 /************************/
