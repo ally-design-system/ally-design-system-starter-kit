@@ -1,0 +1,19 @@
+/*
+ * External Link Styles
+ *
+ */
+
+.ex-link {
+    display: inline-block;
+    color: $link-color;
+    // Stops link text from wrapping with / without SVG
+    // @todo: Possibly change so it can wrap but with SVG
+    white-space: nowrap;
+
+    svg {
+        width: 14px;
+        height: 14px;
+        fill: $link-color;
+        margin: auto 0 auto $gutter--xxxs;
+    }
+}

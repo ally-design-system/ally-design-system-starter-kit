@@ -7,35 +7,56 @@
     "workbench.iconTheme": "material-icon-theme",
 
     "material-icon-theme.activeIconPack": "react",
-    "material-icon-theme.hidesExplorerArrows": true,
-    "material-icon-theme.showUpdateMessage": true,
-    "material-icon-theme.folders.color": "#ec407a",
-    "material-icon-theme.folders.associations": {
-        ".cache": "Database",
-        "design_assets": "Theme",
-        "design_files": "Custom",
-        "node_modules": "Node",
-        "public": "Public",
-        "page-data": "Global",
-        "01_atoms": "Cluster",
-        "02_molecules": "App",
-        "03_organisms": "Components",
-        "04_templates": "Layout",
-        "05_pages": "Log",
-        "06_posts": "Docs",
-        "07_images": "Images",
-        "08_icons": "Svg",
-        "09_utilities": "Utils",
-        "10_styles": "Sass",
-        "00_base-styles": "Theme",
-        "01_atom-styles": "Cluster",
-        "02_molecule-styles": "App",
-        "03_organism-styles": "Components",
-        "04_template-styles": "Layout"
-    },
-    "material-icon-theme.files.associations": {
-        "*.js": "react"
-    },
+	"material-icon-theme.hidesExplorerArrows": true,
+	"material-icon-theme.showUpdateMessage": true,
+	"material-icon-theme.folders.color": "#ec407a",
+	"material-icon-theme.folders.associations": {
+		".cache": "Database",
+		"design_assets": "Custom",
+		"design_files": "Custom",
+		"node_modules": "Node",
+		"public": "Public",
+		"00_design_tokens": "Theme",
+		"Border": "Theme",
+		"Breakpoints": "Theme",
+		"Colors": "Theme",
+		"FocusVisible": "Theme",
+		"Icon": "Theme",
+		"Opacity": "Theme",
+		"Shadow": "Theme",
+		"Spacing": "Theme",
+		"Transition": "Theme",
+		"Typography": "Theme",
+		"ZIndex": "Theme",
+		"01_atoms": "Cluster",
+		"Button": "Cluster",
+		"ExLink": "Cluster",
+		"Image": "Cluster",
+		"InLink": "Cluster",
+		"NavLink": "Cluster",
+		"SkipLink": "Cluster",
+		"02_molecules": "App",
+		"MenuDesktop": "App",
+		"MenuMobile": "App",
+		"03_organisms": "Components",
+		"Footer": "Components",
+		"Header": "Components",
+		"04_templates": "Layout",
+		"MainLayout": "Layout",
+		"PageTemplate": "Layout",
+		"PostTemplate": "Layout",
+		"05_pages": "Content",
+		"06_posts": "Log",
+		"07_images": "Images",
+		"logos": "Images",
+		"08_icons": "Svg",
+		"09_utilities": "Utils",
+		"10_styles": "Sass"
+	},
+	"material-icon-theme.files.associations": {
+
+		"*.js": "react"
+	},
 
     "scss.lint.duplicateProperties": "warning",
     "scss.lint.unknownProperties": "warning",
@@ -64,5 +85,8 @@
 
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
+    },
+    "material-icon-theme.languages.associations": {
+    
     }
 }

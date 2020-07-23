@@ -37,7 +37,26 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby", "storybook", "design system", "atomic design", "sass", "ally"
+    "gatsby",
+    "gatsbyjs",
+    "gatsby-starter",
+    "gatsby-boilerplate",
+    "react",
+    "reactjs",
+    "storybook",
+    "storybookjs",
+    "graphql",
+    "markdown",
+    "sass",
+    "design-system",
+    "a11y-testing",
+    "figma",
+    "kit",
+    "accessibility",
+    "a11y",
+    "bem-methodology",
+    "bem-naming",
+    "bem"
   ],
   "license": "MIT",
   "scripts": {

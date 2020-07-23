@@ -1,0 +1,118 @@
+/*
+ * Typography Styles
+ *
+ */
+
+// @todo create typography mixin (https://scarab.style/core/design-tokens/#font-sizes-line-heights)
+
+// Import from Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+// Font Families
+$font--arimo: "Arimo", sans-serif;
+$font--slab: "Roboto Slab", serif;
+
+// Set Site Theme Fonts
+$theme-font-primary: $font--arimo;
+$theme-font-secondry: $font--slab;
+
+// Font Weights
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+
+// Font Line Height
+$font-line-height: 1.4;
+
+/* Font Sizing
+ *************/
+
+// Set Base Font Size
+$font-size: 1.1rem;
+
+// Font Size Options
+$font-size--xs: $font-size / 1.2; // 0.91rem
+$font-size--s: $font-size; // 1.1rem
+$font-size--m: $font-size * 1.3; // 1.43rem
+$font-size--l: $font-size * 1.5; // 1.65rem
+$font-size--xl: $font-size * 2.1; // 2.31rem
+
+// Set Site Heading Styles
+$heading-font: $theme-font-primary;
+$heading-weight: $font-weight--bold;
+$heading-color: $theme-color-primary;
+
+// Set Site Paragraph Styles
+$paragraph-font: $theme-font-secondry;
+$paragraph-weight: $font-weight--normal;
+$paragraph-color: $theme-color-primary;
+
+// Set Site Link Styles
+$link-font: $theme-font-primary;
+$link-weight: $font-weight--bold;
+$link-color: $theme-color-primary;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    font-weight: $heading-weight;
+    color: $heading-color;
+    margin: $gutter--m 0 $gutter--l;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: $gutter--xl 0 $gutter--s;
+}
+
+p {
+    font-family: $paragraph-font;
+    font-weight: $paragraph-weight;
+    color: $paragraph-color;
+    margin-bottom: $gutter--s;
+    font-size: $font-size--s;
+}
+
+h1 {
+    font-size: $font-size--xl;
+}
+
+h2 {
+    font-size: $font-size--l;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: $font-size--m;
+}
+
+a {
+    font-family: $link-font;
+    font-weight: $link-weight;
+    color: $link-color;
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-size: $font-size--s;
+
+    &:hover,
+    &.focus-visible {
+        border-bottom: $border--bottom;
+    }
+}
+
+ul {
+    margin: $gutter--l 0;
+
+    li {
+        margin: $gutter--xs 0;
+        font-size: $font-size--s;
+    }
+}

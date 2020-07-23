@@ -1,0 +1,90 @@
+/*
+ * Mobile Menu Styles
+ *
+ * Custom styling for the Reach UI 'menu-button' component: https://reacttraining.com/reach-ui/menu-button
+ * Source code: https://github.com/reach/reach-ui/tree/main/packages/menu-button
+ */
+
+[data-reach-menu-button] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $button-font;
+    font-weight: $font-weight--bold;
+    font-size: $font-size--s;
+    color: $button-color;
+    background: $button-background;
+    padding: $gutter--s $gutter--m;
+
+    &:hover,
+    &:focus {
+        background-color: $button-background--hover;
+    }
+
+    svg {
+        fill: $button-color;
+        width: 1.3rem;
+        margin: auto 0 auto $gutter--xs;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        display: none; // Removes Element Visually And From The Accessibility Tree
+    }
+}
+
+[data-reach-menu-popover] {
+    left: auto !important; // Overrides default so that menu isn't off screen
+    right: $gutter--m !important; // Overrides default so that menu isn't off screen
+    margin-left: $gutter--m;
+    width: auto;
+}
+
+[data-reach-menu-list] {
+    display: block;
+    background-color: $site-background-color;
+    padding: $gutter--xs;
+    margin: $gutter--xs 0;
+    border: $border;
+
+    &.focus-visible {
+        outline: 0; // Outline replaced with border
+    }
+
+    [data-reach-menu-item] {
+        line-height: $gutter--xl * 1.3;
+        border-bottom: 0;
+    }
+}
+
+[data-reach-menu-item] {
+    font-family: $button-font;
+    font-size: $font-size--s;
+    padding: $gutter--s;
+    transition: $transition-background;
+
+    &[data-selected] {
+        color: $button-color;
+        background: $color-indigo--lighter;
+    }
+
+    &.active {
+        color: $button-color;
+        background: $color-indigo;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-down[data-reach-menu-list],
+.slide-down[data-reach-menu-items] {
+    animation: slide-down 0.2s ease;
+}

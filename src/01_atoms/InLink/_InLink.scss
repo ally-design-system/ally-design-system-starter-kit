@@ -1,0 +1,21 @@
+/*
+ * Internal Link Styles
+ *
+ */
+
+.in-link {
+    font-family: $link-font;
+    font-weight: $link-weight;
+    color: $link-color;
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-size: $font-size--s;
+
+    &:hover {
+        border-bottom: $border--bottom;
+    }
+
+    .focus-visible {
+        outline-offset: -$outline-offset;
+    }
+}

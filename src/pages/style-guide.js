@@ -4,12 +4,12 @@
  */
 
 import React from "react"
-import Layout from "../04_templates/MainLayout"
-import Image from "../01_atoms/Image"
-import Icon from "../01_atoms/Icon"
-import InLink from "../01_atoms/InLink"
-import ExLink from "../01_atoms/ExLink"
-import Button from "../01_atoms/Button"
+import Layout from "../04_templates/MainLayout/MainLayout"
+import Image from "../01_atoms/Image/Image"
+import Icon from "../00_design_tokens/005_iconography/Icon/Icon"
+import InLink from "../01_atoms/InLink/InLink"
+import ExLink from "../01_atoms/ExLink/ExLink"
+import Button from "../01_atoms/Button/Button"
 
 // @todo: Move to style guide styling unless adding Storybook!?
 const Container = {
@@ -25,7 +25,7 @@ const ComponentsPage = () => (
                     <h1>Ally Style Guide</h1>
                     <h2>Atom Components</h2>
                     <h3>Image</h3>
-                    <Image alt="Gatsby Logo" filename="Gatsby.png" />
+                    <Image alt="Gatsby Logo" filename="gatsby.png" />
                     <h3>Icon</h3>
                     <div style={Container}>
                         <Icon id="mail" title="Email address" />

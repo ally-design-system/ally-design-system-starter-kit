@@ -1,0 +1,21 @@
+// Color Palette Options
+$color-white: #fefefe;
+$color-black: #000013;
+$color-indigo: #4b0082;
+$color-indigo--lighter: #6b00b8;
+$color-indigo--darker: #2b0049;
+
+// Set Site Theme Color Palette
+$theme-color-primary: $color-black;
+$theme-color-primary--lighter: $color-black;
+$theme-color-primary--darker: $color-black;
+
+$theme-color-seconday: $color-indigo;
+$theme-color-seconday--lighter: $color-indigo--lighter;
+$theme-color-seconday--darker: $color-indigo--darker;
+
+$theme-color-accent: $color-indigo;
+$theme-color-accent--lighter: $color-indigo--lighter;
+$theme-color-accent--darker: $color-indigo--darker;
+
+$theme-color-background: $color-white;

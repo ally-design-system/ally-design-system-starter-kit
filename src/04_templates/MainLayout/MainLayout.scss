@@ -1,0 +1,15 @@
+/*
+ * Main Layout Template Styles
+ *
+ */
+
+// Height of Header + Footer Components
+$header-and-footer: 14.5rem;
+
+.main-layout {
+    margin: 0 auto;
+    max-width: $site-max-width;
+    padding: $gutter--xl $gutter--m;
+    // Sets minimum page height to viewport height - (Header + Footer) height to keep footer at bottom of page
+    min-height: calc(100vh - #{$header-and-footer});
+}
