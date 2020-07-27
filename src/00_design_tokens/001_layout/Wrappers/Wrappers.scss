@@ -1,4 +1,25 @@
-// @todo: create wrapper design token with below in it:
+/*
+ * Wrapper Design Tokens
+ *
+ */
 
-// Set Max Width for Site
-$site-max-width: breakpoint(l);
+// Wrapper Values
+$wrappers: (
+    SiteMaxWidth: breakpoint(l),
+);
+
+// Wrapper Design Token Config
+@function wrapper($name) {
+    @if map-has-key($wrappers, $name) {
+        @return map-get($wrappers, $name);
+    }
+
+    @error "The key #{$name} is not in the $wrappers design token map";
+    @return null;
+}
+
+// Wrapper Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    wsite   width: wrapper(SiteMaxWidth);
+*/

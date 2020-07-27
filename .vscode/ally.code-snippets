@@ -184,5 +184,12 @@
       "spacing(xxxxl)",
 		],
 		  "description": "Spacing xxxxl snippet"
+    },
+    "Wrapper SiteMaxWidth": {
+		"prefix": "wsite",
+		"body": [
+      "width: wrapper(SiteMaxWidth);",
+		],
+		  "description": "Wrapper SiteMaxWidth snippet"
     }
 }

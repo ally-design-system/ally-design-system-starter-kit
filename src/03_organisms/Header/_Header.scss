@@ -14,7 +14,7 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: $site-max-width;
+        max-width: wrapper(SiteMaxWidth);
         padding: spacing(l);
     }
 
