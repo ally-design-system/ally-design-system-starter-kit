@@ -4,7 +4,7 @@
  */
 
 .header {
-    z-index: map-get($zindex, header);
+    z-index: zlayer(Header);
     background-color: $site-background-color;
     border-bottom: $border;
     width: 100%;

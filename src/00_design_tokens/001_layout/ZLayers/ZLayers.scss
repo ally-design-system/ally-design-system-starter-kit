@@ -1,0 +1,27 @@
+/*
+ * Z layer Design Tokens
+ *
+ */
+
+// Z Layer Values
+$zlayers: (
+    SkipLink: 10,
+    Header: 5,
+    Footer: 5,
+);
+
+// Z Layer Design Token Config
+@function zlayer($name) {
+    @if map-has-key($zlayers, $name) {
+        @return map-get($zlayers, $name);
+    }
+
+    @error "The key #{$name} is not in the $zlayers design token map";
+    @return null;
+}
+
+// Z Layer Design Token Usage With Ally Code Snippets
+// Can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    zl  z-index: zlayer(ComponentName);
+*/

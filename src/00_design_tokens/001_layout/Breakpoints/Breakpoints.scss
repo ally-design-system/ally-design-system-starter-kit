@@ -18,11 +18,11 @@ $breakpoints: (
         @return map-get($breakpoints, $name);
     }
 
-    @warn "The key #{$name} is not in the ’$breakpoint’ design token map";
+    @error "The key #{$name} is not in the $breakpoints design token map";
     @return null;
 }
 
-// Breakpoint Design Token Config Usage With Ally Code Snippets
+// Breakpoint Design Token Usage With Ally Code Snippets
 // Can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     bp       @media (min-width: breakpoint(?)) {}

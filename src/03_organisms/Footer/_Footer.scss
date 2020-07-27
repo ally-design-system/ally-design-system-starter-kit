@@ -4,7 +4,7 @@
  */
 
 .footer {
-    z-index: map-get($zindex, footer);
+    z-index: zlayer(Footer);
     background-color: $site-background-color;
     border-top: $border;
     width: 100%;

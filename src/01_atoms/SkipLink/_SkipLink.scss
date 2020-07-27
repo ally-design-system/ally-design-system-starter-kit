@@ -18,7 +18,7 @@
 
 [data-reach-skip-nav-link] {
     &:focus {
-        z-index: map-get($zindex, skiplink);
+        z-index: zlayer(SkipLink);
         position: fixed;
         overflow: hidden;
         left: $gutter--xs;

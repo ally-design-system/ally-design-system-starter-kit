@@ -93,5 +93,13 @@
       "@media (min-width: breakpoint(xl)) {}",
 		],
 		  "description": "Ally media query xl"
+    },
+    "Z Layer": {
+		"prefix": "zl",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/ZLayers/ZLayers'"
+      "z-index: zlayer(${TM_FILENAME_BASE});",
+		],
+		  "description": "zlayer() snippet"
     }
 }
