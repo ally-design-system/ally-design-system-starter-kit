@@ -1,9 +1,34 @@
-/* Breakpoints
- *************/
+/*
+ * Breakpoint Design Tokens
+ *
+ */
 
-// Set Breakpoint Options
-$breakpoint-mobile--s: 380px;
-$breakpoint-mobile: 500px;
-$breakpoint-tablet: 950px;
-$breakpoint-desktop: 1200px;
-$breakpoint-desktop--l: 1600px;
+// Breakpoint Values
+$breakpoints: (
+    xs: 380px,
+    s: 500px,
+    m: 950px,
+    l: 1200px,
+    xl: 1600px,
+);
+
+// Breakpoint Design Token Config
+@function breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @return map-get($breakpoints, $name);
+    }
+
+    @warn "The key #{$name} is not in the ’$breakpoint’ design token map";
+    @return null;
+}
+
+// Breakpoint Design Token Config Usage With Ally Code Snippets
+// Can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    bp       @media (min-width: breakpoint(?)) {}
+    bpxs     @media (min-width: breakpoint(xs)) {}
+    bps      @media (min-width: breakpoint(s)) {}
+    bpm      @media (min-width: breakpoint(m)) {}
+    bpl      @media (min-width: breakpoint(l)) {}
+    bpxl     @media (min-width: breakpoint(xl)) {}
+*/

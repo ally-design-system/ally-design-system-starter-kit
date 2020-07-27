@@ -51,5 +51,47 @@
       "export default ${TM_FILENAME_BASE}"
 		],
 		  "description": "React arrow function component with Props"
+    },
+    "Breakpoint": {
+		"prefix": "bp",
+		"body": [
+      "@media (min-width: breakpoint(?)) {}",
+		],
+		  "description": "Ally media query"
+    },
+    "Breakpoint xs": {
+		"prefix": "bpxs",
+		"body": [
+      "@media (min-width: breakpoint(xs)) {}",
+		],
+		  "description": "Ally media query xs"
+    },
+    "Breakpoint s": {
+		"prefix": "bps",
+		"body": [
+      "@media (min-width: breakpoint(s)) {}",
+		],
+		  "description": "Ally media query s"
+    },
+    "Breakpoint m": {
+		"prefix": "bpm",
+		"body": [
+      "@media (min-width: breakpoint(m)) {}",
+		],
+		  "description": "Ally media query m"
+    },
+    "Breakpoint l": {
+		"prefix": "bpl",
+		"body": [
+      "@media (min-width: breakpoint(l)) {}",
+		],
+		  "description": "Ally media query l"
+    },
+    "Breakpoint xl": {
+		"prefix": "bpxl",
+		"body": [
+      "@media (min-width: breakpoint(xl)) {}",
+		],
+		  "description": "Ally media query xl"
     }
 }

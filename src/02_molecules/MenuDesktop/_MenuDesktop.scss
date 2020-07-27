@@ -7,7 +7,7 @@
     display: none; // Removes Element Visually And From The Accessibility Tree
     list-style: none;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: breakpoint(m)) {
         display: flex;
     }
 

@@ -89,6 +89,7 @@ const ComponentsPage = () => (
                             <ExLink />
                         </p>
                     </div>
+                    <div className="component-test"></div>
                 </div>
             </section>
         </Layout>
