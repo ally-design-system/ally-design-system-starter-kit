@@ -107,5 +107,82 @@
       "z-index: zlayer(${TM_FILENAME_BASE});",
 		],
 		  "description": "zlayer() snippet"
+    },
+    "Spacing xxxxs": {
+		"prefix": "sxxxxs",
+		"body": [
+      "spacing(xxxxs)",
+		],
+		  "description": "Spacing xxxxs snippet"
+    },
+    "Spacing xxxs": {
+		"prefix": "sxxxs",
+		"body": [
+      "spacing(xxxs)",
+		],
+		  "description": "Spacing xxxs snippet"
+    },
+    "Spacing xxs": {
+		"prefix": "sxxs",
+		"body": [
+      "spacing(xxs)",
+		],
+		  "description": "Spacing xxs snippet"
+    },
+    "Spacing xs": {
+		"prefix": "sxs",
+		"body": [
+      "spacing(xs)",
+		],
+		  "description": "Spacing xs snippet"
+    },
+    "Spacing s": {
+		"prefix": "ss",
+		"body": [
+      "spacing(s)",
+		],
+		  "description": "Spacing s snippet"
+    },
+    "Spacing m": {
+		"prefix": "sm",
+		"body": [
+      "spacing(m)",
+		],
+		  "description": "Spacing m snippet"
+    },
+    "Spacing l": {
+		"prefix": "sl",
+		"body": [
+      "spacing(l)",
+		],
+		  "description": "Spacing l snippet"
+    },
+    "Spacing xl": {
+		"prefix": "sxl",
+		"body": [
+      "spacing(xl)",
+		],
+		  "description": "Spacing xl snippet"
+    },
+    "Spacing xxl": {
+		"prefix": "sxxl",
+		"body": [
+      "spacing(xxl)",
+		],
+		  "description": "Spacing xxl snippet"
+    },
+    "Spacing xxxl": {
+		"prefix": "sxxxl",
+		"body": [
+      "spacing(xxxl)",
+		],
+		  "description": "Spacing xxxl snippet"
+    },
+    "Spacing xxxxl": {
+		"prefix": "sxxxxl",
+		"body": [
+      "spacing(xxxxl)",
+		],
+		  "description": "Spacing xxxxl snippet"
     }
 }

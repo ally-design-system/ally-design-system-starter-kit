@@ -14,7 +14,7 @@
         flex-direction: column;
         justify-content: space-between;
         max-width: $site-max-width;
-        padding: $gutter--s $gutter--m;
+        padding: spacing(m) spacing(l);
         margin: 0 auto;
         min-height: 6.5rem;
     }
@@ -26,7 +26,7 @@
     }
 
     &__in-link {
-        margin-right: $gutter--s;
+        margin-right: spacing(m);
     }
 
     &__text {
@@ -40,7 +40,7 @@
         svg {
             width: 12px;
             height: 12px;
-            margin-left: $gutter--xxxxs;
+            margin-left: spacing(xxs);
         }
     }
 }

@@ -60,7 +60,7 @@ h6 {
     font-family: $heading-font;
     font-weight: $heading-weight;
     color: $heading-color;
-    margin: $gutter--m 0 $gutter--l;
+    margin: spacing(l) 0 spacing(xl);
 }
 
 h2,
@@ -68,14 +68,14 @@ h3,
 h4,
 h5,
 h6 {
-    margin: $gutter--xl 0 $gutter--s;
+    margin: spacing(xxxl) 0 spacing(m);
 }
 
 p {
     font-family: $paragraph-font;
     font-weight: $paragraph-weight;
     color: $paragraph-color;
-    margin-bottom: $gutter--s;
+    margin-bottom: spacing(m);
     font-size: $font-size--s;
 }
 
@@ -109,10 +109,10 @@ a {
 }
 
 ul {
-    margin: $gutter--l 0;
+    margin: spacing(xl) 0;
 
     li {
-        margin: $gutter--xs 0;
+        margin: spacing(s) 0;
         font-size: $font-size--s;
     }
 }

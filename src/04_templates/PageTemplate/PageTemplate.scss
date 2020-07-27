@@ -8,13 +8,13 @@
     $self: &;
 
     display: grid;
-    row-gap: $gutter--m;
+    row-gap: spacing(l);
 
     @media (min-width: breakpoint(m)) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, auto);
-        column-gap: $gutter--m;
-        row-gap: $gutter--m;
+        column-gap: spacing(l);
+        row-gap: spacing(l);
     }
 
     &__column {
@@ -23,11 +23,11 @@
 
     &__feature-image {
         width: 100%;
-        margin: $gutter--m auto $gutter--xl 0;
+        margin: spacing(l) auto spacing(xxxl) 0;
 
         @media (min-width: breakpoint(m)) {
             width: 90%;
-            margin: $gutter--m 0 $gutter--xl auto;
+            margin: spacing(l) 0 spacing(xxxl) auto;
         }
     }
 
@@ -60,7 +60,7 @@
                 width: 38%;
 
                 @media (min-width: breakpoint(m)) {
-                    margin: $gutter--m 0 $gutter--m auto;
+                    margin: spacing(l) 0 spacing(l) auto;
                 }
             }
         }
@@ -72,7 +72,7 @@
 
                 @media (min-width: breakpoint(m)) {
                     justify-content: space-between;
-                    margin: -$gutter--m 0 $gutter--m auto;
+                    margin: -spacing(l) 0 spacing(l) auto;
                 }
             }
         }
@@ -80,6 +80,6 @@
 
     &__icon {
         width: 11%;
-        margin: 0 0 $gutter--m;
+        margin: 0 0 spacing(l);
     }
 }

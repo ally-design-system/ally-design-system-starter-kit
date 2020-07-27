@@ -4,10 +4,10 @@
  */
 
 .post-template {
-    margin-top: $gutter--xl;
+    margin-top: spacing(xxxl);
 
     &__frontmatter {
-        margin: $gutter--xl 0;
+        margin: spacing(xxxl) 0;
     }
 
     &__date {
@@ -15,6 +15,6 @@
     }
 
     &__content {
-        margin: $gutter--m 0;
+        margin: spacing(l) 0;
     }
 }

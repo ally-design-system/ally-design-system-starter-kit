@@ -15,7 +15,7 @@
         justify-content: space-between;
         margin: 0 auto;
         max-width: $site-max-width;
-        padding: $gutter--m;
+        padding: spacing(l);
     }
 
     &__site-title {
@@ -29,6 +29,6 @@
     &__navigation {
         display: flex;
         margin: auto 0;
-        padding-left: $gutter--s;
+        padding-left: spacing(m);
     }
 }

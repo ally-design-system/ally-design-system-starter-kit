@@ -12,7 +12,7 @@
     }
 
     &__item {
-        margin: 0 0 0 $gutter--m;
+        margin: 0 0 0 spacing(l);
 
         &:first-of-type {
             margin-left: 0;

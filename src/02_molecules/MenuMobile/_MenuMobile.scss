@@ -14,7 +14,7 @@
     font-size: $font-size--s;
     color: $button-color;
     background: $button-background;
-    padding: $gutter--s $gutter--m;
+    padding: spacing(m) spacing(l);
 
     &:hover,
     &:focus {
@@ -24,7 +24,7 @@
     svg {
         fill: $button-color;
         width: 1.3rem;
-        margin: auto 0 auto $gutter--xs;
+        margin: auto 0 auto spacing(s);
     }
 
     @media (min-width: breakpoint(m)) {
@@ -34,16 +34,18 @@
 
 [data-reach-menu-popover] {
     left: auto !important; // Overrides default so that menu isn't off screen
-    right: $gutter--m !important; // Overrides default so that menu isn't off screen
-    margin-left: $gutter--m;
+    right: spacing(
+        l
+    ) !important; // Overrides default so that menu isn't off screen
+    margin-left: spacing(l);
     width: auto;
 }
 
 [data-reach-menu-list] {
     display: block;
     background-color: $site-background-color;
-    padding: $gutter--xs;
-    margin: $gutter--xs 0;
+    padding: spacing(s);
+    margin: spacing(s) 0;
     border: $border;
 
     &.focus-visible {
@@ -51,7 +53,7 @@
     }
 
     [data-reach-menu-item] {
-        line-height: $gutter--xl * 1.3;
+        line-height: spacing(xxxl) * 1.3;
         border-bottom: 0;
     }
 }
@@ -59,7 +61,7 @@
 [data-reach-menu-item] {
     font-family: $button-font;
     font-size: $font-size--s;
-    padding: $gutter--s;
+    padding: spacing(m);
     transition: $transition-background;
 
     &[data-selected] {
