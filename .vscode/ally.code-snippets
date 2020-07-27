@@ -55,6 +55,7 @@
     "Breakpoint": {
 		"prefix": "bp",
 		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
       "@media (min-width: breakpoint(?)) {}",
 		],
 		  "description": "Ally media query"
@@ -62,6 +63,7 @@
     "Breakpoint xs": {
 		"prefix": "bpxs",
 		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
       "@media (min-width: breakpoint(xs)) {}",
 		],
 		  "description": "Ally media query xs"
@@ -69,6 +71,7 @@
     "Breakpoint s": {
 		"prefix": "bps",
 		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
       "@media (min-width: breakpoint(s)) {}",
 		],
 		  "description": "Ally media query s"
@@ -76,6 +79,7 @@
     "Breakpoint m": {
 		"prefix": "bpm",
 		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
       "@media (min-width: breakpoint(m)) {}",
 		],
 		  "description": "Ally media query m"
@@ -83,6 +87,7 @@
     "Breakpoint l": {
 		"prefix": "bpl",
 		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
       "@media (min-width: breakpoint(l)) {}",
 		],
 		  "description": "Ally media query l"
@@ -90,6 +95,7 @@
     "Breakpoint xl": {
 		"prefix": "bpxl",
 		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
       "@media (min-width: breakpoint(xl)) {}",
 		],
 		  "description": "Ally media query xl"
