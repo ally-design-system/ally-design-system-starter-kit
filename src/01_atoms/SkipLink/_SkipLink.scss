@@ -12,7 +12,7 @@
     width: 1px;
     margin: -1px;
     transform: translateY(-100%);
-    opacity: 0;
+    opacity: opacity(0);
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
@@ -26,9 +26,9 @@
         height: auto;
         clip: auto;
         padding: spacing(s);
-        background-color: $site-background-color;
+        background-color: color(snow);
         transform: translateY(spacing(s));
-        opacity: 1;
+        opacity: opacity(100);
     }
 
     &.focus-visible,
