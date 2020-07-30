@@ -191,5 +191,33 @@
       "width: wrapper(SiteMaxWidth);",
 		],
 		  "description": "Wrapper SiteMaxWidth snippet"
+    },
+    "Brand color snow": {
+		"prefix": "cs",
+		"body": [
+      "color(snow)",
+		],
+		  "description": "Brand color snow snippet"
+    },
+    "Brand color midnight": {
+		"prefix": "cm",
+		"body": [
+      "color(midnight)",
+		],
+		  "description": "Brand color midnight snippet"
+    },
+    "Brand color gold": {
+		"prefix": "cg",
+		"body": [
+      "color(gold)",
+		],
+		  "description": "Brand color gold snippet"
+    },
+    "Brand color tangerine": {
+		"prefix": "ct",
+		"body": [
+      "color(tangerine)",
+		],
+		  "description": "Brand color tangerine snippet"
     }
 }
