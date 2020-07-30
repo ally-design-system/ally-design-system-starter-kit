@@ -89,7 +89,9 @@ const ComponentsPage = () => (
                             <ExLink />
                         </p>
                     </div>
-                    <div className="component-test"></div>
+                    <div className="component-test">
+                        <p>Test</p>
+                    </div>
                 </div>
             </section>
         </Layout>

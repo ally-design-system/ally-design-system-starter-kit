@@ -42,7 +42,7 @@ $spacing: (
         @return map-get($spacing, $name);
     }
 
-    @warn "The key #{$name} is not in the ’$spacing’ design token map";
+    @error "The key #{$name} is not in the ’$spacing’ design token map";
     @return null;
 }
 
