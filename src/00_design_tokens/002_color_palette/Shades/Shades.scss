@@ -2,3 +2,28 @@
  * Shade Design Tokens
  *
  */
+
+// Shades Map
+$shades: (
+    // 20
+        20: 20%,
+    // 40
+        40: 40%,
+    // 60
+        60: 60%,
+    // 80
+        80: 80%
+);
+
+@function shade($color, $number) {
+    @if map-has-key($shades, $number) {
+        @return mix(#000, $color, $number);
+    }
+
+    @error "The key #{$number} is not in the $shades design token map, please choose between 20, 40, 60 and 80";
+    @return null;
+}
+
+// Examples
+// shade(color(tangerine), 20)
+// shade(color(snow), 40)
