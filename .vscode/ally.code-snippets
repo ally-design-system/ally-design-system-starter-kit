@@ -219,5 +219,33 @@
       "color(tangerine)",
 		],
 		  "description": "Brand color tangerine snippet"
+    },
+    "Opacity 0%": {
+		"prefix": "o0",
+		"body": [
+      "opacity: opacity(0);",
+		],
+		  "description": "Opacity 0% snippet"
+    },
+    "Opacity 25%": {
+		"prefix": "o25",
+		"body": [
+      "opacity: opacity(25);",
+		],
+		  "description": "Opacity 25% snippet"
+    },
+    "Opacity 75%": {
+		"prefix": "o75",
+		"body": [
+      "opacity: opacity(75);",
+		],
+		  "description": "Opacity 75% snippet"
+    },
+    "Opacity 100%": {
+		"prefix": "o100",
+		"body": [
+      "opacity: opacity(100);",
+		],
+		  "description": "Opacity 100% snippet"
     }
 }
