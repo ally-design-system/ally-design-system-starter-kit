@@ -4,7 +4,9 @@
  */
 
 // Set Site Background Color
-$site-background-color: $color-snow; // @todo: Change to actual color from colors!
+$site-background-color: color(
+    snow
+); // @todo: Change to actual color from colors!
 
 // Set the root font-size for REMs
 :root {
@@ -13,9 +15,9 @@ $site-background-color: $color-snow; // @todo: Change to actual color from color
 
 // Set Body Background Color
 body {
-    background-color: $color-snow;
+    background-color: color(snow);
 
     @media (prefers-color-scheme: dark) {
-        background-color: $color-midnight;
+        background-color: color(midnight);
     }
 }

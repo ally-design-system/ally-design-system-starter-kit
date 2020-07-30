@@ -66,12 +66,12 @@
 
     &[data-selected] {
         color: $button-color;
-        background: $color-tangerine;
+        background: color(tangerine);
     }
 
     &.active {
         color: $button-color;
-        background: $color-gold;
+        background: color(gold);
     }
 }
 

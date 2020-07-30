@@ -5,9 +5,9 @@
 
 // Set Site Button Styles
 $button-font: $theme-font-primary;
-$button-color: $color-snow;
-$button-background: $color-gold;
-$button-background--hover: $color-tangerine;
+$button-color: color(snow);
+$button-background: color(gold);
+$button-background--hover: color(tangerine);
 
 button,
 .button {

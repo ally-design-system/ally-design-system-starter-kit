@@ -1,10 +1,9 @@
-// Color Palette Options
-$color-snow: #fffafa; // Snow
-$color-midnight: #000013; // Midnight
-$color-gold: #ffd700; // Gold
-$color-tangerine: #f28500; // Tangerine
+/*
+ * Brand Color Design Tokens
+ *
+ */
 
-// Color Palette Map
+// Brand Color Palette Map
 $colors: (
     // Snow
         snow: #fffafa,
@@ -16,7 +15,7 @@ $colors: (
         tangerine: #f28500
 );
 
-// Color Design Token Config
+// Brand Color Design Token Config
 @function color($name) {
     @if map-has-key($colors, $name) {
         @return map-get($colors, $name);
