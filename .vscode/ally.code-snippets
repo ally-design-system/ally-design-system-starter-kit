@@ -275,5 +275,33 @@
       "shade(color(), 80)",
 		],
 		  "description": "Shade 80 snippet"
+    },
+    "Tint 20": {
+		"prefix": "t20",
+		"body": [
+      "tint(color(), 20)",
+		],
+		  "description": "Tint 20 snippet"
+    },
+    "Tint 40": {
+		"prefix": "t40",
+		"body": [
+      "tint(color(), 40)",
+		],
+		  "description": "Tint 40 snippet"
+    },
+    "Tint 60": {
+		"prefix": "t60",
+		"body": [
+      "tint(color(), 60)",
+		],
+		  "description": "Tint 60 snippet"
+    },
+    "Tint 80": {
+		"prefix": "t80",
+		"body": [
+      "tint(color(), 80)",
+		],
+		  "description": "Tint 80 snippet"
     }
 }
