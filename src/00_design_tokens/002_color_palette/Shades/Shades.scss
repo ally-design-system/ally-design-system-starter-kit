@@ -15,6 +15,7 @@ $shades: (
         80: 80%
 );
 
+// Shade Design Token Config
 @function shade($color, $number) {
     @if map-has-key($shades, $number) {
         @return mix(#000, $color, $number);
@@ -24,6 +25,13 @@ $shades: (
     @return null;
 }
 
-// Examples
-// shade(color(tangerine), 20)
-// shade(color(snow), 40)
+// Shade Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+// Snippets offer shade skeleton but the user still needs to manually add color
+// Example: shade(color(snow), 40)
+/*
+    s20  shade(color(), 20)
+    s40  shade(color(), 40)
+    s60  shade(color(), 60)
+    s80  shade(color(), 80)
+*/

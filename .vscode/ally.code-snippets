@@ -247,5 +247,33 @@
       "opacity: opacity(100);",
 		],
 		  "description": "Opacity 100% snippet"
+    },
+    "Shade 20": {
+		"prefix": "s20",
+		"body": [
+      "shade(color(), 20)",
+		],
+		  "description": "Shade 20 snippet"
+    },
+    "Shade 40": {
+		"prefix": "s40",
+		"body": [
+      "shade(color(), 40)",
+		],
+		  "description": "Shade 40 snippet"
+    },
+    "Shade 60": {
+		"prefix": "s60",
+		"body": [
+      "shade(color(), 60)",
+		],
+		  "description": "Shade 60 snippet"
+    },
+    "Shade 80": {
+		"prefix": "s80",
+		"body": [
+      "shade(color(), 80)",
+		],
+		  "description": "Shade 80 snippet"
     }
 }
