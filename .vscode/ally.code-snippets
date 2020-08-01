@@ -303,5 +303,12 @@
       "tint(color(), 80)",
 		],
 		  "description": "Tint 80 snippet"
+    },
+    "70deg Gradient": {
+		"prefix": "g70gt",
+		"body": [
+      "background: gradient-70(color(gold), color(tangerine));",
+		],
+		  "description": "70deg Gradient snippet"
     }
 }
