@@ -46,7 +46,7 @@
     background-color: $site-background-color;
     padding: spacing(s);
     margin: spacing(s) 0;
-    border: $border;
+    border: border(default);
 
     &.focus-visible {
         outline: 0; // Outline replaced with border

@@ -12,7 +12,7 @@
     font-size: $font-size--s;
 
     &:hover {
-        border-bottom: $border--bottom;
+        border-bottom: border(default);
     }
 
     .focus-visible {

@@ -19,7 +19,7 @@
         }
 
         a.active {
-            border-bottom: $border--bottom;
+            border-bottom: border(default);
         }
     }
 }

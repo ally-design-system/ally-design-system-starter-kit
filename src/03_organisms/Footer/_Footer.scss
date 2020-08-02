@@ -6,7 +6,7 @@
 .footer {
     z-index: zlayer(Footer);
     background-color: $site-background-color;
-    border-top: $border;
+    border-top: border(default);
     width: 100%;
 
     &__inner {

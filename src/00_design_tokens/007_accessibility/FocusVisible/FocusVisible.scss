@@ -9,8 +9,8 @@
  */
 
 // Set focus outline using border styles
-$outline: $border;
-$outline-offset: $border-width;
+$outline: border(default);
+$outline-offset: border(default)-width;
 
 // This will hide the focus indicator if the element receives focus via the mouse,
 // but it will still show up on keyboard focus.

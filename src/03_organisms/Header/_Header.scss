@@ -6,7 +6,7 @@
 .header {
     z-index: zlayer(Header);
     background-color: $site-background-color;
-    border-bottom: $border;
+    border-bottom: border(default);
     width: 100%;
 
     &__inner {

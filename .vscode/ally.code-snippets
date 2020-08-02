@@ -310,5 +310,19 @@
       "background: gradient-70(color(gold), color(tangerine));",
 		],
 		  "description": "70deg Gradient snippet"
+    },
+    "Border Default": {
+		"prefix": "bd",
+		"body": [
+      "border: border(default);",
+		],
+		  "description": "Border Default snippet"
+    },
+    "Shadow Default": {
+		"prefix": "sd",
+		"body": [
+      "box-shadow: 15px 15px 0 0 color(midnight);",
+		],
+		  "description": "Border Default snippet"
     }
 }

@@ -104,7 +104,7 @@ a {
 
     &:hover,
     &.focus-visible {
-        border-bottom: $border--bottom;
+        border-bottom: border(default);
     }
 }
 
