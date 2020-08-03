@@ -331,5 +331,12 @@
       "transition: transition(background-color);",
 		],
 		  "description": "Transition Background Color snippet"
+    },
+    "Animation FadeIn": {
+		"prefix": "afi",
+		"body": [
+      "animation: animation(fadeIn);",
+		],
+		  "description": "Animation FadeIn snippet"
     }
 }
