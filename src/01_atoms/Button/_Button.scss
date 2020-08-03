@@ -18,7 +18,7 @@ button,
     text-decoration: none;
     line-height: 1;
     cursor: pointer;
-    transition: $transition-background;
+    transition: transition(background-color);
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: $button-font;

@@ -1,5 +1,25 @@
-/* Transitions
- *************/
+/*
+ * Transition Styles
+ *
+ */
 
-// Set Background Color Transition
-$transition-background: background-color 250ms ease-in-out;
+// Transitions Map
+$transitions: (
+    background-color: background-color 250ms ease-in-out,
+);
+
+// Transitions Design Token Config
+@function transition($name) {
+    @if map-has-key($transitions, $name) {
+        @return map-get($transitions, $name);
+    }
+
+    @error "The key #{$name} is not in the $transitions design token map";
+    @return null;
+}
+
+// Transitions Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    tbc     transition: transition(background-color);
+*/
