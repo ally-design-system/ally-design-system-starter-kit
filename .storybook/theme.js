@@ -16,12 +16,12 @@ export default create({
 
     // Theme base colours
     colorPrimary: "#000013",
-    colorSecondary: "#4b0082",
+    colorSecondary: "#000013",
 
     // UI colours
-    appBg: "#fefefe",
-    appContentBg: "#fefefe",
-    appBorderColor: "#4b0082",
+    appBg: "#fffafa",
+    appContentBg: "#fffafa",
+    appBorderColor: "#ffd700",
     appBorderRadius: 0,
 
     // Typography
@@ -30,16 +30,16 @@ export default create({
 
     // Text colours
     textColor: "#000013",
-    textInverseColor: "#fefefe",
+    textInverseColor: "#000013",
 
     // Toolbar and active colours
     barTextColor: "#000013",
-    barSelectedColor: "#4b0082",
-    barBg: "#fefefe",
+    barSelectedColor: "#000013",
+    barBg: "#ffd700",
 
     // Form colours
-    inputBg: "#fefefe",
-    inputBorder: "#4b0082",
+    inputBg: "#fffafa",
+    inputBorder: "#ffd700",
     inputTextColor: "#000013",
     inputBorderRadius: 0,
 
