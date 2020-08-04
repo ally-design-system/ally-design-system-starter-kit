@@ -14,8 +14,4 @@
     &:hover {
         border-bottom: border(default);
     }
-
-    .focus-visible {
-        outline-offset: -$outline-offset;
-    }
 }

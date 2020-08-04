@@ -8,10 +8,6 @@
  * JavaScript imported in `.storybook/preview.js` for Storybook Build
  */
 
-// Set focus outline using border styles
-$outline: border(default);
-$outline-offset: border(default)-width;
-
 // This will hide the focus indicator if the element receives focus via the mouse,
 // but it will still show up on keyboard focus.
 .js-focus-visible :focus:not(.focus-visible) {
@@ -22,6 +18,6 @@ $outline-offset: border(default)-width;
 // If this styling is removed the browser's default focus
 // indicator will be displayed instead.
 .js-focus-visible .focus-visible {
-    outline: $outline;
-    outline-offset: $outline-offset;
+    outline: border(default);
+    outline-offset: spacing(xxs);
 }
