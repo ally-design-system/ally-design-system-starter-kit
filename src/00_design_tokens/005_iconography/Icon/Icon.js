@@ -19,7 +19,7 @@ const Icon = props => {
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 24 24"
                 focusable="false"
-                className={`icon ${props.modifier}`}
+                className={`icon ${props.fill} ${props.modifier}`}
             >
                 <title>{props.title}</title>
                 <use xlinkHref={`${IconsSprite}#${props.name}`} />
@@ -31,13 +31,15 @@ const Icon = props => {
 Icon.defaultProps = {
     name: "open-in-new",
     title: "Link will open in new tab",
+    fill: "midnight",
     modifier: "",
 }
 
 Icon.propTypes = {
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    modifier: PropTypes.string,
+    fill: PropTypes.oneOf(["midnight", "snow"]),
+    modifier: PropTypes.oneOf(["", "--small"]),
 }
 
 export default Icon

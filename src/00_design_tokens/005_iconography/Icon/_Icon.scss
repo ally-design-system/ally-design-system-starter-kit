@@ -6,5 +6,17 @@
 .icon {
     width: 24px;
     height: 24px;
-    fill: color(midnight);
+
+    &.--small {
+        width: 16px;
+        height: 16px;
+    }
+
+    &.midnight {
+        fill: color(midnight);
+    }
+
+    &.snow {
+        fill: color(snow);
+    }
 }
