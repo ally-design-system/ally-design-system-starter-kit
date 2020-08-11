@@ -15,12 +15,17 @@
  *
  */
 
-// Import Fonts
+/* Import Fonts
+***************/
+
 // https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
 // https://css-tricks.com/snippets/css/using-font-face/
 // https://google-webfonts-helper.herokuapp.com/fonts
 // https://developers.google.com/fonts/docs/css2
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+/* Typeface Design Tokens
+*************************/
 
 // Typeface Map
 $typefaces: (
@@ -37,6 +42,9 @@ $typefaces: (
     @error "The key #{$name} is not in the $typefaces design token map";
     @return null;
 }
+
+/* Font Size Design Tokens
+**************************/
 
 // Font Size Map
 $font-sizes: (
@@ -70,13 +78,8 @@ $font-sizes: (
     @return null;
 }
 
-// // Typeface (font-family)
-// $font--arimo: "Arimo", sans-serif;
-// $font--slab: "Roboto Slab", serif;
-
-// // Set Site Theme Fonts
-// $theme-font-primary: $font--arimo;
-// $theme-font-secondry: $font--slab;
+/* Font Weight Design Tokens
+****************************/
 
 // Font Weights Map
 $font-weights: (
@@ -94,8 +97,8 @@ $font-weights: (
     @return null;
 }
 
-// $font-weight--normal: 400;
-// $font-weight--bold: 700;
+/* Leading Design Tokens
+************************/
 
 // Leading (line-height) Map
 $leading-heights: (
@@ -113,7 +116,8 @@ $leading-heights: (
     @return null;
 }
 
-// $font-line-height: 1.4;
+/* Tracking Design Tokens
+*************************/
 
 // Tracking (letter-spacing) Map
 $tracking-widths: (
@@ -131,34 +135,8 @@ $tracking-widths: (
     @return null;
 }
 
-/* Font Sizing
- *************/
-
-// // Set Base Font Size
-// $font-size: 1.1rem;
-
-// // Font Size Options
-// $font-size--xs: $font-size / 1.2; // 0.91rem
-// $font-size--s: $font-size; // 1.1rem
-// $font-size--m: $font-size * 1.3; // 1.43rem
-// $font-size--l: $font-size * 1.5; // 1.65rem
-// $font-size--xl: $font-size * 2.1; // 2.31rem
-
-// // Set Site Heading Styles
-// $heading-font: $theme-font-primary;
-// $heading-weight: $font-weight--bold;
-// $heading-color: color(midnight);
-
-// // Set Site Paragraph Styles
-// $paragraph-font: $theme-font-secondry;
-// $paragraph-weight: $font-weight--normal;
-// $paragraph-color: color(midnight);
-
-// // Set Site Link Styles
-// $link-font: $theme-font-primary;
-// $link-weight: $font-weight--bold;
-// $link-color: color(midnight);
-
+/* Heading Styling
+******************/
 h1,
 h2,
 h3,
@@ -169,18 +147,45 @@ h6 {
     font-weight: font-weight(bold);
     color: color(midnight);
     line-height: leading(tall);
-    // padding: 0;
-    // margin: 0 0 spacing(m) 0;
+    letter-spacing: tracking(regular);
+    padding: 0;
+    margin-bottom: spacing(m);
 }
 
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//     margin: spacing(xxxl) 0 spacing(m);
-// }
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: spacing(l) 0 spacing(m);
+}
 
+h1 {
+    font-size: font-size(hxl);
+}
+
+h2 {
+    font-size: font-size(hl);
+}
+
+h3 {
+    font-size: font-size(hm);
+}
+
+h4 {
+    font-size: font-size(hs);
+}
+
+h5 {
+    font-size: font-size(hxs);
+}
+
+h6 {
+    font-size: font-size(hxxs);
+}
+
+/* Pargraph Styling
+*******************/
 p {
     font-family: typeface(slab);
     font-weight: font-weight(regular);
@@ -189,21 +194,8 @@ p {
     font-size: font-size(copy);
 }
 
-// h1 {
-//     font-size: $font-size--xl;
-// }
-
-// h2 {
-//     font-size: $font-size--l;
-// }
-
-// h3,
-// h4,
-// h5,
-// h6 {
-//     font-size: $font-size--m;
-// }
-
+/* Link (Anchor) Styling
+************************/
 a,
 a:link,
 a:visited {
@@ -221,6 +213,8 @@ a:visited {
     }
 }
 
+/* List (Unordered List) Styling
+********************************/
 ul {
     margin: spacing(xl) 0;
 
@@ -230,71 +224,11 @@ ul {
     }
 }
 
-// // Font Size Scale Map
-// $font-sizes: (
-//     // Heading 1
-//         h1: 1,
-//     // Heading 2
-//         h2: 2,
-//     // Heading 3
-//         h3: 3,
-//     // Heading 4
-//         h4: 4,
-//     // Heading 5
-//         h5: 5,
-//     // Heading 6
-//         h6: 6,
-//     // Copy
-//         copy: 7,
-//     // Sub
-//         sub: 7,
-//     // Microcopy
-//         micro: 8
-// );
-
-// // Brand Color Design Token Config
-// @function font-size($name) {
-//     @if map-has-key($font-sizes, $name) {
-//         @return map-get($font-sizes, $name);
-//     }
-
-//     @error "The key #{$name} is not in the $font-sizes design token map";
-//     @return null;
-// }
-
-// // Heading 1
-// h1 {
-//     font-family: $heading-font;
-//     font-weight: $heading-weight;
-//     color: $heading-color;
-//     line-height: 1.5;
-//     padding: 0;
-//     margin: 0;
-//     letter-spacing: 0px;
-// }
-// // Heading 2
-// h2 {
-// }
-// // Heading 3
-// h3 {
-// }
-// // Heading 4
-// h4 {
-// }
-// // Heading 5
-// h5 {
-// }
-// // Heading 6
-// h6 {
-// }
-// // Paragraph
-// p {
-// }
+// Subcopy Caption
 // // Microcopy (Side Comment)
 // small {
 // }
-// // Anchor Link
-// a {
+
 // }
 // // Emphasis
 // em {
