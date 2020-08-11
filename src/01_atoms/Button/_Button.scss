@@ -4,8 +4,8 @@
  */
 
 // Set Site Button Styles
-$button-font: $theme-font-primary;
-$button-color: color(snow);
+$button-font: typeface(arimo);
+$button-color: color(midnight);
 $button-background: color(gold);
 $button-background--hover: color(tangerine);
 
@@ -22,8 +22,8 @@ button,
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: $button-font;
-    font-weight: $font-weight--bold;
-    font-size: $font-size--s;
+    font-weight: font-weight(bold);
+    font-size: font-size(hxxs);
     color: $button-color;
     background: $button-background;
     padding: spacing(m) spacing(l);

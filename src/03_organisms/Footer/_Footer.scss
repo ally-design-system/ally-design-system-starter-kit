@@ -5,7 +5,7 @@
 
 .footer {
     z-index: zlayer(Footer);
-    background-color: $site-background-color;
+    background-color: color(snow);
     border-top: border(default);
     width: 100%;
 
@@ -30,12 +30,12 @@
     }
 
     &__text {
-        font-size: $font-size--xs;
+        font-size: font-size(microcopy);
         margin: 0;
     }
 
     &__ex-link {
-        font-size: $font-size--xs;
+        font-size: font-size(microcopy);
 
         svg {
             width: 12px;

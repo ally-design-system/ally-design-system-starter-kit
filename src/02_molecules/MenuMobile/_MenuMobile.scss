@@ -9,20 +9,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $button-font;
-    font-weight: $font-weight--bold;
-    font-size: $font-size--s;
-    color: $button-color;
-    background: $button-background;
+    font-family: typeface(arimo);
+    font-weight: font-weight(bold);
+    font-size: font-size(copy);
+    color: color(midnight);
+    background: color(gold);
     padding: spacing(m) spacing(l);
 
     &:hover,
     &:focus {
-        background-color: $button-background--hover;
+        background: gradient-70(color(gold), color(tangerine));
     }
 
     svg {
-        fill: $button-color;
+        fill: color(midnight);
         width: 1.3rem;
         margin: auto 0 auto spacing(s);
     }
@@ -43,7 +43,7 @@
 
 [data-reach-menu-list] {
     display: block;
-    background-color: $site-background-color;
+    background-color: color(snow);
     padding: spacing(s);
     margin: spacing(s) 0;
     border: border(default);
@@ -59,18 +59,18 @@
 }
 
 [data-reach-menu-item] {
-    font-family: $button-font;
-    font-size: $font-size--s;
+    font-family: typeface(arimo);
+    font-size: font-size(copy);
     padding: spacing(m);
     transition: transition(background-color);
 
     &[data-selected] {
-        color: $button-color;
+        color: color(midnight);
         background: color(tangerine);
     }
 
     &.active {
-        color: $button-color;
+        color: color(midnight);
         background: color(gold);
     }
 }

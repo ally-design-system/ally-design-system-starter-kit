@@ -90,7 +90,22 @@ const ComponentsPage = () => (
                         </p>
                     </div>
                     <div className="component-test">
-                        <p>Test</p>
+                        {/* https://brajeshwar.github.io/entities */}
+                        <blockquote cite="https://www.huxley.net/bnw/four.html">
+                            <p>
+                                <span class="open-quotation">&#8220;</span>
+                                Words can be like X-rays, if you use them
+                                properly—they’ll go through anything. You read
+                                and you’re pierced. Words can be like X-rays, if
+                                you use them properly—they’ll go through
+                                anything. You read and you’re pierced.
+                                <span class="close-quotation">&#8221;</span>
+                            </p>
+                            <footer>
+                                <span class="em-dash">&#8212;</span> Aldous
+                                Huxley, <cite>Brave New World</cite>
+                            </footer>
+                        </blockquote>
                     </div>
                 </div>
             </section>

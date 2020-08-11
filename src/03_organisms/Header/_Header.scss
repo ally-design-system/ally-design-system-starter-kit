@@ -5,7 +5,7 @@
 
 .header {
     z-index: zlayer(Header);
-    background-color: $site-background-color;
+    background-color: color(snow);
     border-bottom: border(default);
     width: 100%;
 
@@ -23,7 +23,7 @@
     }
 
     &__in-link {
-        font-size: $font-size--m;
+        font-size: font-size(hxxs);
     }
 
     &__navigation {

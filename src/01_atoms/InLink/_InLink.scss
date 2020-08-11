@@ -4,12 +4,12 @@
  */
 
 .in-link {
-    font-family: $link-font;
-    font-weight: $link-weight;
-    color: $link-color;
+    font-family: typeface(arimo);
+    font-weight: font-weight(bold);
+    color: color(midnight);
     text-decoration: none;
     padding-bottom: 2px;
-    font-size: $font-size--s;
+    font-size: font-size(copy);
 
     &:hover {
         border-bottom: border(default);

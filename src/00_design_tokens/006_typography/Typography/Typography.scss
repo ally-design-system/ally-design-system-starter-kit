@@ -1,55 +1,163 @@
 /*
  * Typography Styles
  *
+ * https://brajeshwar.github.io/entities/
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+ * Use <em> to indicate stress emphasis.
+ * Use <strong> to indicate importance, seriousness, or urgency.
+ * Use <mark> to indicate relevance.
+ * Use <cite> to mark up the name of a work, such as a book, play, or song.
+ * Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
  */
 
-// @todo create typography mixin (https://scarab.style/core/design-tokens/#font-sizes-line-heights)
+/*
+ * Font Design Tokens
+ *
+ */
 
-// Import from Google Fonts
+// Import Fonts
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+// https://css-tricks.com/snippets/css/using-font-face/
+// https://google-webfonts-helper.herokuapp.com/fonts
+// https://developers.google.com/fonts/docs/css2
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
-// Font Families
-$font--arimo: "Arimo", sans-serif;
-$font--slab: "Roboto Slab", serif;
+// Typeface Map
+$typefaces: (
+    arimo: "" Arimo ", sans-serif",
+    slab: "" Roboto Slab ", serif",
+);
 
-// Set Site Theme Fonts
-$theme-font-primary: $font--arimo;
-$theme-font-secondry: $font--slab;
+// Typeface Design Token Config
+@function typeface($name) {
+    @if map-has-key($typefaces, $name) {
+        @return map-get($typefaces, $name);
+    }
 
-// Font Weights
-$font-weight--normal: 400;
-$font-weight--bold: 700;
+    @error "The key #{$name} is not in the $typefaces design token map";
+    @return null;
+}
 
-// Font Line Height
-$font-line-height: 1.4;
+// Font Size Map
+$font-sizes: (
+    // Heading XL 48px
+        hxl: 3rem,
+    // Heading L 40px
+        hl: 2.5rem,
+    // Heading M 32px
+        hm: 2rem,
+    // Heading S 26px
+        hs: 1.625rem,
+    // Heading XS 20px
+        hxs: 1.25rem,
+    // Heading XXS 18px
+        hxxs: 1.125rem,
+    // Copy 16px
+        copy: 1rem,
+    // Subcopy 14px
+        subcopy: 0.875rem,
+    // Microcopy 12px
+        microcopy: 0.7rem
+);
+
+// Font Size Design Token Config
+@function font-size($name) {
+    @if map-has-key($font-sizes, $name) {
+        @return map-get($font-sizes, $name);
+    }
+
+    @error "The key #{$name} is not in the $font-sizes design token map";
+    @return null;
+}
+
+// // Typeface (font-family)
+// $font--arimo: "Arimo", sans-serif;
+// $font--slab: "Roboto Slab", serif;
+
+// // Set Site Theme Fonts
+// $theme-font-primary: $font--arimo;
+// $theme-font-secondry: $font--slab;
+
+// Font Weights Map
+$font-weights: (
+    regular: 400,
+    bold: 700,
+);
+
+// Font Weights Design Token Config
+@function font-weight($name) {
+    @if map-has-key($font-weights, $name) {
+        @return map-get($font-weights, $name);
+    }
+
+    @error "The key #{$name} is not in the $font-weights design token map";
+    @return null;
+}
+
+// $font-weight--normal: 400;
+// $font-weight--bold: 700;
+
+// Leading (line-height) Map
+$leading-heights: (
+    regular: 1.4,
+    tall: 1.6,
+);
+
+// Leading (line-height) Design Token Config
+@function leading($name) {
+    @if map-has-key($leading-heights, $name) {
+        @return map-get($leading-heights, $name);
+    }
+
+    @error "The key #{$name} is not in the $leading-heights design token map";
+    @return null;
+}
+
+// $font-line-height: 1.4;
+
+// Tracking (letter-spacing) Map
+$tracking-widths: (
+    regular: 0,
+    wide: 0.1rem,
+);
+
+// Tracking (letter-spacing) Design Token Config
+@function tracking($name) {
+    @if map-has-key($tracking-widths, $name) {
+        @return map-get($tracking-widths, $name);
+    }
+
+    @error "The key #{$name} is not in the $tracking-widths design token map";
+    @return null;
+}
 
 /* Font Sizing
  *************/
 
-// Set Base Font Size
-$font-size: 1.1rem;
+// // Set Base Font Size
+// $font-size: 1.1rem;
 
-// Font Size Options
-$font-size--xs: $font-size / 1.2; // 0.91rem
-$font-size--s: $font-size; // 1.1rem
-$font-size--m: $font-size * 1.3; // 1.43rem
-$font-size--l: $font-size * 1.5; // 1.65rem
-$font-size--xl: $font-size * 2.1; // 2.31rem
+// // Font Size Options
+// $font-size--xs: $font-size / 1.2; // 0.91rem
+// $font-size--s: $font-size; // 1.1rem
+// $font-size--m: $font-size * 1.3; // 1.43rem
+// $font-size--l: $font-size * 1.5; // 1.65rem
+// $font-size--xl: $font-size * 2.1; // 2.31rem
 
-// Set Site Heading Styles
-$heading-font: $theme-font-primary;
-$heading-weight: $font-weight--bold;
-$heading-color: color(midnight);
+// // Set Site Heading Styles
+// $heading-font: $theme-font-primary;
+// $heading-weight: $font-weight--bold;
+// $heading-color: color(midnight);
 
-// Set Site Paragraph Styles
-$paragraph-font: $theme-font-secondry;
-$paragraph-weight: $font-weight--normal;
-$paragraph-color: color(midnight);
+// // Set Site Paragraph Styles
+// $paragraph-font: $theme-font-secondry;
+// $paragraph-weight: $font-weight--normal;
+// $paragraph-color: color(midnight);
 
-// Set Site Link Styles
-$link-font: $theme-font-primary;
-$link-weight: $font-weight--bold;
-$link-color: color(midnight);
+// // Set Site Link Styles
+// $link-font: $theme-font-primary;
+// $link-weight: $font-weight--bold;
+// $link-color: color(midnight);
 
 h1,
 h2,
@@ -57,54 +165,59 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading-font;
-    font-weight: $heading-weight;
-    color: $heading-color;
-    margin: spacing(l) 0 spacing(xl);
+    font-family: typeface(arimo);
+    font-weight: font-weight(bold);
+    color: color(midnight);
+    line-height: leading(tall);
+    // padding: 0;
+    // margin: 0 0 spacing(m) 0;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: spacing(xxxl) 0 spacing(m);
-}
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     margin: spacing(xxxl) 0 spacing(m);
+// }
 
 p {
-    font-family: $paragraph-font;
-    font-weight: $paragraph-weight;
-    color: $paragraph-color;
-    margin-bottom: spacing(m);
-    font-size: $font-size--s;
+    font-family: typeface(slab);
+    font-weight: font-weight(regular);
+    color: color(midnight);
+    line-height: leading(regular);
+    font-size: font-size(copy);
 }
 
-h1 {
-    font-size: $font-size--xl;
-}
+// h1 {
+//     font-size: $font-size--xl;
+// }
 
-h2 {
-    font-size: $font-size--l;
-}
+// h2 {
+//     font-size: $font-size--l;
+// }
 
-h3,
-h4,
-h5,
-h6 {
-    font-size: $font-size--m;
-}
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-size: $font-size--m;
+// }
 
-a {
-    font-family: $link-font;
-    font-weight: $link-weight;
-    color: $link-color;
-    text-decoration: none;
-    padding-bottom: 2px;
-    font-size: $font-size--s;
+a,
+a:link,
+a:visited {
+    // font-family: $link-font;
+    // font-weight: $link-weight;
+    // color: $link-color;
+    // text-decoration: none;
+    // padding-bottom: 2px;
+    // font-size: $font-size--s;
 
     &:hover,
+    &:active,
     &.focus-visible {
-        border-bottom: border(default);
+        // border-bottom: border(default);
     }
 }
 
@@ -113,6 +226,149 @@ ul {
 
     li {
         margin: spacing(s) 0;
-        font-size: $font-size--s;
+        font-size: font-size(copy);
+    }
+}
+
+// // Font Size Scale Map
+// $font-sizes: (
+//     // Heading 1
+//         h1: 1,
+//     // Heading 2
+//         h2: 2,
+//     // Heading 3
+//         h3: 3,
+//     // Heading 4
+//         h4: 4,
+//     // Heading 5
+//         h5: 5,
+//     // Heading 6
+//         h6: 6,
+//     // Copy
+//         copy: 7,
+//     // Sub
+//         sub: 7,
+//     // Microcopy
+//         micro: 8
+// );
+
+// // Brand Color Design Token Config
+// @function font-size($name) {
+//     @if map-has-key($font-sizes, $name) {
+//         @return map-get($font-sizes, $name);
+//     }
+
+//     @error "The key #{$name} is not in the $font-sizes design token map";
+//     @return null;
+// }
+
+// // Heading 1
+// h1 {
+//     font-family: $heading-font;
+//     font-weight: $heading-weight;
+//     color: $heading-color;
+//     line-height: 1.5;
+//     padding: 0;
+//     margin: 0;
+//     letter-spacing: 0px;
+// }
+// // Heading 2
+// h2 {
+// }
+// // Heading 3
+// h3 {
+// }
+// // Heading 4
+// h4 {
+// }
+// // Heading 5
+// h5 {
+// }
+// // Heading 6
+// h6 {
+// }
+// // Paragraph
+// p {
+// }
+// // Microcopy (Side Comment)
+// small {
+// }
+// // Anchor Link
+// a {
+// }
+// // Emphasis
+// em {
+// }
+// // Idiomatic
+// i {
+// }
+// // Strong Importance
+// strong {
+// }
+// // Highlight (Mark Text)
+// mark {
+// }
+// // Citation
+// cite {
+// }
+// // Block Quotation
+// blockquote {
+// }
+
+mark {
+    background-color: color(gold);
+    color: color(midnight);
+}
+// Accessibility concerns
+// The presence of the mark element is not announced by most screen reading technology in its default configuration.
+// It can be made to be announced by using the CSS content property, along with the ::before and ::after pseudo-elements.
+// https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/
+mark::before,
+mark::after {
+    content: " [highlight start] ";
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+mark::after {
+    content: " [highlight end] ";
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote {
+    p {
+        padding: spacing(xl) spacing(xxl);
+        color: color(midnight);
+        border-radius: radius(square);
+        background: color(gold);
+        line-height: 28px;
+
+        span.open-quotation,
+        span.close-quotation {
+            font-size: font-size(hxxs);
+            line-height: 18px;
+            padding: 0 spacing(xxs) 0 0;
+        }
+
+        span.close-quotation {
+            padding: 0 0 0 spacing(xxs);
+        }
+    }
+
+    footer {
+        font-weight: bold;
+        padding: spacing(xxs) spacing(xxl);
+
+        span.em-dash {
+            padding: 0 spacing(xxs) 0 0;
+        }
     }
 }
