@@ -10,60 +10,6 @@
  * Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
  */
 
-/* Typeface Design Tokens
-*************************/
-
-// Typeface Map
-$typefaces: (
-    arimo: "" Arimo ", sans-serif",
-    slab: "" Roboto Slab ", serif",
-);
-
-// Typeface Design Token Config
-@function typeface($name) {
-    @if map-has-key($typefaces, $name) {
-        @return map-get($typefaces, $name);
-    }
-
-    @error "The key #{$name} is not in the $typefaces design token map";
-    @return null;
-}
-
-/* Font Size Design Tokens
-**************************/
-
-// Font Size Map
-$font-sizes: (
-    // Heading XL 48px
-        hxl: 3rem,
-    // Heading L 40px
-        hl: 2.5rem,
-    // Heading M 32px
-        hm: 2rem,
-    // Heading S 26px
-        hs: 1.625rem,
-    // Heading XS 20px
-        hxs: 1.25rem,
-    // Heading XXS 18px
-        hxxs: 1.125rem,
-    // Copy 16px
-        copy: 1rem,
-    // Subcopy 14px
-        subcopy: 0.875rem,
-    // Microcopy 12px
-        microcopy: 0.7rem
-);
-
-// Font Size Design Token Config
-@function font-size($name) {
-    @if map-has-key($font-sizes, $name) {
-        @return map-get($font-sizes, $name);
-    }
-
-    @error "The key #{$name} is not in the $font-sizes design token map";
-    @return null;
-}
-
 /* Font Weight Design Tokens
 ****************************/
 
