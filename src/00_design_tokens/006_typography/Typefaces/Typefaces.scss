@@ -3,13 +3,13 @@
  *
  */
 
-// Typeface Map
+// Typefaces Map
 $typefaces: (
     arimo: "" Arimo ", sans-serif",
     slab: "" Roboto Slab ", serif",
 );
 
-// Typeface Design Token Config
+// Typeface Design Tokens Config
 @function typeface($name) {
     @if map-has-key($typefaces, $name) {
         @return map-get($typefaces, $name);
