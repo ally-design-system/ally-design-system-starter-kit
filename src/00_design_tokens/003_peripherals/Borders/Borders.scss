@@ -5,7 +5,7 @@
 
 // Borders Map
 $borders: (
-    default: solid color(midnight) 3px,
+    default: solid tint(color(midnight), 40) 3px,
 );
 
 // Borders Design Token Config

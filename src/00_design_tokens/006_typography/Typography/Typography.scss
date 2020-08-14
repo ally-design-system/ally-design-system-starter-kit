@@ -91,18 +91,27 @@ a:visited {
 
 /* List (Unordered List) Styling
 ********************************/
-ul {
+ul,
+ol {
     margin: spacing(xl) 0;
-    padding-left: spacing(l);
+    padding-left: spacing(xxxxl);
 
     li {
         margin: spacing(xxs) 0;
         font-size: font-size(copy);
+        font-weight: font-weight(bold);
     }
 }
 
-// Subcopy Caption
-// // Microcopy (Side Comment)
+// Figure Caption
+figcaption {
+    font-size: font-size(subcopy);
+    font-weight: font-weight(bold);
+    padding: spacing(s) 0 spacing(xl);
+    color: tint(color(midnight), 20);
+}
+
+// Microcopy (Side Comment)
 // small {
 // }
 

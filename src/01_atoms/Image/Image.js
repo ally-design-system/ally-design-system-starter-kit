@@ -40,17 +40,21 @@ const Image = props => (
             }
 
             return (
-                <Img
-                    className={`image ${props.className} ${props.modifier}`}
-                    alt={props.alt}
-                    fluid={image.node.childImageSharp.fluid}
-                />
+                <figure>
+                    <Img
+                        className={`image ${props.className} ${props.modifier}`}
+                        alt={props.alt}
+                        fluid={image.node.childImageSharp.fluid}
+                    />
+                    <figcaption>{props.caption}</figcaption>
+                </figure>
             )
         }}
     />
 )
 
 Image.defaultProps = {
+    caption: "The Gatsby Logo",
     filename: "gatsby.png",
     alt: "Gatsby Logo",
     className: "",
@@ -58,6 +62,7 @@ Image.defaultProps = {
 }
 
 Image.propTypes = {
+    caption: PropTypes.string,
     filename: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     className: PropTypes.string,

@@ -5,6 +5,7 @@
 
 .image {
     width: 100%;
+    border: border(default);
 
     &.--maxWidth500 {
         max-width: 500px;
