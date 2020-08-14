@@ -10,25 +10,6 @@
  * Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
  */
 
-/* Tracking Design Tokens
-*************************/
-
-// Tracking (letter-spacing) Map
-$tracking-widths: (
-    regular: 0,
-    wide: 0.1rem,
-);
-
-// Tracking (letter-spacing) Design Token Config
-@function tracking($name) {
-    @if map-has-key($tracking-widths, $name) {
-        @return map-get($tracking-widths, $name);
-    }
-
-    @error "The key #{$name} is not in the $tracking-widths design token map";
-    @return null;
-}
-
 /* Heading Styling
 ******************/
 h1,
