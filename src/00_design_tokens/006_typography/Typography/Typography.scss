@@ -1,13 +1,6 @@
 /*
  * Typography Styles
  *
- * https://brajeshwar.github.io/entities/
- * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
- * Use <em> to indicate stress emphasis.
- * Use <strong> to indicate importance, seriousness, or urgency.
- * Use <mark> to indicate relevance.
- * Use <cite> to mark up the name of a work, such as a book, play, or song.
- * Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
  */
 
 // Headings (H1 - H6)
@@ -107,7 +100,7 @@ figcaption {
     font-size: font-size(caption);
     font-weight: font-weight(bold);
     padding: spacing(l) spacing(xxs) spacing(xl);
-    color: tint(color(midnight), 20);
+    color: color(midnight);
     text-align: right;
 }
 
@@ -214,13 +207,12 @@ blockquote {
         font-weight: font-weight(bold);
         padding: spacing(l) spacing(xxs) spacing(xl);
         text-align: right;
-
-        .em-dash {
-            padding: 0 spacing(xxs) 0 0;
-        }
     }
 }
 
 // // Citation
 // cite {
 // }
+
+// Use <cite> to mark up the name of a work, such as a book, play, or song.
+// Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.

@@ -107,8 +107,8 @@ const ComponentsPage = () => (
                                 pierced."
                             </p>
                             <footer>
-                                <span class="em-dash">&#8212;</span> Aldous
-                                Huxley, <cite>Brave New World</cite>
+                                &#8212; &nbsp; Aldous Huxley,{" "}
+                                <cite>Brave New World</cite>
                             </footer>
                         </blockquote>
                     </div>
