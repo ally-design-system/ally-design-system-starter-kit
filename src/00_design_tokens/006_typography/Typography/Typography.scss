@@ -100,6 +100,9 @@ ol {
 }
 
 // Caption (Figure Caption)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
+// The <figcaption> or Figure Caption element represents a caption or legend describing
+// the rest of the contents of its parent <figure> element.
 figcaption {
     font-size: font-size(caption);
     font-weight: font-weight(bold);
@@ -109,16 +112,26 @@ figcaption {
 }
 
 // Microcopy (Small)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small
+// The <small> element represents side-comments and small print, like copyright and legal text,
+// independent of its styled presentation.
 small {
     font-size: font-size(microcopy);
     font-weight: font-weight(bold);
     color: tint(color(midnight), 20);
 }
 
-// }
-// // Emphasis
-// em {
-// }
+// Emphasis (Em)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
+// The <em> element is for words that have a stressed emphasis compared to surrounding text,
+// which is often limited to a word or words of a sentence and affects the meaning of the sentence itself.
+em {
+    font-size: font-size(copy);
+    font-weight: font-weight(bold);
+    font-style: italic;
+    color: color(midnight);
+}
+
 // // Idiomatic
 // i {
 // }

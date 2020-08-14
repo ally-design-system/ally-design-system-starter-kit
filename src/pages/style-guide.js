@@ -117,7 +117,11 @@ const ComponentsPage = () => (
                         <li>Something</li>
                         <li>yeah</li>
                     </ol>
-                    <p>jkjfhjkf hfdkjh kfhf fh hfhdfsfd fd</p>
+                    <p>
+                        Words can be like <em>X-rays</em>, if you use them
+                        properly—they’ll go through anything. You read and
+                        you’re pierced.
+                    </p>
                 </div>
             </section>
         </Layout>
