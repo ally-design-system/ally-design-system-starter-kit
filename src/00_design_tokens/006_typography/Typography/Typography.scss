@@ -99,7 +99,7 @@ ol {
     }
 }
 
-// Caption (Figure Caption)
+// Caption
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
 // The <figcaption> or Figure Caption element represents a caption or legend describing
 // the rest of the contents of its parent <figure> element.
@@ -111,7 +111,7 @@ figcaption {
     text-align: right;
 }
 
-// Microcopy (Small)
+// Microcopy
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small
 // The <small> element represents side-comments and small print, like copyright and legal text,
 // independent of its styled presentation.
@@ -121,7 +121,7 @@ small {
     color: tint(color(midnight), 20);
 }
 
-// Emphasis (Em)
+// Emphasis
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
 // The <em> element is for words that have a stressed emphasis compared to surrounding text,
 // which is often limited to a word or words of a sentence and affects the meaning of the sentence itself.
@@ -132,9 +132,15 @@ em {
     color: color(midnight);
 }
 
-// // Idiomatic
-// i {
-// }
+// Idiomatic
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+// The <i> element represents a range of text that is set off from the normal text
+// for some reason, such as idiomatic text, technical terms or taxonomical designations.
+i {
+    font-style: italic;
+    color: color(midnight);
+}
+
 // // Strong Importance
 // strong {
 // }

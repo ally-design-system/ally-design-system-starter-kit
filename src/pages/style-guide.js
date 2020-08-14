@@ -119,8 +119,8 @@ const ComponentsPage = () => (
                     </ol>
                     <p>
                         Words can be like <em>X-rays</em>, if you use them
-                        properly—they’ll go through anything. You read and
-                        you’re pierced.
+                        properly—they’ll go through <i>anything</i>. You read
+                        and you’re pierced.
                     </p>
                 </div>
             </section>
