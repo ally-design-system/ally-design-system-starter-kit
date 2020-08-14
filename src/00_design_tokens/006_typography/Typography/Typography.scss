@@ -106,7 +106,7 @@ ol {
 figcaption {
     font-size: font-size(caption);
     font-weight: font-weight(bold);
-    padding: spacing(l) 0 spacing(xl);
+    padding: spacing(l) spacing(xxs) spacing(xl);
     color: tint(color(midnight), 20);
     text-align: right;
 }
@@ -177,35 +177,45 @@ mark::after {
     content: " [highlight end] ";
 }
 
-blockquote {
-    margin: 0;
+// Quotation
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
+// The <q> element indicates that the enclosed text is a short inline quotation.
+// Most modern browsers implement this by surrounding the text in quotation marks and
+// a URL for the source of the quotation may be given using the cite attribute.
+q {
+    font-style: italic;
+    color: color(midnight);
 }
 
+// Block Quotation
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
+// The <blockquote> element indicates that the enclosed text is an extended quotation.
+// Usually, this is rendered visually by indentation and a URL for the source of the quotation
+// may be given using the cite attribute, while a text representation of the source can be given
+// using the <cite> element.
 blockquote {
+    margin: spacing(xxxl) 0;
+
     p {
-        padding: spacing(xl) spacing(xxl);
+        font-size: font-size(copy);
         color: color(midnight);
+        line-height: leading(tall);
+        font-weight: font-weight(bold);
+        padding: spacing(xl) spacing(xxl);
+        border: border(default);
         border-radius: radius(square);
+        box-shadow: 15px 15px 0 0 color(midnight);
         background: color(gold);
-        line-height: 28px;
-
-        span.open-quotation,
-        span.close-quotation {
-            font-size: font-size(hxxs);
-            line-height: 18px;
-            padding: 0 spacing(xxs) 0 0;
-        }
-
-        span.close-quotation {
-            padding: 0 0 0 spacing(xxs);
-        }
     }
 
     footer {
-        font-weight: bold;
-        padding: spacing(xxs) spacing(xxl);
+        font-size: font-size(copy);
+        color: color(midnight);
+        font-weight: font-weight(bold);
+        padding: spacing(l) spacing(xxs) spacing(xl);
+        text-align: right;
 
-        span.em-dash {
+        .em-dash {
             padding: 0 spacing(xxs) 0 0;
         }
     }
@@ -213,7 +223,4 @@ blockquote {
 
 // // Citation
 // cite {
-// }
-// // Block Quotation
-// blockquote {
 // }

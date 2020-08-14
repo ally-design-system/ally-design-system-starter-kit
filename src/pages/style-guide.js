@@ -97,13 +97,14 @@ const ComponentsPage = () => (
                         {/* https://brajeshwar.github.io/entities */}
                         <blockquote cite="https://www.huxley.net/bnw/four.html">
                             <p>
-                                <span class="open-quotation">&#8220;</span>
-                                Words can be like X-rays, if you use them
+                                "Words can be like X-rays, if you use them
                                 properly—they’ll go through anything. You read
                                 and you’re pierced. Words can be like X-rays, if
                                 you use them properly—they’ll go through
-                                anything. You read and you’re pierced.
-                                <span class="close-quotation">&#8221;</span>
+                                anything. You read and you’re pierced. Words can
+                                be like X-rays, if you use them properly—they’ll
+                                go through anything. You read and you’re
+                                pierced."
                             </p>
                             <footer>
                                 <span class="em-dash">&#8212;</span> Aldous
@@ -121,6 +122,13 @@ const ComponentsPage = () => (
                         <strong>Words</strong> can be like <em>X-rays</em>, if
                         you use them <mark>properly—they’ll</mark> go through{" "}
                         <i>anything</i>. You read and you’re pierced.
+                    </p>
+                    <p>
+                        When Dave asks HAL to open the pod bay door, HAL
+                        answers:{" "}
+                        <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">
+                            I'm sorry, Dave. I'm afraid I can't do that.
+                        </q>
                     </p>
                 </div>
             </section>
