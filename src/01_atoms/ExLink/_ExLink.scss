@@ -16,4 +16,10 @@
         fill: color(midnight);
         margin: auto 0 auto spacing(xs);
     }
+
+    &.--microcopy {
+        font-size: font-size(microcopy);
+        font-weight: font-weight(bold);
+        color: tint(color(midnight), 20);
+    }
 }

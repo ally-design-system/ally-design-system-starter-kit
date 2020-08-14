@@ -14,4 +14,10 @@
     &:hover {
         border-bottom: border(default);
     }
+
+    &.--microcopy {
+        font-size: font-size(microcopy);
+        font-weight: font-weight(bold);
+        color: tint(color(midnight), 20);
+    }
 }

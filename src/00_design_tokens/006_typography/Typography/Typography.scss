@@ -10,8 +10,7 @@
  * Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
  */
 
-/* Heading Styling
-******************/
+// Headings (H1 - H6)
 h1,
 h2,
 h3,
@@ -58,8 +57,7 @@ h6 {
     font-size: font-size(hxxs);
 }
 
-/* Pargraph Styling
-*******************/
+// Pargraphs
 p {
     font-family: typeface(slab);
     font-size: font-size(copy);
@@ -69,8 +67,7 @@ p {
     color: color(midnight);
 }
 
-/* Link (Anchor) Styling
-************************/
+// Anchor Links
 a,
 a:link,
 a:visited {
@@ -89,8 +86,7 @@ a:visited {
     }
 }
 
-/* List (Unordered List) Styling
-********************************/
+// Unordered and Ordered Lists
 ul,
 ol {
     margin: spacing(xl) 0;
@@ -103,17 +99,21 @@ ol {
     }
 }
 
-// Figure Caption
+// Caption (Figure Caption)
 figcaption {
-    font-size: font-size(subcopy);
+    font-size: font-size(caption);
     font-weight: font-weight(bold);
-    padding: spacing(s) 0 spacing(xl);
+    padding: spacing(l) 0 spacing(xl);
     color: tint(color(midnight), 20);
+    text-align: right;
 }
 
-// Microcopy (Side Comment)
-// small {
-// }
+// Microcopy (Small)
+small {
+    font-size: font-size(microcopy);
+    font-weight: font-weight(bold);
+    color: tint(color(midnight), 20);
+}
 
 // }
 // // Emphasis

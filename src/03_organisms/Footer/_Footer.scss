@@ -19,18 +19,7 @@
         min-height: 6.5rem;
     }
 
-    &__links {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 1rem;
-    }
-
-    &__in-link {
-        margin-right: spacing(m);
-    }
-
     &__text {
-        font-size: font-size(microcopy);
         margin: 0;
     }
 

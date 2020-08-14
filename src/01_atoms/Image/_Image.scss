@@ -6,6 +6,7 @@
 .image {
     width: 100%;
     border: border(default);
+    box-shadow: 15px 15px 0 0 color(midnight);
 
     &.--maxWidth500 {
         max-width: 500px;
