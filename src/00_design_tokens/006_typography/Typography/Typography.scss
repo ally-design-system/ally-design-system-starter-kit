@@ -20,10 +20,9 @@ h5,
 h6 {
     font-family: typeface(arimo);
     font-weight: font-weight(bold);
-    color: color(midnight);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
-    padding: 0;
+    color: color(midnight);
     margin-bottom: spacing(l);
 }
 
@@ -63,10 +62,11 @@ h6 {
 *******************/
 p {
     font-family: typeface(slab);
-    font-weight: font-weight(regular);
-    color: color(midnight);
-    line-height: leading(regular);
     font-size: font-size(copy);
+    font-weight: font-weight(regular);
+    line-height: leading(regular);
+    letter-spacing: tracking(regular);
+    color: color(midnight);
 }
 
 /* Link (Anchor) Styling
@@ -74,17 +74,18 @@ p {
 a,
 a:link,
 a:visited {
-    // font-family: $link-font;
-    // font-weight: $link-weight;
-    // color: $link-color;
-    // text-decoration: none;
-    // padding-bottom: 2px;
-    // font-size: $font-size--s;
+    font-family: typeface(slab);
+    font-size: font-size(copy);
+    font-weight: font-weight(bold);
+    line-height: leading(regular);
+    letter-spacing: tracking(regular);
+    color: color(midnight);
 
     &:hover,
     &:active,
     &.focus-visible {
-        // border-bottom: border(default);
+        background: color(gold);
+        text-decoration-style: double;
     }
 }
 
@@ -92,9 +93,10 @@ a:visited {
 ********************************/
 ul {
     margin: spacing(xl) 0;
+    padding-left: spacing(l);
 
     li {
-        margin: spacing(s) 0;
+        margin: spacing(xxs) 0;
         font-size: font-size(copy);
     }
 }

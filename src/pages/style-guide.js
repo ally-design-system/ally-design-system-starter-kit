@@ -107,6 +107,13 @@ const ComponentsPage = () => (
                             </footer>
                         </blockquote>
                     </div>
+
+                    <ul>
+                        <li>Home</li>
+                        <li>Something</li>
+                        <li>yeah</li>
+                    </ul>
+                    <p>jkjfhjkf hfdkjh kfhf fh hfhdfsfd fd</p>
                 </div>
             </section>
         </Layout>
