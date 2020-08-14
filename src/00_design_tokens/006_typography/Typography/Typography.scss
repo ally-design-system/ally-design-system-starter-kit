@@ -10,44 +10,6 @@
  * Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
  */
 
-/* Font Weight Design Tokens
-****************************/
-
-// Font Weights Map
-$font-weights: (
-    regular: 400,
-    bold: 700,
-);
-
-// Font Weights Design Token Config
-@function font-weight($name) {
-    @if map-has-key($font-weights, $name) {
-        @return map-get($font-weights, $name);
-    }
-
-    @error "The key #{$name} is not in the $font-weights design token map";
-    @return null;
-}
-
-/* Leading Design Tokens
-************************/
-
-// Leading (line-height) Map
-$leading-heights: (
-    regular: 1.4,
-    tall: 1.6,
-);
-
-// Leading (line-height) Design Token Config
-@function leading($name) {
-    @if map-has-key($leading-heights, $name) {
-        @return map-get($leading-heights, $name);
-    }
-
-    @error "The key #{$name} is not in the $leading-heights design token map";
-    @return null;
-}
-
 /* Tracking Design Tokens
 *************************/
 
