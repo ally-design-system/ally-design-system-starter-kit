@@ -29,7 +29,6 @@ const Footer = () => {
                         &copy; {new Date().getFullYear()}{" "}
                         {data.site.siteMetadata.title}. Built by{" "}
                         <ExLink
-                            className="footer__ex-link"
                             to="https://nikkipantony.com"
                             text="Nikki Pantony"
                             modifier="--microcopy"

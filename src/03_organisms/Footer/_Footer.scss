@@ -22,14 +22,4 @@
     &__text {
         margin: 0;
     }
-
-    &__ex-link {
-        font-size: font-size(microcopy);
-
-        svg {
-            width: 12px;
-            height: 12px;
-            margin-left: spacing(xxs);
-        }
-    }
 }

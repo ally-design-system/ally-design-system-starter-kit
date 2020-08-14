@@ -118,7 +118,7 @@ figcaption {
 small {
     font-size: font-size(microcopy);
     font-weight: font-weight(bold);
-    color: tint(color(midnight), 20);
+    color: color(midnight);
 }
 
 // Emphasis
@@ -149,24 +149,18 @@ strong {
     color: color(midnight);
 }
 
-// // Highlight (Mark Text)
-// mark {
-// }
-// // Citation
-// cite {
-// }
-// // Block Quotation
-// blockquote {
-// }
-
+// Highlight
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
+// The <mark> element represents text which is marked or highlighted for reference or notation purposes,
+// due to the marked passage's relevance or importance in the enclosing context.
 mark {
     background-color: color(gold);
     color: color(midnight);
 }
 // Accessibility concerns
+// https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
 // The presence of the mark element is not announced by most screen reading technology in its default configuration.
 // It can be made to be announced by using the CSS content property, along with the ::before and ::after pseudo-elements.
-// https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/
 mark::before,
 mark::after {
     content: " [highlight start] ";
@@ -216,3 +210,10 @@ blockquote {
         }
     }
 }
+
+// // Citation
+// cite {
+// }
+// // Block Quotation
+// blockquote {
+// }

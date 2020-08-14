@@ -11,15 +11,21 @@
     white-space: nowrap;
 
     svg {
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
         fill: color(midnight);
-        margin: auto 0 auto spacing(xs);
+        margin: auto 0 auto spacing(xxs);
     }
 
     &.--microcopy {
         font-size: font-size(microcopy);
         font-weight: font-weight(bold);
-        color: tint(color(midnight), 20);
+        color: color(midnight);
+
+        svg {
+            width: 12px;
+            height: 12px;
+            margin: auto 0 auto spacing(xxxs);
+        }
     }
 }
