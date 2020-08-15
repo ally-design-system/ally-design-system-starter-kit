@@ -3,7 +3,13 @@
  *
  */
 
-// Headings (H1 - H6)
+// Headings
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+// The <h1> – <h6> elements represent six levels of section headings with <h1> being
+// the highest section level and <h6> is the lowest.
+// You should only use one <h1> per page. However, using more than one will not result
+// in an error, but using only one is seen as a best practice. Having a single top-level
+// title is also arguably better for screenreader users, and for SEO.
 h1,
 h2,
 h3,
@@ -51,6 +57,9 @@ h6 {
 }
 
 // Pargraphs
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+// The <p> element represents a paragraph. Paragraphs are represented in visual media as
+// blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
     font-family: typeface(slab);
     font-size: font-size(copy);
@@ -61,6 +70,12 @@ p {
 }
 
 // Anchor Links
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+// The <a> element with its href attribute, creates a hyperlink to web pages,
+// files, email addresses, locations in the same page, or anything else a URL can address.
+// Content within each <a> should indicate the link's destination.
+// While using the Ally Design System Starter Kit you should create links
+// either using the `InLink` for internal links or the `ExLink` for external links.
 a,
 a:link,
 a:visited {
@@ -80,6 +95,10 @@ a:visited {
 }
 
 // Unordered and Ordered Lists
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+// The <ul> element represents an unordered list of items, typically rendered as a bulleted list.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
+// The <ol> element represents an ordered list of items — typically rendered as a numbered list.
 ul,
 ol {
     margin: spacing(xl) 0;
@@ -150,7 +169,7 @@ mark {
     background-color: color(gold);
     color: color(midnight);
 }
-// Accessibility concerns
+// Accessibility Concerns
 // https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
 // The presence of the mark element is not announced by most screen reading technology in its default configuration.
 // It can be made to be announced by using the CSS content property, along with the ::before and ::after pseudo-elements.
@@ -210,9 +229,10 @@ blockquote {
     }
 }
 
-// // Citation
-// cite {
-// }
+// Citation
+cite {
+    font-style: italic;
+}
 
 // Use <cite> to mark up the name of a work, such as a book, play, or song.
 // Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
