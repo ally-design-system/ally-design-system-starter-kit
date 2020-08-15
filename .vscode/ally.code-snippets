@@ -321,7 +321,7 @@
     "Shadow Default": {
 		"prefix": "sd",
 		"body": [
-      "box-shadow: 15px 15px 0 0 color(midnight);",
+      "box-shadow: spacing(s) spacing(s) 0 0 color(midnight);",
 		],
 		  "description": "Border Default snippet"
     },

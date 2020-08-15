@@ -5,7 +5,7 @@
 
 // Shadows Map
 $shadows: (
-    default: 15px 15px 0 0 color(midnight),
+    default: spacing(s) spacing(s) 0 0 color(midnight),
 );
 
 // Shadows Design Token Config
@@ -21,5 +21,5 @@ $shadows: (
 // Shadows Design Token Usage With Ally Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
-    sd  box-shadow: 15px 15px 0 0 color(midnight);
+    sd  box-shadow: spacing(s) spacing(s) 0 0 color(midnight);
 */
