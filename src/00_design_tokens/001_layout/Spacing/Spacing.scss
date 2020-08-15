@@ -7,36 +7,33 @@
  * https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
  */
 
-// Set Base Spacing
-$spacing-baseline: 1rem; // 1rem / 16px (16px set in `:root` in `global.scss`)
-
 // Spacing Scale
 $spacing: (
-    // xxxxs / 0.0625rem / 1px
-        xxxxs: $spacing-baseline * 0.0625,
-    // xxxs / 0.125rem / 2px
-        xxxs: $spacing-baseline * 0.125,
-    // xxs / 0.25rem / 4px
-        xxs: $spacing-baseline * 0.25,
-    // xs / 0.5rem / 8px
-        xs: $spacing-baseline * 0.5,
-    // s / 0.75rem / 12px
-        s: $spacing-baseline * 0.75,
-    // m / 1rem / 16px
-        m: $spacing-baseline,
-    // l / 1.5rem / 24px
-        l: $spacing-baseline * 1.5,
-    // xl / 2rem / 32px
-        xl: $spacing-baseline * 2,
-    // xxl / 2.5rem / 40px
-        xxl: $spacing-baseline * 2.5,
-    // xxxl / 3rem / 48px
-        xxxl: $spacing-baseline * 3,
-    // xxxxl / 3.5rem / 56px
-        xxxxl: $spacing-baseline * 3.5
+    // xxxxs / 1px
+        xxxxs: 0.0625rem,
+    // xxxs / 2px
+        xxxs: 0.125rem,
+    // xxs / 4px
+        xxs: 0.25rem,
+    // xs / 8px
+        xs: 0.5rem,
+    // s / 12px
+        s: 0.75rem,
+    // m / 16px
+        m: 1rem,
+    // l / 24px
+        l: 1.5rem,
+    // xl / 32px
+        xl: 2rem,
+    // xxl / 40px
+        xxl: 2.5rem,
+    // xxxl / 48px
+        xxxl: 3rem,
+    // xxxxl / 56px
+        xxxxl: 3.5rem
 );
 
-// Spacing Design Token Config
+// Spacing Design Tokens Config
 @function spacing($name) {
     @if map-has-key($spacing, $name) {
         @return map-get($spacing, $name);
