@@ -415,5 +415,19 @@
       "font-weight: font-weight(bold);",
 		],
 		  "description": "Font Weight Bold"
+    },
+    "Leading regular": {
+		"prefix": "lr",
+		"body": [
+      "line-height: leading(regular);",
+		],
+		  "description": "Leading Regular"
+    },
+    "Leading tall": {
+		"prefix": "lt",
+		"body": [
+      "line-height: leading(tall);",
+		],
+		  "description": "Leading Tall"
     }
 }
