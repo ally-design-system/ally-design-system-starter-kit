@@ -111,7 +111,7 @@ ol {
     }
 }
 
-// Caption
+// Captions
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
 // The <figcaption> element represents a caption or legend describing
 // the rest of the contents of its parent <figure> element.
@@ -161,7 +161,7 @@ strong {
     color: color(midnight);
 }
 
-// Highlight
+// Highlighting
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
 // The <mark> element represents text which is marked or highlighted for reference or notation purposes,
 // due to the marked passage's relevance or importance in the enclosing context.
@@ -199,7 +199,7 @@ q {
     color: color(midnight);
 }
 
-// Block Quotation
+// Block Quotations
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
 // The <blockquote> element indicates that the enclosed text is an extended quotation.
 // Usually, this is rendered visually by indentation and a URL for the source of the quotation
@@ -211,7 +211,7 @@ blockquote {
     p {
         font-size: font-size(copy);
         color: color(midnight);
-        line-height: leading(tall);
+        line-height: leading(regular);
         font-weight: font-weight(bold);
         padding: spacing(xl) spacing(xxl);
         border: border(default);
@@ -229,10 +229,46 @@ blockquote {
     }
 }
 
-// Citation
+// Citations
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
+// The <cite> element is used to describe a reference to a cited creative work, and must include
+// the title of that work. The reference may be in an abbreviated form according to context-appropriate
+// conventions related to citation metadata.
 cite {
     font-style: italic;
 }
 
-// Use <cite> to mark up the name of a work, such as a book, play, or song.
-// Use <dfn> to mark up the defining instance of a term, sould include <strong> around it.
+// Abbreviations
+// The <abbr> element represents an abbreviation or acronym; the title attribute provides an expansion or
+// description for the abbreviation. If present, the title must contain the full description and nothing else.
+abbr {
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: dotted color(midnight) 3px;
+    cursor: help;
+}
+
+// Definitions
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn
+// The <dfn> element is used to indicate the term being defined within the context of a definition phrase or sentence.
+// The <p> element, the <dt>/<dd> pairing, or the <section> element which is the nearest ancestor of the <dfn> is
+// considered to be the definition of the term.
+dfn {
+    font-size: font-size(copy);
+    font-weight: font-weight(bold);
+    font-style: italic;
+    color: color(midnight);
+}
+
+// Inline Code
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
+// The <code> element displays its contents styled in a fashion intended to indicate that the text is a short fragment of
+// computer code. By default, the content text is displayed using the user agent's default monospace font.
+code {
+    color: color(snow);
+    font-weight: font-weight(bold);
+    background-color: color(midnight);
+    border-radius: radius(square);
+    font-family: courier, monospace;
+    padding: 0 spacing(xxs);
+}

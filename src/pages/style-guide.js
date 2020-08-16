@@ -130,6 +130,28 @@ const ComponentsPage = () => (
                             I'm sorry, Dave. I'm afraid I can't do that.
                         </q>
                     </p>
+                    <p>
+                        You can use{" "}
+                        <abbr title="Cascading Style Sheets">CSS</abbr> to style
+                        your <abbr title="HyperText Markup Language">HTML</abbr>
+                        .
+                    </p>
+                    <p>
+                        A <dfn id="def-validator">validator</dfn> is a program
+                        that checks for syntax errors in code or documents.
+                    </p>
+
+                    <p>
+                        You can use{" "}
+                        <abbr title="Cascading Style Sheets">CSS</abbr> to style
+                        your <abbr title="HyperText Markup Language">HTML</abbr>
+                        .
+                    </p>
+                    <p>
+                        Words can be like X-rays, if you use them
+                        properly—they’ll <code>go through anything</code>. You
+                        read and you’re pierced.
+                    </p>
                 </div>
             </section>
         </Layout>

@@ -318,6 +318,20 @@
 		],
 		  "description": "Border Default"
     },
+    "Border Radius square": {
+		"prefix": "brs",
+		"body": [
+      "border-radius: radius(square);",
+		],
+		  "description": "Border Radius Square"
+    },
+    "Border Radius rounded": {
+		"prefix": "brr",
+		"body": [
+      "border-radius: radius(rounded);",
+		],
+		  "description": "Border Radius Rounded"
+    },
     "Shadow Default": {
 		"prefix": "sd",
 		"body": [
