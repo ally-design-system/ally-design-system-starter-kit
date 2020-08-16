@@ -272,3 +272,30 @@ code {
     font-family: courier, monospace;
     padding: 0 spacing(xxs);
 }
+
+// Time
+//
+//
+time {
+}
+
+// Keyboard Input
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd
+// The <kbd> element represents inline text denoting textual user input from a keyboard, voice input, or any other text entry device.
+// By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although
+// this is not mandated by the HTML standard.
+kbd {
+    display: inline-block;
+    font-family: courier, monospace;
+    font-size: font-size(copy);
+    color: color(midnight);
+    font-weight: font-weight(bold);
+    line-height: 1;
+    background-color: shade(color(snow), 20);
+    border-radius: 3px;
+    border: 1px solid color(midnight);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+        0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    padding: spacing(xxxs) spacing(xxs);
+    white-space: nowrap;
+}

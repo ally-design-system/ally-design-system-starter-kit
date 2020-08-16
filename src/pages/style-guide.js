@@ -152,6 +152,10 @@ const ComponentsPage = () => (
                         properly—they’ll <code>go through anything</code>. You
                         read and you’re pierced.
                     </p>
+                    <p>
+                        Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +{" "}
+                        <kbd>R</kbd> to re-render an MDN page.
+                    </p>
                 </div>
             </section>
         </Layout>
