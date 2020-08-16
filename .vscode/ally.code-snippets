@@ -429,5 +429,33 @@
       "line-height: leading(tall);",
 		],
 		  "description": "Leading Tall"
+    },
+    "Tracking regular": {
+		"prefix": "tr",
+		"body": [
+      "letter-spacing: tracking(regular);",
+		],
+		  "description": "Tracking Regular"
+    },
+    "Tracking wide": {
+		"prefix": "tw",
+		"body": [
+      "letter-spacing: tracking(wide);",
+		],
+		  "description": "Tracking Wide"
+    },
+    "Typeface arimo": {
+		"prefix": "ta",
+		"body": [
+      "font-family: typeface(arimo);",
+		],
+		  "description": "Typeface Arimo"
+    },
+    "Typeface slab": {
+		"prefix": "ts",
+		"body": [
+      "font-family: typeface(slab);",
+		],
+		  "description": "Typeface Slab"
     }
 }
