@@ -338,5 +338,68 @@
       "animation: animation(fadeIn);",
 		],
 		  "description": "Animation FadeIn snippet"
+    },
+    "Font Size hxl": {
+		"prefix": "fshxl",
+		"body": [
+      "font-size: font-size(hxl);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size hl": {
+		"prefix": "fshl",
+		"body": [
+      "font-size: font-size(hl);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size hm": {
+		"prefix": "fshm",
+		"body": [
+      "font-size: font-size(hm);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size hs": {
+		"prefix": "fshs",
+		"body": [
+      "font-size: font-size(hs);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size hxs": {
+		"prefix": "fshxs",
+		"body": [
+      "font-size: font-size(hxs);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size hxxs": {
+		"prefix": "fshxxs",
+		"body": [
+      "font-size: font-size(hxxs);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size copy": {
+		"prefix": "fsc",
+		"body": [
+      "font-size: font-size(copy);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size caption": {
+		"prefix": "fscap",
+		"body": [
+      "font-size: font-size(caption);",
+		],
+		  "description": "Font Size snippet"
+    },
+    "Font Size microcopy": {
+		"prefix": "fsmc",
+		"body": [
+      "font-size: font-size(microcopy);",
+		],
+		  "description": "Font Size snippet"
     }
 }
