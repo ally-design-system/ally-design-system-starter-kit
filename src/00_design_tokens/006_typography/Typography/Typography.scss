@@ -161,6 +161,15 @@ strong {
     color: color(midnight);
 }
 
+// Strikethrough
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
+// The <s> element renders text with a strikethrough, or a line through it. Use the <s> element to represent
+// things that are no longer relevant or no longer accurate. However, <s> is not appropriate when indicating
+// document edits; for that, use the <del> and <ins> elements, as appropriate.
+s {
+    text-decoration: line-through;
+}
+
 // Highlighting
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
 // The <mark> element represents text which is marked or highlighted for reference or notation purposes,
@@ -266,11 +275,28 @@ dfn {
 // computer code. By default, the content text is displayed using the user agent's default monospace font.
 code {
     color: color(snow);
+    font-size: font-size(copy);
     font-weight: font-weight(bold);
     background-color: color(midnight);
     border-radius: radius(square);
     font-family: courier, monospace;
-    padding: 0 spacing(xxs);
+    padding: spacing(xxxs) spacing(xxs);
+}
+
+// Preformatted Text (Code Blocks)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
+// The <pre> element represents preformatted text which is to be presented exactly as written in the HTML file.
+// The text is typically rendered using monospace font and is used wrapped around <code> to show a code block.
+pre {
+    display: block;
+    color: color(snow);
+    font-size: font-size(copy);
+    font-weight: font-weight(bold);
+    background-color: color(midnight);
+    border-radius: radius(square);
+    font-family: courier, monospace;
+    padding: spacing(m);
+    margin: spacing(xl) 0;
 }
 
 // Time
@@ -298,4 +324,10 @@ kbd {
         0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
     padding: spacing(xxxs) spacing(xxs);
     white-space: nowrap;
+}
+
+del {
+}
+
+ins {
 }

@@ -150,12 +150,15 @@ const ComponentsPage = () => (
                     <p>
                         Words can be like X-rays, if you use them
                         properly—they’ll <code>go through anything</code>. You
-                        read and you’re pierced.
+                        read <s>and you’re pierced</s>.
                     </p>
                     <p>
                         Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +{" "}
                         <kbd>R</kbd> to re-render an MDN page.
                     </p>
+                    <pre>
+                        <code>Works when written in Markdown only.</code>
+                    </pre>
                 </div>
             </section>
         </Layout>
