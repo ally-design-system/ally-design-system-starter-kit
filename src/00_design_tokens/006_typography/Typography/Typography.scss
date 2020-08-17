@@ -117,8 +117,9 @@ ol {
 // The <figcaption> element represents a caption or legend describing
 // the rest of the contents of its parent <figure> element.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption
-// The <caption>...
-figcaption {
+// The <caption> element specifies the caption (or title) of a table.
+figcaption,
+caption {
     font-size: font-size(caption);
     font-weight: font-weight(bold);
     padding: spacing(l) spacing(xxs) spacing(xl);
@@ -370,13 +371,29 @@ var {
 // document's author, however, its definition has since been updated so it can now be used to mark up arbitrary addresses.
 address {
     font-style: italic;
+    padding-bottom: spacing(l);
 
     p {
         padding-bottom: spacing(xxxs);
     }
 }
-del {
+
+// Deleted / Inserted Text
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
+// The <del> element represents a range of text that has been deleted from a document. This can be used when rendering "track changes"
+// or source code diff information, for example.
+// The <ins> element can be used for the opposite purpose: to indicate text that has been added to the document.
+del,
+ins {
+    text-decoration: line-through;
+    background-color: #ff7a7a;
+    color: color(midnight);
+    font-weight: font-weight(bold);
+    padding: spacing(xxxs) spacing(xxs);
 }
 
 ins {
+    text-decoration: none;
+    background-color: #00ff95;
 }

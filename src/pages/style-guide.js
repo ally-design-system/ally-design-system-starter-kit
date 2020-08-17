@@ -221,6 +221,12 @@ const ComponentsPage = () => (
                         </a>
                     </p>
                 </address>
+
+                <p>
+                    There is <del>nothing</del> <ins>no code</ins> either good
+                    or bad, but <del>thinking</del> <ins>running it</ins> makes
+                    it so.
+                </p>
             </section>
         </Layout>
     </>
