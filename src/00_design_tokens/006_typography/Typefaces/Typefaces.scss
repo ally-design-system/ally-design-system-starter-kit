@@ -7,6 +7,7 @@
 $typefaces: (
     arimo: "" Arimo ", sans-serif",
     slab: "" Roboto Slab ", serif",
+    mono: "" Roboto Mono ", monospace",
 );
 
 // Typeface Design Tokens Config
@@ -24,4 +25,5 @@ $typefaces: (
 /*
     ta  font-family: typeface(arimo);
     ts  font-family: typeface(slab);
+    tm  font-family: typeface(mono);
 */

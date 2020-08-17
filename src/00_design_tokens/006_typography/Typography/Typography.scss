@@ -279,7 +279,7 @@ code {
     font-weight: font-weight(bold);
     background-color: color(midnight);
     border-radius: radius(square);
-    font-family: courier, monospace;
+    font-family: typeface(mono);
     padding: spacing(xxxs) spacing(xxs);
 }
 
@@ -294,15 +294,22 @@ pre {
     font-weight: font-weight(bold);
     background-color: color(midnight);
     border-radius: radius(square);
-    font-family: courier, monospace;
+    font-family: typeface(mono);
     padding: spacing(m);
     margin: spacing(xl) 0;
 }
 
 // Time
-//
-//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
+// The <time> element represents a specific period in time. It may include the datetime attribute to translate dates into
+// machine-readable format, allowing for better search engine results or custom features such as reminders.
 time {
+    font-family: typeface(slab);
+    font-size: font-size(copy);
+    font-weight: font-weight(bold);
+    line-height: leading(regular);
+    letter-spacing: tracking(regular);
+    color: color(midnight);
 }
 
 // Keyboard Input
@@ -312,7 +319,7 @@ time {
 // this is not mandated by the HTML standard.
 kbd {
     display: inline-block;
-    font-family: courier, monospace;
+    font-family: typeface(mono);
     font-size: font-size(copy);
     color: color(midnight);
     font-weight: font-weight(bold);

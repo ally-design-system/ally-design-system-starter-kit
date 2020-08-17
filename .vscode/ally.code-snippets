@@ -471,5 +471,12 @@
       "font-family: typeface(slab);",
 		],
 		  "description": "Typeface Slab"
+    },
+    "Typeface mono": {
+		"prefix": "tm",
+		"body": [
+      "font-family: typeface(mono);",
+		],
+		  "description": "Typeface Mono"
     }
 }
