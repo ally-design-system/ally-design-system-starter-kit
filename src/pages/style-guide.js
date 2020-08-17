@@ -120,8 +120,16 @@ const ComponentsPage = () => (
                     </ol>
                     <p>
                         <strong>Words</strong> can be like <em>X-rays</em>, if
-                        you use them <mark>properly—they’ll</mark> go through{" "}
-                        <i>anything</i>. You read and you’re pierced.
+                        you use them{" "}
+                        <mark>
+                            <span className="sr-only">
+                                {" "}
+                                [highlight starts]{" "}
+                            </span>
+                            properly—they’ll
+                            <span className="sr-only"> [highlight ends] </span>
+                        </mark>{" "}
+                        go through <i>anything</i>. You read and you’re pierced.
                     </p>
                     <p>
                         When Dave asks HAL to open the pod bay door, HAL
@@ -171,6 +179,48 @@ const ComponentsPage = () => (
                     and you'll be able to enjoy the band for at least{" "}
                     <time datetime="PT2H30M">2h 30m</time>.
                 </p>
+
+                <p>
+                    I was trying to boot my computer, but I got this hilarious
+                    message:
+                </p>
+
+                <p>
+                    <samp>Keyboard not found Press F1 to continue</samp>
+                </p>
+
+                <p>
+                    You could use this element to highlight <u>speling</u>{" "}
+                    mistakes, so the writer can <u>corect</u> them.
+                </p>
+
+                <p>
+                    The volume of a box is <var>l</var> × <var>w</var> ×{" "}
+                    <var>h</var>, where <var>l</var> represents the length,{" "}
+                    <var>w</var> the width and <var>h</var> the height of the
+                    box.
+                </p>
+
+                <p>Contact the author of this page:</p>
+
+                <address>
+                    <p>
+                        <a href="https://nikkipantony.com">nikkipantony.com</a>
+                    </p>
+                    <p>
+                        <a href="mailto:hello@nikkipantony.com">
+                            hello@nikkipantony.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+447123456789">(+44) 7123 456789</a>
+                    </p>
+                    <p>
+                        <a href="https://goo.gl/maps/LT1tuiDWaj1ScbYu5">
+                            3rd Floor, 15 Colston St, Bristol BS1 5AP
+                        </a>
+                    </p>
+                </address>
             </section>
         </Layout>
     </>
