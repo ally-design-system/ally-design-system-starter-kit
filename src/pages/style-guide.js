@@ -169,7 +169,12 @@ const ComponentsPage = () => (
                     </pre>
                 </div>
                 <p>
-                    The Cure will be celebrating their 40th anniversary on{" "}
+                    The Cure will be celebrating{" "}
+                    <ExLink
+                        href="https://github.com/nikkipantony/gatsby-starter-sass-bem-md"
+                        text="Ally Starter Kit on GitHub"
+                    />{" "}
+                    their 40th <InLink to="/" text="Home" /> anniversary on{" "}
                     <time datetime="2018-07-07">July 7</time> in London's Hyde
                     Park.
                 </p>
@@ -193,6 +198,8 @@ const ComponentsPage = () => (
                     You could use this element to highlight <u>speling</u>{" "}
                     mistakes, so the writer can <u>corect</u> them.
                 </p>
+
+                <hr />
 
                 <p>
                     The volume of a box is <var>l</var> × <var>w</var> ×{" "}

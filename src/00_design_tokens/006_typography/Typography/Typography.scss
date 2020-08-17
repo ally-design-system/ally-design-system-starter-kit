@@ -86,12 +86,14 @@ a:visited {
     line-height: leading(regular);
     letter-spacing: tracking(regular);
     color: color(midnight);
+    text-decoration: none;
+    border-bottom: border(default);
 
     &:hover,
     &:active,
     &.focus-visible {
         background: color(gold);
-        text-decoration-style: double;
+        text-decoration: none;
     }
 }
 
@@ -396,4 +398,17 @@ ins {
 ins {
     text-decoration: none;
     background-color: #00ff95;
+}
+
+// Thematic Break (Horizontal Rule)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
+// The <hr> element represents a thematic break between paragraph-level elements: for example, a change of scene in a story,
+// or a shift of topic within a section.
+// Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule
+// in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw
+// a horizontal line, you should do so using appropriate CSS.
+hr {
+    border: none;
+    border-top: border(default);
+    padding-bottom: spacing(l);
 }

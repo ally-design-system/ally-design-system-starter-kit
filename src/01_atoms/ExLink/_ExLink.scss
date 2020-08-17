@@ -14,7 +14,7 @@
         width: 15px;
         height: 15px;
         fill: color(midnight);
-        margin: auto 0 auto spacing(xxs);
+        margin: 0 spacing(xxxs) 0 spacing(xxs);
     }
 
     &.--microcopy {
@@ -25,7 +25,7 @@
         svg {
             width: 12px;
             height: 12px;
-            margin: auto 0 auto spacing(xxxs);
+            margin: 0 spacing(xxxs);
         }
     }
 }
