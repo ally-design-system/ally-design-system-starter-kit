@@ -60,35 +60,32 @@ const ComponentsPage = () => (
                         <Icon id="message" title="Send me a message" />
                     </div>
                     <h4>Internal Link</h4>
-                    <div style={Container}>
+                    <div>
                         <p>
                             <InLink to="/" text="Home" />
                         </p>
-                        <p> &nbsp; &nbsp; </p>
                         <p>
                             <InLink />
                         </p>
                     </div>
                     <h4>Button</h4>
-                    <div style={Container}>
+                    <div>
                         <p>
                             <Button text="Download" />
                         </p>
-                        <p> &nbsp; &nbsp; </p>
                         <p>
                             <Button />
                         </p>
                     </div>
                     <h2>Molecule Components</h2>
                     <h3>External Link</h3>
-                    <div style={Container}>
+                    <div>
                         <p>
                             <ExLink
                                 href="https://github.com/nikkipantony/gatsby-starter-sass-bem-md"
                                 text="Ally Starter Kit on GitHub"
                             />
                         </p>
-                        <p> &nbsp; &nbsp; </p>
                         <p>
                             <ExLink />
                         </p>
