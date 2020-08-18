@@ -9,7 +9,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import IconsSprite from "../../../08_icons/icon-sprite.svg"
+import IconsSprite from "../08_icons/icon-sprite.svg"
 
 const Icon = props => {
     return (
