@@ -30,7 +30,7 @@ const Icon = props => {
 
 Icon.defaultProps = {
     name: "open-in-new",
-    title: "Link will open in new tab",
+    title: "Link will open in a new tab",
     fill: "midnight",
     modifier: "",
 }

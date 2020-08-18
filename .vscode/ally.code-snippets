@@ -373,7 +373,21 @@
       "animation: animation(fadeIn);",
 		],
 		  "description": "Animation FadeIn"
-    },
+	},
+	"Icon Size Regular": {
+		"prefix": "isr",
+		"body": [
+      "icon-size(regular)",
+		],
+		  "description": "Icon Size Regular"
+	},
+"Icon Size Small": {
+		"prefix": "iss",
+		"body": [
+      "icon-size(small)",
+		],
+		  "description": "Icon Size Small"
+	},
     "Font Size hxl": {
 		"prefix": "fshxl",
 		"body": [

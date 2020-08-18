@@ -5,15 +5,17 @@
 
 .ex-link {
     display: inline-block;
+    font-size: font-size(copy);
+    font-weight: font-weight(bold);
     color: color(midnight);
     // Stops link text from wrapping with / without SVG
     // @todo: Possibly change so it can wrap but with SVG
     white-space: nowrap;
 
     svg {
-        width: 15px;
-        height: 15px;
-        fill: color(midnight);
+        // width: 15px;
+        // height: 15px;
+        // fill: color(midnight);
         margin: 0 spacing(xxxs) 0 spacing(xxs);
     }
 
@@ -23,8 +25,8 @@
         color: color(midnight);
 
         svg {
-            width: 12px;
-            height: 12px;
+            width: icon-size(small);
+            height: icon-size(small);
             margin: 0 spacing(xxxs);
         }
     }

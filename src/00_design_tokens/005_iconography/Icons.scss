@@ -1,0 +1,27 @@
+/*
+ * Icon Size Design Tokens
+ *
+ */
+
+// Icon Size Values
+$icon-sizes: (
+    regular: 16px,
+    small: 12px,
+);
+
+// Icon Size Design Tokens Config
+@function icon-size($name) {
+    @if map-has-key($icon-sizes, $name) {
+        @return map-get($icon-sizes, $name);
+    }
+
+    @error "The key #{$name} is not in the $icon-sizes design token map";
+    @return null;
+}
+
+// Icon Size Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    isr     icon-size(regular)
+    iss     icon-size(small)
+*/

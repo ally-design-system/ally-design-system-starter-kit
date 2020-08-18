@@ -23,8 +23,9 @@ const ExLink = props => {
                 {props.text}{" "}
                 <Icon
                     name="open-in-new"
-                    title="Link will open in new
+                    title="Link will open in a new
                     tab"
+                    fill="midnight"
                 />
             </a>
         </>
