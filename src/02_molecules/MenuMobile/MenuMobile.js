@@ -12,7 +12,7 @@ import Icon from "../../00_iconography/Icon"
 
 // Customized `MenuLink` to work as `NavLink` component used in Desktop Menu with styled active page link in navigation
 const isActive = ({ isCurrent }) => {
-    return { className: isCurrent ? "active" : "navlink" }
+    return { className: isCurrent ? "active" : "nav-link" }
 }
 
 const NavLink = props => <MenuLink getProps={isActive} {...props} />
@@ -31,6 +31,7 @@ const MenuMobile = props => {
                                     ? `close navigation menu`
                                     : `open navigation menu`
                             }
+                            modifier="--large"
                         />
                     </MenuButton>
                     <MenuList className="slide-down">

@@ -12,7 +12,7 @@
     // @todo: Possibly change so it can wrap but with SVG
     white-space: nowrap;
 
-    svg {
+    .icon {
         margin: 0 spacing(xxxs) 0 spacing(xxs);
     }
 
@@ -21,7 +21,7 @@
         font-weight: font-weight(bold);
         color: color(midnight);
 
-        svg {
+        .icon {
             width: icon-size(small);
             height: icon-size(small);
             margin: 0 spacing(xxxs);

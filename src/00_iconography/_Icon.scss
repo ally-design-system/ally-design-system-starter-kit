@@ -12,6 +12,11 @@
         height: icon-size(small);
     }
 
+    &.--large {
+        width: icon-size(large);
+        height: icon-size(large);
+    }
+
     &.midnight {
         fill: color(midnight);
     }

@@ -5,8 +5,9 @@
 
 // Icon Size Values
 $icon-sizes: (
-    regular: 16px,
     small: 12px,
+    regular: 16px,
+    large: 18px,
 );
 
 // Icon Size Design Tokens Config
@@ -22,6 +23,7 @@ $icon-sizes: (
 // Icon Size Token Usage With Ally Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
-    isr     icon-size(regular)
     iss     icon-size(small)
+    isr     icon-size(regular)
+    isl     icon-size(large)
 */
