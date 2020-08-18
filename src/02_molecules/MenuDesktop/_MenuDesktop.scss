@@ -7,19 +7,15 @@
     display: none; // Removes Element Visually And From The Accessibility Tree
     list-style: none;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: breakpoint(m)) {
         display: flex;
     }
 
     &__item {
-        margin: 0 0 0 $gutter--m;
+        margin: 0 0 0 spacing(l);
 
         &:first-of-type {
             margin-left: 0;
-        }
-
-        a.active {
-            border-bottom: $border--bottom;
         }
     }
 }

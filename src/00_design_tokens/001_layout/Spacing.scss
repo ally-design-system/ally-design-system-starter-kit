@@ -1,0 +1,60 @@
+/*
+ * Spacing Design Tokens
+ *
+ * Inspiration from:
+ * https://www.carbondesignsystem.com/guidelines/themes/overview#spacing
+ * https://scarab.style/core/design-tokens/#spacing
+ * https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
+ */
+
+// Spacing Scale
+$spacing: (
+    // xxxxs / 1px
+        xxxxs: 0.0625rem,
+    // xxxs / 2px
+        xxxs: 0.125rem,
+    // xxs / 4px
+        xxs: 0.25rem,
+    // xs / 8px
+        xs: 0.5rem,
+    // s / 12px
+        s: 0.75rem,
+    // m / 16px
+        m: 1rem,
+    // l / 24px
+        l: 1.5rem,
+    // xl / 32px
+        xl: 2rem,
+    // xxl / 40px
+        xxl: 2.5rem,
+    // xxxl / 48px
+        xxxl: 3rem,
+    // xxxxl / 56px
+        xxxxl: 3.5rem
+);
+
+// Spacing Design Tokens Config
+@function spacing($name) {
+    @if map-has-key($spacing, $name) {
+        @return map-get($spacing, $name);
+    }
+
+    @error "The key #{$name} is not in the ’$spacing’ design token map";
+    @return null;
+}
+
+// Spacing Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    sxxxxs  spacing(xxxxs);
+    sxxxs   spacing(xxxs);
+    sxxs    spacing(xxs);
+    sxs     spacing(xs);
+    ss      spacing(s);
+    sm      spacing(m);
+    sl      spacing(l);
+    sxl     spacing(xl);
+    sxxl    spacing(xxl);
+    sxxxl   spacing(xxxl);
+    sxxxxl  spacing(xxxl);
+*/

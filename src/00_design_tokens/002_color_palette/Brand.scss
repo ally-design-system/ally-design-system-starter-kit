@@ -1,0 +1,32 @@
+/*
+ * Brand Color Design Tokens
+ *
+ */
+
+// Brand Color Palette Map
+$colors: (
+    // Snow
+        snow: #fcfcfc,
+    // Midnight
+        midnight: #000013,
+    // Gold
+        gold: #ffd700
+);
+
+// Brand Color Design Tokens Config
+@function color($name) {
+    @if map-has-key($colors, $name) {
+        @return map-get($colors, $name);
+    }
+
+    @error "The key #{$name} is not in the brand $colors design token map";
+    @return null;
+}
+
+// Brand Color Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    cs  color(snow)
+    cm  color(midnight)
+    cg  color(gold)
+*/

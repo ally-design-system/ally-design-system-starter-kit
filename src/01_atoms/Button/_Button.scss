@@ -3,30 +3,24 @@
  *
  */
 
-// Set Site Button Styles
-$button-font: $theme-font-primary;
-$button-color: $color-white;
-$button-background: $theme-color-accent;
-$button-background--hover: $theme-color-accent--darker;
-
 button,
 .button {
     display: inline-block;
-    border: none;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1;
-    cursor: pointer;
-    transition: $transition-background;
+    border: border(default);
+    font-family: typeface(arimo);
+    font-weight: font-weight(bold);
+    font-size: font-size(hxxs);
+    color: color(midnight);
+    background: color(gold);
+    padding: spacing(m) spacing(l);
+    transition: transition(background-color);
     -webkit-appearance: none;
     -moz-appearance: none;
-    font-family: $button-font;
-    font-weight: $font-weight--bold;
-    font-size: $font-size--s;
-    color: $button-color;
-    background: $button-background;
-    padding: $gutter--s $gutter--m;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    margin: 0 spacing(m) 0 0;
 
     &:active {
         transform: scale(1);
@@ -34,6 +28,6 @@ button,
 
     &:hover,
     &:focus {
-        background-color: $button-background--hover;
+        background-color: tint(color(gold), 40);
     }
 }

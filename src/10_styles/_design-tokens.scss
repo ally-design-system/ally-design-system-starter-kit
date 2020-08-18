@@ -6,58 +6,74 @@
 // 001 Layout Design Tokens
 /****************************/
 // Layout / Breakpoint Design Tokens
-@import "../00_design_tokens/001_layout/Breakpoints/Breakpoints";
+@import "../00_design_tokens/001_layout/Breakpoints";
 
 // Layout / Layer Design Tokens
-@import "../00_design_tokens/001_layout/Layers/Layers";
+@import "../00_design_tokens/001_layout/ZLayers";
 
 // Layout / Spacing Design Tokens
-@import "../00_design_tokens/001_layout/Spacing/Spacing";
+@import "../00_design_tokens/001_layout/Spacing";
 
 // Layout / Wrapper Design Tokens
-@import "../00_design_tokens/001_layout/Wrappers/Wrappers";
+@import "../00_design_tokens/001_layout/Wrappers";
 
 // 002 Color Palette Design Tokens
 /***********************************/
+// Action Color Design Tokens
+@import "../00_design_tokens/002_color_palette/Action";
+
 // Brand Color Design Tokens
-@import "../00_design_tokens/002_color_palette/Brand/Brand";
+@import "../00_design_tokens/002_color_palette/Brand";
 
 // Opacity Design Tokens
-@import "../00_design_tokens/002_color_palette/Opacity/Opacity";
+@import "../00_design_tokens/002_color_palette/Opacity";
+
+// Gradient Design Tokens
+@import "../00_design_tokens/002_color_palette/Gradients";
 
 // Shade Design Tokens
-@import "../00_design_tokens/002_color_palette/Shades/Shades";
+@import "../00_design_tokens/002_color_palette/Shades";
 
 // Tint Design Tokens
-@import "../00_design_tokens/002_color_palette/Tints/Tints";
+@import "../00_design_tokens/002_color_palette/Tints";
 
 // 003 Peripheral Design Tokens
 /********************************/
 // Border Design Tokens
-@import "../00_design_tokens/003_peripheral/Borders/Borders";
+@import "../00_design_tokens/003_peripherals/Borders";
+
+// Radii Design Tokens
+@import "../00_design_tokens/003_peripherals/Radii";
 
 // Shadow Design Tokens
-@import "../00_design_tokens/003_peripheral/Shadows/Shadows";
+@import "../00_design_tokens/003_peripherals/Shadows";
 
 // 004 Motion Design Tokens
 /****************************/
 // Transition Design Tokens
-@import "../00_design_tokens/004_motion/Transitions/Transitions";
+@import "../00_design_tokens/004_motion/Transitions";
 
 // Animation Design Tokens
-@import "../00_design_tokens/004_motion/Animations/Animations";
+@import "../00_design_tokens/004_motion/Animations";
 
-// 005 Iconography Design Tokens
-/*********************************/
+// 005 Iconography
+/*******************/
 // Icon Design Tokens
-@import "../00_design_tokens/005_iconography/Icon/Icon";
+@import "../00_design_tokens/005_iconography/IconSizes";
 
-// 006 Typography Design Tokens
-/********************************/
-// Typography Styles Design Tokens
-@import "../00_design_tokens/006_typography/Typography/Typography";
+// 006 Typography
+/******************/
+// Import Fonts
+@import "../00_design_tokens/006_typography/Fonts";
 
-// 007 Accessibility Design Tokens
-/***********************************/
-// Focus Visible Design Tokens
-@import "../00_design_tokens/007_accessibility/FocusVisible/FocusVisible";
+// Font Size Design Tokens
+@import "../00_design_tokens/006_typography/FontSizes";
+
+// Font Weight Design Tokens
+@import "../00_design_tokens/006_typography/FontWeights";
+
+// Leading Design Tokens
+@import "../00_design_tokens/006_typography/Leading";
+
+// Typeface Design Tokens
+@import "../00_design_tokens/006_typography/Typefaces";

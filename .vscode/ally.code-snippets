@@ -51,5 +51,488 @@
       "export default ${TM_FILENAME_BASE}"
 		],
 		  "description": "React arrow function component with Props"
+    },
+    "Breakpoint": {
+		"prefix": "bp",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
+      "@media (min-width: breakpoint(?)) {}",
+		],
+		  "description": "Breakpoint"
+    },
+    "Breakpoint xs": {
+		"prefix": "bpxs",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
+      "@media (min-width: breakpoint(xs)) {}",
+		],
+		  "description": "Breakpoint xs"
+    },
+    "Breakpoint s": {
+		"prefix": "bps",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
+      "@media (min-width: breakpoint(s)) {}",
+		],
+		  "description": "Breakpoint s"
+    },
+    "Breakpoint m": {
+		"prefix": "bpm",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
+      "@media (min-width: breakpoint(m)) {}",
+		],
+		  "description": "Breakpoint m"
+    },
+    "Breakpoint l": {
+		"prefix": "bpl",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
+      "@media (min-width: breakpoint(l)) {}",
+		],
+		  "description": "Breakpoint l"
+    },
+    "Breakpoint xl": {
+		"prefix": "bpxl",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
+      "@media (min-width: breakpoint(xl)) {}",
+		],
+		  "description": "Breakpoint xl"
+    },
+    "Z Layer": {
+		"prefix": "zl",
+		"body": [
+      "// Manage in './src/00_design-tokens/001_layout/ZLayers/ZLayers'"
+      "z-index: zlayer(${TM_FILENAME_BASE});",
+		],
+		  "description": "zlayer()"
+    },
+    "Spacing xxxxs": {
+		"prefix": "sxxxxs",
+		"body": [
+      "spacing(xxxxs)",
+		],
+		  "description": "Spacing xxxxs"
+    },
+    "Spacing xxxs": {
+		"prefix": "sxxxs",
+		"body": [
+      "spacing(xxxs)",
+		],
+		  "description": "Spacing xxxs"
+    },
+    "Spacing xxs": {
+		"prefix": "sxxs",
+		"body": [
+      "spacing(xxs)",
+		],
+		  "description": "Spacing xxs"
+    },
+    "Spacing xs": {
+		"prefix": "sxs",
+		"body": [
+      "spacing(xs)",
+		],
+		  "description": "Spacing xs"
+    },
+    "Spacing s": {
+		"prefix": "ss",
+		"body": [
+      "spacing(s)",
+		],
+		  "description": "Spacing s"
+    },
+    "Spacing m": {
+		"prefix": "sm",
+		"body": [
+      "spacing(m)",
+		],
+		  "description": "Spacing m"
+    },
+    "Spacing l": {
+		"prefix": "sl",
+		"body": [
+      "spacing(l)",
+		],
+		  "description": "Spacing l"
+    },
+    "Spacing xl": {
+		"prefix": "sxl",
+		"body": [
+      "spacing(xl)",
+		],
+		  "description": "Spacing xl"
+    },
+    "Spacing xxl": {
+		"prefix": "sxxl",
+		"body": [
+      "spacing(xxl)",
+		],
+		  "description": "Spacing xxl"
+    },
+    "Spacing xxxl": {
+		"prefix": "sxxxl",
+		"body": [
+      "spacing(xxxl)",
+		],
+		  "description": "Spacing xxxl"
+    },
+    "Spacing xxxxl": {
+		"prefix": "sxxxxl",
+		"body": [
+      "spacing(xxxxl)",
+		],
+		  "description": "Spacing xxxxl"
+    },
+    "Wrapper SiteMaxWidth": {
+		"prefix": "wsite",
+		"body": [
+      "width: wrapper(SiteMaxWidth);",
+		],
+		  "description": "Wrapper SiteMaxWidth"
+    },
+    "Brand color snow": {
+		"prefix": "cs",
+		"body": [
+      "color(snow)",
+		],
+		  "description": "Brand color snow"
+    },
+    "Brand color midnight": {
+		"prefix": "cm",
+		"body": [
+      "color(midnight)",
+		],
+		  "description": "Brand color midnight"
+    },
+    "Brand color gold": {
+		"prefix": "cg",
+		"body": [
+      "color(gold)",
+		],
+		  "description": "Brand color gold"
+    },
+    "Action color success": {
+		"prefix": "acs",
+		"body": [
+      "action-color(success)",
+		],
+		  "description": "Action color success"
+    },
+    "Action color warning": {
+		"prefix": "acw",
+		"body": [
+      "action-color(warning)",
+		],
+		  "description": "Action color warning"
+    },
+    "Action color error": {
+		"prefix": "ace",
+		"body": [
+      "action-color(error)",
+		],
+		  "description": "Action color error"
+    },
+    "Opacity 0%": {
+		"prefix": "o0",
+		"body": [
+      "opacity: opacity(0);",
+		],
+		  "description": "Opacity 0%"
+    },
+    "Opacity 25%": {
+		"prefix": "o25",
+		"body": [
+      "opacity: opacity(25);",
+		],
+		  "description": "Opacity 25%"
+    },
+    "Opacity 75%": {
+		"prefix": "o75",
+		"body": [
+      "opacity: opacity(75);",
+		],
+		  "description": "Opacity 75%"
+    },
+    "Opacity 100%": {
+		"prefix": "o100",
+		"body": [
+      "opacity: opacity(100);",
+		],
+		  "description": "Opacity 100%"
+    },
+    "Shade 20": {
+		"prefix": "s20",
+		"body": [
+      "shade(color(), 20)",
+		],
+		  "description": "Shade 20%"
+    },
+    "Shade 40": {
+		"prefix": "s40",
+		"body": [
+      "shade(color(), 40)",
+		],
+		  "description": "Shade 40%"
+    },
+    "Shade 60": {
+		"prefix": "s60",
+		"body": [
+      "shade(color(), 60)",
+		],
+		  "description": "Shade 60%"
+    },
+    "Shade 80": {
+		"prefix": "s80",
+		"body": [
+      "shade(color(), 80)",
+		],
+		  "description": "Shade 80%"
+    },
+    "Tint 20": {
+		"prefix": "t20",
+		"body": [
+      "tint(color(), 20)",
+		],
+		  "description": "Tint 20%"
+    },
+    "Tint 40": {
+		"prefix": "t40",
+		"body": [
+      "tint(color(), 40)",
+		],
+		  "description": "Tint 40%"
+    },
+    "Tint 60": {
+		"prefix": "t60",
+		"body": [
+      "tint(color(), 60)",
+		],
+		  "description": "Tint 60%"
+    },
+    "Tint 80": {
+		"prefix": "t80",
+		"body": [
+      "tint(color(), 80)",
+		],
+		  "description": "Tint 80%"
+    },
+    "Gradient 70deg Snow Midnight": {
+		"prefix": "g70sm",
+		"body": [
+      "background: gradient-70(color(snow), color(midnight));",
+		],
+		  "description": "Gradient 70deg Snow Midnight"
+    },
+    "Border Default": {
+		"prefix": "bd",
+		"body": [
+      "border: border(default);",
+		],
+		  "description": "Border Default"
+    },
+    "Border Error": {
+		"prefix": "be",
+		"body": [
+      "border: border(error);",
+		],
+		  "description": "Border Error"
+    },
+    "Border Radius square": {
+		"prefix": "brs",
+		"body": [
+      "border-radius: radius(square);",
+		],
+		  "description": "Border Radius Square"
+    },
+    "Border Radius rounded": {
+		"prefix": "brr",
+		"body": [
+      "border-radius: radius(rounded);",
+		],
+		  "description": "Border Radius Rounded"
+    },
+    "Shadow Default": {
+		"prefix": "sd",
+		"body": [
+      "box-shadow: spacing(s) spacing(s) 0 0 color(midnight);",
+		],
+		  "description": "Shadow Default"
+    },
+    "Transition Background Color": {
+		"prefix": "tbc",
+		"body": [
+      "transition: transition(background-color);",
+		],
+		  "description": "Transition Background Color"
+	},
+	"Transition transform": {
+		"prefix": "tt",
+		"body": [
+      "transition: transition(transform);",
+		],
+		  "description": "Transition Transform"
+	},
+	"Transition Opacity": {
+		"prefix": "to",
+		"body": [
+      "transition: transition(opacity);",
+		],
+		  "description": "Transition Opacity"
+	},
+    "Animation FadeIn": {
+		"prefix": "afi",
+		"body": [
+      "animation: animation(fadeIn);",
+		],
+		  "description": "Animation FadeIn"
+	},
+	"Icon Size Small": {
+		"prefix": "iss",
+		"body": [
+      "icon-size(small)",
+		],
+		  "description": "Icon Size Small"
+	},
+	"Icon Size Regular": {
+		"prefix": "isr",
+		"body": [
+      "icon-size(regular)",
+		],
+		  "description": "Icon Size Regular"
+	},
+	"Icon Size Large": {
+		"prefix": "isl",
+		"body": [
+      "icon-size(large)",
+		],
+		  "description": "Icon Size Large"
+	},
+    "Font Size hxl": {
+		"prefix": "fshxl",
+		"body": [
+      "font-size: font-size(hxl);",
+		],
+		  "description": "Font Size H XL"
+    },
+    "Font Size hl": {
+		"prefix": "fshl",
+		"body": [
+      "font-size: font-size(hl);",
+		],
+		  "description": "Font Size H L"
+    },
+    "Font Size hm": {
+		"prefix": "fshm",
+		"body": [
+      "font-size: font-size(hm);",
+		],
+		  "description": "Font Size H M"
+    },
+    "Font Size hs": {
+		"prefix": "fshs",
+		"body": [
+      "font-size: font-size(hs);",
+		],
+		  "description": "Font Size H S"
+    },
+    "Font Size hxs": {
+		"prefix": "fshxs",
+		"body": [
+      "font-size: font-size(hxs);",
+		],
+		  "description": "Font Size H XS"
+    },
+    "Font Size hxxs": {
+		"prefix": "fshxxs",
+		"body": [
+      "font-size: font-size(hxxs);",
+		],
+		  "description": "Font Size H XXS"
+    },
+    "Font Size copy": {
+		"prefix": "fsc",
+		"body": [
+      "font-size: font-size(copy);",
+		],
+		  "description": "Font Size Copy"
+    },
+    "Font Size caption": {
+		"prefix": "fscap",
+		"body": [
+      "font-size: font-size(caption);",
+		],
+		  "description": "Font Size Caption"
+    },
+    "Font Size microcopy": {
+		"prefix": "fsmc",
+		"body": [
+      "font-size: font-size(microcopy);",
+		],
+		  "description": "Font Size Microcopy"
+    },
+    "Font Weight regular": {
+		"prefix": "fwr",
+		"body": [
+      "font-weight: font-weight(regular);",
+		],
+		  "description": "Font Weight Regular"
+    },
+    "Font Weight bold": {
+		"prefix": "fwb",
+		"body": [
+      "font-weight: font-weight(bold);",
+		],
+		  "description": "Font Weight Bold"
+    },
+    "Leading regular": {
+		"prefix": "lr",
+		"body": [
+      "line-height: leading(regular);",
+		],
+		  "description": "Leading Regular"
+    },
+    "Leading tall": {
+		"prefix": "lt",
+		"body": [
+      "line-height: leading(tall);",
+		],
+		  "description": "Leading Tall"
+    },
+    "Tracking regular": {
+		"prefix": "tr",
+		"body": [
+      "letter-spacing: tracking(regular);",
+		],
+		  "description": "Tracking Regular"
+    },
+    "Tracking wide": {
+		"prefix": "tw",
+		"body": [
+      "letter-spacing: tracking(wide);",
+		],
+		  "description": "Tracking Wide"
+    },
+    "Typeface arimo": {
+		"prefix": "ta",
+		"body": [
+      "font-family: typeface(arimo);",
+		],
+		  "description": "Typeface Arimo"
+    },
+    "Typeface slab": {
+		"prefix": "ts",
+		"body": [
+      "font-family: typeface(slab);",
+		],
+		  "description": "Typeface Slab"
+    },
+    "Typeface mono": {
+		"prefix": "tm",
+		"body": [
+      "font-family: typeface(mono);",
+		],
+		  "description": "Typeface Mono"
     }
 }

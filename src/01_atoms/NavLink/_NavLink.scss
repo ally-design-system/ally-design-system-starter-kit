@@ -3,4 +3,17 @@
  *
  */
 
-// .nav-link {}
+a {
+    &.nav-link,
+    &.active {
+        padding: spacing(xxs);
+        text-decoration: none;
+        background: none;
+        border-bottom: none;
+    }
+
+    &.active {
+        background: color(gold);
+        border-bottom: border(default);
+    }
+}

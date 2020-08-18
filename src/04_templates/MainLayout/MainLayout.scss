@@ -4,12 +4,12 @@
  */
 
 // Height of Header + Footer Components
-$header-and-footer: 14.5rem;
+$header-and-footer: 10.5rem;
 
 .main-layout {
     margin: 0 auto;
-    max-width: $site-max-width;
-    padding: $gutter--xl $gutter--m;
+    max-width: wrapper(SiteMaxWidth);
+    padding: spacing(xxxl) spacing(l);
     // Sets minimum page height to viewport height - (Header + Footer) height to keep footer at bottom of page
     min-height: calc(100vh - #{$header-and-footer});
 }

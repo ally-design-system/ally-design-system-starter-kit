@@ -1,0 +1,37 @@
+/*
+ * Tint Design Tokens
+ *
+ */
+
+// Tints Map
+$tints: (
+    // 20
+        20: 20%,
+    // 40
+        40: 40%,
+    // 60
+        60: 60%,
+    // 80
+        80: 80%
+);
+
+// Tint Design Token Config
+@function tint($color, $number) {
+    @if map-has-key($tints, $number) {
+        @return mix(#fff, $color, $number);
+    }
+
+    @error "The key #{$number} is not in the $tints design token map, please choose between 20, 40, 60 and 80";
+    @return null;
+}
+
+// Tint Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+// Snippets offer tint skeleton but the user still needs to manually add color
+// Example: tint(color(snow), 40)
+/*
+    t20  tint(color(), 20)
+    t40  tint(color(), 40)
+    t60  tint(color(), 60)
+    t80  tint(color(), 80)
+*/

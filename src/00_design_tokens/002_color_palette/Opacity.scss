@@ -1,0 +1,35 @@
+/*
+ * Opacity Design Tokens
+ *
+ */
+
+// Opacities Map
+$opacities: (
+    // 0
+        0: 0,
+    // 25%
+        25: 2.5,
+    // 75%
+        75: 7.5,
+    // 100%
+        100: 1
+);
+
+// Opacity Design Token Config
+@function opacity($name) {
+    @if map-has-key($opacities, $name) {
+        @return map-get($opacities, $name);
+    }
+
+    @error "The key #{$name} is not in the $opacities design token map";
+    @return null;
+}
+
+// Opacity Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    o0      opacity: opacity(0);
+    o25     opacity: opacity(25);
+    o75     opacity: opacity(75);
+    o100    opacity: opacity(100);
+*/

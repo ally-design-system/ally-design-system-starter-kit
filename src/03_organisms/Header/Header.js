@@ -26,9 +26,9 @@ const Header = () => {
         <>
             <header className="header">
                 <div className="header__inner">
-                    <div className="header__site-title">
+                    <div className="header__title">
                         <InLink
-                            className="header__in-link"
+                            className="header__title-link"
                             to="/"
                             text={data.site.siteMetadata.title}
                         />

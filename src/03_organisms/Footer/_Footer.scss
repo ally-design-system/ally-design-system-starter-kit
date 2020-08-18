@@ -4,43 +4,21 @@
  */
 
 .footer {
-    z-index: map-get($zindex, footer);
-    background-color: $site-background-color;
-    border-top: $border;
+    z-index: zlayer(Footer);
+    background-color: color(snow);
+    border-top: border(default);
     width: 100%;
 
     &__inner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: $site-max-width;
-        padding: $gutter--s $gutter--m;
+        max-width: wrapper(SiteMaxWidth);
+        padding: spacing(m) spacing(l);
         margin: 0 auto;
-        min-height: 6.5rem;
-    }
-
-    &__links {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 1rem;
-    }
-
-    &__in-link {
-        margin-right: $gutter--s;
     }
 
     &__text {
-        font-size: $font-size--xs;
         margin: 0;
-    }
-
-    &__ex-link {
-        font-size: $font-size--xs;
-
-        svg {
-            width: 12px;
-            height: 12px;
-            margin-left: $gutter--xxxxs;
-        }
     }
 }

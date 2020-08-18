@@ -65,9 +65,10 @@ dd {
     margin: 0; // Remove Default Margins
 }
 
-abbr[title] {
-    text-decoration: underline dotted; // Add Consistent Text Decoration In Chrome, Edge, and Safari
-}
+// Not needed as styled in Typography
+// abbr[title] {
+//     text-decoration: underline dotted; // Add Consistent Text Decoration In Chrome, Edge, and Safari
+// }
 
 b,
 strong {

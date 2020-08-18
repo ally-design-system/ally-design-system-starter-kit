@@ -48,7 +48,7 @@ module.exports = {
                 background_color: `#542c85`,
                 theme_color: `#542c85`,
                 display: `minimal-ui`, // https://developer.mozilla.org/en-US/docs/Web/Manifest/display
-                icon: `src/08_icons/favicon.png`, // This path is relative to the root of the site.
+                icon: `favicon.png`, // This path is relative to the root of the site.
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality

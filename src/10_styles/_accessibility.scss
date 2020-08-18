@@ -1,0 +1,38 @@
+/*
+ * Accessibility Utilities
+ *
+ */
+
+// Focus Visible Styles
+// WICG Polyfill for `:focus-visible`: https://github.com/wicg/focus-visible
+// Demo: https://wicg.github.io/focus-visible/demo/
+// JavaScript imported in `./gatsby-browser.js` for Gatsby Build
+// JavaScript imported in `.storybook/preview.js` for Storybook Build
+
+// This will hide the focus indicator if the element receives focus via the mouse,
+// but it will still show up on keyboard focus.
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+// This defines a strong focus indicator for keyboard focus.
+// If this styling is removed the browser's default focus indicator will be displayed instead.
+.js-focus-visible .focus-visible {
+    outline: border(default);
+    outline-offset: spacing(xxs);
+}
+
+// Screen Reader Only
+// Utilitie for improving accessibility with screen readers.
+// Use .sr-only to hide an element visually without hiding it from screen readers.
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

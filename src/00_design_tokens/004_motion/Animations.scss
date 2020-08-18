@@ -1,0 +1,35 @@
+/*
+ * Animation Styles
+ *
+ */
+
+// FadeIn Animation Keyframes
+@keyframes fadeIn {
+    0% {
+        opacity: opacity(0);
+    }
+    100% {
+        opacity: opacity(100);
+    }
+}
+
+// Animations Map
+$animations: (
+    fadeIn: fadeIn 300ms ease-in,
+);
+
+// Animations Design Token Config
+@function animation($name) {
+    @if map-has-key($animations, $name) {
+        @return map-get($animations, $name);
+    }
+
+    @error "The key #{$name} is not in the $animations design token map";
+    @return null;
+}
+
+// Animations Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    afi     animation: animation(fadeIn);
+*/

@@ -4,17 +4,17 @@
  */
 
 .post-template {
-    margin-top: $gutter--xl;
+    margin-top: spacing(xxxl);
 
     &__frontmatter {
-        margin: $gutter--xl 0;
+        margin: spacing(xxxl) 0;
     }
 
     &__date {
-        font-weight: $font-weight--bold;
+        font-weight: font-weight(bold);
     }
 
     &__content {
-        margin: $gutter--m 0;
+        margin: spacing(l) 0;
     }
 }

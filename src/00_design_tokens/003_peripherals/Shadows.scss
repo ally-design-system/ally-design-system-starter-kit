@@ -1,0 +1,25 @@
+/*
+ * Shadow Styles
+ *
+ */
+
+// Shadows Map
+$shadows: (
+    default: spacing(s) spacing(s) 0 0 color(midnight),
+);
+
+// Shadows Design Token Config
+@function shadow($name) {
+    @if map-has-key($shadows, $name) {
+        @return map-get($shadows, $name);
+    }
+
+    @error "The key #{$name} is not in the $shadows design token map";
+    @return null;
+}
+
+// Shadows Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    sd  box-shadow: spacing(s) spacing(s) 0 0 color(midnight);
+*/

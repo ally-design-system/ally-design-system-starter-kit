@@ -4,18 +4,19 @@
  */
 
 .in-link {
-    font-family: $link-font;
-    font-weight: $link-weight;
-    color: $link-color;
+    font-family: typeface(arimo);
+    font-weight: font-weight(bold);
+    color: color(midnight);
+    font-size: font-size(copy);
     text-decoration: none;
-    padding-bottom: 2px;
-    font-size: $font-size--s;
 
     &:hover {
-        border-bottom: $border--bottom;
+        border-bottom: border(default);
     }
 
-    .focus-visible {
-        outline-offset: -$outline-offset;
+    &.--microcopy {
+        font-size: font-size(microcopy);
+        font-weight: font-weight(bold);
+        color: color(midnight);
     }
 }
