@@ -5,7 +5,7 @@
 
 import React from "react"
 import Layout from "../04_templates/MainLayout/MainLayout"
-import Image from "../01_atoms/Image/Image"
+import Figure from "../01_atoms/Figure/Figure"
 import Icon from "../00_iconography/Icon"
 import InLink from "../01_atoms/InLink/InLink"
 import ExLink from "../01_atoms/ExLink/ExLink"
@@ -25,10 +25,11 @@ const ComponentsPage = () => (
                     <h1>Ally Style Guide</h1>
                     <h2>Atom Components</h2>
                     <h3>Image</h3>
-                    <Image
+                    <Figure
                         alt="Gatsby Logo"
                         filename="gatsby.png"
-                        caption="The GatsbyJS logo."
+                        figcaption="The GatsbyJS logo."
+                        modifier="--maxWidth500"
                     />
                     <h3>Icon</h3>
                     <div style={Container}>

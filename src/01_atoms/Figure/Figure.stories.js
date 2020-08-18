@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import Image from "./Image"
+import Image from "./Figure"
 
 export default {
     title: "/Atoms/Image",

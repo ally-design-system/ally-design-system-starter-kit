@@ -40,13 +40,15 @@ const Image = props => (
             }
 
             return (
-                <figure>
+                <figure
+                    className={`figure ${props.className} ${props.modifier}`}
+                >
                     <Img
-                        className={`image ${props.className} ${props.modifier}`}
+                        className={`figure__image`}
                         alt={props.alt}
                         fluid={image.node.childImageSharp.fluid}
                     />
-                    <figcaption>{props.caption}</figcaption>
+                    <figcaption>{props.figcaption}</figcaption>
                 </figure>
             )
         }}
@@ -62,7 +64,7 @@ Image.defaultProps = {
 }
 
 Image.propTypes = {
-    caption: PropTypes.string,
+    figcaption: PropTypes.string,
     filename: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     className: PropTypes.string,
