@@ -5,7 +5,9 @@
 
 // Transitions Map
 $transitions: (
-    background-color: background-color 250ms ease-in-out,
+    background-color: background-color 0.2s ease-in-out,
+    transform: transform 0.2s ease-in-out,
+    opacity: opacity 0.2s ease-in-out,
 );
 
 // Transitions Design Token Config
@@ -21,5 +23,7 @@ $transitions: (
 // Transitions Design Token Usage With Ally Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
-    tbc     transition: transition(background-color);
+    tbc   transition: transition(background-color);
+    tt    transition:: transition(transform);
+    to    transition:: transition(opacity);
 */

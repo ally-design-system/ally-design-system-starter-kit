@@ -366,7 +366,21 @@
       "transition: transition(background-color);",
 		],
 		  "description": "Transition Background Color"
-    },
+	},
+	"Transition transform": {
+		"prefix": "tt",
+		"body": [
+      "transition: transition(transform);",
+		],
+		  "description": "Transition Transform"
+	},
+	"Transition Opacity": {
+		"prefix": "to",
+		"body": [
+      "transition: transition(opacity);",
+		],
+		  "description": "Transition Opacity"
+	},
     "Animation FadeIn": {
 		"prefix": "afi",
 		"body": [
@@ -381,7 +395,7 @@
 		],
 		  "description": "Icon Size Regular"
 	},
-"Icon Size Small": {
+	"Icon Size Small": {
 		"prefix": "iss",
 		"body": [
       "icon-size(small)",
