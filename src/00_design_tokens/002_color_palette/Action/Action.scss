@@ -4,22 +4,22 @@
  */
 
 // Action Color Palette Map
-$colors: (
+$action-colors: (
     // Success
-        success: #24a148,
+        success: #18d14c,
     // Warning
-        warning: #ff832b,
+        warning: #ff9d00,
     // Error
-        error: #da1e28
+        error: #f30b17
 );
 
 // Action Color Design Tokens Config
 @function action-color($name) {
-    @if map-has-key($colors, $name) {
-        @return map-get($colors, $name);
+    @if map-has-key($action-colors, $name) {
+        @return map-get($action-colors, $name);
     }
 
-    @error "The key #{$name} is not in the action $colors design token map";
+    @error "The key #{$name} is not in the $action-colors design token map";
     @return null;
 }
 

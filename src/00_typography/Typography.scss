@@ -350,7 +350,7 @@ samp {
 u {
     font-style: italic;
     text-decoration: none;
-    border-bottom: solid red 3px;
+    border-bottom: solid action-color(error) 3px;
 }
 
 // Variable
@@ -389,7 +389,7 @@ address {
 del,
 ins {
     text-decoration: line-through;
-    background-color: #ff7a7a;
+    background-color: tint(action-color(error), 40);
     color: color(midnight);
     font-weight: font-weight(bold);
     padding: spacing(xxxs) spacing(xxs);
@@ -397,7 +397,7 @@ ins {
 
 ins {
     text-decoration: none;
-    background-color: #00ff95;
+    background-color: tint(action-color(success), 40);
 }
 
 // Thematic Break (Horizontal Rule)
