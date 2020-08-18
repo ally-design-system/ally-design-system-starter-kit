@@ -11,7 +11,7 @@ import { Link } from "gatsby"
 
 /* Same pattern used within `MenuMobile` to customize `MenuLink` to work as `NavLink` component */
 const isActive = ({ isCurrent }) => {
-    return { className: isCurrent ? "active" : "navlink" }
+    return { className: isCurrent ? "active" : "nav-link" }
 }
 const NavigationLink = props => <Link getProps={isActive} {...props} />
 

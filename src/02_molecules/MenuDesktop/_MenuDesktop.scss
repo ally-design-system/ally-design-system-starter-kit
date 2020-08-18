@@ -17,11 +17,5 @@
         &:first-of-type {
             margin-left: 0;
         }
-
-        a.active {
-            background: color(gold);
-            text-decoration: none;
-            border-bottom: border(default);
-        }
     }
 }
