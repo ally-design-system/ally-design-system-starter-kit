@@ -332,6 +332,13 @@
 		],
 		  "description": "Border Default"
     },
+    "Border Error": {
+		"prefix": "be",
+		"body": [
+      "border: border(error);",
+		],
+		  "description": "Border Error"
+    },
     "Border Radius square": {
 		"prefix": "brs",
 		"body": [

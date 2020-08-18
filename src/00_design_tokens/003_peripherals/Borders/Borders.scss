@@ -6,6 +6,7 @@
 // Borders Map
 $borders: (
     default: solid color(midnight) 3px,
+    error: solid action-color(error) 3px,
 );
 
 // Borders Design Token Config
@@ -22,4 +23,5 @@ $borders: (
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     bd  border: border(default);
+    be  border: border(error);
 */

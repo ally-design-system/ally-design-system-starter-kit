@@ -317,10 +317,10 @@ kbd {
     font-weight: font-weight(bold);
     line-height: 1;
     background-color: shade(color(snow), 20);
-    border-radius: 3px;
-    border: 1px solid color(midnight);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
-        0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    border-radius: radius(rounded);
+    border: solid color(midnight) 1px;
+    box-shadow: 0 spacing(xxxxs) spacing(xxxxs) tint(color(midnight), 20),
+        0 spacing(xxxs) 0 0 shade(color(snow), 20) inset;
     padding: spacing(xxxs) spacing(xxs);
     white-space: nowrap;
 }
@@ -350,7 +350,7 @@ samp {
 u {
     font-style: italic;
     text-decoration: none;
-    border-bottom: solid action-color(error) 3px;
+    border-bottom: border(error);
 }
 
 // Variable
@@ -389,7 +389,7 @@ address {
 del,
 ins {
     text-decoration: line-through;
-    background-color: tint(action-color(error), 40);
+    background-color: tint(action-color(error), 60);
     color: color(midnight);
     font-weight: font-weight(bold);
     padding: spacing(xxxs) spacing(xxs);
@@ -397,7 +397,7 @@ ins {
 
 ins {
     text-decoration: none;
-    background-color: tint(action-color(success), 40);
+    background-color: tint(action-color(success), 60);
 }
 
 // Thematic Break (Horizontal Rule)
