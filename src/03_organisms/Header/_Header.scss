@@ -18,12 +18,24 @@
         padding: spacing(l);
     }
 
-    &__site-title {
+    &__title {
         margin: auto 0;
     }
 
-    &__in-link {
-        font-size: font-size(hxxs);
+    &__title-link {
+        margin: auto 0;
+        padding: spacing(xxs);
+
+        &:link,
+        &:visited,
+        &:active {
+            margin: auto 0;
+            border-bottom: 0;
+        }
+
+        &:hover {
+            border-bottom: border(default);
+        }
     }
 
     &__navigation {
