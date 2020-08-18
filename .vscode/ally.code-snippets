@@ -213,12 +213,26 @@
 		],
 		  "description": "Brand color gold"
     },
-    "Brand color tangerine": {
-		"prefix": "ct",
+    "Action color success": {
+		"prefix": "acs",
 		"body": [
-      "color(tangerine)",
+      "action-color(success)",
 		],
-		  "description": "Brand color tangerine"
+		  "description": "Action color success"
+    },
+    "Action color warning": {
+		"prefix": "acw",
+		"body": [
+      "action-color(warning)",
+		],
+		  "description": "Action color warning"
+    },
+    "Action color error": {
+		"prefix": "ace",
+		"body": [
+      "action-color(error)",
+		],
+		  "description": "Action color error"
     },
     "Opacity 0%": {
 		"prefix": "o0",
@@ -304,12 +318,12 @@
 		],
 		  "description": "Tint 80%"
     },
-    "70deg Gradient": {
-		"prefix": "g70gt",
+    "Gradient 70deg Snow Midnight": {
+		"prefix": "g70sm",
 		"body": [
-      "background: gradient-70(color(gold), color(tangerine));",
+      "background: gradient-70(color(snow), color(midnight));",
 		],
-		  "description": "Gradient 70deg Gold Tangerine"
+		  "description": "Gradient 70deg Snow Midnight"
     },
     "Border Default": {
 		"prefix": "bd",

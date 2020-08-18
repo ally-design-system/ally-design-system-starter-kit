@@ -1,0 +1,32 @@
+/*
+ * Action Color Design Tokens
+ *
+ */
+
+// Action Color Palette Map
+$colors: (
+    // Success
+        success: #24a148,
+    // Warning
+        warning: #ff832b,
+    // Error
+        error: #da1e28
+);
+
+// Action Color Design Tokens Config
+@function action-color($name) {
+    @if map-has-key($colors, $name) {
+        @return map-get($colors, $name);
+    }
+
+    @error "The key #{$name} is not in the action $colors design token map";
+    @return null;
+}
+
+// Action Color Design Token Usage With Ally Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    acs     action-color(success)
+    acw     action-color(warning)
+    ace     action-color(error)
+*/

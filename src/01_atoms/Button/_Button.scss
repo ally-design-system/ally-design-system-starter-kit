@@ -7,7 +7,7 @@
 $button-font: typeface(arimo);
 $button-color: color(midnight);
 $button-background: color(gold);
-$button-background--hover: color(tangerine);
+$button-background--hover: tint(color(gold), 40);
 
 button,
 .button {

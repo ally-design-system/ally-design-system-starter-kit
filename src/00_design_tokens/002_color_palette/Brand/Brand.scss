@@ -10,18 +10,16 @@ $colors: (
     // Midnight
         midnight: #000013,
     // Gold
-        gold: #ffd700,
-    // Tangerine
-        tangerine: #f28500
+        gold: #ffd700
 );
 
-// Brand Color Design Token Config
+// Brand Color Design Tokens Config
 @function color($name) {
     @if map-has-key($colors, $name) {
         @return map-get($colors, $name);
     }
 
-    @error "The key #{$name} is not in the $colors design token map";
+    @error "The key #{$name} is not in the brand $colors design token map";
     @return null;
 }
 
@@ -31,5 +29,4 @@ $colors: (
     cs  color(snow)
     cm  color(midnight)
     cg  color(gold)
-    ct  color(tangerine)
 */
