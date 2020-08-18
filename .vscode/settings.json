@@ -1,104 +1,72 @@
 {
-    "window.zoomLevel": 1,
+	"window.zoomLevel": 1,
 
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
-    "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.iconTheme": "material-icon-theme",
 
-    "material-icon-theme.activeIconPack": "react",
+	"material-icon-theme.activeIconPack": "react",
 	"material-icon-theme.hidesExplorerArrows": true,
 	"material-icon-theme.showUpdateMessage": true,
-	"material-icon-theme.folders.color": "#ec407a",
+	"material-icon-theme.folders.color": "#ffd700",
 	"material-icon-theme.folders.associations": {
 		".cache": "Database",
+		".storybook": "config",
 		"design_assets": "Custom",
 		"design_files": "Custom",
 		"node_modules": "Node",
 		"public": "Public",
 		"00_design_tokens": "Theme",
 		"001_layout": "Theme",
-		"Breakpoints": "Theme",
-		"Spacing": "Theme",
-		"Wrappers": "Theme",
-		"ZLayers": "Theme",
 		"002_color_palette": "Theme",
-		"Brand": "Theme",
-		"Gradients": "Theme",
-		"Opacity": "Theme",
-		"Shades": "Theme",
-		"Tints": "Theme",
 		"003_peripherals": "Theme",
-		"Borders": "Theme",
-		"Shadows": "Theme",
 		"004_motion": "Theme",
-		"Animations": "Theme",
-		"Transitions": "Theme",
-		"005-iconography": "Theme",
-		"Icon": "Theme",
-		"006-typography": "Theme",
-		"Typography": "Theme",
-		"007-accessibility": "Theme",
-		"FocusVisible": "Theme",
+		"005_iconography": "Theme",
+		"006_typography": "Theme",
+		"00_iconography": "Utils",
+		"00_typography": "Font",
 		"01_atoms": "Cluster",
-		"Button": "Cluster",
-		"ExLink": "Cluster",
-		"Image": "Cluster",
-		"InLink": "Cluster",
-		"NavLink": "Cluster",
-		"SkipLink": "Cluster",
 		"02_molecules": "App",
-		"MenuDesktop": "App",
-		"MenuMobile": "App",
 		"03_organisms": "Components",
-		"Footer": "Components",
-		"Header": "Components",
 		"04_templates": "Layout",
-		"MainLayout": "Layout",
-		"PageTemplate": "Layout",
-		"PostTemplate": "Layout",
 		"05_pages": "Content",
 		"06_posts": "Log",
 		"07_images": "Images",
-		"logos": "Images",
 		"08_icons": "Svg",
-		"09_utilities": "Utils",
+		"09_utilities": "Pipe",
 		"10_styles": "Sass"
 	},
 	"material-icon-theme.files.associations": {
-
 		"*.js": "react"
 	},
 
-    "scss.lint.duplicateProperties": "warning",
-    "scss.lint.unknownProperties": "warning",
-    "scss.lint.unknownAtRules": "warning",
-    "scss.lint.emptyRules": "warning",
-    "scss.lint.important": "warning",
-    "scss.validate": true,
+	"scss.lint.duplicateProperties": "warning",
+	"scss.lint.unknownProperties": "warning",
+	"scss.lint.unknownAtRules": "warning",
+	"scss.lint.emptyRules": "warning",
+	"scss.lint.important": "warning",
+	"scss.validate": true,
 
-    "html.format.endWithNewline": true,
-    "html.format.indentInnerHtml": true,
+	"html.format.endWithNewline": true,
+	"html.format.indentInnerHtml": true,
 
-    "files.associations": {
-        "*.js": "javascriptreact"
-    },
+	"files.associations": {
+		"*.js": "javascriptreact"
+	},
 
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.tabSize": 4,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4,
 
-    "prettier.trailingComma": "none",
-    "prettier.arrowParens": "avoid",
-    "prettier.printWidth": 60,
-    "prettier.useTabs": true,
-    "prettier.semi": false,
+	"prettier.trailingComma": "none",
+	"prettier.arrowParens": "avoid",
+	"prettier.printWidth": 60,
+	"prettier.useTabs": true,
+	"prettier.semi": false,
 
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "material-icon-theme.languages.associations": {
-    
-    }
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	}
 }
