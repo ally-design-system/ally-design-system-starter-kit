@@ -7,11 +7,22 @@
  */
 
 module.exports = {
-    // Declare where storybook stories are located
-    stories: ["../src/**/*.stories.js"],
+    // Declare where storybook stories are located plus file types
+    stories: ["../src/**/*.stories.@(js|mdx)"],
 
-    // Register installed storybook addons
-    addons: ["@storybook/addon-actions", "@storybook/addon-links"],
+    // Register installed storybook addons and preset options
+    addons: [
+        "@storybook/addon-actions",
+        "@storybook/addon-links",
+        {
+            name: "@storybook/addon-docs",
+            options: {
+                configureJSX: true,
+                babelOptions: {},
+                sourceLoaderOptions: null,
+            },
+        },
+    ],
 
     webpackFinal: async config => {
         // Set the NODE_ENV to 'production' by default, to allow babel-plugin-remove-graphql-queries to remove static queries

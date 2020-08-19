@@ -6,21 +6,24 @@
  */
 
 import React from "react"
-import Image from "./Figure"
+import Figure from "./FigureStatic"
+import imageFile from "../../07_images/gatsby.png"
 
 export default {
-    title: "/Atoms/Image",
-    component: Image,
+    title: "/Atoms/Figure",
+    component: Figure,
 }
 
-export const ImageFound = () => (
-    <Image alt="Gatsby Logo" filename="gatsby.png" />
-)
-
-export const ImageNotFound = () => (
-    <Image alt="Gatsby Logo" filename="Gatsby.png" />
-)
+const image = {
+    imageFile: imageFile,
+}
 
 export const maxWidth500 = () => (
-    <Image alt="Gatsby Logo" filename="gatsby.png" modifier="--maxWidth500" />
+    <Figure
+        imageFile={image.imageFile}
+        figcaption="The GatsbyJS logo."
+        alt="GatsbyJS Logo"
+        className=""
+        modifier="--maxWidth500"
+    />
 )
