@@ -19,8 +19,8 @@ export default create({
     colorSecondary: "#000013",
 
     // UI colours
-    appBg: "#fffafa",
-    appContentBg: "#fffafa",
+    appBg: "#fcfcfc",
+    appContentBg: "#fcfcfc",
     appBorderColor: "#ffd700",
     appBorderRadius: 0,
 
@@ -38,7 +38,7 @@ export default create({
     barBg: "#ffd700",
 
     // Form colours
-    inputBg: "#fffafa",
+    inputBg: "#fcfcfc",
     inputBorder: "#ffd700",
     inputTextColor: "#000013",
     inputBorderRadius: 0,
