@@ -1,5 +1,5 @@
 /*
- * Image Component
+ * Figure Component
  *
  * Gatsby Image: https://www.gatsbyjs.org/docs/gatsby-image
  * Help for creating a reusable component: https://stackoverflow.com/questions/55122752/reusable-gatsby-image-component-with-dynamic-image-sources
