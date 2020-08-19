@@ -27,11 +27,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/react": "^5.3.19",
-    "@storybook/theming": "^5.3.19",
+    "@storybook/addon-actions": "^6.0.12",
+    "@storybook/addon-links": "^6.0.12",
+    "@storybook/addons": "^6.0.12",
+    "@storybook/react": "^6.0.12",
+    "@storybook/theming": "^6.0.13",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
     "prettier": "^1.19.1"
