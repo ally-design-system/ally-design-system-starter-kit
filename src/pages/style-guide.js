@@ -10,7 +10,6 @@ import Icon from "../00_iconography/Icon"
 import InLink from "../01_atoms/InLink/InLink"
 import ExLink from "../01_atoms/ExLink/ExLink"
 import Button from "../01_atoms/Button/Button"
-import FigureStatic from "../01_atoms/Figure/FigureStatic"
 
 // @todo: Move to style guide styling unless adding Storybook!?
 const Container = {
@@ -32,7 +31,6 @@ const ComponentsPage = () => (
                         figcaption="The GatsbyJS logo."
                         modifier="--maxWidth500"
                     />
-                    <FigureStatic />
                     <h3>Icon</h3>
                     <div style={Container}>
                         <Icon id="mail" title="Email address" />

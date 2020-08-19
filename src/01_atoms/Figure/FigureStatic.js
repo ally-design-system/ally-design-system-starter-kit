@@ -1,7 +1,8 @@
 /*
- * Figure Component
+ * Figure Static Component
  *
- * Without GraphQL or gatsby-image for demo in Storybook until query error is fixed
+ * Static version of Figure component without GraphQL or gatsby-image for demo in Storybook until query error is fixed
+ * https://storybook.js.org/docs/react/configure/images-and-assets
  */
 
 import React from "react"
@@ -23,11 +24,11 @@ const FigureStatic = props => {
 }
 
 FigureStatic.defaultProps = {
-    imageFile: "../../07_images/gatsby.png",
-    figcaption: "The Gatsby Logo",
-    alt: "Gatsby Logo",
+    imageFile: "",
+    figcaption: "",
+    alt: "",
     className: "",
-    modifier: "--maxWidth500",
+    modifier: "",
 }
 
 FigureStatic.propTypes = {

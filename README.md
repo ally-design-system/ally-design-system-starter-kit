@@ -52,14 +52,14 @@ This starter kit aims to help create an enjoyable and productive developer exper
 4.  **Start developing.**
 
     Your now ready to start it up.
-    Start the Gatsby development server first with `gatsby develop` and then start Storybook by running `npm run storybook` in seperate terminal windows.
+    Start the Gatsby development server first with `gatsby develop` and then start Storybook by running `yarn storybook` in seperate terminal windows.
 
     ```shell
     gatsby develop
     ```
 
     ```shell
-    npm run storybook
+    yarn storybook
     ```
 
 5.  **Open the source code and start editing!**
@@ -77,7 +77,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 The starter kit will include:
 
 -   An extended Atomic Design project architecture using 'Particles' (sub-atomic particles representing design tokens).
--   A Storybook (v5) powered UI Component Library (For UI presentation, testing and documentation).
+-   A Storybook (v6) powered UI Component Library (For UI presentation, visual testing and documentation).
 -   Unit testing with Jest and CircleCI (This may not be included in the first version of the kit).
 -   Nested Sass(Scss) with the Atomic BEM naming convention (an extended version of BEM including an atomic prefix which deals with modifiers more gracefully than the original BEM convention).
 -   Markdown files as the content source for pages and posts by default but can be extended to use a CMS of choice.
