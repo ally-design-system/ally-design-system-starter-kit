@@ -11,8 +11,10 @@ export default {
     component: InLink,
 }
 
-export const WithText = () => <InLink to="/" text="Home" />
-
-export const TextMissing = () => <InLink to="/" text="" />
-
-export const AllPropsMissing = () => <InLink />
+export const InternalLink = args => <InLink to="/" {...args} />
+InternalLink.args = {
+    to: "/",
+    text: "Internal Link Example",
+    className: "",
+    modifier: "",
+}
