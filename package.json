@@ -30,6 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@storybook/addon-actions": "^6.0.12",
+    "@storybook/addon-controls": "^6.0.16",
     "@storybook/addon-docs": "^6.0.13",
     "@storybook/addon-links": "^6.0.12",
     "@storybook/addons": "^6.0.12",
@@ -63,15 +64,16 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -p 8008",
+    "dev": "gatsby develop -p 8008",
+    "story": "start-storybook -s ./public -p 6006",
+    "docs": "start-storybook --docs -s ./public -p 5005",
+    "build-gatsby": "gatsby build",
+    "build-story": "build-storybook",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",

@@ -33,15 +33,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     npm install -g gatsby-cli
     ```
 
-2.  **Make sure you have Yarn installed.**
-
-    If you don't already have Yarn installed, install it using npm.
-
-    ```shell
-    npm i yarn
-    ```
-
-3.  **Create a new project using this starter kit.**
+2.  **Create a new project using this starter kit.**
 
     Use the Gatsby CLI to create a new project, specifying this starter.
 
@@ -49,7 +41,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     gatsby new your-new-projects-name https://github.com/ally-design-system/ally-design-system-starter-kit
     ```
 
-4.  **Change directories to your new project.**
+3.  **Change directories to your new project.**
 
     Navigate into your new project’s directory.
 
@@ -57,28 +49,30 @@ This starter kit aims to help create an enjoyable and productive developer exper
     cd your-new-projects-name
     ```
 
-5.  **Start developing.**
+4.  **Start developing.**
 
     Your now ready to start it up.
-    Start the Gatsby development server first with `yarn develop` and then start Storybook by running `yarn storybook` in seperate terminal windows.
+    Start the Gatsby development server first with `npm run dev` and then start Storybook by running `npm run story` in seperate terminal windows.
 
     ```shell
-    yarn develop
+    npm run dev
     ```
 
     ```shell
-    yarn storybook
+    npm run story
     ```
 
-6.  **Open the source code and start editing!**
+5.  **Open the source code and start editing!**
 
-    After running `yarn develop` your project will be served at `http://localhost:8008`.
+    After running `npm run dev` your project will be served at `http://localhost:8008`.
 
-    You'll also see a second link when running `yarn develop`: `http://localhost:8008/___graphql` for GraphiQL.
+    You'll also see a second link when running `npm run dev`: `http://localhost:8008/___graphql` for GraphiQL.
 
     GraphiQL is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Introducing GraphiQL Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
-    After running `yarn storybook` your projects Storybook Design System will open in your default browser at: `http://localhost:6006`.
+    After running `npm run story` your projects Storybook will open in your default browser at: `http://localhost:6006`.
+
+    You can also run `npm run docs` just to view Storybook Docs only at: `http://localhost:5005`.
 
 ## 🗺️ Road Map
 

@@ -24,8 +24,8 @@ const InLink = props => {
 }
 
 InLink.defaultProps = {
-    to: "/",
-    text: "Link Text Missing",
+    to: "",
+    text: "",
     className: "",
     modifier: "",
 }
@@ -34,7 +34,7 @@ InLink.propTypes = {
     to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     className: PropTypes.string,
-    modifier: PropTypes.string,
+    modifier: PropTypes.oneOf(["", "--microcopy"]),
 }
 
 export default InLink
