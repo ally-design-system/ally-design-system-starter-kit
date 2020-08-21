@@ -10,7 +10,7 @@ module.exports = {
     // Declare where storybook stories are located plus file types
     stories: ["../src/**/*.stories.@(js|mdx)"],
 
-    // Register installed storybook addons and preset options
+    // Register installed storybook addons
     addons: [
         "storybook-addon-designs",
         "@storybook/addon-actions",

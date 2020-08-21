@@ -12,7 +12,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: "Component description witten in _markdown_.",
+                component: "Component description written in _markdown_.",
             },
         },
         design: {
