@@ -15,6 +15,11 @@ export default {
                 component: "Component description witten in _markdown_.",
             },
         },
+        design: {
+            type: "figma",
+            url:
+                "https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample",
+        },
     },
     argTypes: {
         to: {

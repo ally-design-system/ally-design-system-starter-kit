@@ -12,6 +12,7 @@ module.exports = {
 
     // Register installed storybook addons and preset options
     addons: [
+        "storybook-addon-designs",
         "@storybook/addon-actions",
         "@storybook/addon-links",
         "@storybook/addon-docs",
