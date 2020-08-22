@@ -1,9 +1,9 @@
 /*
  * Ally Custom Storybook Theme
- *
  * Edit the custom Storybook theme from this file.
- *
+ * Extended in `preview-head.html` and `manager-header.html`
  * Storybook Theme Configuration: https://storybook.js.org/docs/configurations/theming
+ *
  */
 
 // Import the `create()` function to generate a new theme

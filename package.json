@@ -16,10 +16,11 @@
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.8.7",
-    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-sharp": "^2.5.13",
+    "http-server": "^0.12.3",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -29,16 +30,17 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
-    "@storybook/addon-actions": "^6.0.12",
+    "@storybook/addon-actions": "^6.0.16",
     "@storybook/addon-controls": "^6.0.16",
-    "@storybook/addon-docs": "^6.0.13",
-    "@storybook/addon-links": "^6.0.12",
-    "@storybook/addons": "^6.0.12",
-    "@storybook/react": "^6.0.12",
-    "@storybook/theming": "^6.0.13",
+    "@storybook/addon-docs": "^6.0.16",
+    "@storybook/addon-links": "^6.0.16",
+    "@storybook/addons": "^6.0.16",
+    "@storybook/react": "^6.0.16",
+    "@storybook/theming": "^6.0.16",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "storybook-addon-designs": "^5.4.1"
   },
   "keywords": [
     "gatsby",
@@ -64,20 +66,26 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop -p 8008",
-    "story": "start-storybook -s ./public -p 6006",
-    "docs": "start-storybook --docs -s ./public -p 5005",
-    "build-gatsby": "gatsby build",
-    "build-story": "build-storybook",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "dev-site": "gatsby develop -p 8008",
+    "dev-story": "start-storybook -s ./public -p 6006",
+    "dev-design-system": "start-storybook --docs -s ./public -p 5005",
+    "build-site": "gatsby build",
+    "build-story": "build-storybook -o ./public-storybook",
+    "build-design-system": "build-storybook --docs -o ./public-design-system",
+    "serve-site": "http-server ./public -p 8080",
+    "serve-story": "http-server ./public-storybook -p 8081",
+    "serve-design-system": "http-server ./public-design-system -p 8082",
     "start": "npm run develop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikkipantony/ally-starter-kit"
+    "url": "https://github.com/ally-design-system/ally-design-system-starter-kit"
   },
-  "homepage": "https://ally-starter-kit.github.io"
+  "homepage": "https://ally-design-system.github.io"
 }
