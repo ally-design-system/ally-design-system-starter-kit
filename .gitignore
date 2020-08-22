@@ -56,8 +56,11 @@ typings/
 
 # gatsby files
 .cache/
+
+# public / built directories
 public
-storybook-static
+public-design-system
+public-storybook
 
 # Mac files
 .DS_Store
@@ -66,5 +69,6 @@ storybook-static
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity

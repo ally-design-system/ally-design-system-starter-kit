@@ -16,10 +16,11 @@
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.8.7",
-    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-sharp": "^2.5.13",
+    "http-server": "^0.12.3",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -65,11 +66,15 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop -p 8008",
-    "story": "start-storybook -s ./public -p 6006",
-    "docs": "start-storybook --docs -s ./public -p 5005",
-    "build-gatsby": "gatsby build",
-    "build-story": "build-storybook",
+    "dev-site": "gatsby develop -p 8008",
+    "dev-story": "start-storybook -s ./public -p 6006",
+    "dev-design-system": "start-storybook --docs -s ./public -p 5005",
+    "build-site": "gatsby build",
+    "build-story": "build-storybook -o ./public-storybook",
+    "build-design-system": "build-storybook --docs -o ./public-design-system",
+    "serve-site": "http-server ./public -p 8080",
+    "serve-story": "http-server ./public-storybook -p 8081",
+    "serve-design-system": "http-server ./public-design-system -p 8082",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -78,7 +83,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikkipantony/ally-starter-kit"
+    "url": "https://github.com/ally-design-system/ally-design-system-starter-kit"
   },
-  "homepage": "https://ally-starter-kit.github.io"
+  "homepage": "https://ally-design-system.github.io"
 }
