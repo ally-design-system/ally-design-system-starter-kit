@@ -17,6 +17,7 @@ module.exports = {
         "@storybook/addon-links",
         "@storybook/addon-docs",
         "@storybook/addon-controls",
+        "@storybook/addon-viewport",
     ],
 
     webpackFinal: async config => {
