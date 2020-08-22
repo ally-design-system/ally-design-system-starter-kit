@@ -60,7 +60,7 @@ Image.defaultProps = {
     filename: "gatsby.png",
     alt: "Gatsby Logo",
     className: "",
-    modifier: "",
+    modifier: "--maxWidth500",
 }
 
 Image.propTypes = {
