@@ -19,13 +19,13 @@
 
 ## 👋 Introduction
 
-The Ally Design System Starter Kit is built with Gatsby (v2) and Storybook (v5) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.
+The Ally Design System Starter Kit is built with Gatsby (v2) and Storybook (v6) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.
 
-This starter kit aims to help create an enjoyable and productive developer experience for building Jamstack Design System based projects while prioritising Web Accessibility (A11Y) and Performance.
+This starter kit aims to help create an enjoyable and productive developer experience for building Jamstack Design System based projects while prioritising Web Accessibility and Performance.
 
-## 💨 Quick Start
+## 💨 Getting Started
 
-1.  **Make sure you have the Gatsby CLI installed.**
+### 1. **Make sure you have the Gatsby CLI installed.**
 
     If you don't already have the Gatsby CLI installed, install it using npm.
 
@@ -33,7 +33,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     npm install -g gatsby-cli
     ```
 
-2.  **Create a new project using this starter kit.**
+### 2. **Create a new project using this starter kit.**
 
     Use the Gatsby CLI to create a new project, specifying this starter.
 
@@ -41,7 +41,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     gatsby new your-new-projects-name https://github.com/ally-design-system/ally-design-system-starter-kit
     ```
 
-3.  **Change directories to your new project.**
+### 3. **Change directories to your new project.**
 
     Navigate into your new project’s directory.
 
@@ -49,39 +49,102 @@ This starter kit aims to help create an enjoyable and productive developer exper
     cd your-new-projects-name
     ```
 
-4.  **Start developing.**
+### 4. **Start developing.**
 
     Your now ready to start it up.
-    Start the Gatsby development server first with `npm run dev` and then start Storybook by running `npm run story` in seperate terminal windows.
+
+    There are three development enviroments to the Ally Design System Starter Kit:
+
+    -   Gatsby powered site
+    -   Storybook powered visual testing enviroment
+    -   Storybook Docs powered design system
+
+    Each of these has its own development command:
+
+    To start developing the `Gatsby site` use:
 
     ```shell
-    npm run dev
+    npm run dev-site
     ```
+
+    For developing in `Storybook visual testing enviroment` use:
 
     ```shell
-    npm run story
+    npm run dev-story
     ```
 
-5.  **Open the source code and start editing!**
+    And for just developing the `Storybook Docs powered design system` use:
 
-    After running `npm run dev` your project will be served at `http://localhost:8008`.
+    ```shell
+    npm run dev-design-system
+    ```
 
-    You'll also see a second link when running `npm run dev`: `http://localhost:8008/___graphql` for GraphiQL.
+    You can also have all three of these enviroments running simultaneously if needed.
+
+### 5. **Open the source code and start editing!**
+
+    After running `npm run dev-site` your Gatsby site will be served at `http://localhost:8008`.
+
+    You'll also see a second link when running at `http://localhost:8008/___graphql` for GraphiQL.
 
     GraphiQL is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Introducing GraphiQL Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
-    After running `npm run story` your projects Storybook will open in your default browser at: `http://localhost:6006`.
+    After running `npm run dev-story` your projects Storybook powered visual testing enviroment will open in your default browser at: `http://localhost:6006`.
 
-    You can also run `npm run docs` just to view Storybook Docs only at: `http://localhost:5005`.
+    And `npm run dev-design-system` will run your design system powered by Storybook Docs in development mode at: `http://localhost:5005`.
 
-## 🗺️ Road Map
+### 6. **Building and Previewing Builds**
+
+    Once happy with your project you can build your project using the following commands.
+
+    To build the `Gatsby site`:
+
+    ```shell
+    npm run build-site
+    ```
+
+    To build the `Storybook powered visual testing enviroment`:
+
+    ```shell
+    npm run build-story
+    ```
+
+    To build the `Storybook Docs powered design system`:
+
+    ```shell
+    npm run build-design-system
+    ```
+
+    And then you can preview the builds using a local server:
+
+    To serve the `Gatsby site` at `http://localhost:8080`:
+
+    ```shell
+    npm run build-site
+    ```
+
+    To serve the `Storybook powered visual testing enviroment` at `http://localhost:8081`:
+
+    ```shell
+    npm run build-story
+    ```
+
+    To serve the `Storybook Docs powered design system` at `http://localhost:8082`:
+
+    ```shell
+    npm run build-design-system
+    ```
+
+## 🗺️ Kit Features
 
 The starter kit will include:
 
--   An extended Atomic Design project architecture using 'Particles' (sub-atomic particles representing design tokens).
--   A Storybook (v6) powered UI Component Library (For UI presentation, visual testing and documentation).
+-   An extended Atomic Design project architecture using Design Tokens.
+-   A Storybook powered visual testing enviroment.
+-   A Storybook Docs powered design system
 -   Unit testing with Jest and CircleCI (This may not be included in the first version of the kit).
--   Nested Sass(Scss) with the Atomic BEM naming convention (an extended version of BEM including an atomic prefix which deals with modifiers more gracefully than the original BEM convention).
+-   Sass powered Design Token maps and functions.
+-   Nested Sass(Scss) using the BEM naming convention.
 -   Markdown files as the content source for pages and posts by default but can be extended to use a CMS of choice.
 -   Pre-built UI components including:
     -   `SEO` component.
@@ -93,13 +156,11 @@ The starter kit will include:
     -   Default CSS-Grid `PostTemplate`.
     -   Possibly being extended with further base components in the future including a `Modal` component.
 
-## 🎓 Learning Gatsby
+## 🎓 Learning Gatsby and Storybook
 
-Looking for more guidance?
+You can find loads of useful information about Gatsby from their very well written documentation at: [gatsbyjs.org/docs](https://www.gatsbyjs.org/docs) and for information about Storybook head over to the Storybook docs at: [storybook.js.org/docs](https://storybook.js.org/docs/react/get-started/introduction).
 
-You can find loads more information about Gatsby on their website: [gatsbyjs.org](https://www.gatsbyjs.org). They offer fantastic tutorials at: [gatsbyjs.org/tutorial](https://www.gatsbyjs.org/tutorial) and full, very well written documentation at: [gatsbyjs.org/docs](https://www.gatsbyjs.org/docs).
-
-## 🚀 Deploy
+## 🚀 Deployment
 
 Ready to deploy your project and make it live?
 

@@ -17,6 +17,8 @@
 		"design_files": "Custom",
 		"node_modules": "Node",
 		"public": "Public",
+		"public-design-system": "Public",
+		"public-storybook": "Public",
 		"00_design_tokens": "Theme",
 		"001_layout": "Theme",
 		"002_color_palette": "Theme",
