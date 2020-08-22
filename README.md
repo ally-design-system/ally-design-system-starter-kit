@@ -25,15 +25,15 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
 ## 💨 Getting Started
 
-### 1. **Make sure you have the Gatsby CLI installed.**
+1. **Make sure you have the Gatsby CLI installed.**
 
     If you don't already have the Gatsby CLI installed, install it using npm.
-
+    
     ```
     npm install -g gatsby-cli
     ```
 
-### 2. **Create a new project using this starter kit.**
+2. **Create a new project using this starter kit.**
 
     Use the Gatsby CLI to create a new project, specifying this starter.
 
@@ -41,7 +41,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     gatsby new your-new-projects-name https://github.com/ally-design-system/ally-design-system-starter-kit
     ```
 
-### 3. **Change directories to your new project.**
+3. **Change directories to your new project.**
 
     Navigate into your new project’s directory.
 
@@ -49,7 +49,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     cd your-new-projects-name
     ```
 
-### 4. **Start developing.**
+4. **Start developing.**
 
     Your now ready to start it up.
 
@@ -61,19 +61,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     Each of these has its own development command:
 
-    To start developing the `Gatsby site` use:
+    To start developing the Gatsby site use:
 
     ```
     npm run dev-site
     ```
 
-    For developing in `Storybook visual testing environment` use:
+    For developing in Storybook visual testing environment use:
 
     ```
     npm run dev-story
     ```
 
-    And for just developing the `Storybook Docs powered design system` use:
+    And for just developing the Storybook Docs powered design system use:
 
     ```
     npm run dev-design-system
@@ -81,7 +81,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     You can also have all three of these environments running simultaneously if needed.
 
-### 5. **Open the source code and start editing!**
+5. **Open the source code and start editing!**
 
     After running `npm run dev-site` your Gatsby site will be served at `http://localhost:8008`.
 
@@ -93,23 +93,23 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     And `npm run dev-design-system` will run your design system powered by Storybook Docs in development mode at: `http://localhost:5005`.
 
-### 6. **Building and Previewing Builds**
+6. **Building and Previewing Builds**
 
     Once happy with your project you can build your project using the following commands.
 
-    To build the `Gatsby site`:
+    To build the Gatsby site:
 
     ```
     npm run build-site
     ```
 
-    To build the `Storybook powered visual testing environment`:
+    To build the Storybook powered visual testing environment:
 
     ```
     npm run build-story
     ```
 
-    To build the `Storybook Docs powered design system`:
+    To build the Storybook Docs powered design system:
 
     ```
     npm run build-design-system
@@ -117,19 +117,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     And then you can preview the builds using a local server:
 
-    To serve the `Gatsby site` at `http://localhost:8080`:
+    To serve the Gatsby site at `http://localhost:8080`:
 
     ```
     npm run serve-site
     ```
 
-    To serve the `Storybook powered visual testing environment` at `http://localhost:8081`:
+    To serve the Storybook powered visual testing environment at `http://localhost:8081`:
 
     ```
     npm run serve-story
     ```
 
-    To serve the `Storybook Docs powered design system` at `http://localhost:8082`:
+    To serve the Storybook Docs powered design system at `http://localhost:8082`:
 
     ```
     npm run serve-design-system
