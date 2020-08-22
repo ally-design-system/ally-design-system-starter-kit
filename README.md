@@ -29,7 +29,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     If you don't already have the Gatsby CLI installed, install it using npm.
 
-    ```shell
+    ```
     npm install -g gatsby-cli
     ```
 
@@ -37,7 +37,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     Use the Gatsby CLI to create a new project, specifying this starter.
 
-    ```shell
+    ```
     gatsby new your-new-projects-name https://github.com/ally-design-system/ally-design-system-starter-kit
     ```
 
@@ -45,7 +45,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     Navigate into your new project’s directory.
 
-    ```shell
+    ```
     cd your-new-projects-name
     ```
 
@@ -63,19 +63,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     To start developing the `Gatsby site` use:
 
-    ```shell
+    ```
     npm run dev-site
     ```
 
     For developing in `Storybook visual testing environment` use:
 
-    ```shell
+    ```
     npm run dev-story
     ```
 
     And for just developing the `Storybook Docs powered design system` use:
 
-    ```shell
+    ```
     npm run dev-design-system
     ```
 
@@ -99,19 +99,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     To build the `Gatsby site`:
 
-    ```shell
+    ```
     npm run build-site
     ```
 
     To build the `Storybook powered visual testing environment`:
 
-    ```shell
+    ```
     npm run build-story
     ```
 
     To build the `Storybook Docs powered design system`:
 
-    ```shell
+    ```
     npm run build-design-system
     ```
 
@@ -119,19 +119,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     To serve the `Gatsby site` at `http://localhost:8080`:
 
-    ```shell
+    ```
     npm run serve-site
     ```
 
     To serve the `Storybook powered visual testing environment` at `http://localhost:8081`:
 
-    ```shell
+    ```
     npm run serve-story
     ```
 
     To serve the `Storybook Docs powered design system` at `http://localhost:8082`:
 
-    ```shell
+    ```
     npm run serve-design-system
     ```
 
