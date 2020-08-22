@@ -53,10 +53,10 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     Your now ready to start it up.
 
-    There are three development enviroments to the Ally Design System Starter Kit:
+    There are three development environments to the Ally Design System Starter Kit:
 
     -   Gatsby powered site
-    -   Storybook powered visual testing enviroment
+    -   Storybook powered visual testing environment
     -   Storybook Docs powered design system
 
     Each of these has its own development command:
@@ -67,7 +67,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     npm run dev-site
     ```
 
-    For developing in `Storybook visual testing enviroment` use:
+    For developing in `Storybook visual testing environment` use:
 
     ```shell
     npm run dev-story
@@ -79,7 +79,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     npm run dev-design-system
     ```
 
-    You can also have all three of these enviroments running simultaneously if needed.
+    You can also have all three of these environments running simultaneously if needed.
 
 ### 5. **Open the source code and start editing!**
 
@@ -89,7 +89,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     GraphiQL is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Introducing GraphiQL Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
-    After running `npm run dev-story` your projects Storybook powered visual testing enviroment will open in your default browser at: `http://localhost:6006`.
+    After running `npm run dev-story` your project's Storybook powered visual testing environment will open in your default browser at: `http://localhost:6006`.
 
     And `npm run dev-design-system` will run your design system powered by Storybook Docs in development mode at: `http://localhost:5005`.
 
@@ -103,7 +103,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
     npm run build-site
     ```
 
-    To build the `Storybook powered visual testing enviroment`:
+    To build the `Storybook powered visual testing environment`:
 
     ```shell
     npm run build-story
@@ -120,19 +120,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
     To serve the `Gatsby site` at `http://localhost:8080`:
 
     ```shell
-    npm run build-site
+    npm run serve-site
     ```
 
-    To serve the `Storybook powered visual testing enviroment` at `http://localhost:8081`:
+    To serve the `Storybook powered visual testing environment` at `http://localhost:8081`:
 
     ```shell
-    npm run build-story
+    npm run serve-story
     ```
 
     To serve the `Storybook Docs powered design system` at `http://localhost:8082`:
 
     ```shell
-    npm run build-design-system
+    npm run serve-design-system
     ```
 
 ## 🗺️ Kit Features
@@ -140,7 +140,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 The starter kit will include:
 
 -   An extended Atomic Design project architecture using Design Tokens.
--   A Storybook powered visual testing enviroment.
+-   A Storybook powered visual testing environment.
 -   A Storybook Docs powered design system
 -   Unit testing with Jest and CircleCI (This may not be included in the first version of the kit).
 -   Sass powered Design Token maps and functions.
@@ -158,7 +158,7 @@ The starter kit will include:
 
 ## 🎓 Learning Gatsby and Storybook
 
-You can find loads of useful information about Gatsby from their very well written documentation at: [gatsbyjs.org/docs](https://www.gatsbyjs.org/docs) and for information about Storybook head over to the Storybook docs at: [storybook.js.org/docs](https://storybook.js.org/docs/react/get-started/introduction).
+You can find loads of useful information about Gatsby from their very well-written documentation at: [gatsbyjs.org/docs](https://www.gatsbyjs.org/docs) and for information about Storybook head over to the Storybook docs at: [storybook.js.org/docs](https://storybook.js.org/docs/react/get-started/introduction).
 
 ## 🚀 Deployment
 
