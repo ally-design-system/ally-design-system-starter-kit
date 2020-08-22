@@ -37,10 +37,10 @@ export default {
     },
 }
 
-export const InternalLink = args => <InLink to="/" {...args} />
+export const InternalLink = args => <InLink {...args} />
 InternalLink.args = {
-    to: "/",
+    to: "/home",
     text: "Internal Link Example",
     className: "",
-    modifier: "",
+    modifier: "null",
 }

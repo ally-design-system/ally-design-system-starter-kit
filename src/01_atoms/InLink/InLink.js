@@ -34,7 +34,7 @@ InLink.propTypes = {
     to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     className: PropTypes.string,
-    modifier: PropTypes.oneOf(["", "--microcopy"]),
+    modifier: PropTypes.oneOf(["null", "--microcopy"]),
 }
 
 export default InLink
