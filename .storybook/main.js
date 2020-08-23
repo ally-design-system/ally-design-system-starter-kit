@@ -12,12 +12,13 @@ module.exports = {
 
     // Register installed storybook addons
     addons: [
-        "storybook-addon-designs",
+        "@storybook/addon-a11y",
         "@storybook/addon-actions",
-        "@storybook/addon-links",
-        "@storybook/addon-docs",
         "@storybook/addon-controls",
+        "@storybook/addon-docs",
+        "@storybook/addon-links",
         "@storybook/addon-viewport",
+        "storybook-addon-designs",
     ],
 
     webpackFinal: async config => {
