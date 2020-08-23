@@ -7,7 +7,7 @@ import React from "react"
 import Icon from "./Icon"
 
 export default {
-    title: "/Design Tokens/Iconography/Default Icons",
+    title: "/Iconography/Default Icons",
     component: Icon,
 }
 
