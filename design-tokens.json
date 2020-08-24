@@ -1,0 +1,46 @@
+[
+  {
+    "name": "$brand-colors",
+    "value": "( snow: #fcfcfc, midnight: #000013, gold: #ffd700, )",
+    "mapValue": [
+      {
+        "name": "snow",
+        "value": "#fcfcfc",
+        "compiledValue": "#fcfcfc"
+      },
+      {
+        "name": "midnight",
+        "value": "#000013",
+        "compiledValue": "#000013"
+      },
+      {
+        "name": "gold",
+        "value": "#ffd700",
+        "compiledValue": "#ffd700"
+      }
+    ],
+    "compiledValue": "(snow: #fcfcfc, midnight: #000013, gold: #ffd700)"
+  },
+  {
+    "name": "$action-colors",
+    "value": "( success: #18d14c, warning: #ff9d00, error: #f30b17, )",
+    "mapValue": [
+      {
+        "name": "success",
+        "value": "#18d14c",
+        "compiledValue": "#18d14c"
+      },
+      {
+        "name": "warning",
+        "value": "#ff9d00",
+        "compiledValue": "#ff9d00"
+      },
+      {
+        "name": "error",
+        "value": "#f30b17",
+        "compiledValue": "#f30b17"
+      }
+    ],
+    "compiledValue": "(success: #18d14c, warning: #ff9d00, error: #f30b17)"
+  }
+]
