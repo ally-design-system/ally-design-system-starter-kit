@@ -7,7 +7,7 @@ import React from "react"
 import NavLink from "./NavLink"
 
 export default {
-    title: "/Atoms/Navigation Link",
+    title: "Atoms/Navigation Link",
     component: NavLink,
 }
 

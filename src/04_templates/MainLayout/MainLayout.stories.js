@@ -7,7 +7,7 @@ import React from "react"
 import Layout from "./MainLayout"
 
 export default {
-    title: "/Templates/Main Layout",
+    title: "Templates/Main Layout",
     component: Layout,
 }
 

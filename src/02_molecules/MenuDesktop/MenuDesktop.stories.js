@@ -7,7 +7,7 @@ import React from "react"
 import MenuDesktop from "./MenuDesktop"
 
 export default {
-    title: "/Molecules/Menu Desktop",
+    title: "Molecules/Menu Desktop",
     component: MenuDesktop,
 }
 

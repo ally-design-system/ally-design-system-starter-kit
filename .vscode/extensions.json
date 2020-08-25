@@ -1,7 +1,9 @@
 {
     "recommendations": [
         "sibiraj-s.vscode-scss-formatter",
+        "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "pkief.material-icon-theme"
+        "pkief.material-icon-theme",
+        "silvenon.mdx"
     ]
 }

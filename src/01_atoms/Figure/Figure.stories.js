@@ -9,7 +9,7 @@ import React from "react"
 import Figure from "./Figure"
 
 export default {
-    title: "/Atoms/Figure",
+    title: "Atoms/Figure",
     component: Figure,
 }
 

@@ -7,7 +7,7 @@ import React from "react"
 import InLink from "./InLink"
 
 export default {
-    title: "/Atoms/Internal Link",
+    title: "Atoms/Internal Link",
     component: InLink,
     parameters: {
         docs: {

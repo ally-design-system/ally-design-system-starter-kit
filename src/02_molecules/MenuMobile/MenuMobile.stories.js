@@ -7,7 +7,7 @@ import React from "react"
 import MenuMobile from "./MenuMobile"
 
 export default {
-    title: "/Molecules/Menu Mobile",
+    title: "Molecules/Menu Mobile",
     component: MenuMobile,
 }
 

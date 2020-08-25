@@ -7,7 +7,7 @@ import React from "react"
 import ExLink from "./ExLink"
 
 export default {
-    title: "/Atoms/External Link",
+    title: "Atoms/External Link",
     component: ExLink,
 }
 

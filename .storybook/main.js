@@ -6,16 +6,20 @@
  * Storybook Main Configuration: https://storybook.js.org/docs/configurations/overview/#main-configuration
  */
 
+// Require the Docs MDX compiler plugin
+const createCompiler = require("@storybook/addon-docs/mdx-compiler-plugin")
+
 module.exports = {
-    // Declare where storybook stories are located plus file types
-    stories: ["../src/**/*.stories.@(js|mdx)"],
+    // Declare where storybook stories are located plus file types .mdx and .js
+    stories: ["../src/**/*.stories.@(mdx|js)"],
 
     // Register installed storybook addons
     addons: [
         "@storybook/addon-a11y",
         "@storybook/addon-actions",
+        // Register Docs addon with `/register` to register without presets
+        "@storybook/addon-docs/register",
         "@storybook/addon-controls",
-        "@storybook/addon-docs",
         "@storybook/addon-links",
         "@storybook/addon-viewport",
         "storybook-addon-designs",
@@ -50,6 +54,7 @@ module.exports = {
 
         // Add TypeScript Support
         config.module.rules.push({
+            // Load `.ts` / `.tsx` files
             test: /\.(ts|tsx)$/,
             loader: require.resolve("babel-loader"),
             options: {
@@ -71,6 +76,35 @@ module.exports = {
             },
         })
         config.resolve.extensions.push(".ts", ".tsx")
+
+        // Add MDX Support
+        config.module.rules.push({
+            // Load `.stories.mdx` / `.story.mdx` files as CSF and generate the docs page from the markdown
+            test: /\.(stories|story)\.mdx$/,
+            use: [
+                {
+                    // Add JSX Support
+                    loader: "babel-loader",
+                    options: {
+                        plugins: ["@babel/plugin-transform-react-jsx"],
+                    },
+                },
+                {
+                    // Add MDX Complier
+                    loader: "@mdx-js/loader",
+                    options: {
+                        compilers: [createCompiler({})],
+                    },
+                },
+            ],
+        })
+        // Run `source-loader` in story files to show their source code using the `Source` doc block
+        config.module.rules.push({
+            test: /\.(stories|story)\.[tj]sx?$/,
+            loader: require.resolve("@storybook/source-loader"),
+            exclude: [/node_modules/],
+            enforce: "pre",
+        })
 
         return config
     },

@@ -15,6 +15,21 @@ import "!style-loader!css-loader!sass-loader!../src/10_styles/main.scss"
 // Import Storybook Actions addon
 import { action } from "@storybook/addon-actions"
 
+// Import addParameters from React Storybook
+import { addParameters } from "@storybook/react"
+
+// Import DocsPage and DocsContainer from Doc Bloacks
+import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks"
+
+// Set up the Docs parameter including the DocsPage for rendering the page, a container, and various configuration
+// options, such as extractComponentDescription for manually extracting a component description
+addParameters({
+    docs: {
+        container: DocsContainer,
+        page: DocsPage,
+    },
+})
+
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),

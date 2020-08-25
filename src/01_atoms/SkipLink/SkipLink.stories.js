@@ -7,7 +7,7 @@ import React from "react"
 import SkipLink from "./SkipLink"
 
 export default {
-    title: "/Atoms/Skip Link",
+    title: "Atoms/Skip Link",
     component: SkipLink,
 }
 
