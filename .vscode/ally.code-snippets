@@ -451,26 +451,26 @@
 		],
 		  "description": "Font Size H XXS"
     },
-    "Font Size copy": {
-		"prefix": "fsc",
+    "Font Size Copy Medium": {
+		"prefix": "fscm",
 		"body": [
-      "font-size: font-size(copy);",
+      "font-size: font-size(cm);",
 		],
-		  "description": "Font Size Copy"
+		  "description": "Font Size Copy Medium"
     },
-    "Font Size caption": {
-		"prefix": "fscap",
+    "Font Size Copy Small": {
+		"prefix": "fscs",
 		"body": [
-      "font-size: font-size(caption);",
+      "font-size: font-size(cs);",
 		],
-		  "description": "Font Size Caption"
+		  "description": "Font Size Copy Small"
     },
-    "Font Size microcopy": {
-		"prefix": "fsmc",
+    "Font Size Copy X Small": {
+		"prefix": "fscxs",
 		"body": [
-      "font-size: font-size(microcopy);",
+      "font-size: font-size(cxs);",
 		],
-		  "description": "Font Size Microcopy"
+		  "description": "Font Size Copy X Small"
     },
     "Font Weight regular": {
 		"prefix": "fwr",

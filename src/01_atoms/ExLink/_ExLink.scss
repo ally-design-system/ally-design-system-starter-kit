@@ -5,7 +5,7 @@
 
 .ex-link {
     display: inline-block;
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     color: color(midnight);
     // Stops link text from wrapping with / without SVG
@@ -17,7 +17,7 @@
     }
 
     &.--microcopy {
-        font-size: font-size(microcopy);
+        font-size: font-size(cxs);
         font-weight: font-weight(bold);
         color: color(midnight);
 

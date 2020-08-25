@@ -17,12 +17,12 @@ $font-sizes: (
         hxs: 1.25rem,
     // Heading XXS 18px
         hxxs: 1.125rem,
-    // Copy 18px
-        copy: 1.125rem,
-    // Caption 16px
-        caption: 1rem,
-    // Microcopy 14px
-        microcopy: 0.875rem
+    // Copy (Paragraph) 18px
+        cm: 1.125rem,
+    // Copy S (Caption) 16px
+        cs: 1rem,
+    // Copy XS (Microcopy) 14px
+        cxs: 0.875rem
 );
 
 // Font Size Design Tokens Config
@@ -44,7 +44,7 @@ $font-sizes: (
     fshs    font-size: font-size(hs);
     fshsx   font-size: font-size(hxs);
     fshxxs  font-size: font-size(hxxs);
-    fsc     font-size: font-size(copy);
-    fscap   font-size: font-size(caption);
-    fsmc    font-size: font-size(microcopy);
+    fscm    font-size: font-size(cm);
+    fscs    font-size: font-size(cs);
+    fscxs   font-size: font-size(cxs);
 */

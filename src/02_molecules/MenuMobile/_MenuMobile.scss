@@ -11,7 +11,7 @@
     justify-content: center;
     font-family: typeface(arimo);
     font-weight: font-weight(bold);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     color: color(midnight);
     background: color(gold);
     padding: spacing(m) spacing(l);
@@ -59,7 +59,7 @@
 
 [data-reach-menu-item] {
     font-family: typeface(arimo);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     transition: transition(background-color);
 
     &[data-selected] {

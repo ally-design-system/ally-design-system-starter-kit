@@ -78,7 +78,7 @@
     "serve-site": "http-server ./public -p 8080",
     "serve-story": "http-server ./public-storybook -p 8081",
     "serve-design-system": "http-server ./public-design-system -p 8082",
-    "tokens": "sass-export src/10_styles/_test1.scss src/10_styles/_test2.scss -o design-tokens.json -a ",
+    "design-tokens": "sass-export src/10_styles/_test1.scss src/10_styles/_test2.scss -o design-tokens.json -a ",
     "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",

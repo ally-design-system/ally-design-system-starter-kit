@@ -7,7 +7,7 @@
     font-family: typeface(arimo);
     font-weight: font-weight(bold);
     color: color(midnight);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     text-decoration: none;
 
     &:hover {
@@ -15,7 +15,7 @@
     }
 
     &.--microcopy {
-        font-size: font-size(microcopy);
+        font-size: font-size(cxs);
         font-weight: font-weight(bold);
         color: color(midnight);
     }

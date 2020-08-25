@@ -62,7 +62,7 @@ h6 {
 // blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
     font-family: typeface(slab);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(regular);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
@@ -81,7 +81,7 @@ a,
 a:link,
 a:visited {
     font-family: typeface(slab);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
@@ -109,7 +109,7 @@ ol {
 
     li {
         margin: spacing(xxs) 0;
-        font-size: font-size(copy);
+        font-size: font-size(cm);
         font-weight: font-weight(bold);
     }
 }
@@ -122,7 +122,7 @@ ol {
 // The <caption> element specifies the caption (or title) of a table.
 figcaption,
 caption {
-    font-size: font-size(caption);
+    font-size: font-size(cs);
     font-weight: font-weight(bold);
     padding: spacing(l) spacing(xxs) spacing(xl);
     color: color(midnight);
@@ -134,7 +134,7 @@ caption {
 // The <small> element represents side-comments and small print, like copyright and legal text,
 // independent of its styled presentation.
 small {
-    font-size: font-size(microcopy);
+    font-size: font-size(cxs);
     font-weight: font-weight(bold);
     color: color(midnight);
 }
@@ -144,7 +144,7 @@ small {
 // The <em> element is for words that have a stressed emphasis compared to surrounding text,
 // which is often limited to a word or words of a sentence and affects the meaning of the sentence itself.
 em {
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
     color: color(midnight);
@@ -210,7 +210,7 @@ blockquote {
     margin: spacing(xxxl) 0;
 
     p {
-        font-size: font-size(copy);
+        font-size: font-size(cm);
         color: color(midnight);
         line-height: leading(regular);
         font-weight: font-weight(bold);
@@ -222,7 +222,7 @@ blockquote {
     }
 
     footer {
-        font-size: font-size(copy);
+        font-size: font-size(cm);
         color: color(midnight);
         font-weight: font-weight(bold);
         padding: spacing(l) spacing(xxs) spacing(xl);
@@ -255,7 +255,7 @@ abbr {
 // The <p> element, the <dt>/<dd> pairing, or the <section> element which is the nearest ancestor of the <dfn> is
 // considered to be the definition of the term.
 dfn {
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
     color: color(midnight);
@@ -267,7 +267,7 @@ dfn {
 // computer code. By default, the content text is displayed using the user agent's default monospace font.
 code {
     color: color(snow);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     background-color: color(midnight);
     border-radius: radius(square);
@@ -282,7 +282,7 @@ code {
 pre {
     display: block;
     color: color(snow);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     background-color: color(midnight);
     border-radius: radius(square);
@@ -297,7 +297,7 @@ pre {
 // machine-readable format, allowing for better search engine results or custom features such as reminders.
 time {
     font-family: typeface(slab);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
@@ -312,7 +312,7 @@ time {
 kbd {
     display: inline-block;
     font-family: typeface(mono);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     color: color(midnight);
     font-weight: font-weight(bold);
     line-height: 1;
@@ -332,7 +332,7 @@ kbd {
 samp {
     display: block;
     color: color(snow);
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     background-color: color(midnight);
     border-radius: radius(square);
@@ -358,7 +358,7 @@ u {
 // The <var> element represents the name of a variable in a mathematical expression or a programming context.
 // It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent.
 var {
-    font-size: font-size(copy);
+    font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
     color: color(midnight);
