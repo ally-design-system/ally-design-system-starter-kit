@@ -19,14 +19,14 @@ const Button = props => {
 Button.defaultProps = {
     text: "Missing Text",
     className: "",
-    modifier: "",
+    modifier: "null",
 }
 
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     className: PropTypes.string,
-    // modifier: PropTypes.oneOf(["--default", "--delete"]),
     modifier: PropTypes.string,
+    // modifier: PropTypes.oneOf(["null", "--default", "--delete"]),
 }
 
 export default Button

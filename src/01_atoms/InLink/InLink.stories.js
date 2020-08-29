@@ -24,15 +24,23 @@ export default {
     argTypes: {
         to: {
             description: "Props description",
+            // defaultValue: ["/home"],
         },
         text: {
             description: "Props description",
+            // defaultValue: ["Example"],
         },
         className: {
             description: "Props description",
+            // defaultValue: [""],
         },
         modifier: {
             description: "Props description",
+            // control: {
+            //     type: "select",
+            //     options: ["null", "--microcopy"], // Does not work
+            // },
+            // defaultValue: ["null"],
         },
     },
 }

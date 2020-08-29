@@ -192,6 +192,10 @@ const customViewports = {
     },
 }
 
+// Custom Addon Parameters
 export const parameters = {
+    // Add Custom Viewports for the Storybook Viewport Addon
     viewport: { viewports: customViewports },
+    // Enable expanded mode globally in Controls to show property documentation alongside your controls
+    // controls: { expanded: true },
 }
