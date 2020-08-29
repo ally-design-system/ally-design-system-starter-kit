@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import NavLink from "../../01_atoms/NavLink/NavLink"
+import NavLink from "../../03_Atoms/NavLink/NavLink"
 
 const MenuDesktop = props => {
     return (

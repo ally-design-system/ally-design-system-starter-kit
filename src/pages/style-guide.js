@@ -4,12 +4,12 @@
  */
 
 import React from "react"
-import Layout from "../04_templates/MainLayout/MainLayout"
-import Figure from "../01_atoms/Figure/Figure"
-import Icon from "../00_iconography/Icon"
-import InLink from "../01_atoms/InLink/InLink"
-import ExLink from "../01_atoms/ExLink/ExLink"
-import Button from "../01_atoms/Button/Button"
+import Layout from "../06_Templates/MainLayout/MainLayout"
+import Figure from "../03_Atoms/Figure/Figure"
+import Icon from "../03_Atoms/Iconography/Icon"
+import InLink from "../03_Atoms/InLink/InLink"
+import ExLink from "../03_Atoms/ExLink/ExLink"
+import Button from "../03_Atoms/Button/Button"
 
 // @todo: Move to style guide styling unless adding Storybook!?
 const Container = {
@@ -27,7 +27,7 @@ const ComponentsPage = () => (
                     <h3>Image</h3>
                     <Figure
                         alt="Gatsby Logo"
-                        filename="gatsby.png"
+                        filename="Gatsby.png"
                         figcaption="The GatsbyJS logo."
                         modifier="--maxWidth500"
                     />

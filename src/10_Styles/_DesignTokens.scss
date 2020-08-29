@@ -20,10 +20,10 @@
 // 002 Color Palette Design Tokens
 /***********************************/
 // Action Color Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/Action";
+@import "../02_DesignTokens/022_ColorPalette/ActionColors";
 
 // Brand Color Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/Brand";
+@import "../02_DesignTokens/022_ColorPalette/BrandColors";
 
 // Opacity Design Tokens
 @import "../02_DesignTokens/022_ColorPalette/Opacity";
@@ -74,6 +74,9 @@
 
 // Leading Design Tokens
 @import "../02_DesignTokens/026_Typography/Leading";
+
+// Tracking Design Tokens
+@import "../02_DesignTokens/026_Typography/Tracking";
 
 // Typeface Design Tokens
 @import "../02_DesignTokens/026_Typography/Typefaces";

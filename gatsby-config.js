@@ -19,7 +19,7 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
-                path: `${__dirname}/src/07_images`,
+                path: `${__dirname}/src/08_Images`,
             },
         },
         `gatsby-transformer-sharp`,
@@ -28,14 +28,14 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `posts`,
-                path: `${__dirname}/src/06_posts`,
+                path: `${__dirname}/src/07_Pages/BlogPosts`,
             },
         },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `pages`,
-                path: `${__dirname}/src/05_pages`,
+                path: `${__dirname}/src/07_Pages/MainPages`,
             },
         },
         `gatsby-transformer-remark`,

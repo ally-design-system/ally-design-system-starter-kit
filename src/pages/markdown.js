@@ -5,8 +5,8 @@
 
 import React from "react"
 import { Link } from "gatsby"
-import SEO from "../09_utilities/SEO"
-import Layout from "../04_templates/MainLayout/MainLayout"
+import SEO from "../09_Utilities/SEO"
+import Layout from "../06_Templates/MainLayout/MainLayout"
 
 const MarkdownPage = () => (
     <>

@@ -10,7 +10,7 @@
 import "focus-visible"
 
 // Import global styling with loaders to compile component Sass/Scss styling
-import "!style-loader!css-loader!sass-loader!../src/10_styles/main.scss"
+import "!style-loader!css-loader!sass-loader!../src/10_Styles/Main.scss"
 
 // Import Storybook Actions addon
 import { action } from "@storybook/addon-actions"

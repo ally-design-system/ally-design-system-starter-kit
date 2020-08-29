@@ -57,7 +57,7 @@ const Image = props => (
 
 Image.defaultProps = {
     caption: "The Gatsby Logo",
-    filename: "gatsby.png",
+    filename: "Gatsby.png",
     alt: "Gatsby Logo",
     className: "",
     modifier: "--maxWidth500",
