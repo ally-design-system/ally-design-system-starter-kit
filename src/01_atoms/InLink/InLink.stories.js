@@ -52,3 +52,13 @@ InternalLink.args = {
     className: "",
     modifier: "null",
 }
+
+// const Template = args => <InLink {...args} />
+
+// export const InternalLink = Template.bind({})
+// InternalLink.args = {
+//     to: "/home",
+//     text: "Internal Link Example",
+//     className: "",
+//     modifier: "null",
+// }

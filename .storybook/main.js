@@ -53,29 +53,29 @@ module.exports = {
         config.resolve.mainFields = ["browser", "module", "main"]
 
         // Add TypeScript Support
-        config.module.rules.push({
-            // Load `.ts` / `.tsx` files
-            test: /\.(ts|tsx)$/,
-            loader: require.resolve("babel-loader"),
-            options: {
-                presets: [
-                    [
-                        "react-app",
-                        {
-                            flow: false,
-                            typescript: true,
-                        },
-                    ],
-                ],
-                plugins: [
-                    require.resolve("@babel/plugin-proposal-class-properties"),
+        // config.module.rules.push({
+        //     // Load `.ts` / `.tsx` files
+        //     test: /\.(ts|tsx)$/,
+        //     loader: require.resolve("babel-loader"),
+        //     options: {
+        //         presets: [
+        //             [
+        //                 "react-app",
+        //                 {
+        //                     flow: false,
+        //                     typescript: true,
+        //                 },
+        //             ],
+        //         ],
+        //         plugins: [
+        //             require.resolve("@babel/plugin-proposal-class-properties"),
 
-                    // Use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
-                    require.resolve("babel-plugin-remove-graphql-queries"),
-                ],
-            },
-        })
-        config.resolve.extensions.push(".ts", ".tsx")
+        //             // Use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
+        //             require.resolve("babel-plugin-remove-graphql-queries"),
+        //         ],
+        //     },
+        // })
+        // config.resolve.extensions.push(".ts", ".tsx")
 
         // Add MDX Support
         config.module.rules.push({
