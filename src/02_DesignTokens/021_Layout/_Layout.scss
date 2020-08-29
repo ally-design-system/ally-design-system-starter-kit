@@ -21,18 +21,18 @@
 // Breakpoint Values
 // These values should be updated according to your design and not set according to device widths
 // Styles set before a breakpoint will apply from 0px - 379px and until overridden using the cascade using a mobile-first approach
+
+/**
+ * @sass-export-section="breakpoints"
+ */
 $breakpoints: (
-    // xs / 380px - 499px
-        xs: 380px,
-    // s / 500px - 949px
-        s: 500px,
-    // m / 950px - 1199px
-        m: 950px,
-    // l / 1200px - 1599px
-        l: 1200px,
-    // xl / 1600px +
-        xl: 1600px
+    xs: 380px,
+    s: 500px,
+    m: 950px,
+    l: 1200px,
+    xl: 1600px,
 );
+//@end-sass-export-section
 
 // Breakpoint Design Token Usage With VS Code Code Snippets
 // By default these media queries do not specify a specific feature, please change as required
@@ -52,30 +52,23 @@ $breakpoints: (
  */
 
 // Spacing Scale
+/**
+ * @sass-export-section="Spacing"
+ */
 $spacing: (
-    // xxxxs / 1px
-        xxxxs: 0.0625rem,
-    // xxxs / 2px
-        xxxs: 0.125rem,
-    // xxs / 4px
-        xxs: 0.25rem,
-    // xs / 8px
-        xs: 0.5rem,
-    // s / 12px
-        s: 0.75rem,
-    // m / 16px
-        m: 1rem,
-    // l / 24px
-        l: 1.5rem,
-    // xl / 32px
-        xl: 2rem,
-    // xxl / 40px
-        xxl: 2.5rem,
-    // xxxl / 48px
-        xxxl: 3rem,
-    // xxxxl / 56px
-        xxxxl: 3.5rem
+    xxxxs: 0.0625rem,
+    xxxs: 0.125rem,
+    xxs: 0.25rem,
+    xs: 0.5rem,
+    s: 0.75rem,
+    m: 1rem,
+    l: 1.5rem,
+    xl: 2rem,
+    xxl: 2.5rem,
+    xxxl: 3rem,
+    xxxxl: 3.5rem,
 );
+//@end-sass-export-section
 
 // Spacing Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
@@ -98,9 +91,13 @@ $spacing: (
  */
 
 // Wrapper Values
+/**
+ * @sass-export-section="Wrappers"
+ */
 $wrappers: (
     SiteMaxWidth: 1400px,
 );
+//@end-sass-export-section
 
 // Wrapper Design Tokens Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
@@ -113,11 +110,15 @@ $wrappers: (
  */
 
 // Z Layer Values
+/**
+ * @sass-export-section="ZLayers"
+ */
 $zlayers: (
     SkipLink: 10,
     Header: 5,
     Footer: 5,
 );
+//@end-sass-export-section
 
 // Z Layer Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`

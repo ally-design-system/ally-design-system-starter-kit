@@ -4,10 +4,14 @@
  */
 
 // Borders Map
+/**
+ * @sass-export-section="borders"
+ */
 $borders: (
-    default: solid color(midnight) 3px,
-    error: solid action-color(error) 3px,
+    default: solid #000013 3px,
+    error: solid #f30b17 3px,
 );
+//@end-sass-export-section
 
 // Borders Design Token Config
 @function border($name) {

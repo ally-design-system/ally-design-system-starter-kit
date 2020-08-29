@@ -1,46 +1,147 @@
 [
   {
-    "name": "$brand-colors",
-    "value": "( snow: #fcfcfc, midnight: #000013, gold: #ffd700, )",
+    "name": "$breakpoints",
+    "value": "( xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px, )",
     "mapValue": [
       {
-        "name": "snow",
-        "value": "#fcfcfc",
-        "compiledValue": "#fcfcfc"
+        "name": "xs",
+        "value": "380px",
+        "compiledValue": "380px"
       },
       {
-        "name": "midnight",
-        "value": "#000013",
-        "compiledValue": "#000013"
+        "name": "s",
+        "value": "500px",
+        "compiledValue": "500px"
       },
       {
-        "name": "gold",
-        "value": "#ffd700",
-        "compiledValue": "#ffd700"
+        "name": "m",
+        "value": "950px",
+        "compiledValue": "950px"
+      },
+      {
+        "name": "l",
+        "value": "1200px",
+        "compiledValue": "1200px"
+      },
+      {
+        "name": "xl",
+        "value": "1600px",
+        "compiledValue": "1600px"
       }
     ],
-    "compiledValue": "(snow: #fcfcfc, midnight: #000013, gold: #ffd700)"
+    "compiledValue": "(xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px)"
   },
   {
-    "name": "$action-colors",
-    "value": "( success: #18d14c, warning: #ff9d00, error: #f30b17, )",
+    "name": "$spacing",
+    "value": "( xxxxs: 0.0625rem, xxxs: 0.125rem, xxs: 0.25rem, xs: 0.5rem, s: 0.75rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 2.5rem, xxxl: 3rem, xxxxl: 3.5rem, )",
     "mapValue": [
       {
-        "name": "success",
-        "value": "#18d14c",
-        "compiledValue": "#18d14c"
+        "name": "xxxxs",
+        "value": "0.0625rem",
+        "compiledValue": "0.0625rem"
       },
       {
-        "name": "warning",
-        "value": "#ff9d00",
-        "compiledValue": "#ff9d00"
+        "name": "xxxs",
+        "value": "0.125rem",
+        "compiledValue": "0.125rem"
+      },
+      {
+        "name": "xxs",
+        "value": "0.25rem",
+        "compiledValue": "0.25rem"
+      },
+      {
+        "name": "xs",
+        "value": "0.5rem",
+        "compiledValue": "0.5rem"
+      },
+      {
+        "name": "s",
+        "value": "0.75rem",
+        "compiledValue": "0.75rem"
+      },
+      {
+        "name": "m",
+        "value": "1rem",
+        "compiledValue": "1rem"
+      },
+      {
+        "name": "l",
+        "value": "1.5rem",
+        "compiledValue": "1.5rem"
+      },
+      {
+        "name": "xl",
+        "value": "2rem",
+        "compiledValue": "2rem"
+      },
+      {
+        "name": "xxl",
+        "value": "2.5rem",
+        "compiledValue": "2.5rem"
+      },
+      {
+        "name": "xxxl",
+        "value": "3rem",
+        "compiledValue": "3rem"
+      },
+      {
+        "name": "xxxxl",
+        "value": "3.5rem",
+        "compiledValue": "3.5rem"
+      }
+    ],
+    "compiledValue": "(xxxxs: 0.0625rem, xxxs: 0.125rem, xxs: 0.25rem, xs: 0.5rem, s: 0.75rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 2.5rem, xxxl: 3rem, xxxxl: 3.5rem)"
+  },
+  {
+    "name": "$wrappers",
+    "value": "( SiteMaxWidth: 1400px, )",
+    "mapValue": [
+      {
+        "name": "SiteMaxWidth",
+        "value": "1400px",
+        "compiledValue": "1400px"
+      }
+    ],
+    "compiledValue": "(SiteMaxWidth: 1400px)"
+  },
+  {
+    "name": "$zlayers",
+    "value": "( SkipLink: 10, Header: 5, Footer: 5, )",
+    "mapValue": [
+      {
+        "name": "SkipLink",
+        "value": "10",
+        "compiledValue": "10"
+      },
+      {
+        "name": "Header",
+        "value": "5",
+        "compiledValue": "5"
+      },
+      {
+        "name": "Footer",
+        "value": "5",
+        "compiledValue": "5"
+      }
+    ],
+    "compiledValue": "(SkipLink: 10, Header: 5, Footer: 5)"
+  },
+  {
+    "name": "$borders",
+    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
+    "mapValue": [
+      {
+        "name": "default",
+        "value": "solid #000013 3px",
+        "compiledValue": "solid #000013 3px"
       },
       {
         "name": "error",
-        "value": "#f30b17",
-        "compiledValue": "#f30b17"
+        "value": "solid #f30b17 3px",
+        "compiledValue": "solid #f30b17 3px"
       }
     ],
-    "compiledValue": "(success: #18d14c, warning: #ff9d00, error: #f30b17)"
+    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
   }
 ]
