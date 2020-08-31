@@ -11,14 +11,14 @@ const createCompiler = require("@storybook/addon-docs/mdx-compiler-plugin")
 
 module.exports = {
     // Declare where storybook stories are located plus file types .mdx and .js
-    stories: ["../src/**/*.stories.@(mdx|js)"],
+    stories: ["../src/**/*.stories.@(js|mdx)"],
 
     // Register installed storybook addons
     addons: [
-        "@storybook/addon-a11y",
-        "@storybook/addon-actions",
         // Register Docs addon with `/register` to register without presets
         "@storybook/addon-docs/register",
+        "@storybook/addon-a11y",
+        "@storybook/addon-actions",
         "@storybook/addon-controls",
         "@storybook/addon-links",
         "@storybook/addon-viewport",
@@ -53,29 +53,29 @@ module.exports = {
         config.resolve.mainFields = ["browser", "module", "main"]
 
         // Add TypeScript Support
-        // config.module.rules.push({
-        //     // Load `.ts` / `.tsx` files
-        //     test: /\.(ts|tsx)$/,
-        //     loader: require.resolve("babel-loader"),
-        //     options: {
-        //         presets: [
-        //             [
-        //                 "react-app",
-        //                 {
-        //                     flow: false,
-        //                     typescript: true,
-        //                 },
-        //             ],
-        //         ],
-        //         plugins: [
-        //             require.resolve("@babel/plugin-proposal-class-properties"),
+        config.module.rules.push({
+            // Load `.ts` / `.tsx` files
+            test: /\.(ts|tsx)$/,
+            loader: require.resolve("babel-loader"),
+            options: {
+                presets: [
+                    [
+                        "react-app",
+                        {
+                            flow: false,
+                            typescript: true,
+                        },
+                    ],
+                ],
+                plugins: [
+                    require.resolve("@babel/plugin-proposal-class-properties"),
 
-        //             // Use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
-        //             require.resolve("babel-plugin-remove-graphql-queries"),
-        //         ],
-        //     },
-        // })
-        // config.resolve.extensions.push(".ts", ".tsx")
+                    // Use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
+                    require.resolve("babel-plugin-remove-graphql-queries"),
+                ],
+            },
+        })
+        config.resolve.extensions.push(".ts", ".tsx")
 
         // Add MDX Support
         config.module.rules.push({
