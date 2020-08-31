@@ -18,10 +18,10 @@
     }
 
     &.midnight {
-        fill: color(midnight);
+        fill: brand-color(midnight);
     }
 
     &.snow {
-        fill: color(snow);
+        fill: brand-color(snow);
     }
 }

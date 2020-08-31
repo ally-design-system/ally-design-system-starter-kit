@@ -7,7 +7,7 @@
     display: inline-block;
     font-size: font-size(cm);
     font-weight: font-weight(bold);
-    color: color(midnight);
+    color: brand-color(midnight);
     // Stops link text from wrapping with / without SVG
     // @todo: Possibly change so it can wrap but with SVG
     white-space: nowrap;
@@ -19,7 +19,7 @@
     &.--microcopy {
         font-size: font-size(cxs);
         font-weight: font-weight(bold);
-        color: color(midnight);
+        color: brand-color(midnight);
 
         .icon {
             width: icon-size(small);

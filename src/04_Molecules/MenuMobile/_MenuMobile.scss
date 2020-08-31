@@ -12,13 +12,13 @@
     font-family: typeface(arimo);
     font-weight: font-weight(bold);
     font-size: font-size(cm);
-    color: color(midnight);
-    background: color(gold);
+    color: brand-color(midnight);
+    background: brand-color(gold);
     padding: spacing(m) spacing(l);
 
     &:hover,
     &:focus {
-        background: tint(color(gold), 40);
+        background: tint(brand-color(gold), 40);
     }
 
     .icon {
@@ -41,7 +41,7 @@
 
 [data-reach-menu-list] {
     display: block;
-    background-color: color(snow);
+    background-color: brand-color(snow);
     padding: spacing(s);
     margin: spacing(s) 0;
     border: border(default);
@@ -63,13 +63,13 @@
     transition: transition(background-color);
 
     &[data-selected] {
-        color: color(midnight);
-        background: shade(color(gold), 20);
+        color: brand-color(midnight);
+        background: shade(brand-color(gold), 20);
     }
 
     &.active {
-        color: color(midnight);
-        background: color(gold);
+        color: brand-color(midnight);
+        background: brand-color(gold);
     }
 }
 

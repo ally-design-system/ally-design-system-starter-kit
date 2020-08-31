@@ -10,8 +10,8 @@ button,
     font-family: typeface(arimo);
     font-weight: font-weight(bold);
     font-size: font-size(hxxs);
-    color: color(midnight);
-    background: color(gold);
+    color: brand-color(midnight);
+    background: brand-color(gold);
     padding: spacing(m) spacing(l);
     transition: transition(background-color);
     -webkit-appearance: none;
@@ -28,6 +28,6 @@ button,
 
     &:hover,
     &:focus {
-        background-color: tint(color(gold), 40);
+        background-color: tint(brand-color(gold), 40);
     }
 }

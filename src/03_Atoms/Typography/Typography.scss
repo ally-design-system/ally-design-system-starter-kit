@@ -20,7 +20,7 @@ h6 {
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
-    color: color(midnight);
+    color: brand-color(midnight);
     margin-bottom: spacing(l);
 }
 
@@ -66,7 +66,7 @@ p {
     font-weight: font-weight(regular);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
-    color: color(midnight);
+    color: brand-color(midnight);
     padding-bottom: spacing(l);
 }
 
@@ -85,14 +85,14 @@ a:visited {
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
-    color: color(midnight);
+    color: brand-color(midnight);
     text-decoration: none;
     border-bottom: border(default);
 
     &:hover,
     &:active,
     &.focus-visible {
-        background: color(gold);
+        background: brand-color(gold);
         text-decoration: none;
     }
 }
@@ -125,7 +125,7 @@ caption {
     font-size: font-size(cs);
     font-weight: font-weight(bold);
     padding: spacing(l) spacing(xxs) spacing(xl);
-    color: color(midnight);
+    color: brand-color(midnight);
     text-align: right;
 }
 
@@ -136,7 +136,7 @@ caption {
 small {
     font-size: font-size(cxs);
     font-weight: font-weight(bold);
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Emphasis
@@ -147,7 +147,7 @@ em {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Idiomatic Text
@@ -156,7 +156,7 @@ em {
 // for some reason, such as idiomatic text, technical terms or taxonomical designations.
 i {
     font-style: italic;
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Strong Importance
@@ -164,7 +164,7 @@ i {
 // The <strong> element indicates that its contents has a strong importance, seriousness, or urgency.
 strong {
     font-weight: font-weight(bold);
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Strikethrough
@@ -186,8 +186,8 @@ s {
 // It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
 // ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
 mark {
-    background-color: color(gold);
-    color: color(midnight);
+    background-color: brand-color(gold);
+    color: brand-color(midnight);
 }
 
 // Quotation
@@ -197,7 +197,7 @@ mark {
 // a URL for the source of the quotation may be given using the cite attribute.
 q {
     font-style: italic;
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Block Quotations
@@ -211,19 +211,19 @@ blockquote {
 
     p {
         font-size: font-size(cm);
-        color: color(midnight);
+        color: brand-color(midnight);
         line-height: leading(regular);
         font-weight: font-weight(bold);
         padding: spacing(xl) spacing(xxl);
         border: border(default);
         border-radius: radius(square);
-        box-shadow: spacing(s) spacing(s) 0 0 color(midnight);
-        background: color(gold);
+        box-shadow: spacing(s) spacing(s) 0 0 brand-color(midnight);
+        background: brand-color(gold);
     }
 
     footer {
         font-size: font-size(cm);
-        color: color(midnight);
+        color: brand-color(midnight);
         font-weight: font-weight(bold);
         padding: spacing(l) spacing(xxs) spacing(xl);
         text-align: right;
@@ -245,7 +245,7 @@ cite {
 abbr {
     font-style: italic;
     text-decoration: none;
-    border-bottom: dotted color(midnight) 3px;
+    border-bottom: dotted brand-color(midnight) 3px;
     cursor: help;
 }
 
@@ -258,7 +258,7 @@ dfn {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Inline Code
@@ -266,10 +266,10 @@ dfn {
 // The <code> element displays its contents styled in a fashion intended to indicate that the text is a short fragment of
 // computer code. By default, the content text is displayed using the user agent's default monospace font.
 code {
-    color: color(snow);
+    color: brand-color(snow);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
-    background-color: color(midnight);
+    background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: typeface(mono);
     padding: spacing(xxxs) spacing(xxs);
@@ -281,10 +281,10 @@ code {
 // The text is typically rendered using monospace font and is used wrapped around <code> to show a code block.
 pre {
     display: block;
-    color: color(snow);
+    color: brand-color(snow);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
-    background-color: color(midnight);
+    background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: typeface(mono);
     padding: spacing(m);
@@ -301,7 +301,7 @@ time {
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Keyboard Input
@@ -313,14 +313,14 @@ kbd {
     display: inline-block;
     font-family: typeface(mono);
     font-size: font-size(cm);
-    color: color(midnight);
+    color: brand-color(midnight);
     font-weight: font-weight(bold);
     line-height: 1;
-    background-color: shade(color(snow), 20);
+    background-color: shade(brand-color(snow), 20);
     border-radius: radius(rounded);
-    border: solid color(midnight) 1px;
-    box-shadow: 0 spacing(xxxxs) spacing(xxxxs) tint(color(midnight), 20),
-        0 spacing(xxxs) 0 0 shade(color(snow), 20) inset;
+    border: solid brand-color(midnight) 1px;
+    box-shadow: 0 spacing(xxxxs) spacing(xxxxs) tint(brand-color(midnight), 20),
+        0 spacing(xxxs) 0 0 shade(brand-color(snow), 20) inset;
     padding: spacing(xxxs) spacing(xxs);
     white-space: nowrap;
 }
@@ -331,10 +331,10 @@ kbd {
 // computer program. Its contents are typically rendered using the browser's default monospaced font.
 samp {
     display: block;
-    color: color(snow);
+    color: brand-color(snow);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
-    background-color: color(midnight);
+    background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: typeface(mono);
     padding: spacing(m);
@@ -361,7 +361,7 @@ var {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
-    color: color(midnight);
+    color: brand-color(midnight);
 }
 
 // Contact Address
@@ -390,7 +390,7 @@ del,
 ins {
     text-decoration: line-through;
     background-color: tint(action-color(error), 60);
-    color: color(midnight);
+    color: brand-color(midnight);
     font-weight: font-weight(bold);
     padding: spacing(xxxxs) spacing(xxs);
 }

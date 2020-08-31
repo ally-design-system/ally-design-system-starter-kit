@@ -13,7 +13,7 @@ a {
     }
 
     &.active {
-        background: color(gold);
+        background: brand-color(gold);
         border-bottom: border(default);
     }
 }

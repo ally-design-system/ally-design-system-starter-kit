@@ -6,7 +6,7 @@
 .in-link {
     font-family: typeface(arimo);
     font-weight: font-weight(bold);
-    color: color(midnight);
+    color: brand-color(midnight);
     font-size: font-size(cm);
     text-decoration: none;
 
@@ -17,6 +17,6 @@
     &.--microcopy {
         font-size: font-size(cxs);
         font-weight: font-weight(bold);
-        color: color(midnight);
+        color: brand-color(midnight);
     }
 }
