@@ -15,6 +15,7 @@
 		".storybook": "Config",
 		".vscode": "Vscode",
 		"design_assets": "Custom",
+		"design_tokens": "Theme",
 		"node_modules": "Node",
 		"public": "Public",
 		"public-design-system": "Public",
