@@ -10,6 +10,7 @@ import Icon from "../03_Atoms/Iconography/Icon"
 import InLink from "../03_Atoms/InLink/InLink"
 import ExLink from "../03_Atoms/ExLink/ExLink"
 import Button from "../03_Atoms/Button/Button"
+import LayoutTokens from "../02_DesignTokens/021_Layout/Layout/Layout"
 
 const Container = {
     display: "flex",
@@ -29,6 +30,7 @@ const ComponentsPage = () => (
                 <div className="default-page-layout__column">
                     <h1>Ally Style Guide</h1>
                     <h2>Atom Components</h2>
+                    <LayoutTokens />
                     <h3>Image</h3>
                     <Figure
                         alt="Gatsby Logo"

@@ -15,6 +15,7 @@ module.exports = {
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
+        `gatsby-transformer-remark`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -38,7 +39,14 @@ module.exports = {
                 path: `${__dirname}/src/07_Pages/MainPages`,
             },
         },
-        `gatsby-transformer-remark`,
+        `gatsby-transformer-json`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                typeName: `Json`,
+                path: `${__dirname}/design_tokens/`,
+            },
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
