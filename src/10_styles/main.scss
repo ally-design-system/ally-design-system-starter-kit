@@ -6,40 +6,39 @@
  */
 
 // CSS Reset
-@import "../10_styles/css-reset";
+@import "../10_Styles/CSSReset";
+
+// Import Fonts
+@import "../10_styles/Fonts";
 
 // Design Tokens
-@import "../10_styles/design-tokens";
+@import "../10_Styles/DesignTokens";
 
 // Accessibility Utilities
-@import "../10_styles/accessibility";
+@import "../10_Styles/Accessibility";
 
 // Global (Root and Body)
-@import "../10_styles/global";
-
-// Iconography
-@import "../00_iconography/Icon";
-
-// Typography Styles
-@import "../00_typography/Typography";
+@import "../10_Styles/Global";
 
 // Atom Styles
-@import "../01_atoms/Button/Button";
-@import "../01_atoms/ExLink/ExLink";
-@import "../01_atoms/Figure/Figure";
-@import "../01_atoms/InLink/InLink";
-@import "../01_atoms/NavLink/NavLink";
-@import "../01_atoms/SkipLink/SkipLink";
+@import "../03_Atoms/Typography/Typography";
+@import "../03_Atoms/Iconography/Icon";
+@import "../03_Atoms/Button/Button";
+@import "../03_Atoms/ExLink/ExLink";
+@import "../03_Atoms/Figure/Figure";
+@import "../03_Atoms/InLink/InLink";
+@import "../03_Atoms/NavLink/NavLink";
+@import "../03_Atoms/SkipLink/SkipLink";
 
 // Molecule Styles
-@import "../02_molecules/MenuDesktop/MenuDesktop";
-@import "../02_molecules/MenuMobile/MenuMobile";
+@import "../04_Molecules/MenuDesktop/MenuDesktop";
+@import "../04_Molecules/MenuMobile/MenuMobile";
 
 // Organism Styles
-@import "../03_organisms/Footer/Footer";
-@import "../03_organisms/Header/Header";
+@import "../05_Organisms/Footer/Footer";
+@import "../05_Organisms/Header/Header";
 
 // Template Styles
-@import "../04_templates/MainLayout/MainLayout";
-@import "../04_templates/PageTemplate/PageTemplate";
-@import "../04_templates/PostTemplate/PostTemplate";
+@import "../06_Templates/MainLayout/MainLayout";
+@import "../06_Templates/PageTemplate/PageTemplate";
+@import "../06_Templates/PostTemplate/PostTemplate";

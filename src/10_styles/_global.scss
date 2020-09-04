@@ -10,9 +10,9 @@
 
 // Set Body Background Color
 body {
-    background-color: color(snow);
+    background-color: brand-color(snow);
 
     @media (prefers-color-scheme: dark) {
-        background-color: color(midnight);
+        background-color: brand-color(midnight);
     }
 }

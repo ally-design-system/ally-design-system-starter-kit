@@ -1,0 +1,29 @@
+/*
+ * Brand Color Design Tokens
+ *
+ */
+
+// Brand Color Values
+$brand-colors: (
+    snow: #fcfcfc,
+    midnight: #000013,
+    gold: #ffd700,
+);
+
+// Brand Color Design Tokens Config
+@function brand-color($name) {
+    @if map-has-key($brand-colors, $name) {
+        @return map-get($brand-colors, $name);
+    }
+
+    @error "The key #{$name} is not in the brand $brand-colors design token map";
+    @return null;
+}
+
+// Brand Color Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    bcs  brand-color(snow)
+    bcm  brand-color(midnight)
+    bcg  brand-color(gold)
+*/

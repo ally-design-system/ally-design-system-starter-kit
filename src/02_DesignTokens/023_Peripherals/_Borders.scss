@@ -1,0 +1,27 @@
+/*
+ * Border Design Tokens
+ *
+ */
+
+// Border Values
+$borders: (
+    default: solid #000013 3px,
+    error: solid #f30b17 3px,
+);
+
+// Borders Design Tokens Config
+@function border($name) {
+    @if map-has-key($borders, $name) {
+        @return map-get($borders, $name);
+    }
+
+    @error "The key #{$name} is not in the $borders design token map";
+    @return null;
+}
+
+// Border Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    bd  border: border(default);
+    be  border: border(error);
+*/

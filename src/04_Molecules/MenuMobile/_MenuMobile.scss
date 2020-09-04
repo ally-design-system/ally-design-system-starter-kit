@@ -1,0 +1,90 @@
+/*
+ * Mobile Menu Styles
+ *
+ * Custom styling for the Reach UI 'menu-button' component: https://reacttraining.com/reach-ui/menu-button
+ * Source code: https://github.com/reach/reach-ui/tree/main/packages/menu-button
+ */
+
+[data-reach-menu-button] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $rubik;
+    font-weight: font-weight(bold);
+    font-size: font-size(cm);
+    color: brand-color(midnight);
+    background: brand-color(gold);
+    padding: spacing(m) spacing(l);
+
+    &:hover,
+    &:focus {
+        background: tint(brand-color(gold), 40);
+    }
+
+    .icon {
+        margin: auto 0 auto spacing(s);
+    }
+
+    @media (min-width: breakpoint(m)) {
+        display: none; // Removes Element Visually And From The Accessibility Tree
+    }
+}
+
+[data-reach-menu-popover] {
+    left: auto !important; // Overrides default so that menu isn't off screen
+    right: spacing(
+        l
+    ) !important; // Overrides default so that menu isn't off screen
+    margin-left: spacing(l);
+    width: auto;
+}
+
+[data-reach-menu-list] {
+    display: block;
+    background-color: brand-color(snow);
+    padding: spacing(s);
+    margin: spacing(s) 0;
+    border: border(default);
+
+    &.focus-visible {
+        outline: 0; // Outline replaced with border
+    }
+
+    [data-reach-menu-item] {
+        line-height: spacing(xxxl) * 1.3;
+        border-bottom: 0;
+        padding: spacing(xs);
+    }
+}
+
+[data-reach-menu-item] {
+    font-family: $rubik;
+    font-size: font-size(cm);
+    transition: transition(background-color);
+
+    &[data-selected] {
+        color: brand-color(midnight);
+        background: shade(brand-color(gold), 20);
+    }
+
+    &.active {
+        color: brand-color(midnight);
+        background: brand-color(gold);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: opacity(0);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: opacity(100);
+        transform: translateY(0);
+    }
+}
+
+.slide-down[data-reach-menu-list],
+.slide-down[data-reach-menu-items] {
+    animation: slide-down 0.2s ease;
+}

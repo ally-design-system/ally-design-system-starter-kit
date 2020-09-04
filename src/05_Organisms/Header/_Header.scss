@@ -1,0 +1,46 @@
+/*
+ * Header Styles
+ *
+ */
+
+.header {
+    z-index: zlayer(Header);
+    background-color: brand-color(snow);
+    border-bottom: border(default);
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: wrapper(SiteMaxWidth);
+        padding: spacing(l);
+    }
+
+    &__title {
+        margin: auto 0;
+    }
+
+    &__title-link {
+        margin: auto 0;
+        padding: spacing(xxs);
+
+        &:link,
+        &:visited,
+        &:active {
+            margin: auto 0;
+            border-bottom: 0;
+        }
+
+        &:hover {
+            border-bottom: border(default);
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        margin: auto 0;
+        padding-left: spacing(m);
+    }
+}

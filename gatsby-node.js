@@ -12,10 +12,10 @@ const { node } = require("prop-types")
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
     const postTemplate = path.resolve(
-        `src/04_templates/PostTemplate/PostTemplate.js`
+        `src/06_Templates/PostTemplate/PostTemplate.js`
     )
     const pageTemplate = path.resolve(
-        `src/04_templates/PageTemplate/PageTemplate.js`
+        `src/06_Templates/PageTemplate/PageTemplate.js`
     )
 
     const result = await graphql(`

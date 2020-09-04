@@ -1,0 +1,27 @@
+/*
+ * Leading (line-height) Design Tokens
+ *
+ */
+
+// Leading Values
+$leading: (
+    regular: 1.5,
+    tall: 1.8,
+);
+
+// Leading Design Tokens Config
+@function leading($name) {
+    @if map-has-key($leading, $name) {
+        @return map-get($leading, $name);
+    }
+
+    @error "The key #{$name} is not in the $leading design token map";
+    @return null;
+}
+
+// Leading Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    lr  line-height: leading(regular);
+    lt  line-height: leading(tall);
+*/

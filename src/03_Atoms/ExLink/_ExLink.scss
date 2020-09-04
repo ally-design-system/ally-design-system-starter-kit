@@ -1,0 +1,30 @@
+/*
+ * External Link Styles
+ *
+ */
+
+.ex-link {
+    display: inline-block;
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    color: brand-color(midnight);
+    // Stops link text from wrapping with / without SVG
+    // @todo: Possibly change so it can wrap but with SVG
+    white-space: nowrap;
+
+    .icon {
+        margin: 0 spacing(xxxs) 0 spacing(xxs);
+    }
+
+    &.--microcopy {
+        font-size: font-size(cxs);
+        font-weight: font-weight(bold);
+        color: brand-color(midnight);
+
+        .icon {
+            width: icon-size(small);
+            height: icon-size(small);
+            margin: 0 spacing(xxxs);
+        }
+    }
+}

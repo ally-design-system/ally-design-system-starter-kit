@@ -1,0 +1,22 @@
+/*
+ * Typeface Design Tokens
+ *
+ * Fonts are imported in `./src/10_Styles/Fonts`
+ */
+
+// Typefaces Values
+/**
+ * @sass-export-section="$typefaces"
+ */
+$rubik: "Rubik", sans-serif;
+$archivo: "Archivo", sans-serif;
+$mono: "IBM Plex Mono", monospace;
+//@end-sass-export-section
+
+// Typeface Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    tr  font-family: $rubik;
+    ta  font-family: $archivo;
+    tm  font-family: $mono;
+*/

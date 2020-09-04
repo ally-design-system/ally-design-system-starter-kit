@@ -1,0 +1,22 @@
+/*
+ * Internal Link Styles
+ *
+ */
+
+.in-link {
+    font-family: $rubik;
+    font-weight: font-weight(bold);
+    color: brand-color(midnight);
+    font-size: font-size(cm);
+    text-decoration: none;
+
+    &:hover {
+        border-bottom: border(default);
+    }
+
+    &.--microcopy {
+        font-size: font-size(cxs);
+        font-weight: font-weight(bold);
+        color: brand-color(midnight);
+    }
+}

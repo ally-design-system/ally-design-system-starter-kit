@@ -28,7 +28,7 @@ This starter kit aims to help create an enjoyable and productive developer exper
 1. **Make sure you have the Gatsby CLI installed.**
 
     If you don't already have the Gatsby CLI installed, install it using npm.
-    
+
     ```
     npm install -g gatsby-cli
     ```
@@ -55,43 +55,43 @@ This starter kit aims to help create an enjoyable and productive developer exper
 
     There are three development environments to the Ally Design System Starter Kit:
 
-    -   Gatsby powered site
-    -   Storybook powered visual testing environment
-    -   Storybook Docs powered design system
+    - Gatsby to power your site/app
+    - Storybook to power the visual testing environment
+    - Storybook Docs that powers your final design system documentation
 
     Each of these has its own development command:
 
     To start developing the Gatsby site use:
 
     ```
-    npm run dev-site
+    npm run dev-g
     ```
 
-    For developing in Storybook visual testing environment use:
+    For developing in the Storybook visual testing environment use:
 
     ```
-    npm run dev-story
+    npm run dev-s
     ```
 
     And for just developing the Storybook Docs powered design system use:
 
     ```
-    npm run dev-design-system
+    npm run dev-d
     ```
 
     You can also have all three of these environments running simultaneously if needed.
 
 5. **Open the source code and start editing!**
 
-    After running `npm run dev-site` your Gatsby site will be served at `http://localhost:8008`.
+    After running `npm run dev-g` your Gatsby site will be served at `http://localhost:8008`.
 
     You'll also see a second link when running at `http://localhost:8008/___graphql` for GraphiQL.
 
     GraphiQL is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Introducing GraphiQL Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
-    After running `npm run dev-story` your project's Storybook powered visual testing environment will open in your default browser at: `http://localhost:6006`.
+    After running `npm run dev-s` your project's Storybook powered visual testing environment will open in your default browser at: `http://localhost:6006`.
 
-    And `npm run dev-design-system` will run your design system powered by Storybook Docs in development mode at: `http://localhost:5005`.
+    And `npm run dev-d` will run your design system powered by Storybook Docs in development mode at: `http://localhost:5005`.
 
 6. **Building and Previewing Builds**
 
@@ -100,19 +100,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
     To build the Gatsby site:
 
     ```
-    npm run build-site
+    npm run build-g
     ```
 
     To build the Storybook powered visual testing environment:
 
     ```
-    npm run build-story
+    npm run build-s
     ```
 
     To build the Storybook Docs powered design system:
 
     ```
-    npm run build-design-system
+    npm run build-d
     ```
 
     And then you can preview the builds using a local server:
@@ -120,19 +120,19 @@ This starter kit aims to help create an enjoyable and productive developer exper
     To serve the Gatsby site at `http://localhost:8080`:
 
     ```
-    npm run serve-site
+    npm run serve-g
     ```
 
     To serve the Storybook powered visual testing environment at `http://localhost:8081`:
 
     ```
-    npm run serve-story
+    npm run serve-s
     ```
 
     To serve the Storybook Docs powered design system at `http://localhost:8082`:
 
     ```
-    npm run serve-design-system
+    npm run serve-d
     ```
 
 ## 🗺️ Kit Features

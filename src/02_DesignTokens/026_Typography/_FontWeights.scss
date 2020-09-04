@@ -1,0 +1,27 @@
+/*
+ * Font Weight Design Tokens
+ *
+ */
+
+// Font Weight Values
+$font-weights: (
+    regular: 400,
+    bold: 700,
+);
+
+// Font Weight Design Tokens Config
+@function font-weight($name) {
+    @if map-has-key($font-weights, $name) {
+        @return map-get($font-weights, $name);
+    }
+
+    @error "The key #{$name} is not in the $font-weights design token map";
+    @return null;
+}
+
+// Font Weight Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    fwr     font-weight: font-weight(regular);
+    fwb     font-weight: font-weight(bold);
+*/

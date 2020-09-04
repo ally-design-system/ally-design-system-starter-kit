@@ -1,65 +1,4 @@
 {
-    "React arrow function": {
-		"prefix": "rc",
-		"body": [
-       "/*",
-      " * ${TM_FILENAME_BASE} Component",
-      " *",
-      " */",
-      "",
-      "import React from \"react\"",
-      "",
-      "const ${TM_FILENAME_BASE} = () => {",
-      "\t return (",
-      "\t\t <>",
-      "\t\t\t {/* <p>Hi</p> */}",
-      "\t\t </>",
-      "\t )",
-      "}",
-      "",
-      "export default ${TM_FILENAME_BASE}"
-		],
-		  "description": "React arrow function"
-    },
-    "React arrow function component with Props": {
-		"prefix": "rcp",
-		"body": [
-      "/*",
-      " * ${TM_FILENAME_BASE} Component",
-      " *",
-      " */",
-      "",
-      "import React from \"react\"",
-      "import PropTypes from \"prop-types\"",
-      "",
-      "const ${TM_FILENAME_BASE} = props => {",
-      "\t return (",
-      "\t\t <>",
-      "\t\t\t {/* <p>{props.propName}</p> */}",
-      "\t\t </>",
-      "\t )",
-      "}",
-      "",
-      "${TM_FILENAME_BASE}.defaultProps = {"
-      "\t // propName: \"default prop value\"",
-      "}",
-      "",
-      "${TM_FILENAME_BASE}.propTypes = {"
-      "\t // propName: PropTypes.string.isRequired,"
-      "}",
-      "",
-      "export default ${TM_FILENAME_BASE}"
-		],
-		  "description": "React arrow function component with Props"
-    },
-    "Breakpoint": {
-		"prefix": "bp",
-		"body": [
-      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
-      "@media (min-width: breakpoint(?)) {}",
-		],
-		  "description": "Breakpoint"
-    },
     "Breakpoint xs": {
 		"prefix": "bpxs",
 		"body": [
@@ -191,29 +130,8 @@
       "width: wrapper(SiteMaxWidth);",
 		],
 		  "description": "Wrapper SiteMaxWidth"
-    },
-    "Brand color snow": {
-		"prefix": "cs",
-		"body": [
-      "color(snow)",
-		],
-		  "description": "Brand color snow"
-    },
-    "Brand color midnight": {
-		"prefix": "cm",
-		"body": [
-      "color(midnight)",
-		],
-		  "description": "Brand color midnight"
-    },
-    "Brand color gold": {
-		"prefix": "cg",
-		"body": [
-      "color(gold)",
-		],
-		  "description": "Brand color gold"
-    },
-    "Action color success": {
+	},
+	"Action color success": {
 		"prefix": "acs",
 		"body": [
       "action-color(success)",
@@ -233,7 +151,35 @@
       "action-color(error)",
 		],
 		  "description": "Action color error"
+	},
+    "Brand color snow": {
+		"prefix": "bcs",
+		"body": [
+      "brand-color(snow)",
+		],
+		  "description": "Brand color snow"
     },
+    "Brand color midnight": {
+		"prefix": "bcm",
+		"body": [
+      "brand-color(midnight)",
+		],
+		  "description": "Brand color midnight"
+    },
+    "Brand color gold": {
+		"prefix": "bcg",
+		"body": [
+      "brand-color(gold)",
+		],
+		  "description": "Brand color gold"
+    },
+	"Gradient 140deg Midnight Gold Snow": {
+		"prefix": "g140mgs",
+		"body": [
+      "background: gradient(140mgs);",
+		],
+		  "description": "Gradient 140deg Midnight Gold Snow"
+	},
     "Opacity 0%": {
 		"prefix": "o0",
 		"body": [
@@ -265,65 +211,58 @@
     "Shade 20": {
 		"prefix": "s20",
 		"body": [
-      "shade(color(), 20)",
+      "shade(brand-color(), 20)",
 		],
 		  "description": "Shade 20%"
     },
     "Shade 40": {
 		"prefix": "s40",
 		"body": [
-      "shade(color(), 40)",
+      "shade(brand-color(), 40)",
 		],
 		  "description": "Shade 40%"
     },
     "Shade 60": {
 		"prefix": "s60",
 		"body": [
-      "shade(color(), 60)",
+      "shade(brand-color(), 60)",
 		],
 		  "description": "Shade 60%"
     },
     "Shade 80": {
 		"prefix": "s80",
 		"body": [
-      "shade(color(), 80)",
+      "shade(brand-color(), 80)",
 		],
 		  "description": "Shade 80%"
     },
     "Tint 20": {
 		"prefix": "t20",
 		"body": [
-      "tint(color(), 20)",
+      "tint(brand-color(), 20)",
 		],
 		  "description": "Tint 20%"
     },
     "Tint 40": {
 		"prefix": "t40",
 		"body": [
-      "tint(color(), 40)",
+      "tint(brand-color(), 40)",
 		],
 		  "description": "Tint 40%"
     },
     "Tint 60": {
 		"prefix": "t60",
 		"body": [
-      "tint(color(), 60)",
+      "tint(brand-color(), 60)",
 		],
 		  "description": "Tint 60%"
     },
     "Tint 80": {
 		"prefix": "t80",
 		"body": [
-      "tint(color(), 80)",
+      "tint(brand-color(), 80)",
 		],
 		  "description": "Tint 80%"
-    },
-    "Gradient 70deg Snow Midnight": {
-		"prefix": "g70sm",
-		"body": [
-      "background: gradient-70(color(snow), color(midnight));",
-		],
-		  "description": "Gradient 70deg Snow Midnight"
     },
     "Border Default": {
 		"prefix": "bd",
@@ -356,7 +295,7 @@
     "Shadow Default": {
 		"prefix": "sd",
 		"body": [
-      "box-shadow: spacing(s) spacing(s) 0 0 color(midnight);",
+      "box-shadow: shadow(default);",
 		],
 		  "description": "Shadow Default"
     },
@@ -451,26 +390,26 @@
 		],
 		  "description": "Font Size H XXS"
     },
-    "Font Size copy": {
-		"prefix": "fsc",
+    "Font Size Copy Medium": {
+		"prefix": "fscm",
 		"body": [
-      "font-size: font-size(copy);",
+      "font-size: font-size(cm);",
 		],
-		  "description": "Font Size Copy"
+		  "description": "Font Size Copy Medium"
     },
-    "Font Size caption": {
-		"prefix": "fscap",
+    "Font Size Copy Small": {
+		"prefix": "fscs",
 		"body": [
-      "font-size: font-size(caption);",
+      "font-size: font-size(cs);",
 		],
-		  "description": "Font Size Caption"
+		  "description": "Font Size Copy Small"
     },
-    "Font Size microcopy": {
-		"prefix": "fsmc",
+    "Font Size Copy X Small": {
+		"prefix": "fscxs",
 		"body": [
-      "font-size: font-size(microcopy);",
+      "font-size: font-size(cxs);",
 		],
-		  "description": "Font Size Microcopy"
+		  "description": "Font Size Copy X Small"
     },
     "Font Weight regular": {
 		"prefix": "fwr",
@@ -514,24 +453,24 @@
 		],
 		  "description": "Tracking Wide"
     },
-    "Typeface arimo": {
+    "Typeface Rubik": {
+		"prefix": "tr",
+		"body": [
+      "font-family: $rubik;",
+		],
+		  "description": "Typeface Rubik"
+    },
+    "Typeface Archivo": {
 		"prefix": "ta",
 		"body": [
-      "font-family: typeface(arimo);",
+      "font-family: $archivo;",
 		],
-		  "description": "Typeface Arimo"
+		  "description": "Typeface Archivo"
     },
-    "Typeface slab": {
-		"prefix": "ts",
-		"body": [
-      "font-family: typeface(slab);",
-		],
-		  "description": "Typeface Slab"
-    },
-    "Typeface mono": {
+    "Typeface Mono": {
 		"prefix": "tm",
 		"body": [
-      "font-family: typeface(mono);",
+      "font-family: $mono;",
 		],
 		  "description": "Typeface Mono"
     }

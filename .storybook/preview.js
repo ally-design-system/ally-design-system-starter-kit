@@ -10,10 +10,25 @@
 import "focus-visible"
 
 // Import global styling with loaders to compile component Sass/Scss styling
-import "!style-loader!css-loader!sass-loader!../src/10_styles/main.scss"
+import "!style-loader!css-loader!sass-loader!../src/10_Styles/Main.scss"
 
 // Import Storybook Actions addon
 import { action } from "@storybook/addon-actions"
+
+// Import addParameters from React Storybook
+import { addParameters } from "@storybook/react"
+
+// Import DocsPage and DocsContainer from Doc Bloacks
+import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks"
+
+// Set up the Docs parameter including the DocsPage for rendering the page, a container, and various configuration
+// options, such as extractComponentDescription for manually extracting a component description
+addParameters({
+    docs: {
+        container: DocsContainer,
+        page: DocsPage,
+    },
+})
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
@@ -177,6 +192,10 @@ const customViewports = {
     },
 }
 
+// Custom Addon Parameters
 export const parameters = {
+    // Add Custom Viewports for the Storybook Viewport Addon
     viewport: { viewports: customViewports },
+    // Enable expanded mode globally in Controls to show property documentation alongside your controls
+    // controls: { expanded: true },
 }

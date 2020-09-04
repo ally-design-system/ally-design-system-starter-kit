@@ -1,0 +1,25 @@
+/*
+ * Shadow Design Tokens
+ *
+ */
+
+// Shadow Values
+$shadows: (
+    default: 0.75rem 0.75rem 0 0 #000013,
+);
+
+// Shadows Design Tokens Config
+@function shadow($name) {
+    @if map-has-key($shadows, $name) {
+        @return map-get($shadows, $name);
+    }
+
+    @error "The key #{$name} is not in the $shadows design token map";
+    @return null;
+}
+
+// Shadow Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    sd  box-shadow: shadow(default);
+*/

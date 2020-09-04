@@ -1,0 +1,19 @@
+/*
+ * Navigation Link Styles
+ *
+ */
+
+a {
+    &.nav-link,
+    &.active {
+        padding: spacing(xxs);
+        text-decoration: none;
+        background: none;
+        border-bottom: none;
+    }
+
+    &.active {
+        background: brand-color(gold);
+        border-bottom: border(default);
+    }
+}
