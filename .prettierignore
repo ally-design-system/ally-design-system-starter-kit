@@ -1,8 +1,6 @@
 .cache
 .vscode
-design_assets
 node_modules
 public
-package-lock.json
-package.json
+*.json
 *.mdx
