@@ -3,18 +3,18 @@
 # Ally Design System Starter Kit
 
 <div>
-<img alt="Gatsby" src="./src/07_images/logos/GatsbyIconLogo.png" width="60" />
-<img alt="Storybook" src="./src/07_images/logos/StorybookIconLogo.png" width="60" />
-<img alt="Figma" src="./src/07_images/logos/FigmaIconLogo.png" width="60" />
-<img alt="Atomic Design" src="./src/07_images/logos/AtomicDesignIconLogo.png" width="60" />
-<img alt="React" src="./src/07_images/logos/ReactIconLogo.png" width="60" />
-<img alt="GraphQL" src="./src/07_images/logos/GraphQLIconLogo.png" width="60" />
-<img alt="Webpack" src="./src/07_images/logos/WebpackIconLogo.png" width="60" />
-<img alt="Babel" src="./src/07_images/logos/BabelIconLogo.png" width="60" />
-<img alt="Sass" src="./src/07_images/logos/SassIconLogo.png" width="60" />
-<img alt="BEM" src="./src/07_images/logos/BEMIconLogo.png" width="60" />
-<img alt="Prettier" src="./src/07_images/logos/PrettierIconLogo.png" width="60" />
-<img alt="Markdown" src="./src/07_images/logos/MarkdownIconLogo.png" width="60" />
+<img alt="Gatsby" src="./src/08_Images/logos/GatsbyIconLogo.png" width="60" />
+<img alt="Storybook" src="./src/08_Images/logos/StorybookIconLogo.png" width="60" />
+<img alt="Figma" src="./src/08_Images/logos/FigmaIconLogo.png" width="60" />
+<img alt="Atomic Design" src="./src/08_Images/logos/AtomicDesignIconLogo.png" width="60" />
+<img alt="React" src="./src/08_Images/logos/ReactIconLogo.png" width="60" />
+<img alt="GraphQL" src="./src/08_Images/logos/GraphQLIconLogo.png" width="60" />
+<img alt="Webpack" src="./src/08_Images/logos/WebpackIconLogo.png" width="60" />
+<img alt="Babel" src="./src/08_Images/logos/BabelIconLogo.png" width="60" />
+<img alt="Sass" src="./src/08_Images/logos/SassIconLogo.png" width="60" />
+<img alt="BEM" src="./src/08_Images/logos/BEMIconLogo.png" width="60" />
+<img alt="Prettier" src="./src/08_Images/logos/PrettierIconLogo.png" width="60" />
+<img alt="Markdown" src="./src/08_Images/logos/MarkdownIconLogo.png" width="60" />
 </div>
 
 ## 👋 Introduction
