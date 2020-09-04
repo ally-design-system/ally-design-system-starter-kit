@@ -3,14 +3,14 @@
  *
  */
 
-// Transitions Map
+// Transition Values
 $transitions: (
     background-color: background-color 0.2s ease-in-out,
     transform: transform 0.2s ease-in-out,
     opacity: opacity 0.2s ease-in-out,
 );
 
-// Transitions Design Token Config
+// Transition Design Tokens Config
 @function transition($name) {
     @if map-has-key($transitions, $name) {
         @return map-get($transitions, $name);
@@ -20,7 +20,7 @@ $transitions: (
     @return null;
 }
 
-// Transitions Design Token Usage With Ally Code Snippets
+// Transition Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     tbc   transition: transition(background-color);

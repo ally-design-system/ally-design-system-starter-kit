@@ -3,14 +3,11 @@
  *
  */
 
-// Action Color Palette Map
+// Action Color Values
 $action-colors: (
-    // Success
-        success: #18d14c,
-    // Warning
-        warning: #ff9d00,
-    // Error
-        error: #f30b17
+    success: #18d14c,
+    warning: #ff9d00,
+    error: #f30b17,
 );
 
 // Action Color Design Tokens Config
@@ -23,7 +20,7 @@ $action-colors: (
     @return null;
 }
 
-// Action Color Design Token Usage With Ally Code Snippets
+// Action Color Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     acs     action-color(success)

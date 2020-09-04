@@ -1,0 +1,25 @@
+/*
+ * Wrapper Design Tokens
+ *
+ */
+
+// Wrapper Values
+$wrappers: (
+    SiteMaxWidth: 1600px,
+);
+
+// Wrapper Design Tokens Config
+@function wrapper($name) {
+    @if map-has-key($wrappers, $name) {
+        @return map-get($wrappers, $name);
+    }
+
+    @error "The key #{$name} is not in the $wrappers design token map";
+    @return null;
+}
+
+// Wrapper Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    wsite   width: wrapper(SiteMaxWidth);
+*/

@@ -1,25 +1,25 @@
 /*
- * Tracking Design Tokens
+ * Tracking (letter-spacing) Design Tokens
  *
  */
 
-// Tracking (letter-spacing) Map
-$tracking-widths: (
+// Tracking Values
+$tracking: (
     regular: 0,
     wide: 0.1rem,
 );
 
-// Tracking (letter-spacing) Design Token Config
+// Tracking Design Tokens Config
 @function tracking($name) {
-    @if map-has-key($tracking-widths, $name) {
-        @return map-get($tracking-widths, $name);
+    @if map-has-key($tracking, $name) {
+        @return map-get($tracking, $name);
     }
 
-    @error "The key #{$name} is not in the $tracking-widths design token map";
+    @error "The key #{$name} is not in the $tracking-spacing design token map";
     @return null;
 }
 
-// Tracking Design Token Usage With Ally Code Snippets
+// Tracking Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     tr  letter-spacing: tracking(regular);

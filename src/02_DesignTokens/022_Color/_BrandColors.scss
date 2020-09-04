@@ -3,14 +3,11 @@
  *
  */
 
-// Brand Color Palette Map
+// Brand Color Values
 $brand-colors: (
-    // Snow
-        snow: #fcfcfc,
-    // Midnight
-        midnight: #000013,
-    // Gold
-        gold: #ffd700
+    snow: #fcfcfc,
+    midnight: #000013,
+    gold: #ffd700,
 );
 
 // Brand Color Design Tokens Config
@@ -23,7 +20,7 @@ $brand-colors: (
     @return null;
 }
 
-// Brand Color Design Token Usage With Ally Code Snippets
+// Brand Color Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     bcs  brand-color(snow)

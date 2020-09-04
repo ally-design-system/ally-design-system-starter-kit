@@ -5,39 +5,38 @@
 
 // 001 Layout Design Tokens
 /****************************/
-@import "../02_DesignTokens/021_Layout/Layout";
 
-// Layout / Breakpoint Design Tokens
-// @import "../02_DesignTokens/021_Layout/Breakpoints/Breakpoints";
+// Breakpoint Design Tokens
+@import "../02_DesignTokens/021_Layout/Breakpoints";
 
-// // Layout / Layer Design Tokens
-// @import "../02_DesignTokens/021_Layout/ZLayers";
+// Layer Design Tokens
+@import "../02_DesignTokens/021_Layout/ZLayers";
 
-// // Layout / Spacing Design Tokens
-// @import "../02_DesignTokens/021_Layout/Spacing";
+// Spacing Design Tokens
+@import "../02_DesignTokens/021_Layout/Spacing";
 
-// // Layout / Wrapper Design Tokens
-// @import "../02_DesignTokens/021_Layout/Wrappers";
+// Wrapper Design Tokens
+@import "../02_DesignTokens/021_Layout/Wrappers";
 
 // 002 Color Palette Design Tokens
 /***********************************/
 // Action Color Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/ActionColors";
+@import "../02_DesignTokens/022_Color/ActionColors";
 
 // Brand Color Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/BrandColors";
+@import "../02_DesignTokens/022_Color/BrandColors";
 
 // Opacity Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/Opacity";
+@import "../02_DesignTokens/022_Color/Opacity";
 
 // Gradient Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/Gradients";
+@import "../02_DesignTokens/022_Color/Gradients";
 
 // Shade Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/Shades";
+@import "../02_DesignTokens/022_Color/Shades";
 
 // Tint Design Tokens
-@import "../02_DesignTokens/022_ColorPalette/Tints";
+@import "../02_DesignTokens/022_Color/Tints";
 
 // 003 Peripheral Design Tokens
 /********************************/
@@ -65,8 +64,6 @@
 
 // 006 Typography
 /******************/
-// Import Fonts
-@import "../02_DesignTokens/026_Typography/Fonts";
 
 // Font Size Design Tokens
 @import "../02_DesignTokens/026_Typography/FontSizes";

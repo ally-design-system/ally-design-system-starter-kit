@@ -3,7 +3,7 @@
  *
  */
 
-// Font Weights Map
+// Font Weight Values
 $font-weights: (
     regular: 400,
     bold: 700,
@@ -19,7 +19,7 @@ $font-weights: (
     @return null;
 }
 
-// Font Weight Token Usage With Ally Code Snippets
+// Font Weight Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     fwr     font-weight: font-weight(regular);

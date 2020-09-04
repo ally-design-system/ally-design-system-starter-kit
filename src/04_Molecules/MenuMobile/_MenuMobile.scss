@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: typeface(arimo);
+    font-family: $rubik;
     font-weight: font-weight(bold);
     font-size: font-size(cm);
     color: brand-color(midnight);
@@ -58,7 +58,7 @@
 }
 
 [data-reach-menu-item] {
-    font-family: typeface(arimo);
+    font-family: $rubik;
     font-size: font-size(cm);
     transition: transition(background-color);
 

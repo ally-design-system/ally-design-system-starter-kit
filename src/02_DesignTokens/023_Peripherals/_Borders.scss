@@ -1,19 +1,15 @@
 /*
- * Border Styles
+ * Border Design Tokens
  *
  */
 
-// Borders Map
-/**
- * @sass-export-section="borders"
- */
+// Border Values
 $borders: (
     default: solid #000013 3px,
     error: solid #f30b17 3px,
 );
-//@end-sass-export-section
 
-// Borders Design Token Config
+// Borders Design Tokens Config
 @function border($name) {
     @if map-has-key($borders, $name) {
         @return map-get($borders, $name);
@@ -23,7 +19,7 @@ $borders: (
     @return null;
 }
 
-// Borders Design Token Usage With Ally Code Snippets
+// Border Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     bd  border: border(default);

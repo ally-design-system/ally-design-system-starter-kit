@@ -1,65 +1,4 @@
 {
-    "React arrow function": {
-		"prefix": "rc",
-		"body": [
-       "/*",
-      " * ${TM_FILENAME_BASE} Component",
-      " *",
-      " */",
-      "",
-      "import React from \"react\"",
-      "",
-      "const ${TM_FILENAME_BASE} = () => {",
-      "\t return (",
-      "\t\t <>",
-      "\t\t\t {/* <p>Hi</p> */}",
-      "\t\t </>",
-      "\t )",
-      "}",
-      "",
-      "export default ${TM_FILENAME_BASE}"
-		],
-		  "description": "React arrow function"
-    },
-    "React arrow function component with Props": {
-		"prefix": "rcp",
-		"body": [
-      "/*",
-      " * ${TM_FILENAME_BASE} Component",
-      " *",
-      " */",
-      "",
-      "import React from \"react\"",
-      "import PropTypes from \"prop-types\"",
-      "",
-      "const ${TM_FILENAME_BASE} = props => {",
-      "\t return (",
-      "\t\t <>",
-      "\t\t\t {/* <p>{props.propName}</p> */}",
-      "\t\t </>",
-      "\t )",
-      "}",
-      "",
-      "${TM_FILENAME_BASE}.defaultProps = {"
-      "\t // propName: \"default prop value\"",
-      "}",
-      "",
-      "${TM_FILENAME_BASE}.propTypes = {"
-      "\t // propName: PropTypes.string.isRequired,"
-      "}",
-      "",
-      "export default ${TM_FILENAME_BASE}"
-		],
-		  "description": "React arrow function component with Props"
-    },
-    "Breakpoint": {
-		"prefix": "bp",
-		"body": [
-      "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
-      "@media (min-width: breakpoint(?)) {}",
-		],
-		  "description": "Breakpoint"
-    },
     "Breakpoint xs": {
 		"prefix": "bpxs",
 		"body": [
@@ -234,13 +173,13 @@
 		],
 		  "description": "Brand color gold"
     },
-	"Gradient 70deg Snow Midnight": {
-		"prefix": "g70sm",
+	"Gradient 140deg Midnight Gold Snow": {
+		"prefix": "g140mgs",
 		"body": [
-      "background: gradient-70(brand-color(snow), brand-color(midnight));",
+      "background: gradient(140mgs);",
 		],
-		  "description": "Gradient 70deg Snow Midnight"
-    },
+		  "description": "Gradient 140deg Midnight Gold Snow"
+	},
     "Opacity 0%": {
 		"prefix": "o0",
 		"body": [
@@ -356,7 +295,7 @@
     "Shadow Default": {
 		"prefix": "sd",
 		"body": [
-      "box-shadow: spacing(s) spacing(s) 0 0 brand-color(midnight);",
+      "box-shadow: shadow(default);",
 		],
 		  "description": "Shadow Default"
     },
@@ -514,24 +453,24 @@
 		],
 		  "description": "Tracking Wide"
     },
-    "Typeface arimo": {
+    "Typeface Rubik": {
+		"prefix": "tr",
+		"body": [
+      "font-family: $rubik;",
+		],
+		  "description": "Typeface Rubik"
+    },
+    "Typeface Archivo": {
 		"prefix": "ta",
 		"body": [
-      "font-family: typeface(arimo);",
+      "font-family: $archivo;",
 		],
-		  "description": "Typeface Arimo"
+		  "description": "Typeface Archivo"
     },
-    "Typeface slab": {
-		"prefix": "ts",
-		"body": [
-      "font-family: typeface(slab);",
-		],
-		  "description": "Typeface Slab"
-    },
-    "Typeface mono": {
+    "Typeface Mono": {
 		"prefix": "tm",
 		"body": [
-      "font-family: typeface(mono);",
+      "font-family: $mono;",
 		],
 		  "description": "Typeface Mono"
     }

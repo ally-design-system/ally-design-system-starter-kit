@@ -11,10 +11,15 @@ import InLink from "../03_Atoms/InLink/InLink"
 import ExLink from "../03_Atoms/ExLink/ExLink"
 import Button from "../03_Atoms/Button/Button"
 
-// @todo: Move to style guide styling unless adding Storybook!?
 const Container = {
     display: "flex",
     flexWrap: "wrap",
+}
+
+const Gradient = {
+    width: "600px",
+    height: "300px",
+    background: "gradient(140mgs)",
 }
 
 const ComponentsPage = () => (
@@ -232,6 +237,8 @@ const ComponentsPage = () => (
                     or bad, but <del>thinking</del> <ins>running it</ins> makes
                     it so.
                 </p>
+
+                <div style={Gradient}></div>
             </section>
         </Layout>
     </>

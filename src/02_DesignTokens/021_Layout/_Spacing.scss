@@ -1,0 +1,49 @@
+/*
+ * Spacing Design Tokens
+ *
+ * Inspiration from:
+ * https://www.carbondesignsystem.com/guidelines/themes/overview#spacing
+ * https://scarab.style/core/design-tokens/#spacing
+ * https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
+ */
+
+// Spacing Values
+$spacing: (
+    xxxxs: 0.0625rem,
+    xxxs: 0.125rem,
+    xxs: 0.25rem,
+    xs: 0.5rem,
+    s: 0.75rem,
+    m: 1rem,
+    l: 1.5rem,
+    xl: 2rem,
+    xxl: 2.5rem,
+    xxxl: 3rem,
+    xxxxl: 3.5rem,
+);
+
+// Spacing Design Tokens Config
+@function spacing($name) {
+    @if map-has-key($spacing, $name) {
+        @return map-get($spacing, $name);
+    }
+
+    @error "The key #{$name} is not in the ’$spacing’ design token map";
+    @return null;
+}
+
+// Spacing Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    sxxxxs  spacing(xxxxs);
+    sxxxs   spacing(xxxs);
+    sxxs    spacing(xxs);
+    sxs     spacing(xs);
+    ss      spacing(s);
+    sm      spacing(m);
+    sl      spacing(l);
+    sxl     spacing(xl);
+    sxxl    spacing(xxl);
+    sxxxl   spacing(xxxl);
+    sxxxxl  spacing(xxxl);
+*/

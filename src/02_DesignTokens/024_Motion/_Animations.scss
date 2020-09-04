@@ -1,5 +1,5 @@
 /*
- * Animation Styles
+ * Animation Design Tokens
  *
  */
 
@@ -13,12 +13,12 @@
     }
 }
 
-// Animations Map
+// Animation Values
 $animations: (
     fadeIn: fadeIn 300ms ease-in,
 );
 
-// Animations Design Token Config
+// Animation Design Tokens Config
 @function animation($name) {
     @if map-has-key($animations, $name) {
         @return map-get($animations, $name);
@@ -28,7 +28,7 @@ $animations: (
     @return null;
 }
 
-// Animations Design Token Usage With Ally Code Snippets
+// Animation Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
     afi     animation: animation(fadeIn);

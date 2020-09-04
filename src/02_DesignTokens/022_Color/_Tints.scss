@@ -3,19 +3,15 @@
  *
  */
 
-// Tints Map
+// Tint Values
 $tints: (
-    // 20
-        20: 20%,
-    // 40
-        40: 40%,
-    // 60
-        60: 60%,
-    // 80
-        80: 80%
+    20: 20%,
+    40: 40%,
+    60: 60%,
+    80: 80%,
 );
 
-// Tint Design Token Config
+// Tint Design Tokens Config
 @function tint($color, $number) {
     @if map-has-key($tints, $number) {
         @return mix(#fff, $color, $number);
@@ -25,7 +21,7 @@ $tints: (
     @return null;
 }
 
-// Tint Design Token Usage With Ally Code Snippets
+// Tint Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 // Snippets offer tint skeleton but the user still needs to manually add color
 // Example: tint(color(snow), 40)

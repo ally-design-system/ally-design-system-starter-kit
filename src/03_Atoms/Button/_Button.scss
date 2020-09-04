@@ -7,7 +7,7 @@ button,
 .button {
     display: inline-block;
     border: border(default);
-    font-family: typeface(arimo);
+    font-family: $rubik;
     font-weight: font-weight(bold);
     font-size: font-size(hxxs);
     color: brand-color(midnight);
