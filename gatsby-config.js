@@ -43,7 +43,6 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                typeName: `Json`,
                 path: `${__dirname}/design_tokens/`,
             },
         },

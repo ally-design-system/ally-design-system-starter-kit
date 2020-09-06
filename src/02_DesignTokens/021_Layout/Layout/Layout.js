@@ -1,31 +1,21 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default function Layout({ data }) {
+const Breakpoints = () => {
+    const data = useStaticQuery(graphql`
+        query BreakpointsQuery {
+            designTokensJson(name: { eq: "$breakpoints" }) {
+                name
+            }
+        }
+    `)
+
     return (
         <>
-            <p>Layout Design Tokens</p>
-            <p>Breakpoints</p>
-
-            <p>{data.designTokensJson.id}</p>
-
-            {/* {data.designTokensJson.mapValue.map(({ node }, i) => (
-                <div key={i}>
-                    <p>{node.compiledValue}</p>
-                </div>
-            ))} */}
+            <h2>Design Tokens</h2>
+            <h3>{data.designTokensJson.name}</h3>
         </>
     )
 }
-export const query = graphql`
-    query LayoutDesignTokensQuery {
-        designTokensJson(name: { eq: "$breakpoints" }) {
-            name
-            value
-            id
-            mapValue {
-                compiledValue
-            }
-        }
-    }
-`
+
+export default Breakpoints
