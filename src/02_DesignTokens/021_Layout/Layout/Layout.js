@@ -10,10 +10,15 @@ const Breakpoints = () => {
         }
     `)
 
+    const Name = data.designTokensJson.name
+    const TokenName = Name.substring(1)
+    const Capitalize = {
+        textTransform: "capitalize",
+    }
+
     return (
         <>
-            <h2>Design Tokens</h2>
-            <h3>{data.designTokensJson.name}</h3>
+            <h3 style={Capitalize}>{TokenName}</h3>
         </>
     )
 }

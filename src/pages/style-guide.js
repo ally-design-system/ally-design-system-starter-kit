@@ -10,7 +10,7 @@ import Icon from "../03_Atoms/Iconography/Icon"
 import InLink from "../03_Atoms/InLink/InLink"
 import ExLink from "../03_Atoms/ExLink/ExLink"
 import Button from "../03_Atoms/Button/Button"
-import DesignTokens from "../02_DesignTokens/021_Layout/Layout/Layout"
+import LayoutTokens from "../02_DesignTokens/021_Layout/Layout/Layout"
 
 const Container = {
     display: "flex",
@@ -29,7 +29,8 @@ const ComponentsPage = () => (
             <section className="default-page-layout__grid">
                 <div className="default-page-layout__column">
                     <h1>Ally Style Guide</h1>
-                    <DesignTokens />
+                    <h2>Design Tokens</h2>
+                    <LayoutTokens />
                     <h2>Atom Components</h2>
                     <h3>Image</h3>
                     <Figure
