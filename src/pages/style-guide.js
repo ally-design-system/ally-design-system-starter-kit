@@ -10,7 +10,7 @@ import Icon from "../03_Atoms/Iconography/Icon"
 import InLink from "../03_Atoms/InLink/InLink"
 import ExLink from "../03_Atoms/ExLink/ExLink"
 import Button from "../03_Atoms/Button/Button"
-import LayoutTokens from "../02_DesignTokens/021_Layout/Layout/Layout"
+import LayoutTokens from "../02_DesignTokens/021_Layout/LayoutTokens/LayoutTokens"
 
 const Container = {
     display: "flex",
