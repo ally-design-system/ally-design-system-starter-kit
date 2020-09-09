@@ -229,8 +229,8 @@ const ComponentsPage = () => (
                         <a href="tel:+447123456789">(+44) 7123 456789</a>
                     </p>
                     <p>
-                        <a href="https://goo.gl/maps/LT1tuiDWaj1ScbYu5">
-                            3rd Floor, 15 Colston St, Bristol BS1 5AP
+                        <a href="https://goo.gl/maps/SxK5bhzvyMZfc93n7">
+                            Whitley Bay, Newcastle Upon Tyne, England, UK
                         </a>
                     </p>
                 </address>
