@@ -267,12 +267,11 @@ dfn {
 // computer code. By default, the content text is displayed using the user agent's default monospace font.
 code {
     color: brand-color(snow);
-    font-size: font-size(cm);
+    font-size: font-size(cs);
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: $mono;
-    padding: spacing(xxxs) spacing(xxs);
 }
 
 // Preformatted Text (Code Blocks)
@@ -287,7 +286,7 @@ pre {
     background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: $mono;
-    padding: spacing(m);
+    padding: spacing(s);
     margin: 0 0 spacing(xl);
 }
 

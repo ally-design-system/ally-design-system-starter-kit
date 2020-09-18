@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Breakpoints = () => {
+const LayoutTokens = () => {
     const data = useStaticQuery(graphql`
         query BreakpointsQuery {
             designTokensJson(name: { eq: "$breakpoints" }) {
@@ -20,32 +20,47 @@ const Breakpoints = () => {
         textTransform: "capitalize",
     }
 
-    const Table = {
-        borderCollapse: "collapse",
-        border: "3px solid #000013",
-        padding: "10px 40px",
-        minWidth: "400px",
-        textAlign: "left",
-    }
-
     return (
         <section>
             <h3 style={Capitalize}>{TokenName}</h3>
-            <table style={Table}>
-                <thead>
+            <table
+                className="docblock-argstable css-6hhrgj"
+                style={{ textAlign: "left" }}
+            >
+                <thead className="docblock-argstable-head">
                     <tr>
-                        <th style={Table}>Token</th>
-                        <th style={Table}>Value</th>
+                        <th>Token</th>
+                        <th>Value</th>
+                        <th>Default</th>
+                        <th style={{ width: "50% !important" }}>Use</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="docblock-argstable-body">
                     {data.designTokensJson.mapValue.map(node => (
-                        <>
-                            <tr>
-                                <td style={Table}>$breakpoint({node.name})</td>
-                                <td style={Table}>{node.compiledValue}</td>
-                            </tr>
-                        </>
+                        <tr>
+                            <td className="css-4lbn0a">
+                                <span className="css-in3yi3">
+                                    $breakpoint({node.name})
+                                </span>
+                            </td>
+                            <td>
+                                <div className="css-1521b8c">
+                                    <span>{node.compiledValue}</span>
+                                </div>
+                                <div className="css-fimcbu"></div>
+                            </td>
+                            <td style={{ width: "0" }}>
+                                <span>-</span>
+                            </td>
+                            <td style={{ width: "50% !important" }}>
+                                <pre style={{ margin: 0 }}>
+                                    <code>
+                                        @media (min-width: breakpoint(
+                                        {node.name}))
+                                    </code>
+                                </pre>
+                            </td>
+                        </tr>
                     ))}
                 </tbody>
             </table>
@@ -53,4 +68,4 @@ const Breakpoints = () => {
     )
 }
 
-export default Breakpoints
+export default LayoutTokens
