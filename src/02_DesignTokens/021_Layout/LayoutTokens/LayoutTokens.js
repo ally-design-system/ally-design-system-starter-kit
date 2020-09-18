@@ -23,6 +23,43 @@ const LayoutTokens = () => {
     return (
         <section>
             <h3 style={Capitalize}>{TokenName}</h3>
+
+            <div
+                style={{
+                    marginBottom: "30px",
+                }}
+            >
+                {data.designTokensJson.mapValue.map(node => (
+                    <div
+                        style={{
+                            height: "50px",
+                            width: `${node.compiledValue}`,
+                            backgroundColor: "#000013",
+                            marginBottom: "14px",
+                        }}
+                    >
+                        <p
+                            style={{
+                                color: "#fcfcfc",
+                                fontSize: "1rem",
+                                fontWeight: "700",
+                                lineHeight: "50px",
+                                paddingLeft: "14px",
+                            }}
+                        >
+                            $breakpoint({node.name}) {""}
+                            <span
+                                style={{
+                                    marginLeft: "4px",
+                                }}
+                            >
+                                {node.compiledValue}
+                            </span>
+                        </p>
+                    </div>
+                ))}
+            </div>
+
             <table
                 className="docblock-argstable css-6hhrgj"
                 style={{ textAlign: "left" }}

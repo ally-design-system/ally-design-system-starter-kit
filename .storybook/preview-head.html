@@ -6,6 +6,12 @@
 -->
 
 <style>
+    /* Docs Page */
+    .css-t7viak {
+        background: #fcfcfc !important;
+        overflow: hidden !important;
+    }
+
     /* Docs Heading */
     .css-z9ai3 {
         color: #000013 !important;
@@ -46,6 +52,7 @@
 
     .css-p1dfi6 {
         box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0 0 inset !important;
+        border-bottom: 2px solid #000013 !important;
     }
 
     /* Docs Preview Block Header Icons */
@@ -100,7 +107,6 @@
     code {
         color: #fcfcfc !important;
         font-size: 16px !important;
-        font-weight: normal !important;
     }
 
     /* Docs Preview Block Copy Code Button */
@@ -149,6 +155,7 @@
     .css-6hhrgj th {
         color: #000013 !important;
         font-size: 16px !important;
+        border-bottom: 2px solid rgba(0, 0, 13, 1) !important;
     }
 
     /* Args Table Body */
@@ -209,11 +216,17 @@
         padding-top: 14px !important;
         padding-bottom: 10px !important;
         font-size: 15px !important;
+        font-weight: bold !important;
     }
 
-    /* Args Table First Column Text */
-    .css-in3yi3 {
-        font-weight: bold !important;
+    .css-6hhrgj tr:last-child td:first-child,
+    .css-6hhrgj tr:last-child th:first-child {
+        border-bottom-left-radius: 0 !important;
+    }
+
+    .css-6hhrgj td:last-child,
+    .css-6hhrgj th:last-child {
+        border-bottom-right-radius: 0 !important;
     }
 
     /* Hide Default Value Column */

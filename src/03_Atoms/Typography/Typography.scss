@@ -282,7 +282,7 @@ pre {
     display: block;
     color: brand-color(snow);
     font-size: font-size(cm);
-    font-weight: font-weight(bold);
+    font-weight: font-weight(bold) !important;
     background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: $mono;
