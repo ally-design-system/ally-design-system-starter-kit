@@ -19,11 +19,13 @@ const Wrappers = () => {
     const Title = {
         textTransform: "capitalize",
         marginTop: "80px",
+        lineHeight: "1",
     }
 
     return (
         <section>
             <h3 style={Title}>{TokenName}</h3>
+            <p>Description.</p>
 
             <div
                 style={{
