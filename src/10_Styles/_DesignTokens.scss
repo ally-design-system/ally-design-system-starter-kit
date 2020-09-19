@@ -3,79 +3,77 @@
  *
  */
 
-// 001 Layout Design Tokens
-/****************************/
-
-// Breakpoint Design Tokens
-@import "../02_DesignTokens/021_Layout/Breakpoints";
-
-// Layer Design Tokens
-@import "../02_DesignTokens/021_Layout/ZLayers";
-
-// Spacing Design Tokens
-@import "../02_DesignTokens/021_Layout/Spacing";
-
-// Wrapper Design Tokens
-@import "../02_DesignTokens/021_Layout/Wrappers";
-
-// 002 Color Palette Design Tokens
-/***********************************/
+// 001 Color Design Tokens
+/*************************/
 // Action Color Design Tokens
-@import "../02_DesignTokens/022_Color/ActionColors";
+@import "../02_DesignTokens/021_Color/ActionColors";
 
 // Brand Color Design Tokens
-@import "../02_DesignTokens/022_Color/BrandColors";
+@import "../02_DesignTokens/021_Color/BrandColors";
 
 // Opacity Design Tokens
-@import "../02_DesignTokens/022_Color/Opacity";
+@import "../02_DesignTokens/021_Color/Opacity";
 
 // Gradient Design Tokens
-@import "../02_DesignTokens/022_Color/Gradients";
+@import "../02_DesignTokens/021_Color/Gradients";
 
 // Shade Design Tokens
-@import "../02_DesignTokens/022_Color/Shades";
+@import "../02_DesignTokens/021_Color/Shades";
 
 // Tint Design Tokens
-@import "../02_DesignTokens/022_Color/Tints";
+@import "../02_DesignTokens/021_Color/Tints";
 
-// 003 Peripheral Design Tokens
-/********************************/
-// Border Design Tokens
-@import "../02_DesignTokens/023_Peripherals/Borders";
-
-// Radii Design Tokens
-@import "../02_DesignTokens/023_Peripherals/Radii";
-
-// Shadow Design Tokens
-@import "../02_DesignTokens/023_Peripherals/Shadows";
-
-// 004 Motion Design Tokens
-/****************************/
-// Transition Design Tokens
-@import "../02_DesignTokens/024_Motion/Transitions";
-
-// Animation Design Tokens
-@import "../02_DesignTokens/024_Motion/Animations";
-
-// 005 Iconography
-/*******************/
-// Icon Design Tokens
-@import "../02_DesignTokens/025_Iconography/IconSizes";
-
-// 006 Typography
-/******************/
-
+// 002 Typography Design Tokens
+/******************************/
 // Font Size Design Tokens
-@import "../02_DesignTokens/026_Typography/FontSizes";
+@import "../02_DesignTokens/022_Typography/FontSizes";
 
 // Font Weight Design Tokens
-@import "../02_DesignTokens/026_Typography/FontWeights";
+@import "../02_DesignTokens/022_Typography/FontWeights";
 
 // Leading Design Tokens
-@import "../02_DesignTokens/026_Typography/Leading";
+@import "../02_DesignTokens/022_Typography/Leading";
 
 // Tracking Design Tokens
-@import "../02_DesignTokens/026_Typography/Tracking";
+@import "../02_DesignTokens/022_Typography/Tracking";
 
 // Typeface Design Tokens
-@import "../02_DesignTokens/026_Typography/Typefaces";
+@import "../02_DesignTokens/022_Typography/Typefaces";
+
+// 003 Iconography Design Tokens
+/*******************************/
+// Icon Design Tokens
+@import "../02_DesignTokens/023_Iconography/IconSizes";
+
+// 004 Layout Design Tokens
+/**************************/
+// Breakpoint Design Tokens
+@import "../02_DesignTokens/024_Layout/Breakpoints/Breakpoints";
+
+// Layer Design Tokens
+@import "../02_DesignTokens/024_Layout/ZLayers/ZLayers";
+
+// Spacing Design Tokens
+@import "../02_DesignTokens/024_Layout/Spacing/Spacing";
+
+// Wrapper Design Tokens
+@import "../02_DesignTokens/024_Layout/Wrappers/Wrappers";
+
+// 005 Peripheral Design Tokens
+/******************************/
+// Border Design Tokens
+@import "../02_DesignTokens/025_Peripherals/Borders";
+
+// Radii Design Tokens
+@import "../02_DesignTokens/025_Peripherals/Radii";
+
+// Shadow Design Tokens
+@import "../02_DesignTokens/025_Peripherals/Shadows";
+
+// 006 Motion Design Tokens
+/**************************/
+// Transition Design Tokens
+@import "../02_DesignTokens/026_Motion/Transitions";
+
+// Animation Design Tokens
+@import "../02_DesignTokens/026_Motion/Animations";

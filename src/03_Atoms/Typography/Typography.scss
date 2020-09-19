@@ -282,7 +282,9 @@ pre {
     display: block;
     color: brand-color(snow);
     font-size: font-size(cm);
-    font-weight: font-weight(bold) !important;
+    font-weight: font-weight(
+        bold
+    ) !important; // Important so it overrides Storybook styling
     background-color: brand-color(midnight);
     border-radius: radius(square);
     font-family: $mono;

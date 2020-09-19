@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const LayoutTokens = () => {
+const ZLayers = () => {
     const data = useStaticQuery(graphql`
-        query BreakpointsQuery {
-            designTokensJson(name: { eq: "$breakpoints" }) {
+        query ZLayersQuery {
+            designTokensJson(name: { eq: "$zlayers" }) {
                 name
                 mapValue {
                     name
@@ -16,13 +16,14 @@ const LayoutTokens = () => {
 
     const Name = data.designTokensJson.name
     const TokenName = Name.substring(1)
-    const Capitalize = {
+    const Title = {
         textTransform: "capitalize",
+        marginTop: "80px",
     }
 
     return (
         <section>
-            <h3 style={Capitalize}>{TokenName}</h3>
+            <h3 style={Title}>{TokenName}</h3>
 
             <div
                 style={{
@@ -32,22 +33,28 @@ const LayoutTokens = () => {
                 {data.designTokensJson.mapValue.map(node => (
                     <div
                         style={{
-                            height: "50px",
-                            width: `${node.compiledValue}`,
-                            backgroundColor: "#000013",
-                            marginBottom: "14px",
+                            display: "flex",
+                            alignContent: "center",
                         }}
                     >
+                        <div
+                            style={{
+                                height: "30px",
+                                width: `${node.compiledValue}rem`,
+                                backgroundColor: "#000013",
+                                marginBottom: "14px",
+                            }}
+                        ></div>
                         <p
                             style={{
-                                color: "#fcfcfc",
+                                color: "#000013",
                                 fontSize: "1rem",
                                 fontWeight: "700",
-                                lineHeight: "50px",
+                                lineHeight: "30px",
                                 paddingLeft: "14px",
                             }}
                         >
-                            $breakpoint({node.name}) {""}
+                            spacing({node.name}) {""}
                             <span
                                 style={{
                                     marginLeft: "4px",
@@ -77,12 +84,12 @@ const LayoutTokens = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    $breakpoint({node.name})
+                                    zlayer({node.name})
                                 </span>
                             </td>
                             <td>
                                 <div className="css-1521b8c">
-                                    <span>{node.compiledValue}</span>
+                                    Z Index {node.compiledValue}
                                 </div>
                                 <div className="css-fimcbu"></div>
                             </td>
@@ -92,8 +99,8 @@ const LayoutTokens = () => {
                             <td style={{ width: "50% !important" }}>
                                 <pre style={{ margin: 0 }}>
                                     <code>
-                                        @media (min-width: breakpoint(
-                                        {node.name}))
+                                        z-index: zlayer(
+                                        {node.name});
                                     </code>
                                 </pre>
                             </td>
@@ -105,4 +112,4 @@ const LayoutTokens = () => {
     )
 }
 
-export default LayoutTokens
+export default ZLayers
