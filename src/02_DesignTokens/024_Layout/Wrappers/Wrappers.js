@@ -50,14 +50,7 @@ const Wrappers = () => {
                                 paddingLeft: "14px",
                             }}
                         >
-                            wrapper({node.name}) {""}
-                            <span
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                            >
-                                {node.compiledValue}
-                            </span>
+                            wrapper({node.name})
                         </p>
                     </div>
                 ))}

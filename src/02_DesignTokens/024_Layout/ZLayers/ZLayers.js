@@ -56,14 +56,7 @@ const ZLayers = () => {
                                 paddingLeft: "14px",
                             }}
                         >
-                            spacing({node.name}) {""}
-                            <span
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                            >
-                                {node.compiledValue}
-                            </span>
+                            spacing({node.name})
                         </p>
                     </div>
                 ))}

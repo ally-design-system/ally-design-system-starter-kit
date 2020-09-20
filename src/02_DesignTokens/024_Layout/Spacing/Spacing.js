@@ -56,16 +56,7 @@ const Spacing = () => {
                                 paddingLeft: "14px",
                             }}
                         >
-                            spacing({node.name}) {""}
-                            <span
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                            >
-                                {node.compiledValue} / {""}
-                                {parseFloat(`${node.compiledValue}`, 10) * 16}
-                                px
-                            </span>
+                            spacing({node.name})
                         </p>
                     </div>
                 ))}

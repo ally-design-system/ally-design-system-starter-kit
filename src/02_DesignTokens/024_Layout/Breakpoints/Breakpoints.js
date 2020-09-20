@@ -50,14 +50,7 @@ const Breakpoints = () => {
                                 paddingLeft: "14px",
                             }}
                         >
-                            breakpoint({node.name}) {""}
-                            <span
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                            >
-                                {node.compiledValue}
-                            </span>
+                            breakpoint({node.name})
                         </p>
                     </div>
                 ))}
