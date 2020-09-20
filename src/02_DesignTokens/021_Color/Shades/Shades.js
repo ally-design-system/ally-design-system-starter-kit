@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Gradients = () => {
+const Shades = () => {
     const data = useStaticQuery(graphql`
-        query GradientsQuery {
-            designTokensJson(name: { eq: "$gradients" }) {
+        query ShadesQuery {
+            designTokensJson(name: { eq: "$shades" }) {
                 name
                 mapValue {
                     name
@@ -16,6 +16,7 @@ const Gradients = () => {
 
     const Name = data.designTokensJson.name
     const TokenName = Name.substring(1)
+
     const Title = {
         textTransform: "capitalize",
         marginTop: "80px",
@@ -46,14 +47,22 @@ const Gradients = () => {
                     >
                         <div
                             style={{
-                                height: "120px",
-                                width: "100%",
-                                background: `${node.compiledValue}`,
                                 borderRadius: "4px",
                                 border: "2px solid #000013",
                                 boxShadow: "rgba(0, 0, 0, 0.1) 0 4px 6px 0",
+                                backgroundColor: `#18d14c`,
                             }}
-                        ></div>
+                        >
+                            <div
+                                style={{
+                                    height: "120px",
+                                    width: "100%",
+                                    backgroundColor: "#000",
+                                    borderRadius: "1px",
+                                    opacity: `${node.compiledValue}`,
+                                }}
+                            ></div>
+                        </div>
                         <figcaption
                             style={{
                                 color: "#000013",
@@ -63,7 +72,7 @@ const Gradients = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            gradient({node.name})
+                            shade(action-color(success), {node.name})
                         </figcaption>
                     </figure>
                 ))}
@@ -86,7 +95,7 @@ const Gradients = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    gradient({node.name})
+                                    shade(action-color(success), {node.name})
                                 </span>
                             </td>
                             <td>
@@ -101,7 +110,8 @@ const Gradients = () => {
                             <td style={{ width: "50% !important" }}>
                                 <pre style={{ margin: 0 }}>
                                     <code>
-                                        background: gradient(
+                                        background-color:
+                                        shade(action-color(success),
                                         {node.name});
                                     </code>
                                 </pre>
@@ -114,4 +124,4 @@ const Gradients = () => {
     )
 }
 
-export default Gradients
+export default Shades

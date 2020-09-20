@@ -63,14 +63,7 @@ const BrandColors = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            brand-color({node.name}) {""}
-                            <span
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                            >
-                                {node.compiledValue}
-                            </span>
+                            brand-color({node.name})
                         </figcaption>
                     </figure>
                 ))}

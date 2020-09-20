@@ -63,14 +63,7 @@ const ActionColors = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            action-color({node.name}) {""}
-                            <span
-                                style={{
-                                    marginLeft: "4px",
-                                }}
-                            >
-                                {node.compiledValue}
-                            </span>
+                            action-color({node.name})
                         </figcaption>
                     </figure>
                 ))}

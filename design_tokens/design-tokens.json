@@ -57,18 +57,84 @@
   },
   {
     "name": "$opacities",
-    "value": "( 0: 0, 25: 2.5, 75: 7.5, 100: 1, )",
-    "compiledValue": "(0: 0, 25: 2.5, 75: 7.5, 100: 1)"
+    "value": "( o0: 0, o25: 0.25, o75: 0.75, o100: 1, )",
+    "mapValue": [
+      {
+        "name": "o0",
+        "value": "0",
+        "compiledValue": "0"
+      },
+      {
+        "name": "o25",
+        "value": "0.25",
+        "compiledValue": "0.25"
+      },
+      {
+        "name": "o75",
+        "value": "0.75",
+        "compiledValue": "0.75"
+      },
+      {
+        "name": "o100",
+        "value": "1",
+        "compiledValue": "1"
+      }
+    ],
+    "compiledValue": "(o0: 0, o25: 0.25, o75: 0.75, o100: 1)"
   },
   {
     "name": "$shades",
-    "value": "( 20: 20%, 40: 40%, 60: 60%, 80: 80%, )",
-    "compiledValue": "(20: 20%, 40: 40%, 60: 60%, 80: 80%)"
+    "value": "( s20: 20%, s40: 40%, s60: 60%, s80: 80%, )",
+    "mapValue": [
+      {
+        "name": "s20",
+        "value": "20%",
+        "compiledValue": "20%"
+      },
+      {
+        "name": "s40",
+        "value": "40%",
+        "compiledValue": "40%"
+      },
+      {
+        "name": "s60",
+        "value": "60%",
+        "compiledValue": "60%"
+      },
+      {
+        "name": "s80",
+        "value": "80%",
+        "compiledValue": "80%"
+      }
+    ],
+    "compiledValue": "(s20: 20%, s40: 40%, s60: 60%, s80: 80%)"
   },
   {
     "name": "$tints",
-    "value": "( 20: 20%, 40: 40%, 60: 60%, 80: 80%, )",
-    "compiledValue": "(20: 20%, 40: 40%, 60: 60%, 80: 80%)"
+    "value": "( t20: 20%, t40: 40%, t60: 60%, t80: 80%, )",
+    "mapValue": [
+      {
+        "name": "t20",
+        "value": "20%",
+        "compiledValue": "20%"
+      },
+      {
+        "name": "t40",
+        "value": "40%",
+        "compiledValue": "40%"
+      },
+      {
+        "name": "t60",
+        "value": "60%",
+        "compiledValue": "60%"
+      },
+      {
+        "name": "t80",
+        "value": "80%",
+        "compiledValue": "80%"
+      }
+    ],
+    "compiledValue": "(t20: 20%, t40: 40%, t60: 60%, t80: 80%)"
   },
   {
     "name": "$font-sizes",
