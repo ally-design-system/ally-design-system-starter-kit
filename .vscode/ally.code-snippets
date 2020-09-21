@@ -456,21 +456,21 @@
     "Typeface Rubik": {
 		"prefix": "tr",
 		"body": [
-      "font-family: $rubik;",
+      "font-family: typeface(rubik);",
 		],
 		  "description": "Typeface Rubik"
     },
     "Typeface Archivo": {
 		"prefix": "ta",
 		"body": [
-      "font-family: $archivo;",
+      "font-family: typeface(archivo);",
 		],
 		  "description": "Typeface Archivo"
     },
     "Typeface Mono": {
 		"prefix": "tm",
 		"body": [
-      "font-family: $mono;",
+      "font-family: typeface(mono);",
 		],
 		  "description": "Typeface Mono"
     }

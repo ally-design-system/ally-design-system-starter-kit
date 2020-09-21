@@ -178,14 +178,14 @@ const ComponentsPage = () => (
                         text="Ally Starter Kit on GitHub"
                     />{" "}
                     their 40th <InLink to="/" text="Home" /> anniversary on{" "}
-                    <time datetime="2018-07-07">July 7</time> in London's Hyde
+                    <time dateTime="2018-07-07">July 7</time> in London's Hyde
                     Park.
                 </p>
 
                 <p>
                     The concert starts at <time datetime="20:00">20:00</time>{" "}
                     and you'll be able to enjoy the band for at least{" "}
-                    <time datetime="PT2H30M">2h 30m</time>.
+                    <time dateTime="PT2H30M">2h 30m</time>.
                 </p>
 
                 <p>

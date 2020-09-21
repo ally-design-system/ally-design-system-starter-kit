@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $rubik;
+    font-family: typeface(rubik);
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(regular);
@@ -61,7 +61,7 @@ h6 {
 // The <p> element represents a paragraph. Paragraphs are represented in visual media as
 // blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
-    font-family: $archivo;
+    font-family: typeface(archivo);
     font-size: font-size(cm);
     font-weight: font-weight(regular);
     line-height: leading(regular);
@@ -80,7 +80,7 @@ p {
 a,
 a:link,
 a:visited {
-    font-family: $archivo;
+    font-family: typeface(archivo);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
@@ -271,7 +271,7 @@ code {
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: $mono;
+    font-family: typeface(mono);
 }
 
 // Preformatted Text (Code Blocks)
@@ -287,7 +287,7 @@ pre {
     ) !important; // Important so it overrides Storybook styling
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: $mono;
+    font-family: typeface(mono);
     padding: spacing(s);
     margin: 0 0 spacing(xl);
 }
@@ -297,7 +297,7 @@ pre {
 // The <time> element represents a specific period in time. It may include the datetime attribute to translate dates into
 // machine-readable format, allowing for better search engine results or custom features such as reminders.
 time {
-    font-family: $archivo;
+    font-family: typeface(archivo);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
@@ -312,7 +312,7 @@ time {
 // this is not mandated by the HTML standard.
 kbd {
     display: inline-block;
-    font-family: $mono;
+    font-family: typeface(mono);
     font-size: font-size(cm);
     color: brand-color(midnight);
     font-weight: font-weight(bold);
@@ -337,7 +337,7 @@ samp {
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: $mono;
+    font-family: typeface(mono);
     padding: spacing(m);
     margin: 0 0 spacing(xl);
 }

@@ -255,6 +255,28 @@
     "compiledValue": "IBM Plex Mono, monospace"
   },
   {
+    "name": "$typefaces",
+    "value": "( rubik: $rubik, archivo: $archivo, mono: $mono, )",
+    "mapValue": [
+      {
+        "name": "rubik",
+        "value": "$rubik",
+        "compiledValue": "Rubik, sans-serif"
+      },
+      {
+        "name": "archivo",
+        "value": "$archivo",
+        "compiledValue": "Archivo, sans-serif"
+      },
+      {
+        "name": "mono",
+        "value": "$mono",
+        "compiledValue": "IBM Plex Mono, monospace"
+      }
+    ],
+    "compiledValue": "(rubik: \"Rubik\", sans-serif, archivo: \"Archivo\", sans-serif, mono: \"IBM Plex Mono\", monospace)"
+  },
+  {
     "name": "$icon-sizes",
     "value": "( small: 12px, regular: 16px, large: 18px, )",
     "mapValue": [

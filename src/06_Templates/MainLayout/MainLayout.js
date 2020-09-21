@@ -14,7 +14,7 @@ const MainLayout = ({ children }) => (
         <SkipLink />
         <Header />
         <main className="main-layout">
-            <SkipNavContent tabindex="-1">{children}</SkipNavContent>
+            <SkipNavContent tabIndex="-1">{children}</SkipNavContent>
         </main>
         <Footer />
     </>
