@@ -5,7 +5,7 @@
 
 // Tracking Values
 $tracking: (
-    regular: 0,
+    normal: "normal",
     wide: 0.1rem,
 );
 
@@ -22,6 +22,6 @@ $tracking: (
 // Tracking Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
-    tr  letter-spacing: tracking(regular);
+    tr  letter-spacing: tracking(normal);
     tw  letter-spacing: tracking(wide);
 */

@@ -224,12 +224,12 @@
   },
   {
     "name": "$tracking",
-    "value": "( regular: 0, wide: 0.1rem, )",
+    "value": "( normal: \"normal\", wide: 0.1rem, )",
     "mapValue": [
       {
-        "name": "regular",
-        "value": "0",
-        "compiledValue": "0"
+        "name": "normal",
+        "value": "normal",
+        "compiledValue": "normal"
       },
       {
         "name": "wide",
@@ -237,7 +237,7 @@
         "compiledValue": "0.1rem"
       }
     ],
-    "compiledValue": "(regular: 0, wide: 0.1rem)"
+    "compiledValue": "(normal: \"normal\", wide: 0.1rem)"
   },
   {
     "name": "$rubik",

@@ -442,7 +442,7 @@
     "Tracking regular": {
 		"prefix": "tr",
 		"body": [
-      "letter-spacing: tracking(regular);",
+      "letter-spacing: tracking(normal);",
 		],
 		  "description": "Tracking Regular"
     },

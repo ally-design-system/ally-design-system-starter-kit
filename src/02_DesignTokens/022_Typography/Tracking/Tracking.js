@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const FontSizes = () => {
+const Tracking = () => {
     const data = useStaticQuery(graphql`
-        query FontSizesQuery {
-            designTokensJson(name: { eq: "$font-sizes" }) {
+        query TrackingQuery {
+            designTokensJson(name: { eq: "$tracking" }) {
                 name
                 mapValue {
                     name
@@ -35,19 +35,20 @@ const FontSizes = () => {
                 {data.designTokensJson.mapValue.map(node => (
                     <p
                         style={{
+                            letterSpacing: `${node.compiledValue}`,
                             fontWeight: 700,
-                            fontSize: `${node.compiledValue}`,
-                            lineHeight: 1,
+                            fontSize: "2rem",
                         }}
                     >
-                        {node.name} {node.compiledValue}
+                        Tracking {node.compiledValue}
                         <span
                             style={{
+                                letterSpacing: "normal",
                                 fontSize: "1.125rem",
                                 marginLeft: "14px",
                             }}
                         >
-                            font-size({node.name})
+                            tracking({node.name})
                         </span>
                     </p>
                 ))}
@@ -70,7 +71,7 @@ const FontSizes = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    font-size({node.name})
+                                    tracking({node.name})
                                 </span>
                             </td>
                             <td>
@@ -85,7 +86,7 @@ const FontSizes = () => {
                             <td style={{ width: "50% !important" }}>
                                 <pre style={{ margin: 0 }}>
                                     <code>
-                                        font-size: font-size(
+                                        letter-spacing: tracking(
                                         {node.name});
                                     </code>
                                 </pre>
@@ -98,4 +99,4 @@ const FontSizes = () => {
     )
 }
 
-export default FontSizes
+export default Tracking

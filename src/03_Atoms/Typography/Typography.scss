@@ -19,7 +19,7 @@ h6 {
     font-family: typeface(rubik);
     font-weight: font-weight(bold);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
     margin-bottom: spacing(l);
 }
@@ -65,7 +65,7 @@ p {
     font-size: font-size(cm);
     font-weight: font-weight(regular);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
     padding-bottom: spacing(l);
 }
@@ -84,7 +84,7 @@ a:visited {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
     text-decoration: none;
     border-bottom: border(default);
@@ -301,7 +301,7 @@ time {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
 }
 
