@@ -427,23 +427,6 @@
     "compiledValue": "(SkipLink: 10, Header: 5, Footer: 5)"
   },
   {
-    "name": "$borders",
-    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
-    "mapValue": [
-      {
-        "name": "default",
-        "value": "solid #000013 3px",
-        "compiledValue": "solid #000013 3px"
-      },
-      {
-        "name": "error",
-        "value": "solid #f30b17 3px",
-        "compiledValue": "solid #f30b17 3px"
-      }
-    ],
-    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
-  },
-  {
     "name": "$radii",
     "value": "( square: 0px, rounded: 3px, )",
     "mapValue": [
@@ -471,6 +454,23 @@
       }
     ],
     "compiledValue": "(default: 0.75rem 0.75rem 0 0 #000013)"
+  },
+  {
+    "name": "$borders",
+    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
+    "mapValue": [
+      {
+        "name": "default",
+        "value": "solid #000013 3px",
+        "compiledValue": "solid #000013 3px"
+      },
+      {
+        "name": "error",
+        "value": "solid #f30b17 3px",
+        "compiledValue": "solid #f30b17 3px"
+      }
+    ],
+    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
   },
   {
     "name": "$animations",

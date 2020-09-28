@@ -31,17 +31,18 @@ const BrandColors = () => {
                 style={{
                     display: "flex",
                     flexWrap: "wrap",
-                    justifyContent: "space-between",
                     marginBottom: "-40px",
                     width: "100%",
+                    marginLeft: "-30px",
+                    width: "calc(100% + 80px)",
                 }}
             >
                 {data.designTokensJson.mapValue.map(node => (
                     <figure
-                        className="colors__figure"
                         style={{
-                            marginBottom: "10px",
-                            width: "280px",
+                            margin: "0 50px 10px 30px",
+                            minWidth: "280px",
+                            maxWidth: "280px",
                         }}
                     >
                         <div

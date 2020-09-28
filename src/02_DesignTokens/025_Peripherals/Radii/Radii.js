@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Tints = () => {
+const Radii = () => {
     const data = useStaticQuery(graphql`
-        query TintsQuery {
-            designTokensJson(name: { eq: "$tints" }) {
+        query Radii {
+            designTokensJson(name: { eq: "$radii" }) {
                 name
                 mapValue {
                     name
@@ -16,7 +16,6 @@ const Tints = () => {
 
     const Name = data.designTokensJson.name
     const TokenName = Name.substring(1)
-
     const Title = {
         textTransform: "capitalize",
         marginTop: "80px",
@@ -48,22 +47,13 @@ const Tints = () => {
                     >
                         <div
                             style={{
-                                borderRadius: "4px",
-                                border: "2px solid #000013",
-                                boxShadow: "rgba(0, 0, 0, 0.1) 0 4px 6px 0",
-                                backgroundColor: "#ffd700",
+                                height: "120px",
+                                width: "100%",
+                                backgroundColor: "#fcfcfc",
+                                borderRadius: `${node.compiledValue}`,
+                                border: "solid #000013 3px",
                             }}
-                        >
-                            <div
-                                style={{
-                                    height: "120px",
-                                    width: "100%",
-                                    backgroundColor: `#fff`,
-                                    borderRadius: "1px",
-                                    opacity: `${node.compiledValue}`,
-                                }}
-                            ></div>
-                        </div>
+                        ></div>
                         <figcaption
                             style={{
                                 color: "#000013",
@@ -73,7 +63,7 @@ const Tints = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            tint(brand-color(gold), {node.name})
+                            radius({node.name})
                         </figcaption>
                     </figure>
                 ))}
@@ -96,7 +86,7 @@ const Tints = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    tint(brand-color(gold), {node.name})
+                                    radius({node.name})
                                 </span>
                             </td>
                             <td>
@@ -111,8 +101,7 @@ const Tints = () => {
                             <td style={{ width: "50% !important" }}>
                                 <pre style={{ margin: 0 }}>
                                     <code>
-                                        background-color:
-                                        tint(brand-color(gold),
+                                        border-radius: radius(
                                         {node.name});
                                     </code>
                                 </pre>
@@ -125,4 +114,4 @@ const Tints = () => {
     )
 }
 
-export default Tints
+export default Radii
