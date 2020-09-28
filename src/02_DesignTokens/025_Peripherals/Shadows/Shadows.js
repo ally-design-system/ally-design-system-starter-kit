@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Radii = () => {
+const Shadows = () => {
     const data = useStaticQuery(graphql`
-        query RadiiQuery {
-            designTokensJson(name: { eq: "$radii" }) {
+        query ShadowsQuery {
+            designTokensJson(name: { eq: "$shadows" }) {
                 name
                 mapValue {
                     name
@@ -50,8 +50,9 @@ const Radii = () => {
                                 height: "120px",
                                 width: "100%",
                                 backgroundColor: "#fcfcfc",
-                                borderRadius: `${node.compiledValue}`,
+                                borderRadius: 0,
                                 border: "solid #000013 3px",
+                                boxShadow: `${node.compiledValue}`,
                             }}
                         ></div>
                         <figcaption
@@ -60,10 +61,10 @@ const Radii = () => {
                                 fontSize: "1.125rem",
                                 fontWeight: "700",
                                 textAlign: "left",
-                                padding: "1rem 0 2.5rem",
+                                padding: "2rem 0 2.5rem",
                             }}
                         >
-                            radius({node.name})
+                            shadow({node.name})
                         </figcaption>
                     </figure>
                 ))}
@@ -86,7 +87,7 @@ const Radii = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    radius({node.name})
+                                    shadow({node.name})
                                 </span>
                             </td>
                             <td>
@@ -101,7 +102,7 @@ const Radii = () => {
                             <td style={{ width: "50% !important" }}>
                                 <pre style={{ margin: 0 }}>
                                     <code>
-                                        border-radius: radius(
+                                        box-shadow: shadow(
                                         {node.name});
                                     </code>
                                 </pre>
@@ -114,4 +115,4 @@ const Radii = () => {
     )
 }
 
-export default Radii
+export default Shadows
