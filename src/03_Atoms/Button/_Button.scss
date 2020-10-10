@@ -13,7 +13,7 @@ button,
     color: brand-color(midnight);
     background: brand-color(gold);
     padding: spacing(m) spacing(l);
-    transition: transition(background-color);
+    transition: background-color transition(ease-in-out);
     -webkit-appearance: none;
     -moz-appearance: none;
     text-align: center;

@@ -299,26 +299,12 @@
 		],
 		  "description": "Shadow Default"
     },
-    "Transition Background Color": {
-		"prefix": "tbc",
+    "Transition Ease In Out": {
+		"prefix": "teio",
 		"body": [
-      "transition: transition(background-color);",
+      "transition: background-color transition(ease-in-out);",
 		],
-		  "description": "Transition Background Color"
-	},
-	"Transition transform": {
-		"prefix": "tt",
-		"body": [
-      "transition: transition(transform);",
-		],
-		  "description": "Transition Transform"
-	},
-	"Transition Opacity": {
-		"prefix": "to",
-		"body": [
-      "transition: transition(opacity);",
-		],
-		  "description": "Transition Opacity"
+		  "description": "Transition Ease In Out"
 	},
     "Animation FadeIn": {
 		"prefix": "afi",

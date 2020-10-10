@@ -427,6 +427,23 @@
     "compiledValue": "(SkipLink: 10, Header: 5, Footer: 5)"
   },
   {
+    "name": "$borders",
+    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
+    "mapValue": [
+      {
+        "name": "default",
+        "value": "solid #000013 3px",
+        "compiledValue": "solid #000013 3px"
+      },
+      {
+        "name": "error",
+        "value": "solid #f30b17 3px",
+        "compiledValue": "solid #f30b17 3px"
+      }
+    ],
+    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
+  },
+  {
     "name": "$radii",
     "value": "( square: 0px, rounded: 3px, )",
     "mapValue": [
@@ -456,23 +473,6 @@
     "compiledValue": "(default: 0.75rem 0.75rem 0 0 #000013)"
   },
   {
-    "name": "$borders",
-    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
-    "mapValue": [
-      {
-        "name": "default",
-        "value": "solid #000013 3px",
-        "compiledValue": "solid #000013 3px"
-      },
-      {
-        "name": "error",
-        "value": "solid #f30b17 3px",
-        "compiledValue": "solid #f30b17 3px"
-      }
-    ],
-    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
-  },
-  {
     "name": "$animations",
     "value": "( fadeIn: fadeIn 300ms ease-in, )",
     "mapValue": [
@@ -486,24 +486,14 @@
   },
   {
     "name": "$transitions",
-    "value": "( background-color: background-color 0.2s ease-in-out, transform: transform 0.2s ease-in-out, opacity: opacity 0.2s ease-in-out, )",
+    "value": "( ease-in-out: 0.2s ease-in-out, )",
     "mapValue": [
       {
-        "name": "background-color",
-        "value": "background-color 0.2s ease-in-out",
-        "compiledValue": "background-color 0.2s ease-in-out"
-      },
-      {
-        "name": "transform",
-        "value": "transform 0.2s ease-in-out",
-        "compiledValue": "transform 0.2s ease-in-out"
-      },
-      {
-        "name": "opacity",
-        "value": "opacity 0.2s ease-in-out",
-        "compiledValue": "opacity 0.2s ease-in-out"
+        "name": "ease-in-out",
+        "value": "0.2s ease-in-out",
+        "compiledValue": "0.2s ease-in-out"
       }
     ],
-    "compiledValue": "(background-color: background-color 0.2s ease-in-out, transform: transform 0.2s ease-in-out, opacity: opacity 0.2s ease-in-out)"
+    "compiledValue": "(ease-in-out: 0.2s ease-in-out)"
   }
 ]

@@ -1,9 +1,9 @@
 /*
- * Animation Design Tokens
+ * Keyframe Animation Design Tokens
  *
  */
 
-// FadeIn Animation Keyframes
+// FadeIn Keyframe Animation
 @keyframes fadeIn {
     0% {
         opacity: opacity(o0);
@@ -13,12 +13,12 @@
     }
 }
 
-// Animation Values
+// Keyframe Animation Values
 $animations: (
     fadeIn: fadeIn 300ms ease-in,
 );
 
-// Animation Design Tokens Config
+// Keyframe Animation Design Tokens Config
 @function animation($name) {
     @if map-has-key($animations, $name) {
         @return map-get($animations, $name);

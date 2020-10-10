@@ -13,7 +13,8 @@
     margin: -1px;
     transform: translateY(-100%);
     opacity: opacity(o0);
-    transition: transition(transform), transition(opacity);
+    transition: transform transition(ease-in-out),
+        opacity transition(ease-in-out);
 }
 
 [data-reach-skip-nav-link] {
