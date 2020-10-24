@@ -178,14 +178,14 @@ const ComponentsPage = () => (
                         text="Ally Starter Kit on GitHub"
                     />{" "}
                     their 40th <InLink to="/" text="Home" /> anniversary on{" "}
-                    <time datetime="2018-07-07">July 7</time> in London's Hyde
+                    <time dateTime="2018-07-07">July 7</time> in London's Hyde
                     Park.
                 </p>
 
                 <p>
                     The concert starts at <time datetime="20:00">20:00</time>{" "}
                     and you'll be able to enjoy the band for at least{" "}
-                    <time datetime="PT2H30M">2h 30m</time>.
+                    <time dateTime="PT2H30M">2h 30m</time>.
                 </p>
 
                 <p>
@@ -226,8 +226,8 @@ const ComponentsPage = () => (
                         <a href="tel:+447123456789">(+44) 7123 456789</a>
                     </p>
                     <p>
-                        <a href="https://goo.gl/maps/LT1tuiDWaj1ScbYu5">
-                            3rd Floor, 15 Colston St, Bristol BS1 5AP
+                        <a href="https://goo.gl/maps/SxK5bhzvyMZfc93n7">
+                            Whitley Bay, Newcastle Upon Tyne, England, UK
                         </a>
                     </p>
                 </address>

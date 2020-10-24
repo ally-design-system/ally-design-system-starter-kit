@@ -7,13 +7,13 @@ button,
 .button {
     display: inline-block;
     border: border(default);
-    font-family: $rubik;
+    font-family: typeface(rubik);
     font-weight: font-weight(bold);
     font-size: font-size(hxxs);
     color: brand-color(midnight);
     background: brand-color(gold);
     padding: spacing(m) spacing(l);
-    transition: transition(background-color);
+    transition: background-color transition(ease-in-out);
     -webkit-appearance: none;
     -moz-appearance: none;
     text-align: center;
@@ -28,6 +28,6 @@ button,
 
     &:hover,
     &:focus {
-        background-color: tint(brand-color(gold), 40);
+        background-color: tint(brand-color(gold), t40);
     }
 }

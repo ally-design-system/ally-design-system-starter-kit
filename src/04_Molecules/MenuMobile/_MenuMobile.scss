@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $rubik;
+    font-family: typeface(rubik);
     font-weight: font-weight(bold);
     font-size: font-size(cm);
     color: brand-color(midnight);
@@ -18,7 +18,7 @@
 
     &:hover,
     &:focus {
-        background: tint(brand-color(gold), 40);
+        background: tint(brand-color(gold), t40);
     }
 
     .icon {
@@ -58,13 +58,13 @@
 }
 
 [data-reach-menu-item] {
-    font-family: $rubik;
+    font-family: typeface(rubik);
     font-size: font-size(cm);
-    transition: transition(background-color);
+    transition: background-color transition(ease-in-out);
 
     &[data-selected] {
         color: brand-color(midnight);
-        background: shade(brand-color(gold), 20);
+        background: shade(brand-color(gold), s20);
     }
 
     &.active {
@@ -75,11 +75,11 @@
 
 @keyframes slide-down {
     0% {
-        opacity: opacity(0);
+        opacity: opacity(o0);
         transform: translateY(-20px);
     }
     100% {
-        opacity: opacity(100);
+        opacity: opacity(o100);
         transform: translateY(0);
     }
 }

@@ -16,10 +16,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $rubik;
+    font-family: typeface(rubik);
     font-weight: font-weight(bold);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
     margin-bottom: spacing(l);
 }
@@ -61,11 +61,11 @@ h6 {
 // The <p> element represents a paragraph. Paragraphs are represented in visual media as
 // blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
-    font-family: $archivo;
+    font-family: typeface(archivo);
     font-size: font-size(cm);
     font-weight: font-weight(regular);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
     padding-bottom: spacing(l);
 }
@@ -80,11 +80,11 @@ p {
 a,
 a:link,
 a:visited {
-    font-family: $archivo;
+    font-family: typeface(archivo);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
     text-decoration: none;
     border-bottom: border(default);
@@ -267,12 +267,11 @@ dfn {
 // computer code. By default, the content text is displayed using the user agent's default monospace font.
 code {
     color: brand-color(snow);
-    font-size: font-size(cm);
+    font-size: font-size(cs);
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: $mono;
-    padding: spacing(xxxs) spacing(xxs);
+    font-family: typeface(mono);
 }
 
 // Preformatted Text (Code Blocks)
@@ -283,11 +282,13 @@ pre {
     display: block;
     color: brand-color(snow);
     font-size: font-size(cm);
-    font-weight: font-weight(bold);
+    font-weight: font-weight(
+        bold
+    ) !important; // Important so it overrides Storybook styling
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: $mono;
-    padding: spacing(m);
+    font-family: typeface(mono);
+    padding: spacing(s);
     margin: 0 0 spacing(xl);
 }
 
@@ -296,11 +297,11 @@ pre {
 // The <time> element represents a specific period in time. It may include the datetime attribute to translate dates into
 // machine-readable format, allowing for better search engine results or custom features such as reminders.
 time {
-    font-family: $archivo;
+    font-family: typeface(archivo);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
-    letter-spacing: tracking(regular);
+    letter-spacing: tracking(normal);
     color: brand-color(midnight);
 }
 
@@ -311,16 +312,16 @@ time {
 // this is not mandated by the HTML standard.
 kbd {
     display: inline-block;
-    font-family: $mono;
+    font-family: typeface(mono);
     font-size: font-size(cm);
     color: brand-color(midnight);
     font-weight: font-weight(bold);
     line-height: 1;
-    background-color: shade(brand-color(snow), 20);
+    background-color: shade(brand-color(snow), s20);
     border-radius: radius(rounded);
     border: solid brand-color(midnight) 1px;
-    box-shadow: 0 spacing(xxxxs) spacing(xxxxs) tint(brand-color(midnight), 20),
-        0 spacing(xxxs) 0 0 shade(brand-color(snow), 20) inset;
+    box-shadow: 0 spacing(xxxxs) spacing(xxxxs) tint(brand-color(midnight), t20),
+        0 spacing(xxxs) 0 0 shade(brand-color(snow), s20) inset;
     padding: spacing(xxxs) spacing(xxs);
     white-space: nowrap;
 }
@@ -336,7 +337,7 @@ samp {
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: $mono;
+    font-family: typeface(mono);
     padding: spacing(m);
     margin: 0 0 spacing(xl);
 }
@@ -389,7 +390,7 @@ address {
 del,
 ins {
     text-decoration: line-through;
-    background-color: tint(action-color(error), 60);
+    background-color: tint(action-color(error), t60);
     color: brand-color(midnight);
     font-weight: font-weight(bold);
     padding: spacing(xxxxs) spacing(xxs);
@@ -397,7 +398,7 @@ ins {
 
 ins {
     text-decoration: none;
-    background-color: tint(action-color(success), 60);
+    background-color: tint(action-color(success), t60);
 }
 
 // Thematic Break (Horizontal Rule)

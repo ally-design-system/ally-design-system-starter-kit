@@ -12,8 +12,9 @@
     width: 1px;
     margin: -1px;
     transform: translateY(-100%);
-    opacity: opacity(0);
-    transition: transition(transform), transition(opacity);
+    opacity: opacity(o0);
+    transition: transform transition(ease-in-out),
+        opacity transition(ease-in-out);
 }
 
 [data-reach-skip-nav-link] {
@@ -28,7 +29,7 @@
         padding: spacing(s);
         background-color: brand-color(snow);
         transform: translateY(spacing(s));
-        opacity: opacity(100);
+        opacity: opacity(o100);
     }
 
     &.focus-visible,

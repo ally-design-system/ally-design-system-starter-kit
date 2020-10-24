@@ -1,0 +1,31 @@
+/*
+ * Opacity Design Tokens
+ *
+ */
+
+// Opacity Values
+$opacities: (
+    o0: 0,
+    o25: 0.25,
+    o75: 0.75,
+    o100: 1,
+);
+
+// Opacity Design Tokens Config
+@function opacity($name) {
+    @if map-has-key($opacities, $name) {
+        @return map-get($opacities, $name);
+    }
+
+    @error "The key #{$name} is not in the $opacities design token map";
+    @return null;
+}
+
+// Opacity Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    o0      opacity: opacity(o0);
+    o25     opacity: opacity(o25);
+    o75     opacity: opacity(o75);
+    o100    opacity: opacity(o100);
+*/

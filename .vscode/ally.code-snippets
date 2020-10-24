@@ -183,28 +183,28 @@
     "Opacity 0%": {
 		"prefix": "o0",
 		"body": [
-      "opacity: opacity(0);",
+      "opacity: opacity(o0);",
 		],
 		  "description": "Opacity 0%"
     },
     "Opacity 25%": {
 		"prefix": "o25",
 		"body": [
-      "opacity: opacity(25);",
+      "opacity: opacity(o25);",
 		],
 		  "description": "Opacity 25%"
     },
     "Opacity 75%": {
 		"prefix": "o75",
 		"body": [
-      "opacity: opacity(75);",
+      "opacity: opacity(o75);",
 		],
 		  "description": "Opacity 75%"
     },
     "Opacity 100%": {
 		"prefix": "o100",
 		"body": [
-      "opacity: opacity(100);",
+      "opacity: opacity(o100);",
 		],
 		  "description": "Opacity 100%"
     },
@@ -239,28 +239,28 @@
     "Tint 20": {
 		"prefix": "t20",
 		"body": [
-      "tint(brand-color(), 20)",
+      "tint(brand-color(), t20)",
 		],
 		  "description": "Tint 20%"
     },
     "Tint 40": {
 		"prefix": "t40",
 		"body": [
-      "tint(brand-color(), 40)",
+      "tint(brand-color(), t40)",
 		],
 		  "description": "Tint 40%"
     },
     "Tint 60": {
 		"prefix": "t60",
 		"body": [
-      "tint(brand-color(), 60)",
+      "tint(brand-color(), t60)",
 		],
 		  "description": "Tint 60%"
     },
     "Tint 80": {
 		"prefix": "t80",
 		"body": [
-      "tint(brand-color(), 80)",
+      "tint(brand-color(), t80)",
 		],
 		  "description": "Tint 80%"
     },
@@ -299,26 +299,12 @@
 		],
 		  "description": "Shadow Default"
     },
-    "Transition Background Color": {
-		"prefix": "tbc",
+    "Transition Ease In Out": {
+		"prefix": "teio",
 		"body": [
-      "transition: transition(background-color);",
+      "transition: background-color transition(ease-in-out);",
 		],
-		  "description": "Transition Background Color"
-	},
-	"Transition transform": {
-		"prefix": "tt",
-		"body": [
-      "transition: transition(transform);",
-		],
-		  "description": "Transition Transform"
-	},
-	"Transition Opacity": {
-		"prefix": "to",
-		"body": [
-      "transition: transition(opacity);",
-		],
-		  "description": "Transition Opacity"
+		  "description": "Transition Ease In Out"
 	},
     "Animation FadeIn": {
 		"prefix": "afi",
@@ -442,7 +428,7 @@
     "Tracking regular": {
 		"prefix": "tr",
 		"body": [
-      "letter-spacing: tracking(regular);",
+      "letter-spacing: tracking(normal);",
 		],
 		  "description": "Tracking Regular"
     },
@@ -456,21 +442,21 @@
     "Typeface Rubik": {
 		"prefix": "tr",
 		"body": [
-      "font-family: $rubik;",
+      "font-family: typeface(rubik);",
 		],
 		  "description": "Typeface Rubik"
     },
     "Typeface Archivo": {
 		"prefix": "ta",
 		"body": [
-      "font-family: $archivo;",
+      "font-family: typeface(archivo);",
 		],
 		  "description": "Typeface Archivo"
     },
     "Typeface Mono": {
 		"prefix": "tm",
 		"body": [
-      "font-family: $mono;",
+      "font-family: typeface(mono);",
 		],
 		  "description": "Typeface Mono"
     }

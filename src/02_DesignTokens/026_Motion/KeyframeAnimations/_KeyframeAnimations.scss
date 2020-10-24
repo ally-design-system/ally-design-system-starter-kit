@@ -1,0 +1,35 @@
+/*
+ * Keyframe Animation Design Tokens
+ *
+ */
+
+// FadeIn Keyframe Animation
+@keyframes fadeIn {
+    0% {
+        opacity: opacity(o0);
+    }
+    100% {
+        opacity: opacity(o100);
+    }
+}
+
+// Keyframe Animation Values
+$keyframe-animations: (
+    fadeIn: fadeIn 300ms ease-in,
+);
+
+// Keyframe Animation Design Tokens Config
+@function animation($name) {
+    @if map-has-key($keyframe-animations, $name) {
+        @return map-get($keyframe-animations, $name);
+    }
+
+    @error "The key #{$name} is not in the $animations design token map";
+    @return null;
+}
+
+// Animation Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    afi     animation: animation(fadeIn);
+*/

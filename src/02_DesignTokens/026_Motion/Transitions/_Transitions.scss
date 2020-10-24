@@ -1,0 +1,25 @@
+/*
+ * Transition Styles
+ *
+ */
+
+// Transition Values
+$transitions: (
+    ease-in-out: 0.2s ease-in-out,
+);
+
+// Transition Design Tokens Config
+@function transition($name) {
+    @if map-has-key($transitions, $name) {
+        @return map-get($transitions, $name);
+    }
+
+    @error "The key #{$name} is not in the $transitions design token map";
+    @return null;
+}
+
+// Transition Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    teio   transition: background-color transition(ease-in-out);
+*/

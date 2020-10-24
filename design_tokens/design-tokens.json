@@ -1,0 +1,499 @@
+[
+  {
+    "name": "$action-colors",
+    "value": "( success: #18d14c, warning: #ff9d00, error: #f30b17, )",
+    "mapValue": [
+      {
+        "name": "success",
+        "value": "#18d14c",
+        "compiledValue": "#18d14c"
+      },
+      {
+        "name": "warning",
+        "value": "#ff9d00",
+        "compiledValue": "#ff9d00"
+      },
+      {
+        "name": "error",
+        "value": "#f30b17",
+        "compiledValue": "#f30b17"
+      }
+    ],
+    "compiledValue": "(success: #18d14c, warning: #ff9d00, error: #f30b17)"
+  },
+  {
+    "name": "$brand-colors",
+    "value": "( snow: #fcfcfc, midnight: #000013, gold: #ffd700, )",
+    "mapValue": [
+      {
+        "name": "snow",
+        "value": "#fcfcfc",
+        "compiledValue": "#fcfcfc"
+      },
+      {
+        "name": "midnight",
+        "value": "#000013",
+        "compiledValue": "#000013"
+      },
+      {
+        "name": "gold",
+        "value": "#ffd700",
+        "compiledValue": "#ffd700"
+      }
+    ],
+    "compiledValue": "(snow: #fcfcfc, midnight: #000013, gold: #ffd700)"
+  },
+  {
+    "name": "$gradients",
+    "value": "( 140mgs: linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%), )",
+    "mapValue": [
+      {
+        "name": "mgs",
+        "value": "linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%)",
+        "compiledValue": "linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%)"
+      }
+    ],
+    "compiledValue": "(140mgs: linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%))"
+  },
+  {
+    "name": "$opacities",
+    "value": "( o0: 0, o25: 0.25, o75: 0.75, o100: 1, )",
+    "mapValue": [
+      {
+        "name": "o0",
+        "value": "0",
+        "compiledValue": "0"
+      },
+      {
+        "name": "o25",
+        "value": "0.25",
+        "compiledValue": "0.25"
+      },
+      {
+        "name": "o75",
+        "value": "0.75",
+        "compiledValue": "0.75"
+      },
+      {
+        "name": "o100",
+        "value": "1",
+        "compiledValue": "1"
+      }
+    ],
+    "compiledValue": "(o0: 0, o25: 0.25, o75: 0.75, o100: 1)"
+  },
+  {
+    "name": "$shades",
+    "value": "( s20: 20%, s40: 40%, s60: 60%, s80: 80%, )",
+    "mapValue": [
+      {
+        "name": "s20",
+        "value": "20%",
+        "compiledValue": "20%"
+      },
+      {
+        "name": "s40",
+        "value": "40%",
+        "compiledValue": "40%"
+      },
+      {
+        "name": "s60",
+        "value": "60%",
+        "compiledValue": "60%"
+      },
+      {
+        "name": "s80",
+        "value": "80%",
+        "compiledValue": "80%"
+      }
+    ],
+    "compiledValue": "(s20: 20%, s40: 40%, s60: 60%, s80: 80%)"
+  },
+  {
+    "name": "$tints",
+    "value": "( t20: 20%, t40: 40%, t60: 60%, t80: 80%, )",
+    "mapValue": [
+      {
+        "name": "t20",
+        "value": "20%",
+        "compiledValue": "20%"
+      },
+      {
+        "name": "t40",
+        "value": "40%",
+        "compiledValue": "40%"
+      },
+      {
+        "name": "t60",
+        "value": "60%",
+        "compiledValue": "60%"
+      },
+      {
+        "name": "t80",
+        "value": "80%",
+        "compiledValue": "80%"
+      }
+    ],
+    "compiledValue": "(t20: 20%, t40: 40%, t60: 60%, t80: 80%)"
+  },
+  {
+    "name": "$font-sizes",
+    "value": "( hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem, )",
+    "mapValue": [
+      {
+        "name": "hxl",
+        "value": "3rem",
+        "compiledValue": "3rem"
+      },
+      {
+        "name": "hl",
+        "value": "2.5rem",
+        "compiledValue": "2.5rem"
+      },
+      {
+        "name": "hm",
+        "value": "2rem",
+        "compiledValue": "2rem"
+      },
+      {
+        "name": "hs",
+        "value": "1.625rem",
+        "compiledValue": "1.625rem"
+      },
+      {
+        "name": "hxs",
+        "value": "1.25rem",
+        "compiledValue": "1.25rem"
+      },
+      {
+        "name": "hxxs",
+        "value": "1.125rem",
+        "compiledValue": "1.125rem"
+      },
+      {
+        "name": "cm",
+        "value": "1.125rem",
+        "compiledValue": "1.125rem"
+      },
+      {
+        "name": "cs",
+        "value": "1rem",
+        "compiledValue": "1rem"
+      },
+      {
+        "name": "cxs",
+        "value": "0.875rem",
+        "compiledValue": "0.875rem"
+      }
+    ],
+    "compiledValue": "(hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem)"
+  },
+  {
+    "name": "$font-weights",
+    "value": "( regular: 400, bold: 700, )",
+    "mapValue": [
+      {
+        "name": "regular",
+        "value": "400",
+        "compiledValue": "400"
+      },
+      {
+        "name": "bold",
+        "value": "700",
+        "compiledValue": "700"
+      }
+    ],
+    "compiledValue": "(regular: 400, bold: 700)"
+  },
+  {
+    "name": "$leading",
+    "value": "( regular: 1.5, tall: 1.8, )",
+    "mapValue": [
+      {
+        "name": "regular",
+        "value": "1.5",
+        "compiledValue": "1.5"
+      },
+      {
+        "name": "tall",
+        "value": "1.8",
+        "compiledValue": "1.8"
+      }
+    ],
+    "compiledValue": "(regular: 1.5, tall: 1.8)"
+  },
+  {
+    "name": "$tracking",
+    "value": "( normal: \"normal\", wide: 0.1rem, )",
+    "mapValue": [
+      {
+        "name": "normal",
+        "value": "normal",
+        "compiledValue": "normal"
+      },
+      {
+        "name": "wide",
+        "value": "0.1rem",
+        "compiledValue": "0.1rem"
+      }
+    ],
+    "compiledValue": "(normal: \"normal\", wide: 0.1rem)"
+  },
+  {
+    "name": "$rubik",
+    "value": "\"Rubik\", sans-serif",
+    "compiledValue": "Rubik, sans-serif"
+  },
+  {
+    "name": "$archivo",
+    "value": "\"Archivo\", sans-serif",
+    "compiledValue": "Archivo, sans-serif"
+  },
+  {
+    "name": "$mono",
+    "value": "\"IBM Plex Mono\", monospace",
+    "compiledValue": "IBM Plex Mono, monospace"
+  },
+  {
+    "name": "$typefaces",
+    "value": "( rubik: $rubik, archivo: $archivo, mono: $mono, )",
+    "mapValue": [
+      {
+        "name": "rubik",
+        "value": "$rubik",
+        "compiledValue": "Rubik, sans-serif"
+      },
+      {
+        "name": "archivo",
+        "value": "$archivo",
+        "compiledValue": "Archivo, sans-serif"
+      },
+      {
+        "name": "mono",
+        "value": "$mono",
+        "compiledValue": "IBM Plex Mono, monospace"
+      }
+    ],
+    "compiledValue": "(rubik: \"Rubik\", sans-serif, archivo: \"Archivo\", sans-serif, mono: \"IBM Plex Mono\", monospace)"
+  },
+  {
+    "name": "$icon-sizes",
+    "value": "( small: 12px, regular: 16px, large: 18px, )",
+    "mapValue": [
+      {
+        "name": "small",
+        "value": "12px",
+        "compiledValue": "12px"
+      },
+      {
+        "name": "regular",
+        "value": "16px",
+        "compiledValue": "16px"
+      },
+      {
+        "name": "large",
+        "value": "18px",
+        "compiledValue": "18px"
+      }
+    ],
+    "compiledValue": "(small: 12px, regular: 16px, large: 18px)"
+  },
+  {
+    "name": "$breakpoints",
+    "value": "( xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px, )",
+    "mapValue": [
+      {
+        "name": "xs",
+        "value": "380px",
+        "compiledValue": "380px"
+      },
+      {
+        "name": "s",
+        "value": "500px",
+        "compiledValue": "500px"
+      },
+      {
+        "name": "m",
+        "value": "950px",
+        "compiledValue": "950px"
+      },
+      {
+        "name": "l",
+        "value": "1200px",
+        "compiledValue": "1200px"
+      },
+      {
+        "name": "xl",
+        "value": "1600px",
+        "compiledValue": "1600px"
+      }
+    ],
+    "compiledValue": "(xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px)"
+  },
+  {
+    "name": "$spacing",
+    "value": "( xxxxs: 0.0625rem, xxxs: 0.125rem, xxs: 0.25rem, xs: 0.5rem, s: 0.75rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 2.5rem, xxxl: 3rem, xxxxl: 3.5rem, )",
+    "mapValue": [
+      {
+        "name": "xxxxs",
+        "value": "0.0625rem",
+        "compiledValue": "0.0625rem"
+      },
+      {
+        "name": "xxxs",
+        "value": "0.125rem",
+        "compiledValue": "0.125rem"
+      },
+      {
+        "name": "xxs",
+        "value": "0.25rem",
+        "compiledValue": "0.25rem"
+      },
+      {
+        "name": "xs",
+        "value": "0.5rem",
+        "compiledValue": "0.5rem"
+      },
+      {
+        "name": "s",
+        "value": "0.75rem",
+        "compiledValue": "0.75rem"
+      },
+      {
+        "name": "m",
+        "value": "1rem",
+        "compiledValue": "1rem"
+      },
+      {
+        "name": "l",
+        "value": "1.5rem",
+        "compiledValue": "1.5rem"
+      },
+      {
+        "name": "xl",
+        "value": "2rem",
+        "compiledValue": "2rem"
+      },
+      {
+        "name": "xxl",
+        "value": "2.5rem",
+        "compiledValue": "2.5rem"
+      },
+      {
+        "name": "xxxl",
+        "value": "3rem",
+        "compiledValue": "3rem"
+      },
+      {
+        "name": "xxxxl",
+        "value": "3.5rem",
+        "compiledValue": "3.5rem"
+      }
+    ],
+    "compiledValue": "(xxxxs: 0.0625rem, xxxs: 0.125rem, xxs: 0.25rem, xs: 0.5rem, s: 0.75rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 2.5rem, xxxl: 3rem, xxxxl: 3.5rem)"
+  },
+  {
+    "name": "$wrappers",
+    "value": "( SiteMaxWidth: 1600px, )",
+    "mapValue": [
+      {
+        "name": "SiteMaxWidth",
+        "value": "1600px",
+        "compiledValue": "1600px"
+      }
+    ],
+    "compiledValue": "(SiteMaxWidth: 1600px)"
+  },
+  {
+    "name": "$zlayers",
+    "value": "( SkipLink: 10, Header: 5, Footer: 5, )",
+    "mapValue": [
+      {
+        "name": "SkipLink",
+        "value": "10",
+        "compiledValue": "10"
+      },
+      {
+        "name": "Header",
+        "value": "5",
+        "compiledValue": "5"
+      },
+      {
+        "name": "Footer",
+        "value": "5",
+        "compiledValue": "5"
+      }
+    ],
+    "compiledValue": "(SkipLink: 10, Header: 5, Footer: 5)"
+  },
+  {
+    "name": "$borders",
+    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
+    "mapValue": [
+      {
+        "name": "default",
+        "value": "solid #000013 3px",
+        "compiledValue": "solid #000013 3px"
+      },
+      {
+        "name": "error",
+        "value": "solid #f30b17 3px",
+        "compiledValue": "solid #f30b17 3px"
+      }
+    ],
+    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
+  },
+  {
+    "name": "$radii",
+    "value": "( square: 0px, rounded: 3px, )",
+    "mapValue": [
+      {
+        "name": "square",
+        "value": "0px",
+        "compiledValue": "0px"
+      },
+      {
+        "name": "rounded",
+        "value": "3px",
+        "compiledValue": "3px"
+      }
+    ],
+    "compiledValue": "(square: 0px, rounded: 3px)"
+  },
+  {
+    "name": "$shadows",
+    "value": "( default: 0.75rem 0.75rem 0 0 #000013, )",
+    "mapValue": [
+      {
+        "name": "default",
+        "value": "0.75rem 0.75rem 0 0 #000013",
+        "compiledValue": "0.75rem 0.75rem 0 0 #000013"
+      }
+    ],
+    "compiledValue": "(default: 0.75rem 0.75rem 0 0 #000013)"
+  },
+  {
+    "name": "$keyframe-animations",
+    "value": "( fadeIn: fadeIn 300ms ease-in, )",
+    "mapValue": [
+      {
+        "name": "fadeIn",
+        "value": "fadeIn 300ms ease-in",
+        "compiledValue": "fadeIn 300ms ease-in"
+      }
+    ],
+    "compiledValue": "(fadeIn: fadeIn 300ms ease-in)"
+  },
+  {
+    "name": "$transitions",
+    "value": "( ease-in-out: 0.2s ease-in-out, )",
+    "mapValue": [
+      {
+        "name": "ease-in-out",
+        "value": "0.2s ease-in-out",
+        "compiledValue": "0.2s ease-in-out"
+      }
+    ],
+    "compiledValue": "(ease-in-out: 0.2s ease-in-out)"
+  }
+]
