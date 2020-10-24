@@ -48,13 +48,20 @@ const Transitions = () => {
                         <div
                             className="ally-design-tokens-motion"
                             style={{
+                                display: "grid",
+                                justifyContent: "center",
+                                alignContent: "center",
+                                fontWeight: "700",
                                 height: "120px",
                                 width: "100%",
                                 borderRadius: "3px",
                                 border: "#000013 solid 3px",
                                 transition: `background-color ${node.compiledValue}`,
+                                cursor: "crosshair",
                             }}
-                        ></div>
+                        >
+                            Hover
+                        </div>
                         <figcaption
                             style={{
                                 color: "#000013",
