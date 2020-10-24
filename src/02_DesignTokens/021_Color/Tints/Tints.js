@@ -14,8 +14,9 @@ const Tints = () => {
         }
     `)
 
-    const Name = data.designTokensJson.name
-    const TokenName = Name.substring(1)
+    const VariableName = data.designTokensJson.name // Variable name
+    const Name = VariableName.substring(1) // Remove `$` from variable name
+    const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
 
     const Title = {
         textTransform: "capitalize",

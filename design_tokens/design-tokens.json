@@ -473,7 +473,7 @@
     "compiledValue": "(default: 0.75rem 0.75rem 0 0 #000013)"
   },
   {
-    "name": "$animations",
+    "name": "$keyframe-animations",
     "value": "( fadeIn: fadeIn 300ms ease-in, )",
     "mapValue": [
       {

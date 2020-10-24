@@ -14,14 +14,14 @@
 }
 
 // Keyframe Animation Values
-$animations: (
+$keyframe-animations: (
     fadeIn: fadeIn 300ms ease-in,
 );
 
 // Keyframe Animation Design Tokens Config
 @function animation($name) {
-    @if map-has-key($animations, $name) {
-        @return map-get($animations, $name);
+    @if map-has-key($keyframe-animations, $name) {
+        @return map-get($keyframe-animations, $name);
     }
 
     @error "The key #{$name} is not in the $animations design token map";

@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Borders = () => {
+const KeyFrameAnimations = () => {
     const data = useStaticQuery(graphql`
-        query BordersQuery {
-            designTokensJson(name: { eq: "$borders" }) {
+        query KeyFrameAnimationsQuery {
+            designTokensJson(name: { eq: "$keyframe-animations" }) {
                 name
                 mapValue {
                     name
@@ -48,14 +48,22 @@ const Borders = () => {
                         }}
                     >
                         <div
+                            onClick={() => window.location.reload()}
                             style={{
+                                display: "grid",
+                                justifyContent: "center",
+                                alignContent: "center",
+                                fontWeight: "700",
                                 height: "120px",
                                 width: "100%",
-                                backgroundColor: "#fcfcfc",
-                                borderRadius: 0,
-                                border: `${node.compiledValue}`,
+                                borderRadius: "3px",
+                                border: "#000013 solid 3px",
+                                animation: `${node.compiledValue}`,
+                                cursor: "pointer",
                             }}
-                        ></div>
+                        >
+                            Click To Reload
+                        </div>
                         <figcaption
                             style={{
                                 color: "#000013",
@@ -65,7 +73,7 @@ const Borders = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            border({node.name})
+                            animation({node.name})
                         </figcaption>
                     </figure>
                 ))}
@@ -88,7 +96,7 @@ const Borders = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    border({node.name})
+                                    animation({node.name})
                                 </span>
                             </td>
                             <td>
@@ -103,8 +111,7 @@ const Borders = () => {
                             <td style={{ width: "50% !important" }}>
                                 <pre style={{ margin: 0 }}>
                                     <code>
-                                        border: border(
-                                        {node.name});
+                                        animation: animation({node.name});
                                     </code>
                                 </pre>
                             </td>
@@ -116,4 +123,4 @@ const Borders = () => {
     )
 }
 
-export default Borders
+export default KeyFrameAnimations
