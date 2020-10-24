@@ -46,14 +46,13 @@ const Transitions = () => {
                         }}
                     >
                         <div
+                            className="ally-design-tokens-motion"
                             style={{
                                 height: "120px",
                                 width: "100%",
-                                backgroundColor: "#000013",
                                 borderRadius: "3px",
                                 border: "#000013 solid 3px",
-                                transition:
-                                    "background-color `${node.compiledValue}`",
+                                transition: `background-color ${node.compiledValue}`,
                             }}
                         ></div>
                         <figcaption
