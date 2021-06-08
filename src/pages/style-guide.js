@@ -59,7 +59,7 @@ const ComponentsPage = () => (
                         <p> &nbsp; &nbsp; </p>
                         <Icon id="cookie" title="Cookies policy" />
                         <p> &nbsp; &nbsp; </p>
-                        <Icon id="privacy-lock" title="Priavy policy" />
+                        <Icon id="privacy-lock" title="Privacy policy" />
                         <p> &nbsp; &nbsp; </p>
                         <Icon id="burger-menu" title="Open menu" />
                         <p> &nbsp; &nbsp; </p>
@@ -198,8 +198,8 @@ const ComponentsPage = () => (
                 </p>
 
                 <p>
-                    You could use this element to highlight <u>speling</u>{" "}
-                    mistakes, so the writer can <u>corect</u> them.
+                    You could use this element to highlight <u>spelling</u>{" "}
+                    mistakes, so the writer can <u>correct</u> them.
                 </p>
 
                 <hr />

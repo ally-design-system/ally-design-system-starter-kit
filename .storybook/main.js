@@ -13,6 +13,11 @@ module.exports = {
     // Declare where storybook stories are located plus file types .mdx and .js
     stories: ["../src/**/*.stories.@(js|mdx)"],
 
+    // Use Webpack 5
+    core: {
+        builder: "webpack5",
+    },
+
     // Register installed storybook addons
     addons: [
         // Register Docs addon with `/register` to register without presets
