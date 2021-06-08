@@ -18,8 +18,8 @@ import { action } from "@storybook/addon-actions"
 // Import addParameters from React Storybook
 import { addParameters } from "@storybook/react"
 
-// Import DocsPage and DocsContainer from Doc Bloacks
-import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks"
+// Import DocsPage and DocsContainer from Doc Blocks
+import { DocsPage, DocsContainer } from "@storybook/addon-docs"
 
 // Set up the Docs parameter including the DocsPage for rendering the page, a container, and various configuration
 // options, such as extractComponentDescription for manually extracting a component description

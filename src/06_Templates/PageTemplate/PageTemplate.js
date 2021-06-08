@@ -15,28 +15,26 @@ export default function Template({
     const { frontmatter, html } = markdownRemark
 
     return (
-        <>
-            <Layout>
-                <SEO title={frontmatter.title} />
-                <section className="page-template">
-                    <div
-                        className="page-template__column"
-                        dangerouslySetInnerHTML={{ __html: html }}
-                    />
-                    <div className="page-template__column">
-                        <div className="page-template__feature-image"></div>
-                        <div className="page-template__icons">
-                            <div className="page-template__icon"></div>
-                            <div className="page-template__icon"></div>
-                            <div className="page-template__icon"></div>
-                            <div className="page-template__icon"></div>
-                            <div className="page-template__icon"></div>
-                            <div className="page-template__icon"></div>
-                        </div>
+        <Layout>
+            <SEO title={frontmatter.title} />
+            <section className="page-template">
+                <div
+                    className="page-template__column"
+                    dangerouslySetInnerHTML={{ __html: html }}
+                />
+                <div className="page-template__column">
+                    <div className="page-template__feature-image"></div>
+                    <div className="page-template__icons">
+                        <div className="page-template__icon"></div>
+                        <div className="page-template__icon"></div>
+                        <div className="page-template__icon"></div>
+                        <div className="page-template__icon"></div>
+                        <div className="page-template__icon"></div>
+                        <div className="page-template__icon"></div>
                     </div>
-                </section>
-            </Layout>
-        </>
+                </div>
+            </section>
+        </Layout>
     )
 }
 

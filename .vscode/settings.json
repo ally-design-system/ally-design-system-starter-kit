@@ -63,5 +63,30 @@
 
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
-	}
+	},
+	"cSpell.words": [
+		"Aldous",
+		"Eygi",
+		"Graphi",
+		"Pantony",
+		"Rambeck",
+		"Vercel",
+		"Viewports",
+		"entrypoint",
+		"figma",
+		"frontmatter",
+		"galaxys",
+		"gatsbyjs",
+		"ipad",
+		"iphone",
+		"iphonex",
+		"iphonexr",
+		"iphonexsmax",
+		"nikkipantony",
+		"pixelxl",
+		"prioritising",
+		"reactjs",
+		"storybookjs",
+		"transpiled"
+	]
 }

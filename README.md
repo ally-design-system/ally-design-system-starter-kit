@@ -19,9 +19,9 @@
 
 ## 👋 Introduction
 
-The Ally Design System Starter Kit is built with Gatsby (v2) and Storybook (v6) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.
+The Ally Design System Starter Kit is built with Gatsby (v3) and Storybook (v6) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.
 
-This starter kit aims to help create an enjoyable and productive developer experience for building Jamstack Design System based projects while prioritising Web Accessibility and Performance.
+This starter kit aims to help create an enjoyable and productive developer experience for building Design System based projects while prioritising Web Accessibility and Performance.
 
 ## 💨 Getting Started
 
